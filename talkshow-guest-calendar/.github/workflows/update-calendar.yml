@@ -1,0 +1,35 @@
+name: Weekly calendar update
+
+on:
+  schedule:
+    # GitHub Actions usa UTC :contentReference[oaicite:6]{index=6}
+    # Lunes 12:00 UTC = Lunes 09:00 Argentina (GMT-3)
+    - cron: "0 12 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Generate calendar
+        run: python generate_calendar.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "calendar-bot"
+          git config user.email "calendar-bot@users.noreply.github.com"
+          git add docs/calendar.ics docs/last_updated.txt
+          git commit -m "Weekly update" || exit 0
+          git push
