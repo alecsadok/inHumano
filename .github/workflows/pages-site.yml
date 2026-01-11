@@ -1,0 +1,76 @@
+name: Build & Deploy Site (ICS Talkshows + Eventos) to GitHub Pages
+
+on:
+  schedule:
+    # Lunes 12:00 UTC (aprox 09:00 Argentina UTC-3)
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 1) Generar el calendario de talkshows
+      - name: Generate talkshow calendar
+        working-directory: talkshow-guest-calendar
+        run: |
+          python update_calendar.py
+
+      # 2) Generar el calendario de eventos (desde eventos/events.yml)
+      - name: Generate eventos calendar
+        working-directory: eventos
+        run: |
+          python generate_events_ics.py
+
+      # 3) Armar el sitio para Pages
+      - name: Prepare Pages site (_site)
+        run: |
+          rm -rf _site
+          mkdir -p _site
+
+          # Home de Pages
+          cp -r pages/* _site/
+
+          # Publicar ICS talkshows en la raíz del sitio
+          cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
+
+          # Publicar carpeta eventos (tu proyecto)
+          mkdir -p _site/eventos
+          cp -r eventos/* _site/eventos/
+
+          # Publicar el ICS de eventos dentro de /eventos/
+          cp eventos/output/events.ics _site/eventos/events.ics
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
