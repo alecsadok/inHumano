@@ -31,22 +31,28 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # 1) Actualiza events.yaml desde tu watchlist
+      - name: Update events.yaml (watchlist)
+        run: |
+          python update_events.py
+
+      # 2) Genera premios.ics
       - name: Build premios.ics
         run: |
           python generate_calendar.py
 
+      # 3) Genera talkshow-guests.ics
       - name: Build talkshow-guests.ics
         working-directory: talkshow-guest-calendar
         run: |
           python update_calendar.py
 
+      # 4) Publica todo en el mismo sitio
       - name: Prepare Pages site (_site)
         run: |
           rm -rf _site
           mkdir -p _site
-
           cp -r pages/* _site/
-
           cp premios.ics _site/premios.ics
           cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
 
