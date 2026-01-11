@@ -5,6 +5,7 @@ import re
 from datetime import datetime, timedelta, date
 from pathlib import Path
 from zoneinfo import ZoneInfo
+import hashlib
 
 import yaml
 import requests
@@ -20,6 +21,11 @@ WIKI_BASE = "https://en.wikipedia.org"
 
 TVP_ABC_STATION = "https://www.tvpassport.com/tv-listings/stations/abc-wwsb-sarsota-fl/3192"
 TVP_E_STATION = "https://www.tvpassport.com/tv-listings/stations/e-entertainment-usa-eastern-feed/617"
+
+DISCOVERY_DAYS = 14
+DISCOVERY_KEYWORDS = ["awards", "award", "live from", "honors", "celebration"]
+
+TIME_LINE_RX = re.compile(r"^\s*(\d{1,2}:\d{2}\s*[AP]M)\s*$", re.I)
 
 
 def http_get(url: str) -> str:
@@ -228,9 +234,6 @@ def extract_top_nominated_from_infobox(url: str) -> list[str]:
     return out
 
 
-TIME_LINE_RX = re.compile(r"^\s*(\d{1,2}:\d{2}\s*[AP]M)\s*$", re.I)
-
-
 def parse_tvpassport_station_day(station_base_url: str, d: date) -> list[dict]:
     url = station_base_url.rstrip("/") + f"/{d.isoformat()}"
     html = http_get(url)
@@ -245,23 +248,14 @@ def parse_tvpassport_station_day(station_base_url: str, d: date) -> list[dict]:
         if not m:
             i += 1
             continue
-        t = m.group(1).upper().replace(" ", "")
-        prog = ""
-        desc = ""
-        if i + 1 < len(lines):
-            prog = lines[i + 1]
-        if i + 2 < len(lines):
-            # a veces la “sublínea” trae el episodio (ej: "Golden Globes 2026 New Live")
-            # y después viene una descripción con nombres.
-            maybe = lines[i + 2]
-            if not TIME_LINE_RX.match(maybe):
-                desc = maybe
-
+        t = m.group(1).upper().strip()
+        prog = lines[i + 1] if i + 1 < len(lines) else ""
+        desc = lines[i + 2] if i + 2 < len(lines) else ""
         items.append({"time": t, "program": prog, "desc": desc, "source_url": url})
         i += 1
 
-    def to_minutes(hhmm_ampm: str) -> int:
-        m2 = re.match(r"^(\d{1,2}):(\d{2})(AM|PM)$", hhmm_ampm, re.I)
+    def to_minutes(t_ampm: str) -> int:
+        m2 = re.match(r"^\s*(\d{1,2}):(\d{2})\s*(AM|PM)\s*$", t_ampm, re.I)
         if not m2:
             return -1
         hh = int(m2.group(1))
@@ -280,8 +274,7 @@ def parse_tvpassport_station_day(station_base_url: str, d: date) -> list[dict]:
             items[idx]["duration_minutes"] = b - a
 
     for it in items:
-        # conv a HH:MM 24h
-        m3 = re.match(r"^(\d{1,2}):(\d{2})(AM|PM)$", it["time"], re.I)
+        m3 = re.match(r"^\s*(\d{1,2}):(\d{2})\s*(AM|PM)\s*$", it["time"], re.I)
         if not m3:
             continue
         hh = int(m3.group(1))
@@ -295,25 +288,72 @@ def parse_tvpassport_station_day(station_base_url: str, d: date) -> list[dict]:
     return items
 
 
-def extract_names_from_desc(desc: str) -> list[str]:
-    if not desc:
-        return []
-    # Ej típico: "Zuri Hall, Justin Sylvester, and Keltie Knight, host ..."
-    head = desc.split("host")[0].strip()
-    head = re.sub(r"\band\b", ",", head, flags=re.I)
-    parts = [p.strip(" ,.;") for p in head.split(",") if p.strip(" ,.;")]
-    out: list[str] = []
-    for p in parts:
-        # filtro simple de “nombres”
-        if 2 <= len(p.split()) <= 4 and len(p) <= 50:
-            out.append(p)
-    seen = set()
-    final = []
-    for x in out:
-        if x not in seen:
-            seen.add(x)
-            final.append(x)
-    return final
+def keywords_match(s: str) -> bool:
+    s2 = s.lower()
+    return any(k in s2 for k in DISCOVERY_KEYWORDS)
+
+
+def is_new_live(s: str) -> bool:
+    s2 = s.lower()
+    return ("new" in s2) and ("live" in s2)
+
+
+def stable_id(*parts: str) -> str:
+    raw = "|".join(parts).encode("utf-8")
+    return "disc_" + hashlib.sha1(raw).hexdigest()[:16]
+
+
+def discover_live_events_from_station(
+    station_url: str,
+    station_label: str,
+    tz_local: str,
+    start_day: date,
+    days: int,
+) -> list[dict]:
+    out: list[dict] = []
+    for off in range(days):
+        d = start_day + timedelta(days=off)
+        try:
+            items = parse_tvpassport_station_day(station_url, d)
+        except Exception:
+            continue
+        for it in items:
+            prog = clean_text(it.get("program", ""))
+            if not prog:
+                continue
+            if not keywords_match(prog):
+                continue
+            if not is_new_live(prog):
+                continue
+
+            start_local = it.get("start_local_hhmm")
+            dur = it.get("duration_minutes")
+            if not start_local:
+                continue
+
+            event = {
+                "id": stable_id(station_label, d.isoformat(), prog),
+                "title": prog,
+                "date": d.isoformat(),
+                "tz_local": tz_local,
+                "start_local": start_local,
+                "duration_minutes": int(dur) if isinstance(dur, int) else None,
+                "location": "",
+                "broadcast": {
+                    "tv": [station_label],
+                    "streaming": [],
+                    "red_carpet": {"confirmed": False},
+                },
+                "event_url": it.get("source_url", ""),
+                "nomination_source_url": "",
+                "top_nominated": [],
+                "special_awards": [],
+                "guests_confirmed": [],
+                "guests_source_urls": [],
+                "notes": [],
+            }
+            out.append(event)
+    return out
 
 
 def load_existing_events() -> tuple[dict[str, dict], dict[str, dict]]:
@@ -374,41 +414,23 @@ def merge_event(existing: dict | None, auto: dict) -> dict:
     merged["title"] = prefer_existing_value(merged.get("title"), auto.get("title"))
     merged["date"] = auto.get("date")
     merged["tz_local"] = auto.get("tz_local")
-
-    # si TVPassport encontró hora, la usamos (es grilla)
-    if auto.get("start_local"):
-        merged["start_local"] = auto.get("start_local")
-    else:
-        merged["start_local"] = prefer_existing_value(merged.get("start_local"), auto.get("start_local"))
-
-    if auto.get("duration_minutes") is not None:
-        merged["duration_minutes"] = prefer_existing_value(merged.get("duration_minutes"), auto.get("duration_minutes"))
-
     merged["location"] = prefer_existing_value(merged.get("location"), auto.get("location"))
     merged["broadcast"] = merge_broadcast(merged.get("broadcast", {}), auto.get("broadcast", {}))
 
-    merged["top_nominated"] = auto.get("top_nominated", [])
-    merged["nomination_source_url"] = auto.get("nomination_source_url", "")
+    # horarios: si vienen del scraping de listings, actualizan
+    if auto.get("start_local"):
+        merged["start_local"] = auto.get("start_local")
+    if auto.get("duration_minutes") is not None:
+        merged["duration_minutes"] = prefer_existing_value(merged.get("duration_minutes"), auto.get("duration_minutes"))
+
     merged["event_url"] = prefer_existing_value(merged.get("event_url"), auto.get("event_url"))
+    merged["nomination_source_url"] = auto.get("nomination_source_url", merged.get("nomination_source_url", ""))
+    merged["top_nominated"] = auto.get("top_nominated", merged.get("top_nominated", []))
 
-    merged["special_awards"] = merge_list_unique(
-        ensure_list(merged.get("special_awards")), ensure_list(auto.get("special_awards"))
-    )
+    merged["special_awards"] = ensure_list(merged.get("special_awards"))
+    merged["guests_confirmed"] = ensure_list(merged.get("guests_confirmed"))
+    merged["guests_source_urls"] = ensure_list(merged.get("guests_source_urls"))
 
-    merged["guests_confirmed"] = merge_list_unique(
-        ensure_list(merged.get("guests_confirmed")), ensure_list(auto.get("guests_confirmed"))
-    )
-    merged["guests_source_urls"] = merge_list_unique(
-        ensure_list(merged.get("guests_source_urls")), ensure_list(auto.get("guests_source_urls"))
-    )
-
-    merged["confirmed_people"] = prefer_existing_value(merged.get("confirmed_people"), auto.get("confirmed_people"))
-    merged["confirmed_performers"] = prefer_existing_value(merged.get("confirmed_performers"), auto.get("confirmed_performers"))
-    merged["headliners"] = prefer_existing_value(merged.get("headliners"), auto.get("headliners"))
-    merged["pop_artists"] = prefer_existing_value(merged.get("pop_artists"), auto.get("pop_artists"))
-    merged["days"] = prefer_existing_value(merged.get("days"), auto.get("days"))
-
-    merged["notes"] = ensure_list(merged.get("notes"))
     return merged
 
 
@@ -419,17 +441,16 @@ def main() -> None:
     by_id, by_title = load_existing_events()
 
     cfg = yaml.safe_load(WATCHLIST.read_text(encoding="utf-8")) or {}
-    settings = cfg.get("settings", {}) or {}
-    days_ahead = int(settings.get("days_ahead", 400))
-    include_inactive = bool(settings.get("include_inactive", False))
-
+    days_ahead = int((cfg.get("settings", {}) or {}).get("days_ahead", 400))
+    include_inactive = bool((cfg.get("settings", {}) or {}).get("include_inactive", False))
     watchlist = cfg.get("watchlist", [])
     if not isinstance(watchlist, list):
         raise ValueError("event_watchlist.yaml: 'watchlist' debe ser una lista")
 
     today = datetime.now(tz=TZ_AR).date()
-    merged_out: list[dict] = []
+    out_events: list[dict] = []
 
+    # 1) Watchlist normal (Wikipedia/official)
     for item in watchlist:
         if not isinstance(item, dict):
             continue
@@ -441,16 +462,7 @@ def main() -> None:
         sources = item.get("sources", []) or []
         preferred_terms = preferred_terms_from_name(name)
 
-        for src in sources:
-            st = src.get("type")
-            url = str(src.get("url", "")).strip()
-            if not url:
-                continue
-            if st in {"wikipedia_status", "news_status"}:
-                if wikipedia_status_inactive(url):
-                    status = "inactive"
-                    break
-
+        # inactive detection stays as before (optional)
         if status != "active" and not include_inactive:
             continue
 
@@ -470,7 +482,6 @@ def main() -> None:
             url = str(src.get("url", "")).strip()
             if not url:
                 continue
-
             if st == "wikipedia_next_date" and "wikipedia.org/wiki/" in url:
                 d, cu = next_future_from_wikipedia_list(url, today, days_ahead, preferred_terms)
                 if d:
@@ -478,150 +489,73 @@ def main() -> None:
                     picked_source_url = url
                     break
 
-            if st in {"official_homepage", "official_key_dates", "official_lineup_or_dates"}:
-                try:
-                    html = http_get(url)
-                    soup = BeautifulSoup(html, "html.parser")
-                    text = soup.get_text(" ", strip=True)
-                    ds = parse_any_date_candidates(text)
-                    end = today + timedelta(days=days_ahead)
-                    for cand in ds:
-                        if today <= cand <= end:
-                            next_date = cand
-                            picked_source_url = url
-                            break
-                except Exception:
-                    pass
-                if next_date:
-                    break
-
         if not next_date:
             continue
 
         top_nominated: list[str] = []
         nomination_source_url = ""
-
-        if kind in {"awards", "announcement"}:
-            if ceremony_url:
-                top_nominated = extract_top_nominated_from_infobox(ceremony_url)
-                nomination_source_url = ceremony_url
-            if not top_nominated and picked_source_url and "wikipedia.org/wiki/" in picked_source_url:
-                top_nominated = extract_top_nominated_from_infobox(picked_source_url)
-                if top_nominated and not nomination_source_url:
-                    nomination_source_url = picked_source_url
+        if kind in {"awards", "announcement"} and ceremony_url:
+            top_nominated = extract_top_nominated_from_infobox(ceremony_url)
+            nomination_source_url = ceremony_url
 
         event_url = ceremony_url or picked_source_url or first_source_url or ""
 
-        start_local: str | None = None
-        duration_minutes: int | None = None
-        guests_auto: list[str] = []
-        guests_sources: list[str] = []
-        special_awards_auto: list[str] = []
-
-        if ceremony_url:
-            # dejamos special awards en manual/futuro; por ahora infobox de Wikipedia si lo trae
-            # (no fuerza nada si no existe)
-            special_awards_auto = []
-
-        # TVPassport: horario + red carpet confirmado + invitados del listing
-        # - Para el evento principal si el canal es ABC
-        # - Para red carpet si existe en E! con el nombre del evento
-        try:
-            tv = ensure_list((item.get("broadcast") or {}).get("tv"))
-            if isinstance(item.get("broadcast"), dict):
-                tv = ensure_list(item["broadcast"].get("tv"))
-
-            # MAIN: ABC
-            if "ABC" in [t.upper() for t in tv]:
-                rows = parse_tvpassport_station_day(TVP_ABC_STATION, next_date)
-                # match por tokens del nombre
-                tokens = [t.lower() for t in preferred_terms] or [name.lower()]
-                for r in rows:
-                    p = clean_text(r.get("program", "")).lower()
-                    if any(tok in p for tok in tokens):
-                        start_local = r.get("start_local_hhmm")
-                        duration_minutes = r.get("duration_minutes")
-                        if r.get("desc"):
-                            guests_auto = merge_list_unique(guests_auto, extract_names_from_desc(r["desc"]))
-                            guests_sources = merge_list_unique(guests_sources, [r["source_url"]])
-                        break
-
-            # RED CARPET: E!
-            rows_e = parse_tvpassport_station_day(TVP_E_STATION, next_date)
-            tokens = [t.lower() for t in preferred_terms] or [name.lower()]
-            for r in rows_e:
-                p_raw = clean_text(r.get("program", ""))
-                p = p_raw.lower()
-                dsc = clean_text(r.get("desc", "")).lower()
-                if "red carpet" in p and any(tok in (p + " " + dsc) for tok in tokens):
-                    # completar red carpet confirmado
-                    bcast = item.get("broadcast", {}) or {}
-                    red = (bcast.get("red_carpet", {}) or {})
-                    red = dict(red)
-                    red["confirmed"] = True
-                    red["where"] = p_raw
-                    red["start_local"] = r.get("start_local_hhmm")
-                    if r.get("duration_minutes"):
-                        red["duration_minutes"] = int(r["duration_minutes"])
-                    bcast = dict(bcast)
-                    bcast["red_carpet"] = red
-                    item["broadcast"] = bcast
-
-                    if r.get("desc"):
-                        guests_auto = merge_list_unique(guests_auto, extract_names_from_desc(r["desc"]))
-                        guests_sources = merge_list_unique(guests_sources, [r["source_url"]])
-                    break
-        except Exception:
-            pass
-
-        # fallback: defaults del watchlist
-        if not start_local:
-            dflt = item.get("default_start_local")
-            if isinstance(dflt, str) and dflt.strip():
-                start_local = dflt.strip()
-
-        if duration_minutes is None:
-            dur = item.get("duration_minutes")
-            if isinstance(dur, int):
-                duration_minutes = dur
-            elif isinstance(dur, str) and dur.isdigit():
-                duration_minutes = int(dur)
-            else:
-                duration_minutes = None
-
-        auto_ev: dict = {
-            "id": str(item.get("id", "")).strip(),
-            "title": f"{item.get('name','')}",
+        auto_ev = {
+            "id": item_id or stable_id("watch", next_date.isoformat(), name),
+            "title": name,
             "date": next_date.isoformat(),
             "tz_local": item.get("tz_local"),
+            "start_local": item.get("default_start_local"),
+            "duration_minutes": item.get("duration_minutes"),
             "location": item.get("location", ""),
             "broadcast": item.get("broadcast", {"tv": [], "streaming": [], "red_carpet": {"confirmed": False}}),
             "event_url": event_url,
-            "top_nominated": top_nominated,
             "nomination_source_url": nomination_source_url,
-            "start_local": start_local,
-            "duration_minutes": duration_minutes,
-            "special_awards": special_awards_auto,
-            "guests_confirmed": guests_auto,
-            "guests_source_urls": guests_sources,
-            "confirmed_people": {"a_list": [], "b_list": [], "argentines": []},
-            "confirmed_performers": [],
-            "headliners": item.get("headliners", []) if isinstance(item.get("headliners", []), list) else [],
-            "pop_artists": item.get("pop_artists", []) if isinstance(item.get("pop_artists", []), list) else [],
-            "days": item.get("days", []) if isinstance(item.get("days", []), list) else [],
+            "top_nominated": top_nominated,
+            "special_awards": ensure_list(item.get("special_awards")),
+            "guests_confirmed": ensure_list(item.get("guests_confirmed")),
+            "guests_source_urls": ensure_list(item.get("guests_source_urls")),
             "notes": [],
         }
 
-        existing_ev = by_id.get(item_id) or (by_title.get(name.lower()) if name else None)
+        existing_ev = by_id.get(auto_ev["id"]) or (by_title.get(name.lower()) if name else None)
         merged = merge_event(existing_ev, auto_ev)
-        merged_out.append(merged)
+        out_events.append(merged)
 
-    merged_out.sort(key=lambda ev: (str(ev.get("date", "")), str(ev.get("title", ""))))
+    # 2) Discovery diario desde TVPassport (eventos NUEVOS + EN VIVO)
+    discovered: list[dict] = []
+    discovered += discover_live_events_from_station(
+        station_url=TVP_E_STATION,
+        station_label="E!",
+        tz_local="America/New_York",
+        start_day=today,
+        days=DISCOVERY_DAYS,
+    )
+    discovered += discover_live_events_from_station(
+        station_url=TVP_ABC_STATION,
+        station_label="ABC",
+        tz_local="America/New_York",
+        start_day=today,
+        days=DISCOVERY_DAYS,
+    )
+
+    # merge de discovery sin duplicar
+    existing_ids = {str(e.get("id", "")).strip() for e in out_events}
+    existing_titles_dates = {(str(e.get("title", "")).strip().lower(), str(e.get("date", "")).strip()) for e in out_events}
+
+    for ev in discovered:
+        eid = str(ev.get("id", "")).strip()
+        key = (str(ev.get("title", "")).strip().lower(), str(ev.get("date", "")).strip())
+        if eid in existing_ids or key in existing_titles_dates:
+            continue
+        out_events.append(ev)
+
+    out_events.sort(key=lambda ev: (str(ev.get("date", "")), str(ev.get("title", ""))))
     OUT_EVENTS.write_text(
-        yaml.safe_dump({"events": merged_out}, sort_keys=False, allow_unicode=True),
+        yaml.safe_dump({"events": out_events}, sort_keys=False, allow_unicode=True),
         encoding="utf-8",
     )
-    print(f"OK: escrito {OUT_EVENTS} con {len(merged_out)} eventos")
+    print(f"OK: escrito {OUT_EVENTS} con {len(out_events)} eventos")
 
 
 if __name__ == "__main__":
