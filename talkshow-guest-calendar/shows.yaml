@@ -7,10 +7,14 @@ shows:
   - id: jimmy_kimmel_live
     name: "Jimmy Kimmel Live!"
     country: "US"
-    tz_local: "America/Los_Angeles"
+    tz_local: "America/New_York"
     airtime_local: "23:35"
     duration_minutes: 60
     sources:
+      - type: tvpassport_station
+        url: "https://www.tvpassport.com/tv-listings/stations/abc-eastern/1224"
+        match:
+          contains_any: ["Jimmy Kimmel Live"]
       - type: epguides_show
         url: "https://epguides.com/JimmyKimmelLive/"
 
@@ -21,8 +25,12 @@ shows:
     airtime_local: "23:35"
     duration_minutes: 60
     sources:
+      - type: tvpassport_station
+        url: "https://www.tvpassport.com/tv-listings/stations/cbs-eastern/1225"
+        match:
+          contains_any: ["Late Show With Stephen Colbert", "Late Show with Stephen Colbert"]
       - type: epguides_show
-        url: "https://epguides.com/LateShow/"
+        url: "https://epguides.com/LateShowWithStephenColbert/"
 
   - id: tonight_show_fallon
     name: "The Tonight Show Starring Jimmy Fallon"
@@ -31,6 +39,10 @@ shows:
     airtime_local: "23:35"
     duration_minutes: 60
     sources:
+      - type: tvpassport_station
+        url: "https://www.tvpassport.com/tv-listings/stations/nbc-network-eastern/1227"
+        match:
+          contains_any: ["Tonight Show Starring Jimmy Fallon", "The Tonight Show Starring Jimmy Fallon"]
       - type: wikipedia_episode_table
         url: "https://en.wikipedia.org/wiki/List_of_The_Tonight_Show_Starring_Jimmy_Fallon_episodes"
         columns:
@@ -44,6 +56,10 @@ shows:
     airtime_local: "00:35"
     duration_minutes: 60
     sources:
+      - type: tvpassport_station
+        url: "https://www.tvpassport.com/tv-listings/stations/nbc-network-eastern/1227"
+        match:
+          contains_any: ["Late Night With Seth Meyers", "Late Night with Seth Meyers"]
       - type: wikipedia_episode_table
         url: "https://en.wikipedia.org/wiki/List_of_Late_Night_with_Seth_Meyers_episodes"
         columns:
@@ -57,6 +73,10 @@ shows:
     airtime_local: "23:30"
     duration_minutes: 90
     sources:
+      - type: tvpassport_station
+        url: "https://www.tvpassport.com/tv-listings/stations/nbc-network-eastern/1227"
+        match:
+          contains_any: ["Saturday Night Live"]
       - type: wikipedia_episode_table
         url: "https://en.wikipedia.org/wiki/Saturday_Night_Live_season_51"
         columns:
