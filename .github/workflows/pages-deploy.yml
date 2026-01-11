@@ -2,7 +2,7 @@ name: Build & Deploy site (premios + talkshows)
 
 on:
   schedule:
-    - cron: "0 12 * * 1"   # Lunes 12:00 UTC ~ 09:00 Argentina
+    - cron: "0 0 * * *"   # Todos los días 00:00 UTC (GMT-0)
   workflow_dispatch:
 
 permissions:
@@ -31,23 +31,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 1) Actualiza events.yaml desde tu watchlist
-      - name: Update events.yaml (watchlist)
+      - name: Update events.yaml (watchlist + discovery)
         run: |
           python update_events.py
 
-      # 2) Genera premios.ics
       - name: Build premios.ics
         run: |
           python generate_calendar.py
 
-      # 3) Genera talkshow-guests.ics
       - name: Build talkshow-guests.ics
         working-directory: talkshow-guest-calendar
         run: |
           python update_calendar.py
 
-      # 4) Publica todo en el mismo sitio
       - name: Prepare Pages site (_site)
         run: |
           rm -rf _site
