@@ -113,6 +113,8 @@ def main() -> None:
         argentines = ensure_list(confirmed_people.get("argentines"))
 
         top_nominated = ensure_list(ev.get("top_nominated"))
+        nomination_source_url = str(ev.get("nomination_source_url", "") or "").strip()
+
         confirmed_performers = ensure_list(ev.get("confirmed_performers"))
         special_awards = ensure_list(ev.get("special_awards"))
 
@@ -190,6 +192,9 @@ def main() -> None:
 
             if top_nominated:
                 desc_lines.append("Más nominadas/os: " + ", ".join(top_nominated))
+                if nomination_source_url:
+                    desc_lines.append("Fuente (nominados): " + nomination_source_url)
+
             if confirmed_performers:
                 desc_lines.append("Performances confirmadas: " + ", ".join(confirmed_performers))
             if special_awards:
