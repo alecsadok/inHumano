@@ -47,16 +47,22 @@ def parse_local_dt(date_str: str, time_str: str, tz_name: str) -> datetime:
 
 
 def ar_time_window_style(ar_start: datetime, ar_end: datetime) -> str:
-    # Estilo como el ejemplo: "04/01 21:00–00:00 (Argentina, GMT-3)"
-    # Aunque cruce de día, mantiene solo la fecha del inicio.
     return f"{ar_start.strftime('%d/%m %H:%M')}–{ar_end.strftime('%H:%M')} (Argentina, GMT-3)"
 
 
-def add_list_line(desc_lines: list[str], label: str, items: list[str]) -> None:
-    if items:
-        desc_lines.append(f"{label}: " + "; ".join(items))
-    else:
-        desc_lines.append(f"{label}: —")
+def combine_celebs(confirmed_people: dict | None) -> list[str]:
+    confirmed_people = confirmed_people or {}
+    a = ensure_list(confirmed_people.get("a_list"))
+    b = ensure_list(confirmed_people.get("b_list"))
+    ar = ensure_list(confirmed_people.get("argentines"))
+    out = []
+    seen = set()
+    for x in a + b + ar:
+        x = str(x).strip()
+        if x and x not in seen:
+            seen.add(x)
+            out.append(x)
+    return out
 
 
 def build_event_lines(
@@ -75,7 +81,9 @@ def build_event_lines(
     out.append(f"SUMMARY:{ics_escape(summary)}")
     if location:
         out.append(f"LOCATION:{ics_escape(location)}")
-    out.append(f"DESCRIPTION:{ics_escape('\\n'.join(description_lines))}")
+
+    desc = "\n".join(description_lines)
+    out.append("DESCRIPTION:" + ics_escape(desc))
 
     if dtstart_ba and dtend_ba:
         out.append(f"DTSTART;TZID=America/Argentina/Buenos_Aires:{fmt_dt(dtstart_ba)}")
@@ -141,9 +149,7 @@ def main() -> None:
         nomination_source_url = str(ev.get("nomination_source_url", "") or "").strip()
 
         confirmed_people = ev.get("confirmed_people", {}) or {}
-        a_list = ensure_list(confirmed_people.get("a_list"))
-        b_list = ensure_list(confirmed_people.get("b_list"))
-        argentines = ensure_list(confirmed_people.get("argentines"))
+        celebs = combine_celebs(confirmed_people)
 
         confirmed_performers = ensure_list(ev.get("confirmed_performers"))
         special_awards = ensure_list(ev.get("special_awards"))
@@ -175,7 +181,6 @@ def main() -> None:
             day_pop = ensure_list(day_ev.get("pop_artists")) or pop_artists
             day_notes = ensure_list(day_ev.get("notes")) + notes
 
-            # 1) Red carpet como evento separado (si está confirmado y tiene horario)
             if red_confirmed and tz_local and red_start_local and red_duration_minutes:
                 rc_local_dt = parse_local_dt(day_date, str(red_start_local), str(tz_local))
                 rc_start = rc_local_dt.astimezone(TZ_AR)
@@ -183,27 +188,24 @@ def main() -> None:
 
                 desc_lines: list[str] = []
                 desc_lines.append("Hora Argentina: " + ar_time_window_style(rc_start, rc_end))
-
                 if tv:
                     desc_lines.append("TV (origen): " + "; ".join(tv) + ".")
                 if streaming:
                     desc_lines.append("Streaming (origen): " + "; ".join(streaming) + ".")
+                desc_lines.append("Red carpet confirmado (oficial): " + (red_where if red_where else "Sí") + ".")
 
-                if red_where:
-                    desc_lines.append("Red carpet confirmado (oficial): " + red_where + ".")
-                else:
-                    desc_lines.append("Red carpet confirmado (oficial): Sí.")
-
-                # Nominados: solo para eventos de premios/nominaciones, NO celebs
                 if top_nominated:
                     desc_lines.append("Más nominadas/os: " + "; ".join(top_nominated) + ".")
                     if nomination_source_url:
                         desc_lines.append("Fuente (nominados): " + nomination_source_url)
 
-                # Celebs confirmadas (si querés mantenerlo como en el ejemplo)
-                add_list_line(desc_lines, "Celebrities confirmadas (A-list)", a_list)
-                add_list_line(desc_lines, "Celebrities confirmadas (B-list)", b_list)
-                add_list_line(desc_lines, "Argentinos confirmados", argentines)
+                if special_awards:
+                    desc_lines.append("Premios especiales confirmados: " + "; ".join(special_awards) + ".")
+
+                if celebs:
+                    desc_lines.append("Celebridades que van: " + "; ".join(celebs) + ".")
+                else:
+                    desc_lines.append("Celebridades que van: —")
 
                 for n in day_notes:
                     if str(n).strip():
@@ -221,9 +223,7 @@ def main() -> None:
                     )
                 )
 
-            # 2) Evento principal
             desc_lines_main: list[str] = []
-
             has_time = bool(start_local and tz_local and duration_minutes)
             if has_time:
                 local_dt = parse_local_dt(day_date, str(start_local), str(tz_local))
@@ -241,14 +241,10 @@ def main() -> None:
                 desc_lines_main.append("Streaming (origen): " + "; ".join(streaming) + ".")
 
             if red_confirmed:
-                if red_where:
-                    desc_lines_main.append("Red carpet confirmado: " + red_where + ".")
-                else:
-                    desc_lines_main.append("Red carpet confirmado: Sí.")
+                desc_lines_main.append("Red carpet confirmado: " + (red_where if red_where else "Sí") + ".")
             else:
                 desc_lines_main.append("Red carpet: no confirmado oficialmente.")
 
-            # Nominados (lo que pediste ahora): siempre que exista top_nominated
             if top_nominated:
                 desc_lines_main.append("Más nominadas/os: " + "; ".join(top_nominated) + ".")
                 if nomination_source_url:
@@ -287,10 +283,10 @@ def main() -> None:
                         line += f" ({stage})"
                     desc_lines_main.append(line)
 
-            # Celebs confirmadas (se mantiene como en tu ejemplo; lo de “nominados” va con link)
-            add_list_line(desc_lines_main, "Celebrities confirmadas (A-list)", a_list)
-            add_list_line(desc_lines_main, "Celebrities confirmadas (B-list)", b_list)
-            add_list_line(desc_lines_main, "Argentinos confirmados", argentines)
+            if celebs:
+                desc_lines_main.append("Celebridades que van: " + "; ".join(celebs) + ".")
+            else:
+                desc_lines_main.append("Celebridades que van: —")
 
             for n in day_notes:
                 if str(n).strip():
