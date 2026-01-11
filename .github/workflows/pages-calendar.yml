@@ -1,4 +1,4 @@
-name: Build & Deploy ICS to GitHub Pages
+name: Build & Deploy Site (ICS + Eventos) to GitHub Pages
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -28,40 +28,31 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies (from repo root)
+      - name: Install dependencies (repo root)
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run updater (script is in talkshow-guest-calendar)
+      - name: Run updater (talkshow calendar)
         working-directory: talkshow-guest-calendar
         run: |
           python update_calendar.py
 
-      # Arma el “sitio” que se va a publicar en Pages:
       - name: Prepare Pages site (_site)
         run: |
           rm -rf _site
           mkdir -p _site
 
-          # Copiamos tu página estática
+          # 1) Publicar tu web estática
           cp -r pages/* _site/
 
-          # Copiamos el output generado por el script
+          # 2) Publicar el ICS generado
           cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
           cp talkshow-guest-calendar/output/talkshow-guests.json _site/talkshow-guests.json || true
 
-      # (Opcional pero útil) Mantener “actividad” en el repo:
-      # GitHub puede deshabilitar scheduled workflows si no hay actividad 60 días. :contentReference[oaicite:3]{index=3}
-      - name: Keep-alive commit (optional)
-        run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > talkshow-guest-calendar/output/last_run_utc.txt
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add talkshow-guest-calendar/output/last_run_utc.txt
-          git diff --cached --quiet && exit 0
-          git commit -m "Keep alive: update last_run_utc"
-          git push
+          # 3) Publicar el proyecto "eventos/"
+          mkdir -p _site/eventos
+          cp -r eventos/* _site/eventos/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -72,5 +63,4 @@ jobs:
           path: _site
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
