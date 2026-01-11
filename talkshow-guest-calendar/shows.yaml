@@ -1,0 +1,67 @@
+settings:
+  days_ahead: 21
+  include_sources_in_description: true
+  allow_unofficial_fallbacks: true   # ponelo en false si querés SOLO oficial + wikipedia (+ ig)
+
+shows:
+  # === US (OFICIAL) ===
+  - id: jimmy_kimmel_live
+    name: "Jimmy Kimmel Live!"
+    country: "US"
+    sources:
+      - type: abc_guest_schedule
+        url: "https://abc.com/show/9bfe2f4f-41ad-4492-a6dd-0b67db180543/guest-schedule"
+
+  - id: late_show_colbert
+    name: "The Late Show with Stephen Colbert"
+    country: "US"
+    sources:
+      - type: cbs_episode_guide
+        url: "https://www.cbs.com/shows/the-late-show-with-stephen-colbert/episodes/"
+
+  # === US (WIKIPEDIA) ===
+  - id: tonight_show_fallon
+    name: "The Tonight Show Starring Jimmy Fallon"
+    country: "US"
+    sources:
+      - type: wikipedia_episode_table
+        url: "https://en.wikipedia.org/wiki/List_of_The_Tonight_Show_Starring_Jimmy_Fallon_episodes"
+        columns:
+          date: "Original release date"
+          guests: ["Guest(s)", "Musical/entertainment guest(s)"]
+
+  - id: late_night_seth_meyers
+    name: "Late Night with Seth Meyers"
+    country: "US"
+    sources:
+      - type: wikipedia_episode_table
+        url: "https://en.wikipedia.org/wiki/List_of_Late_Night_with_Seth_Meyers_episodes"
+        columns:
+          date: "Original release date"
+          guests: ["Guest(s)", "Musical/entertainment guest(s)"]
+
+  - id: snl
+    name: "Saturday Night Live"
+    country: "US"
+    sources:
+      - type: wikipedia_episode_table
+        url: "https://en.wikipedia.org/wiki/Saturday_Night_Live_season_51"
+        columns:
+          date: "Original release date"
+          guests: ["Host", "Musical guest"]
+
+  # === Fallback “multi-show” (NO oficial) ===
+  - id: interbridge_lineups
+    name: "Late Night Lineups (Fallback)"
+    country: "US"
+    sources:
+      - type: interbridge_lineups_by_date
+        url: "https://www.interbridge.com/lineupsdate.html"
+
+  # === UK (ejemplo con TV listings; NO oficial) ===
+  - id: graham_norton_tvguide
+    name: "The Graham Norton Show (TVGuide listing)"
+    country: "UK"
+    sources:
+      - type: tvguide_listing
+        url: "https://www.tvguide.co.uk/schedule/affb0f51-de48-50aa-ba98-1a55e6013f98/the-graham-norton-show"
