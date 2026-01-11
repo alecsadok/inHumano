@@ -1,0 +1,68 @@
+name: Build & Deploy site (premios + talkshows)
+
+on:
+  schedule:
+    # Lunes 12:00 UTC = Lunes 09:00 Argentina (GMT-3)
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # ====== Proyecto 1: Premios ======
+      - name: Build premios.ics
+        run: |
+          python generate_calendar.py
+
+      # ====== Proyecto 2: Talk shows ======
+      - name: Build talkshow-guests.ics
+        working-directory: talkshow-guest-calendar
+        run: |
+          python update_calendar.py
+
+      # ====== Armar el sitio final ======
+      - name: Prepare Pages site (_site)
+        run: |
+          rm -rf _site
+          mkdir -p _site
+
+          # Copiamos tu web estática
+          cp -r pages/* _site/
+
+          # Copiamos los outputs a la raíz del sitio publicado
+          cp premios.ics _site/premios.ics
+          cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
