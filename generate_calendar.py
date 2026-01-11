@@ -305,6 +305,12 @@ def main() -> None:
 
     print("OK: docs/calendar.ics actualizado")
 
+OUTPUT_DIR = Path("pages")
+OUTPUT_DIR.mkdir(exist_ok=True)
+
+(OUTPUT_DIR / "calendar.ics").write_text(...)
+(OUTPUT_DIR / "last_updated.txt").write_text(...)
+
 
 if __name__ == "__main__":
     main()
