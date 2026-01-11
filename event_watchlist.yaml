@@ -1,9 +1,8 @@
 settings:
-  days_ahead: 400          # cuánto mirar hacia adelante para "próximos"
-  include_inactive: false  # no meter eventos en pausa/discontinuados en events.yaml
+  days_ahead: 400
+  include_inactive: false
 
 watchlist:
-  # ===== Awards / TV =====
   - id: golden_globes
     name: "Golden Globe Awards"
     kind: awards
@@ -27,7 +26,7 @@ watchlist:
       - type: official_homepage
         url: "https://www.sagawards.org/"
       - type: wikipedia_next_date
-        url: "https://en.wikipedia.org/wiki/Screen_Actors_Guild_Awards"
+        url: "https://en.wikipedia.org/wiki/Actor_Awards"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 120
@@ -77,7 +76,7 @@ watchlist:
     default_start_local: "19:00"
     duration_minutes: 180
     broadcast:
-      tv: ["E!","USA Network"]
+      tv: ["E!", "USA Network"]
       streaming: []
       red_carpet: { confirmed: false }
 
@@ -176,6 +175,8 @@ watchlist:
     kind: awards
     status: active
     sources:
+      - type: official_homepage
+        url: "https://glaad.org/mediaawards/37/"
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/GLAAD_Media_Award"
     tz_local: "America/Los_Angeles"
@@ -192,7 +193,7 @@ watchlist:
     status: active
     sources:
       - type: wikipedia_next_date
-        url: "https://en.wikipedia.org/wiki/Primetime_Emmy_Awards"
+        url: "https://en.wikipedia.org/wiki/List_of_Primetime_Emmy_Awards_ceremonies"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 180
@@ -201,7 +202,6 @@ watchlist:
       streaming: ["Peacock"]
       red_carpet: { confirmed: false }
 
-  # ===== Concerts / Festivals (fechas + headliners; set times solo si aparecen) =====
   - id: coachella
     name: "Coachella"
     kind: festival
@@ -279,7 +279,6 @@ watchlist:
       streaming: ["BBC iPlayer (según cobertura anual)"]
       red_carpet: { confirmed: false }
 
-  # ===== Inactivos/discontinuados (se detectan y se excluyen) =====
   - id: teen_choice
     name: "Teen Choice Awards"
     kind: awards
