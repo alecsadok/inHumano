@@ -13,10 +13,8 @@ from dateutil import parser as dtparser
 
 TZ_AR = ZoneInfo("America/Argentina/Buenos_Aires")
 UA = "Mozilla/5.0 (compatible; inHumanoCalendarBot/1.0; +https://alecsadok.github.io/inHumano/)"
-
 WATCHLIST = Path("event_watchlist.yaml")
 OUT_EVENTS = Path("events.yaml")
-
 WIKI_BASE = "https://en.wikipedia.org"
 
 
@@ -34,13 +32,11 @@ def clean_wiki_text(s: str) -> str:
 
 def parse_any_date_candidates(text: str) -> list[date]:
     candidates: list[date] = []
-
     rx = re.compile(
         r"\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
         r"\s+\d{1,2}(?:st|nd|rd|th)?(?:,)?\s+\d{4}\b"
         r"|\b\d{1,2}\s+(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{4}\b"
     )
-
     for m in rx.finditer(text):
         s = m.group(0)
         try:
@@ -48,8 +44,7 @@ def parse_any_date_candidates(text: str) -> list[date]:
             candidates.append(d)
         except Exception:
             continue
-
-    out = []
+    out: list[date] = []
     seen = set()
     for d in candidates:
         if d not in seen:
@@ -79,7 +74,77 @@ def wikipedia_status_inactive(url: str) -> bool:
     return any(k in text for k in keywords)
 
 
-def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int) -> tuple[date | None, str | None]:
+def preferred_terms_from_name(name: str) -> list[str]:
+    toks = []
+    for w in re.split(r"[^a-zA-Z0-9]+", name.lower()):
+        w = w.strip()
+        if len(w) >= 4 and w not in {"awards", "award", "ceremony", "the", "with", "and"}:
+            toks.append(w)
+    # dedupe preserve order
+    seen = set()
+    out = []
+    for t in toks:
+        if t not in seen:
+            seen.add(t)
+            out.append(t)
+    return out
+
+
+def score_ceremony_link(href: str, anchor_text: str, year: int, preferred_terms: list[str]) -> int:
+    h = (href or "").lower()
+    a = (anchor_text or "").lower()
+    score = 0
+
+    # hard penalties for clearly-not-ceremony pages
+    if re.search(r"/wiki/\d{4}_in_", h):
+        score -= 200
+    if "help:" in h or "wikipedia:" in h or "special:" in h:
+        score -= 200
+    if "list_of" in h:
+        score -= 40
+
+    # year / ordinal heuristics
+    if str(year) in h or str(year) in a:
+        score += 60
+    if re.search(r"\b\d{1,3}(st|nd|rd|th)\b", h) or re.search(r"\b\d{1,3}(st|nd|rd|th)\b", a):
+        score += 40
+
+    # ceremony-ish words
+    if "award" in h or "award" in a:
+        score += 15
+    if "ceremon" in h or "ceremon" in a:
+        score += 15
+
+    # bias toward the event name tokens
+    for t in preferred_terms:
+        if t in h:
+            score += 18
+        if t in a:
+            score += 10
+
+    return score
+
+
+def pick_best_ceremony_url(tr: BeautifulSoup, year: int, preferred_terms: list[str]) -> str | None:
+    best_href = None
+    best_score = -10**9
+
+    for a in tr.select("a[href]"):
+        href = a.get("href", "")
+        if not href.startswith("/wiki/"):
+            continue
+        anchor = a.get_text(" ", strip=True)
+        sc = score_ceremony_link(href, anchor, year, preferred_terms)
+        if sc > best_score:
+            best_score = sc
+            best_href = href
+
+    if best_href and best_score > -50:
+        return WIKI_BASE + best_href
+    return None
+
+
+def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int, preferred_terms: list[str]) -> tuple[date | None, str | None]:
     try:
         html = http_get(url)
     except Exception:
@@ -87,7 +152,6 @@ def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int) -> t
 
     soup = BeautifulSoup(html, "html.parser")
     end = today + timedelta(days=days_ahead)
-
     tables = soup.select("table.wikitable")
     candidates: list[tuple[date, str | None]] = []
 
@@ -96,26 +160,17 @@ def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int) -> t
             row_text = clean_wiki_text(tr.get_text(" ", strip=True))
             if not row_text:
                 continue
-
             ds = parse_any_date_candidates(row_text)
             if not ds:
                 continue
-
             d = ds[0]
             if not (today <= d <= end):
                 continue
 
-            ceremony_url = None
-            for a in tr.select("a[href]"):
-                href = a.get("href", "")
-                if href.startswith("/wiki/") and not href.startswith("/wiki/Help:"):
-                    ceremony_url = WIKI_BASE + href
-                    break
-
+            ceremony_url = pick_best_ceremony_url(tr, d.year, preferred_terms)
             candidates.append((d, ceremony_url))
 
     if not candidates:
-        # fallback: solo fecha sin link
         try:
             html2 = http_get(url)
             soup2 = BeautifulSoup(html2, "html.parser")
@@ -132,7 +187,7 @@ def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int) -> t
     return candidates[0][0], candidates[0][1]
 
 
-def extract_most_nominations_from_ceremony_page(url: str) -> list[str]:
+def extract_top_nominated_from_page(url: str) -> list[str]:
     try:
         html = http_get(url)
     except Exception:
@@ -143,16 +198,8 @@ def extract_most_nominations_from_ceremony_page(url: str) -> list[str]:
     if not infobox:
         return []
 
-    keys = {
-        "most nominations",
-        "most nominated",
-        "most nominations (film)",
-        "most nominations (television)",
-        "most nominations (tv)",
-        "most nominations (music)",
-    }
-
     results: list[str] = []
+
     for tr in infobox.select("tr"):
         th = tr.select_one("th")
         td = tr.select_one("td")
@@ -160,8 +207,11 @@ def extract_most_nominations_from_ceremony_page(url: str) -> list[str]:
             continue
         k = clean_wiki_text(th.get_text(" ", strip=True)).lower()
         v = clean_wiki_text(td.get_text(" ", strip=True))
-        if k in keys and v:
-            # si hay varios ítems separados por ";", los separamos en lista
+        if not v:
+            continue
+
+        # flexible matching
+        if "most nomination" in k or "most nominated" in k:
             parts = [p.strip() for p in re.split(r"\s*;\s*", v) if p.strip()]
             if parts:
                 results.extend(parts)
@@ -169,8 +219,8 @@ def extract_most_nominations_from_ceremony_page(url: str) -> list[str]:
                 results.append(v)
 
     # dedupe preserve order
+    out: list[str] = []
     seen = set()
-    out = []
     for x in results:
         if x not in seen:
             seen.add(x)
@@ -227,8 +277,8 @@ def main() -> None:
         status = item.get("status", "active")
         kind = item.get("kind", "")
         sources = item.get("sources", []) or []
+        preferred_terms = preferred_terms_from_name(str(item.get("name", "")))
 
-        # chequear inactivo por wiki/news si aplica
         for src in sources:
             st = src.get("type")
             url = src.get("url")
@@ -244,6 +294,7 @@ def main() -> None:
 
         next_date: date | None = None
         ceremony_url: str | None = None
+        picked_source_url: str | None = None
 
         for src in sources:
             st = src.get("type")
@@ -252,9 +303,10 @@ def main() -> None:
                 continue
 
             if st == "wikipedia_next_date" and "wikipedia.org/wiki/" in url:
-                d, cu = next_future_from_wikipedia_list(url, today, days_ahead)
+                d, cu = next_future_from_wikipedia_list(url, today, days_ahead, preferred_terms)
                 if d:
                     next_date, ceremony_url = d, cu
+                    picked_source_url = url
                     break
 
             if st in {"official_homepage", "official_key_dates", "official_lineup_or_dates", "instagram_profile"}:
@@ -274,14 +326,18 @@ def main() -> None:
                 if d:
                     next_date = d
                     ceremony_url = None
+                    picked_source_url = url
                     break
 
         if not next_date:
             continue
 
         top_nominated: list[str] = []
-        if kind == "awards" and ceremony_url:
-            top_nominated = extract_most_nominations_from_ceremony_page(ceremony_url)
+        if kind == "awards":
+            if ceremony_url:
+                top_nominated = extract_top_nominated_from_page(ceremony_url)
+            if not top_nominated and picked_source_url and "wikipedia.org/wiki/" in picked_source_url:
+                top_nominated = extract_top_nominated_from_page(picked_source_url)
 
         events_out.append(build_event_entry(item, next_date, top_nominated))
 
