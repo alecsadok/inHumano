@@ -1,9 +1,37 @@
-<h1>inHumano</h1>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>inHumano</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.4}
+    code{background:#f4f4f4;padding:2px 6px;border-radius:6px}
+    a{color:#0b57d0}
+    .card{border:1px solid #ddd;border-radius:14px;padding:16px;margin:16px 0}
+    .small{color:#555;font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <h1>inHumano</h1>
 
-<h2>Calendarios (suscripción)</h2>
-<ul>
-  <li><a href="./premios.ics">Premios / Eventos (premios.ics)</a></li>
-  <li><a href="./talkshow-guests.ics">Talk shows (talkshow-guests.ics)</a></li>
-</ul>
+  <div class="card">
+    <h2>Calendarios (Google Calendar / iCal)</h2>
+    <ul>
+      <li><a href="./premios.ics">premios.ics — Premios / festivales / eventos</a></li>
+      <li><a href="./talkshow-guests.ics">talkshow-guests.ics — Talk shows (invitados)</a></li>
+    </ul>
 
-<p>Google Calendar: “Otros calendarios” → “+” → “Desde URL” → pegás el link del .ics.</p>
+    <p class="small">
+      Para suscribirte: Google Calendar (web) → <b>Otros calendarios</b> → <b>+</b> → <b>Desde URL</b> → pegás el link del .ics.
+      (Google puede tardar en refrescar suscripciones por URL.)
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Links directos</h2>
+    <p><code>https://alecsadok.github.io/inHumano/premios.ics</code></p>
+    <p><code>https://alecsadok.github.io/inHumano/talkshow-guests.ics</code></p>
+  </div>
+</body>
+</html>
