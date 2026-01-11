@@ -1,0 +1,180 @@
+events:
+  # =========================
+  # PREMIACIONES / TV (ejemplos)
+  # =========================
+
+  - title: "Oscars 2026 (98th) — Ceremonia"
+    date: "2026-03-15"
+    start_local: "19:00"
+    tz_local: "America/New_York"
+    duration_minutes: 210
+    location: "Dolby Theatre, Hollywood, Los Angeles, CA, USA"
+    broadcast:
+      tv: ["ABC"]
+      streaming: []
+      red_carpet:
+        confirmed: false
+        # Si se confirma:
+        # confirmed: true
+        # where: "ABC / Disney+ (si se anuncia)"
+        # start_local: "18:00"
+        # duration_minutes: 60
+    confirmed_people:
+      a_list: ["Conan O'Brien (host)"]
+      b_list: []
+      argentines: []
+    top_nominated: []
+    confirmed_performers: []
+    special_awards: []
+    notes:
+      - "Regla: solo confirmaciones oficiales / medios confiables / Wikipedia."
+
+  - title: "GRAMMY Awards 2026 — Telecast"
+    date: "2026-02-01"
+    start_local: "20:00"
+    tz_local: "America/New_York"
+    duration_minutes: 210
+    location: "Crypto.com Arena, Los Angeles, CA, USA"
+    broadcast:
+      tv: ["CBS"]
+      streaming: ["Paramount+"]
+      red_carpet:
+        confirmed: false
+    confirmed_people:
+      a_list: ["Kendrick Lamar (top nominee)", "Lady Gaga (top nominee)", "Bad Bunny (top nominee)", "Sabrina Carpenter (top nominee)"]
+      b_list: ["Doechii (nominee)", "SZA (nominee)", "Tyler, The Creator (nominee)"]
+      argentines: []
+    top_nominated:
+      - "Kendrick Lamar (9)"
+      - "Cirkut (7)"
+      - "Jack Antonoff (7)"
+      - "Lady Gaga (7)"
+    confirmed_performers: []
+    special_awards: []
+    notes:
+      - "Performances/presenters/red carpet: completar solo cuando haya anuncio oficial."
+
+  # =========================
+  # FESTIVALES / RECITALES
+  # =========================
+
+  # ---- Lollapalooza Argentina (ya tiene headliners confirmados)
+  - title: "Lollapalooza Argentina 2026 — Festival"
+    date: "2026-03-13"
+    tz_local: "America/Argentina/Buenos_Aires"
+    location: "Hipódromo de San Isidro, Buenos Aires, Argentina"
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet:
+        confirmed: false
+    headliners:
+      - "Sabrina Carpenter"
+      - "Tyler, The Creator"
+      - "Chappell Roan"
+      - "Deftones"
+      - "Skrillex"
+      - "Lorde"
+      - "Doechii"
+      - "Turnstile"
+      - "Lewis Capaldi"
+      - "Paulo Londra"
+    pop_artists:
+      - "Sabrina Carpenter"
+      - "Chappell Roan"
+      - "Lorde"
+      - "Lewis Capaldi"
+      - "Paulo Londra"
+    confirmed_people:
+      a_list: ["Sabrina Carpenter", "Tyler, The Creator", "Skrillex", "Lorde"]
+      b_list: ["Chappell Roan", "Doechii", "Lewis Capaldi"]
+      argentines: ["Paulo Londra"]
+    notes:
+      - "Fechas oficiales: 13–15/03/2026."
+      - "Set times (por artista/escenario): por anunciar oficialmente."
+    # Si querés separarlo por día (recomendado cuando haya set times):
+    days:
+      - date: "2026-03-13"
+        notes: ["Día 1 — set times por anunciar."]
+        set_times: []
+      - date: "2026-03-14"
+        notes: ["Día 2 — set times por anunciar."]
+        set_times: []
+      - date: "2026-03-15"
+        notes: ["Día 3 — set times por anunciar."]
+        set_times: []
+
+  # ---- Lollapalooza Chile (fechas oficiales)
+  - title: "Lollapalooza Chile 2026 — Festival"
+    date: "2026-03-13"
+    tz_local: "America/Santiago"
+    location: "Parque O'Higgins, Santiago, Chile"
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet:
+        confirmed: false
+    headliners: []
+    pop_artists: []
+    confirmed_people:
+      a_list: []
+      b_list: []
+      argentines: []
+    notes:
+      - "Fechas oficiales: 13–15/03/2026."
+      - "Lineup y set times: por anunciar oficialmente."
+    days:
+      - date: "2026-03-13"
+        set_times: []
+      - date: "2026-03-14"
+        set_times: []
+      - date: "2026-03-15"
+        set_times: []
+
+  # ---- Lollapalooza Brasil (fechas oficiales)
+  - title: "Lollapalooza Brasil 2026 — Festival"
+    date: "2026-03-20"
+    tz_local: "America/Sao_Paulo"
+    location: "Autódromo de Interlagos, São Paulo, Brasil"
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet:
+        confirmed: false
+    headliners: []
+    pop_artists: []
+    confirmed_people:
+      a_list: []
+      b_list: []
+      argentines: []
+    notes:
+      - "Fechas oficiales: 20–22/03/2026."
+      - "Horario general del predio (si está publicado oficialmente): incluirlo aquí."
+      - "Lineup y set times: por anunciar oficialmente."
+    days:
+      - date: "2026-03-20"
+        set_times: []
+      - date: "2026-03-21"
+        set_times: []
+      - date: "2026-03-22"
+        set_times: []
+
+  # ---- Lollapalooza Chicago (USA) — placeholder (NO completar hasta que haya fecha oficial)
+  - title: "Lollapalooza Chicago (USA) — Festival (placeholder)"
+    date: "2026-12-31"
+    tz_local: "America/Chicago"
+    location: "Grant Park, Chicago, IL, USA"
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet:
+        confirmed: false
+    headliners: []
+    pop_artists: []
+    confirmed_people:
+      a_list: []
+      b_list: []
+      argentines: []
+    notes:
+      - "NO usar esta entrada: reemplazar por fechas oficiales cuando se anuncien."
+      - "El support oficial suele decir cuando todavía no hay fechas publicadas."
