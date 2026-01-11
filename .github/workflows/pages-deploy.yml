@@ -2,8 +2,7 @@ name: Build & Deploy site (premios + talkshows)
 
 on:
   schedule:
-    # Lunes 12:00 UTC = Lunes 09:00 Argentina (GMT-3)
-    - cron: "0 12 * * 1"
+    - cron: "0 12 * * 1"   # Lunes 12:00 UTC ~ 09:00 Argentina
   workflow_dispatch:
 
 permissions:
@@ -32,27 +31,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # ====== Proyecto 1: Premios ======
       - name: Build premios.ics
         run: |
           python generate_calendar.py
 
-      # ====== Proyecto 2: Talk shows ======
       - name: Build talkshow-guests.ics
         working-directory: talkshow-guest-calendar
         run: |
           python update_calendar.py
 
-      # ====== Armar el sitio final ======
       - name: Prepare Pages site (_site)
         run: |
           rm -rf _site
           mkdir -p _site
 
-          # Copiamos tu web estática
           cp -r pages/* _site/
 
-          # Copiamos los outputs a la raíz del sitio publicado
           cp premios.ics _site/premios.ics
           cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
 
