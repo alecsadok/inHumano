@@ -1,0 +1,313 @@
+settings:
+  days_ahead: 400          # cuánto mirar hacia adelante para "próximos"
+  include_inactive: false  # no meter eventos en pausa/discontinuados en events.yaml
+
+watchlist:
+  # ===== Awards / TV =====
+  - id: golden_globes
+    name: "Golden Globe Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/List_of_Golden_Globe_Awards_ceremonies"
+    tz_local: "America/New_York"
+    default_start_local: "20:00"
+    duration_minutes: 180
+    broadcast:
+      tv: ["CBS"]
+      streaming: ["Paramount+"]
+      red_carpet: { confirmed: false }
+
+  - id: sag_awards
+    name: "SAG Awards / Actor Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: official_homepage
+        url: "https://www.sagawards.org/"
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/Screen_Actors_Guild_Awards"
+    tz_local: "America/New_York"
+    default_start_local: "20:00"
+    duration_minutes: 120
+    broadcast:
+      tv: []
+      streaming: ["Netflix"]
+      red_carpet: { confirmed: false }
+
+  - id: oscars_noms
+    name: "Oscars — Nominations Announcement"
+    kind: announcement
+    status: active
+    sources:
+      - type: official_key_dates
+        url: "https://www.oscars.org/oscars/ceremonies/"
+    tz_local: "America/New_York"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: grammys
+    name: "GRAMMY Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/List_of_Grammy_Award_ceremony_locations"
+    tz_local: "America/New_York"
+    default_start_local: "20:00"
+    duration_minutes: 210
+    broadcast:
+      tv: ["CBS"]
+      streaming: ["Paramount+"]
+      red_carpet: { confirmed: false }
+
+  - id: critics_choice
+    name: "Critics Choice Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/Critics%27_Choice_Movie_Awards"
+    tz_local: "America/New_York"
+    default_start_local: "19:00"
+    duration_minutes: 180
+    broadcast:
+      tv: ["E!","USA Network"]
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: super_bowl
+    name: "Super Bowl"
+    kind: sports
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/List_of_Super_Bowl_halftime_shows"
+    tz_local: "America/New_York"
+    default_start_local: "18:30"
+    duration_minutes: 240
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: naacp_image_awards
+    name: "NAACP Image Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/NAACP_Image_Awards"
+    tz_local: "America/New_York"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: ["BET"]
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: brit_awards
+    name: "The BRIT Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/List_of_Brit_Awards_ceremonies"
+    tz_local: "Europe/London"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: ["ITV1"]
+      streaming: ["ITVX"]
+      red_carpet: { confirmed: false }
+
+  - id: oscars
+    name: "Academy Awards / Oscars"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/List_of_Academy_Awards_ceremonies"
+    tz_local: "America/New_York"
+    default_start_local: "19:00"
+    duration_minutes: 210
+    broadcast:
+      tv: ["ABC"]
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: queerties
+    name: "The Queerties"
+    kind: awards
+    status: active
+    sources:
+      - type: instagram_profile
+        url: "https://www.instagram.com/queerty/"
+    tz_local: "America/New_York"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: iheart_music_awards
+    name: "iHeartRadio Music Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/IHeartRadio_Music_Awards"
+    tz_local: "America/New_York"
+    default_start_local: "20:00"
+    duration_minutes: 120
+    broadcast:
+      tv: ["FOX"]
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: glaad
+    name: "GLAAD Media Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/GLAAD_Media_Award"
+    tz_local: "America/Los_Angeles"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: emmys
+    name: "Primetime Emmy Awards"
+    kind: awards
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/Primetime_Emmy_Awards"
+    tz_local: "America/New_York"
+    default_start_local: "20:00"
+    duration_minutes: 180
+    broadcast:
+      tv: ["NBC"]
+      streaming: ["Peacock"]
+      red_carpet: { confirmed: false }
+
+  # ===== Concerts / Festivals (fechas + headliners; set times solo si aparecen) =====
+  - id: coachella
+    name: "Coachella"
+    kind: festival
+    status: active
+    sources:
+      - type: official_homepage
+        url: "https://www.coachella.com/"
+      - type: official_lineup_or_dates
+        url: "https://coachella.com/lineup/#/artists/byDay"
+    tz_local: "America/Los_Angeles"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: ["YouTube (Coachella official livestream)"]
+      red_carpet: { confirmed: false }
+
+  - id: met_gala
+    name: "Met Gala"
+    kind: event
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/Met_Gala"
+    tz_local: "America/New_York"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: ["Vogue (digital) / YouTube"]
+      red_carpet: { confirmed: false }
+
+  - id: tomorrowland
+    name: "Tomorrowland (Belgium)"
+    kind: festival
+    status: active
+    sources:
+      - type: wikipedia_next_date
+        url: "https://en.wikipedia.org/wiki/Tomorrowland_(festival)"
+    tz_local: "Europe/Brussels"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: outside_lands
+    name: "Outside Lands"
+    kind: festival
+    status: active
+    sources:
+      - type: official_homepage
+        url: "https://www.sfoutsidelands.com/"
+    tz_local: "America/Los_Angeles"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: []
+      streaming: []
+      red_carpet: { confirmed: false }
+
+  - id: glastonbury
+    name: "Glastonbury Festival"
+    kind: festival
+    status: active
+    sources:
+      - type: official_homepage
+        url: "https://www.glastonburyfestivals.co.uk/"
+    tz_local: "Europe/London"
+    default_start_local: null
+    duration_minutes: null
+    broadcast:
+      tv: ["BBC (según cobertura anual)"]
+      streaming: ["BBC iPlayer (según cobertura anual)"]
+      red_carpet: { confirmed: false }
+
+  # ===== Inactivos/discontinuados (se detectan y se excluyen) =====
+  - id: teen_choice
+    name: "Teen Choice Awards"
+    kind: awards
+    status: inactive
+    sources:
+      - type: wikipedia_status
+        url: "https://en.wikipedia.org/wiki/Teen_Choice_Awards"
+
+  - id: rdma
+    name: "Radio Disney Music Awards"
+    kind: awards
+    status: inactive
+    sources:
+      - type: wikipedia_status
+        url: "https://en.wikipedia.org/wiki/Radio_Disney_Music_Awards"
+
+  - id: mtv_movie_tv
+    name: "MTV Movie & TV Awards"
+    kind: awards
+    status: inactive
+    sources:
+      - type: wikipedia_status
+        url: "https://en.wikipedia.org/wiki/MTV_Movie_%26_TV_Awards"
+
+  - id: kaaboo
+    name: "KAABOO Del Mar"
+    kind: festival
+    status: inactive
+    sources:
+      - type: news_status
+        url: "https://www.nbcsandiego.com/news/local/kaaboo-music-festival-will-not-return-to-del-mar-this-summer/3766919/"
