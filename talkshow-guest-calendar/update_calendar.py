@@ -22,6 +22,8 @@ OUT_DIR.mkdir(exist_ok=True)
 ICS_OUT = OUT_DIR / "talkshow-guests.ics"
 JSON_OUT = OUT_DIR / "talkshow-guests.json"
 
+TIME_LINE_RX = re.compile(r"^\s*(\d{1,2}:\d{2}\s*[AP]M)\s*$", re.I)
+
 
 def ics_escape(s: str) -> str:
     s = s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,")
@@ -69,6 +71,42 @@ def clean_guest_label(s: str) -> str:
     return s
 
 
+def split_guests(items: list[str]) -> list[str]:
+    out: list[str] = []
+    for it in items:
+        if not it:
+            continue
+        parts = re.split(r"\s*(?:,| and | & |\u2022|/)\s*", it)
+        for p in parts:
+            p = clean_guest_label(p.strip())
+            if p and p.lower() not in {"tbd", "tba"}:
+                out.append(p)
+    seen = set()
+    final = []
+    for x in out:
+        if x not in seen:
+            seen.add(x)
+            final.append(x)
+    return final
+
+
+def parse_any_date(s: str) -> date | None:
+    from dateutil import parser as dtparser
+
+    s = re.sub(r"\[\d+\]", "", (s or "")).strip()
+    if not s or s.lower() in {"tba", "tbd"}:
+        return None
+    try:
+        dt = dtparser.parse(s, fuzzy=True, dayfirst=False)
+        return dt.date()
+    except Exception:
+        return None
+
+
+def within_window(d: date, start: date, end: date) -> bool:
+    return start <= d <= end
+
+
 def parse_epguides_show(url: str) -> list[tuple[date, list[str]]]:
     html = http_get(url)
     soup = BeautifulSoup(html, "html.parser")
@@ -90,18 +128,8 @@ def parse_epguides_show(url: str) -> list[tuple[date, list[str]]]:
 
         mon_str, day_str, year_str = m.group(1), m.group(2), m.group(3)
         month_map = {
-            "Jan": 1,
-            "Feb": 2,
-            "Mar": 3,
-            "Apr": 4,
-            "May": 5,
-            "Jun": 6,
-            "Jul": 7,
-            "Aug": 8,
-            "Sep": 9,
-            "Oct": 10,
-            "Nov": 11,
-            "Dec": 12,
+            "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+            "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12
         }
         mm = month_map.get(mon_str)
         if not mm:
@@ -115,14 +143,13 @@ def parse_epguides_show(url: str) -> list[tuple[date, list[str]]]:
         except ValueError:
             continue
 
-        tail = ln[m.end() :].strip(" -–—:|")
+        tail = ln[m.end():].strip(" -–—:|")
         tail = re.sub(r"\bEp\.\s*#?\S+\b", "", tail).strip()
         guests: list[str] = []
         if tail:
             parts = re.split(r"[;|•]+", tail)
             for p in parts:
-                p = p.strip(" -–—:|")
-                p = clean_guest_label(p)
+                p = clean_guest_label(p.strip(" -–—:|"))
                 if p and len(p) > 1:
                     guests.append(p)
         items.append((d, guests))
@@ -144,25 +171,16 @@ def parse_wikipedia_episode_table(url: str, columns: dict) -> list[tuple[date, l
     tables = soup.select("table.wikitable")
     for table in tables:
         headers = [th.get_text(" ", strip=True) for th in table.select("tr th")]
-        if not headers:
-            continue
-        if date_header not in headers:
+        if not headers or date_header not in headers:
             continue
 
         header_row = table.select_one("tr")
         ths = header_row.select("th")
-        header_map = {}
-        for i, th in enumerate(ths):
-            header_map[th.get_text(" ", strip=True)] = i
-
+        header_map = {th.get_text(" ", strip=True): i for i, th in enumerate(ths)}
         if date_header not in header_map:
             continue
 
-        guest_idxs = []
-        for gh in guest_headers:
-            if gh in header_map:
-                guest_idxs.append(header_map[gh])
-
+        guest_idxs = [header_map[gh] for gh in guest_headers if gh in header_map]
         date_idx = header_map[date_header]
         rows = table.select("tr")[1:]
 
@@ -179,8 +197,7 @@ def parse_wikipedia_episode_table(url: str, columns: dict) -> list[tuple[date, l
             guests: list[str] = []
             for gi in guest_idxs:
                 if gi < len(tds):
-                    val = tds[gi].get_text(" ", strip=True)
-                    val = re.sub(r"\[\d+\]", "", val).strip()
+                    val = re.sub(r"\[\d+\]", "", tds[gi].get_text(" ", strip=True)).strip()
                     if val and val.lower() != "tbd":
                         guests.append(val)
 
@@ -191,30 +208,85 @@ def parse_wikipedia_episode_table(url: str, columns: dict) -> list[tuple[date, l
     return []
 
 
-def parse_any_date(s: str) -> date | None:
-    from dateutil import parser as dtparser
+def to_minutes_ampm(t: str) -> int:
+    m = re.match(r"^\s*(\d{1,2}):(\d{2})\s*(AM|PM)\s*$", t, re.I)
+    if not m:
+        return -1
+    hh = int(m.group(1))
+    mm = int(m.group(2))
+    ap = m.group(3).upper()
+    if ap == "PM" and hh != 12:
+        hh += 12
+    if ap == "AM" and hh == 12:
+        hh = 0
+    return hh * 60 + mm
 
-    s = re.sub(r"\[\d+\]", "", s).strip()
-    if not s or s.lower() in {"tba", "tbd"}:
-        return None
-    try:
-        dt = dtparser.parse(s, fuzzy=True, dayfirst=False)
-        return dt.date()
-    except Exception:
-        return None
 
+def parse_tvpassport_station_day(station_base_url: str, d: date) -> list[dict]:
+    url = station_base_url.rstrip("/") + f"/{d.isoformat()}"
+    html = http_get(url)
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n")
+    lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
 
-def split_guests(items: list[str]) -> list[str]:
-    out: list[str] = []
-    for it in items:
-        if not it:
+    items: list[dict] = []
+    i = 0
+    while i < len(lines):
+        m = TIME_LINE_RX.match(lines[i])
+        if not m:
+            i += 1
             continue
-        parts = re.split(r"\s*(?:,| and | & |\u2022|/)\s*", it)
-        for p in parts:
-            p = p.strip()
-            p = clean_guest_label(p)
-            if p and p.lower() not in {"tbd", "tba"}:
-                out.append(p)
+        t = m.group(1).upper().strip()
+        prog = lines[i + 1] if i + 1 < len(lines) else ""
+        desc = lines[i + 2] if i + 2 < len(lines) else ""
+        items.append({"time": t, "program": prog, "desc": desc, "source_url": url})
+        i += 1
+
+    for idx in range(len(items) - 1):
+        a = to_minutes_ampm(items[idx]["time"])
+        b = to_minutes_ampm(items[idx + 1]["time"])
+        if a >= 0 and b >= 0 and b > a:
+            items[idx]["duration_minutes"] = b - a
+
+    for it in items:
+        m2 = re.match(r"^\s*(\d{1,2}):(\d{2})\s*(AM|PM)\s*$", it["time"], re.I)
+        if not m2:
+            continue
+        hh = int(m2.group(1))
+        mm = int(m2.group(2))
+        ap = m2.group(3).upper()
+        if ap == "PM" and hh != 12:
+            hh += 12
+        if ap == "AM" and hh == 12:
+            hh = 0
+        it["start_local_hhmm"] = f"{hh:02d}:{mm:02d}"
+    return items
+
+
+def match_program(program: str, contains_any: list[str]) -> bool:
+    p = (program or "").lower()
+    for t in contains_any:
+        if str(t).strip().lower() in p:
+            return True
+    return False
+
+
+def extract_guests_from_tvpassport_desc(desc: str) -> list[str]:
+    d = (desc or "").strip()
+    if not d:
+        return []
+    d = re.sub(r"^\s*New\s+Live\s*", "", d, flags=re.I).strip()
+    d = re.sub(r"^[Ee]pisode\s*\d+\s*[-–—]\s*", "", d).strip()
+    if ":" in d and any(k in d.lower() for k in ["guest", "guests", "with", "starring"]):
+        tail = d.split(":", 1)[1]
+    else:
+        tail = d
+    tail = re.sub(r"\band\b", ",", tail, flags=re.I)
+    parts = [p.strip(" ,.;") for p in tail.split(",") if p.strip(" ,.;")]
+    out: list[str] = []
+    for p in parts:
+        if 2 <= len(p.split()) <= 5 and len(p) <= 80:
+            out.append(p)
     seen = set()
     final = []
     for x in out:
@@ -222,10 +294,6 @@ def split_guests(items: list[str]) -> list[str]:
             seen.add(x)
             final.append(x)
     return final
-
-
-def within_window(d: date, start: date, end: date) -> bool:
-    return start <= d <= end
 
 
 def build_ics(episodes: list[Episode]) -> str:
@@ -274,17 +342,12 @@ def build_ics(episodes: list[Episode]) -> str:
 
         desc_lines = [time_line]
         if ep.guests:
-            desc_lines.append("Invitados:")
-            for g in ep.guests:
-                desc_lines.append(f"- {g}")
+            desc_lines.append("Invitados: " + "; ".join(ep.guests))
         else:
             desc_lines.append("Invitados: (no publicados aún en las fuentes consultadas)")
 
         if real_sources:
-            desc_lines.append("")
-            desc_lines.append("Fuentes:")
-            for s in real_sources:
-                desc_lines.append(f"- {s}")
+            desc_lines.append("Fuentes: " + "; ".join(real_sources))
 
         lines.append("DESCRIPTION:" + ics_escape("\n".join(desc_lines)))
         lines.append("END:VEVENT")
@@ -302,7 +365,6 @@ def main() -> None:
     settings = cfg.get("settings", {}) or {}
     days_ahead = int(settings.get("days_ahead", 21))
     include_sources = bool(settings.get("include_sources_in_description", True))
-    allow_unofficial = bool(settings.get("allow_unofficial_fallbacks", True))
 
     shows = cfg.get("shows", [])
     if not isinstance(shows, list):
@@ -325,7 +387,8 @@ def main() -> None:
             continue
 
         srcs = sh.get("sources", []) or []
-        parsed_rows: list[tuple[date, list[str], list[str]]] = []
+
+        by_date: dict[date, dict] = {}
 
         for src in srcs:
             stype = (src.get("type") or "").strip()
@@ -334,38 +397,67 @@ def main() -> None:
                 continue
 
             try:
-                if stype == "epguides_show":
+                if stype == "tvpassport_station":
+                    match_cfg = src.get("match") or {}
+                    contains_any = ensure_list(match_cfg.get("contains_any"))
+                    for off in range(days_ahead + 1):
+                        d = today + timedelta(days=off)
+                        items = parse_tvpassport_station_day(url, d)
+                        for it in items:
+                            if not match_program(it.get("program", ""), contains_any):
+                                continue
+                            hhmm = it.get("start_local_hhmm")
+                            if not hhmm:
+                                continue
+                            guests = extract_guests_from_tvpassport_desc(it.get("desc", ""))
+                            src_list = [it.get("source_url", url)] if include_sources else []
+                            cur = by_date.get(d, {})
+                            prev_guests = cur.get("guests", [])
+                            if len(guests) >= len(prev_guests):
+                                by_date[d] = {"guests": guests, "sources": src_list, "hhmm": hhmm}
+                            break
+
+                elif stype == "epguides_show":
                     rows = parse_epguides_show(url)
                     for d, guests in rows:
-                        parsed_rows.append((d, guests, [url] if include_sources else []))
+                        if not within_window(d, today, end):
+                            continue
+                        src_list = [url] if include_sources else []
+                        cur = by_date.get(d, {})
+                        prev_guests = cur.get("guests", [])
+                        if len(guests) > len(prev_guests):
+                            by_date[d] = {"guests": guests, "sources": src_list, "hhmm": cur.get("hhmm")}
 
                 elif stype == "wikipedia_episode_table":
                     cols = src.get("columns") or {}
                     rows = parse_wikipedia_episode_table(url, cols)
                     for d, guests in rows:
-                        parsed_rows.append((d, guests, [url] if include_sources else []))
+                        if not within_window(d, today, end):
+                            continue
+                        src_list = [url] if include_sources else []
+                        cur = by_date.get(d, {})
+                        prev_guests = cur.get("guests", [])
+                        if len(guests) > len(prev_guests):
+                            by_date[d] = {"guests": guests, "sources": src_list, "hhmm": cur.get("hhmm")}
 
                 else:
                     continue
             except Exception:
                 continue
 
-        if not parsed_rows and not allow_unofficial:
-            continue
-
-        by_date: dict[date, tuple[list[str], list[str]]] = {}
-        for d, guests, src_list in parsed_rows:
-            if not within_window(d, today, end):
-                continue
-            prev = by_date.get(d)
-            if not prev or len(guests) > len(prev[0]):
-                by_date[d] = (guests, src_list)
-
         local_tz = ZoneInfo(str(tz_local))
-        hh, mm = parse_time_hhmm(str(airtime_local))
+        default_hh, default_mm = parse_time_hhmm(str(airtime_local))
 
         for d in sorted(by_date.keys()):
-            guests, src_list = by_date[d]
+            info = by_date[d]
+            guests = info.get("guests", []) or []
+            src_list = info.get("sources", []) or []
+            hhmm_override = info.get("hhmm")
+
+            if isinstance(hhmm_override, str) and re.match(r"^\d{2}:\d{2}$", hhmm_override):
+                hh, mm = parse_time_hhmm(hhmm_override)
+            else:
+                hh, mm = default_hh, default_mm
 
             local_dt = datetime(d.year, d.month, d.day, hh, mm, tzinfo=local_tz)
             ar_start = local_dt.astimezone(TZ_AR)
@@ -375,13 +467,13 @@ def main() -> None:
                 f"__ARSTART__={ar_start.isoformat()}",
                 f"__AREND__={ar_end.isoformat()}",
             ]
-
             ep_sources = internal + (src_list if include_sources else [])
+
             ep = Episode(
                 show_id=str(show_id),
                 show_name=str(show_name),
                 air_date=d,
-                guests=guests,
+                guests=split_guests([", ".join(guests)]) if guests and len(guests) == 1 else guests,
                 sources=ep_sources,
             )
             episodes.append(ep)
@@ -391,11 +483,10 @@ def main() -> None:
                     "show_id": show_id,
                     "show_name": show_name,
                     "air_date_local": d.isoformat(),
-                    "airtime_local": airtime_local,
                     "tz_local": tz_local,
                     "start_argentina": ar_start.isoformat(),
                     "end_argentina": ar_end.isoformat(),
-                    "guests": guests,
+                    "guests": ep.guests,
                     "sources": src_list if include_sources else [],
                 }
             )
