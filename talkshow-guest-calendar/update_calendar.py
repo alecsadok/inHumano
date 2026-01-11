@@ -1,341 +1,297 @@
+#!/usr/bin/env python3
 from __future__ import annotations
 
-import argparse
-import datetime as dt
-import hashlib
-import os
+import json
 import re
 from dataclasses import dataclass
+from datetime import datetime, timedelta, date
 from pathlib import Path
-from typing import Any, Iterable
+from zoneinfo import ZoneInfo
 
-import requests
 import yaml
+import requests
 from bs4 import BeautifulSoup
-from dateutil import parser as dateparser
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+
+TZ_AR = ZoneInfo("America/Argentina/Buenos_Aires")
+
+UA = "Mozilla/5.0 (compatible; inHumanoCalendarBot/1.0; +https://alecsadok.github.io/inHumano/)"
+
+OUT_DIR = Path("output")
+OUT_DIR.mkdir(exist_ok=True)
+
+ICS_OUT = OUT_DIR / "talkshow-guests.ics"
+JSON_OUT = OUT_DIR / "talkshow-guests.json"
 
 
-OUTPUT_DIR = Path("output")
-OUTPUT_ICS = OUTPUT_DIR / "talkshow-guests.ics"
-OUTPUT_JSON = OUTPUT_DIR / "talkshow-guests.json"
-
-USER_AGENT = "talkshow-guest-calendar/1.0 (+https://github.com/yourname/yourrepo)"
-
-
-@dataclass(frozen=True)
-class Appearance:
-    show_id: str
-    show_name: str
-    date: dt.date
-    guests: tuple[str, ...]
-    sources: tuple[str, ...]
-
-
-def build_session() -> requests.Session:
-    s = requests.Session()
-    retries = Retry(
-        total=3,
-        backoff_factor=1.0,
-        status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=("GET",),
-        raise_on_status=False,
-    )
-    s.mount("http://", HTTPAdapter(max_retries=retries))
-    s.mount("https://", HTTPAdapter(max_retries=retries))
-    s.headers.update({"User-Agent": USER_AGENT})
+def ics_escape(s: str) -> str:
+    s = s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,")
+    s = s.replace("\r\n", "\n").replace("\r", "\n").replace("\n", "\\n")
     return s
 
 
-def http_get(session: requests.Session, url: str) -> str:
-    r = session.get(url, timeout=30)
+def fmt_dt(dt: datetime) -> str:
+    return dt.strftime("%Y%m%dT%H%M%S")
+
+
+def dtstamp_utc() -> str:
+    return datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+
+
+def parse_time_hhmm(s: str) -> tuple[int, int]:
+    m = re.match(r"^\s*(\d{1,2}):(\d{2})\s*$", s or "")
+    if not m:
+        raise ValueError(f"Invalid HH:MM time: {s}")
+    return int(m.group(1)), int(m.group(2))
+
+
+@dataclass
+class Episode:
+    show_id: str
+    show_name: str
+    air_date: date
+    guests: list[str]
+    sources: list[str]
+
+
+def http_get(url: str) -> str:
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
     r.raise_for_status()
     return r.text
 
 
-def clean_text(s: str) -> str:
-    s = re.sub(r"\[\d+\]", "", s)  # [1]
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-
-def split_guests(raw: str) -> list[str]:
-    raw = clean_text(raw)
-    raw = raw.replace(";", ",")
-    raw = raw.replace(" & ", ", ")
-    # “X performs” / “with a performance by …” → mantenemos el nombre, quitamos verbo
-    raw = re.sub(r"\b(performs|performing)\b.*$", "", raw, flags=re.IGNORECASE).strip()
-    parts = [p.strip(" ,") for p in raw.split(",")]
-    parts = [p for p in parts if p and p.lower() not in {"n/a", "none"}]
-    # dedupe conservando orden
-    seen = set()
-    out: list[str] = []
-    for p in parts:
-        if p.lower() not in seen:
-            seen.add(p.lower())
-            out.append(p)
-    return out
-
-
-def parse_date_from_text(text: str, today: dt.date) -> dt.date | None:
+def parse_epguides_show(url: str) -> list[tuple[date, list[str]]]:
     """
-    Intenta sacar una fecha.
-    Prioridad:
-      - ISO dentro de paréntesis: (2026-01-05)
-      - parseo libre con dateutil (en inglés)
+    Best-effort: EPGuides suele tener una tabla en texto/HTML con fechas + nombres.
+    Vamos a extraer líneas que contengan una fecha tipo 'Jan 10 2026' o '10 Jan 26' etc.
     """
-    m = re.search(r"\((\d{4}-\d{2}-\d{2})\)", text)
-    if m:
-        return dt.date.fromisoformat(m.group(1))
-
-    try:
-        d = dateparser.parse(text, fuzzy=True, default=dt.datetime(today.year, 1, 1))
-        if not d:
-            return None
-        # si no venía año y quedamos muy en el pasado, empujamos al año siguiente
-        candidate = d.date()
-        if candidate < today - dt.timedelta(days=180):
-            candidate = dt.date(today.year + 1, candidate.month, candidate.day)
-        return candidate
-    except Exception:
-        return None
-
-
-# ---------- Scrapers ----------
-
-def scrape_abc_guest_schedule(session: requests.Session, url: str, show_id: str, show_name: str, today: dt.date) -> list[Appearance]:
-    html = http_get(session, url)
+    html = http_get(url)
     soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n")
+    # Normalizar espacios
+    text = re.sub(r"[ \t]+", " ", text)
 
-    # En la página de ABC suelen aparecer items tipo:
-    # "Friday, Jan 09, 2026 Denis Leary; Rachel Maddow; HUNTR/X performs."
-    items = [clean_text(li.get_text(" ", strip=True)) for li in soup.select("li")]
+    # Detectar fechas en formato "Jan 10 2026" (inglés)
+    months = "(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+    # Ej: "Jan 10 2026"
+    rx = re.compile(rf"\b{months}\s+(\d{{1,2}})\s+(\d{{4}})\b")
 
-    out: list[Appearance] = []
-    for t in items:
-        if not re.search(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b", t):
+    items: list[tuple[date, list[str]]] = []
+
+    lines = text.split("\n")
+    for ln in lines:
+        ln = ln.strip()
+        if len(ln) < 8:
             continue
-        d = parse_date_from_text(t, today)
-        if not d:
-            continue
-        # guests: todo lo que viene después de la fecha
-        # Intento “cortar” a partir del año
-        m = re.search(r"\b\d{4}\b", t)
+        m = rx.search(ln)
         if not m:
             continue
-        after = t[m.end():].strip(" -–: ")
-        guests = split_guests(after)
-        if guests:
-            out.append(Appearance(show_id, show_name, d, tuple(guests), (url,)))
-    return out
+
+        mon_str, day_str, year_str = m.group(1), m.group(2), m.group(3)
+        month_map = {
+            "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+            "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12
+        }
+        mm = month_map.get(mon_str)
+        if not mm:
+            continue
+        dd = int(day_str)
+        yy = int(year_str)
+        try:
+            d = date(yy, mm, dd)
+        except ValueError:
+            continue
+
+        # Guests: heurística: lo que sigue después de la fecha
+        # Ej: "... Jan 10 2026  Guest: X; Musical: Y"
+        tail = ln[m.end():].strip(" -–—:|")
+        # Limpiar cosas tipo "Ep. #", etc
+        tail = re.sub(r"\bEp\.\s*#?\S+\b", "", tail).strip()
+        guests = []
+        if tail:
+            # Separar por ; / , / | / •
+            parts = re.split(r"[;|•]+", tail)
+            for p in parts:
+                p = p.strip(" -–—:|")
+                if p and len(p) > 1:
+                    guests.append(p)
+        items.append((d, guests))
+
+    # Deduplicar por fecha (quedarse con la más completa)
+    by_date: dict[date, list[str]] = {}
+    for d, g in items:
+        if d not in by_date or len(g) > len(by_date[d]):
+            by_date[d] = g
+    return [(d, by_date[d]) for d in sorted(by_date.keys())]
 
 
-def scrape_cbs_episode_guide(session: requests.Session, url: str, show_id: str, show_name: str, today: dt.date) -> list[Appearance]:
-    html = http_get(session, url)
+def parse_wikipedia_episode_table(url: str, columns: dict) -> list[tuple[date, list[str]]]:
+    html = http_get(url)
     soup = BeautifulSoup(html, "html.parser")
 
-    # En CBS suele haber H2 del estilo:
-    # "1/8/26 (Tom Hiddleston, Terry Gross)"
-    out: list[Appearance] = []
-    for h2 in soup.find_all(["h2", "h3"]):
-        t = clean_text(h2.get_text(" ", strip=True))
-        m = re.match(r"^(\d{1,2}/\d{1,2}/\d{2})\s*\((.+)\)$", t)
-        if not m:
+    # tomar la primera tabla "wikitable" con un header que tenga la columna date
+    date_header = columns["date"]
+    guest_headers = columns["guests"]
+
+    tables = soup.select("table.wikitable")
+    for table in tables:
+        headers = [th.get_text(" ", strip=True) for th in table.select("tr th")]
+        if not headers:
             continue
-        d = parse_date_from_text(m.group(1), today)
-        if not d:
-            continue
-        guests = split_guests(m.group(2))
-        if guests:
-            out.append(Appearance(show_id, show_name, d, tuple(guests), (url,)))
-    return out
-
-
-def scrape_wikipedia_episode_table(
-    session: requests.Session,
-    url: str,
-    show_id: str,
-    show_name: str,
-    today: dt.date,
-    date_header: str,
-    guest_headers: list[str],
-) -> list[Appearance]:
-    html = http_get(session, url)
-    soup = BeautifulSoup(html, "html.parser")
-
-    def norm(x: str) -> str:
-        return re.sub(r"\s+", " ", x.strip()).lower()
-
-    date_h = norm(date_header)
-    guest_hs = {norm(h) for h in guest_headers}
-
-    # buscamos una tabla que contenga el header de fecha + alguno de invitados
-    for table in soup.select("table.wikitable"):
-        headers = [norm(th.get_text(" ", strip=True)) for th in table.select("tr th")]
-        if date_h not in headers:
-            continue
-        if not any(h in headers for h in guest_hs):
+        if date_header not in headers:
             continue
 
-        # map header->index (primer row de headers real)
+        # map header->index
         header_row = table.select_one("tr")
-        if not header_row:
-            continue
-        header_cells = header_row.find_all(["th", "td"])
-        header_map: dict[str, int] = {}
-        for i, cell in enumerate(header_cells):
-            header_map[norm(cell.get_text(" ", strip=True))] = i
+        ths = header_row.select("th")
+        header_map = {}
+        for i, th in enumerate(ths):
+            header_map[th.get_text(" ", strip=True)] = i
 
-        if date_h not in header_map:
+        if date_header not in header_map:
             continue
-        guest_idxs = [header_map[h] for h in header_map.keys() if h in guest_hs]
-        date_idx = header_map[date_h]
 
-        out: list[Appearance] = []
-        for tr in table.find_all("tr")[1:]:
-            tds = tr.find_all(["th", "td"])
-            if len(tds) <= max([date_idx, *guest_idxs], default=date_idx):
+        guest_idxs = []
+        for gh in guest_headers:
+            if gh in header_map:
+                guest_idxs.append(header_map[gh])
+
+        date_idx = header_map[date_header]
+        rows = table.select("tr")[1:]
+
+        out: list[tuple[date, list[str]]] = []
+        for tr in rows:
+            tds = tr.find_all(["td", "th"])
+            if len(tds) <= date_idx:
                 continue
-
-            date_text = clean_text(tds[date_idx].get_text(" ", strip=True))
-            d = parse_date_from_text(date_text, today)
+            date_txt = tds[date_idx].get_text(" ", strip=True)
+            d = parse_any_date(date_txt)
             if not d:
                 continue
 
-            guests_all: list[str] = []
+            guests: list[str] = []
             for gi in guest_idxs:
-                guests_all.extend(split_guests(tds[gi].get_text(" ", strip=True)))
+                if gi < len(tds):
+                    val = tds[gi].get_text(" ", strip=True)
+                    val = re.sub(r"\[\d+\]", "", val).strip()
+                    if val and val.lower() != "tbd":
+                        guests.append(val)
 
-            if guests_all:
-                out.append(Appearance(show_id, show_name, d, tuple(guests_all), (url,)))
+            # dividir invitados en lista si vienen con saltos / "and" / etc
+            guests = split_guests(guests)
+            out.append((d, guests))
         return out
 
     return []
 
 
-def scrape_interbridge_lineups_by_date(session: requests.Session, url: str, today: dt.date) -> list[Appearance]:
-    html = http_get(session, url)
-    soup = BeautifulSoup(html, "html.parser")
-    text = soup.get_text("\n", strip=True)
+def parse_any_date(s: str) -> date | None:
+    # soporta muchas variantes via dateutil (pero sin depender de locale)
+    from dateutil import parser as dtparser
+    s = re.sub(r"\[\d+\]", "", s).strip()
+    if not s or s.lower() in {"tba", "tbd"}:
+        return None
+    try:
+        dt = dtparser.parse(s, fuzzy=True, dayfirst=False)
+        return dt.date()
+    except Exception:
+        return None
 
-    # Bloques tipo:
-    # "Monday, January 12" luego líneas "Jimmy Fallon: X, Y"
-    lines = [clean_text(l) for l in text.split("\n") if l.strip()]
-    out: list[Appearance] = []
 
-    current_date: dt.date | None = None
-    for line in lines:
-        # encabezado de día
-        if re.match(r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+\w+\s+\d{1,2}$", line):
-            d = parse_date_from_text(line, today)
-            current_date = d
+def split_guests(items: list[str]) -> list[str]:
+    out: list[str] = []
+    for it in items:
+        if not it:
             continue
-
-        if not current_date:
-            continue
-
-        m = re.match(r"^(.+?):\s+(.+)$", line)
-        if not m:
-            continue
-
-        show_name = m.group(1).strip()
-        guests = split_guests(m.group(2))
-        if not guests:
-            continue
-
-        show_id = "interbridge_" + re.sub(r"[^a-z0-9]+", "_", show_name.lower()).strip("_")
-        out.append(Appearance(show_id, show_name, current_date, tuple(guests), (url,)))
-
-    return out
+        parts = re.split(r"\s*(?:,| and | & |\u2022|/)\s*", it)
+        for p in parts:
+            p = p.strip()
+            if p and p.lower() not in {"tbd", "tba"}:
+                out.append(p)
+    # dedupe preserve order
+    seen = set()
+    final = []
+    for x in out:
+        if x not in seen:
+            seen.add(x)
+            final.append(x)
+    return final
 
 
-def scrape_tvguide_listing(session: requests.Session, url: str, show_id: str, show_name: str, today: dt.date) -> list[Appearance]:
-    html = http_get(session, url)
-    soup = BeautifulSoup(html, "html.parser")
-    text = soup.get_text("\n", strip=True)
-    lines = [clean_text(l) for l in text.split("\n") if l.strip()]
-
-    # Buscamos “Friday 9 January” + en la parte de “Guest”
-    date_line = next((l for l in lines if re.match(r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+\d{1,2}\s+\w+$", l)), None)
-    if not date_line:
-        return []
-    d = parse_date_from_text(date_line, today)
-    if not d:
-        return []
-
-    # Extraemos invitados desde el bloque donde aparecen pares “Nombre” + “Guest”
-    guests: list[str] = []
-    for i, l in enumerate(lines):
-        if l.lower() == "guest" and i > 0:
-            candidate = lines[i - 1]
-            # Evitar labels genéricos
-            if candidate.lower() not in {"host", "guest"}:
-                guests.append(candidate)
-
-    # De-dupe
-    guests = split_guests(", ".join(guests))
-    if not guests:
-        # fallback: a veces están en la descripción
-        # (esto es muy heurístico, lo dejamos vacío si no aparece)
-        pass
-
-    if guests:
-        return [Appearance(show_id, show_name, d, tuple(guests), (url,))]
-    return []
+def within_window(d: date, start: date, end: date) -> bool:
+    return start <= d <= end
 
 
-# ---------- Output ----------
-
-def fold_ics_line(line: str) -> str:
-    # RFC 5545: 75 octets aprox; simplificamos por caracteres
-    if len(line) <= 75:
-        return line
-    out = []
-    while len(line) > 75:
-        out.append(line[:75])
-        line = " " + line[75:]
-    out.append(line)
-    return "\r\n".join(out)
-
-
-def to_ics(appearances: list[Appearance], generated_at_utc: dt.datetime) -> str:
+def build_ics(episodes: list[Episode]) -> str:
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
+        "PRODID:-//inHumano//talkshow-calendar//ES",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        "PRODID:-//talkshow-guest-calendar//EN",
+        "X-WR-CALNAME:Talk shows (invitados) — Argentina (GMT-3)",
+        "X-WR-TIMEZONE:America/Argentina/Buenos_Aires",
+        "X-PUBLISHED-TTL:PT24H",
     ]
-    stamp = generated_at_utc.strftime("%Y%m%dT%H%M%SZ")
+    stamp = dtstamp_utc()
 
-    for a in sorted(appearances, key=lambda x: (x.date, x.show_name)):
-        uid_raw = f"{a.show_id}-{a.date.isoformat()}-{','.join(a.guests)}"
-        uid = hashlib.sha256(uid_raw.encode("utf-8")).hexdigest()[:24] + "@talkshow"
-        dtstart = a.date.strftime("%Y%m%d")
+    for ep in sorted(episodes, key=lambda e: (e.air_date, e.show_name)):
+        uid = f"{uuid.uuid4()}@inhumano-talkshows"
+        lines.append("BEGIN:VEVENT")
+        lines.append(f"UID:{uid}")
+        lines.append(f"DTSTAMP:{stamp}")
 
-        summary = f"{a.show_name} — " + "; ".join(a.guests)
-        desc_parts = [
-            f"Show: {a.show_name}",
-            f"Date: {a.date.isoformat()}",
-            f"Guests: {', '.join(a.guests)}",
-        ]
-        if a.sources:
-            desc_parts.append("Sources:")
-            desc_parts.extend([f"- {u}" for u in a.sources])
+        # DTSTART/DTEND en Argentina
+        # La hora “airtime_local” se resuelve fuera y se guarda en sources? lo haremos desde JSON,
+        # pero para ICS se computa en el momento de crear Episode (ver main).
+        # Acá asumimos que ep.sources incluye strings con "ar_start=..."? no: mejor guardamos en JSON.
+        # Solución: guardamos el start/end en el título Episode como atributos en dict: simplificamos: lo recalculamos en main y guardamos en ep.sources? no.
+        # En esta implementación guardamos un "meta" en sources con "ARSTART=..."? no.
+        # Mejor: en main convertimos y guardamos iso strings en Episode.guests? no.
+        # Para mantener Episode simple, vamos a codificar dtstart/dtend en sources con prefijo, y lo filtramos aquí.
+        # (Es estable y no se muestra al usuario.)
+        arstart = None
+        arend = None
+        real_sources = []
+        for s in ep.sources:
+            if s.startswith("__ARSTART__="):
+                arstart = datetime.fromisoformat(s.split("=", 1)[1])
+            elif s.startswith("__AREND__="):
+                arend = datetime.fromisoformat(s.split("=", 1)[1])
+            else:
+                real_sources.append(s)
 
-        description = "\\n".join(desc_parts)
+        if not arstart or not arend:
+            # all-day fallback
+            d0 = ep.air_date
+            lines.append(f"DTSTART;VALUE=DATE:{d0.strftime('%Y%m%d')}")
+            lines.append(f"DTEND;VALUE=DATE:{(d0 + timedelta(days=1)).strftime('%Y%m%d')}")
+            time_line = "Hora Argentina: por anunciar."
+        else:
+            lines.append(f"DTSTART;TZID=America/Argentina/Buenos_Aires:{fmt_dt(arstart)}")
+            lines.append(f"DTEND;TZID=America/Argentina/Buenos_Aires:{fmt_dt(arend)}")
+            time_line = f"Hora Argentina: {arstart.strftime('%d/%m %H:%M')}–{arend.strftime('%H:%M')} (GMT-3)"
 
-        lines.extend([
-            "BEGIN:VEVENT",
-            fold_ics_line(f"UID:{uid}"),
-            f"DTSTAMP:{stamp}",
-            f"DTSTART;VALUE=DATE:{dtstart}",
-            fold_ics_line(f"SUMMARY:{summary}"),
-            fold_ics_line(f"DESCRIPTION:{description}"),
-        ])
-        if a.sources:
-            lines.append(fold_ics_line(f"URL:{a.sources[0]}"))
+        # SUMMARY
+        main_guest = ep.guests[0] if ep.guests else "Invitados por anunciar"
+        summary = f"{ep.show_name} — {main_guest}"
+        lines.append(f"SUMMARY:{ics_escape(summary)}")
+
+        # DESCRIPTION
+        desc_lines = [time_line]
+        if ep.guests:
+            desc_lines.append("Invitados:")
+            for g in ep.guests:
+                desc_lines.append(f"- {g}")
+        else:
+            desc_lines.append("Invitados: (no publicados aún en las fuentes consultadas)")
+
+        if real_sources:
+            desc_lines.append("")
+            desc_lines.append("Fuentes:")
+            for s in real_sources:
+                desc_lines.append(f"- {s}")
+
+        lines.append("DESCRIPTION:" + ics_escape("\n".join(desc_lines)))
         lines.append("END:VEVENT")
 
     lines.append("END:VCALENDAR")
@@ -343,113 +299,122 @@ def to_ics(appearances: list[Appearance], generated_at_utc: dt.datetime) -> str:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--config", default="shows.yaml")
-    ap.add_argument("--days-ahead", type=int, default=None)
-    args = ap.parse_args()
+    cfg_path = Path("shows.yaml")
+    if not cfg_path.exists():
+        raise FileNotFoundError("No existe talkshow-guest-calendar/shows.yaml")
 
-    cfg = yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))
-    settings = cfg.get("settings", {})
-    days_ahead = args.days_ahead or int(settings.get("days_ahead", 21))
+    cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
+    settings = cfg.get("settings", {}) or {}
+    days_ahead = int(settings.get("days_ahead", 21))
+    include_sources = bool(settings.get("include_sources_in_description", True))
     allow_unofficial = bool(settings.get("allow_unofficial_fallbacks", True))
 
-    today = dt.datetime.utcnow().date()
-    until = today + dt.timedelta(days=days_ahead)
+    shows = cfg.get("shows", [])
+    if not isinstance(shows, list):
+        raise ValueError("shows.yaml: 'shows' debe ser una lista.")
 
-    session = build_session()
+    today = datetime.now(tz=TZ_AR).date()
+    end = today + timedelta(days=days_ahead)
 
-    all_apps: list[Appearance] = []
+    episodes: list[Episode] = []
+    json_items: list[dict] = []
 
-    for show in cfg.get("shows", []):
-        sid = show["id"]
-        sname = show["name"]
-        for src in show.get("sources", []):
-            stype = src["type"]
-            url = src["url"]
+    for sh in shows:
+        show_id = sh.get("id")
+        show_name = sh.get("name")
+        tz_local = sh.get("tz_local")
+        airtime_local = sh.get("airtime_local")
+        duration_minutes = int(sh.get("duration_minutes", 60))
+
+        if not (show_id and show_name and tz_local and airtime_local):
+            continue
+
+        srcs = sh.get("sources", []) or []
+        parsed_rows: list[tuple[date, list[str], list[str]]] = []
+
+        # Recolectar episodios desde fuentes (en orden)
+        for src in srcs:
+            stype = (src.get("type") or "").strip()
+            url = (src.get("url") or "").strip()
+            if not (stype and url):
+                continue
 
             try:
-                if stype == "abc_guest_schedule":
-                    all_apps.extend(scrape_abc_guest_schedule(session, url, sid, sname, today))
-
-                elif stype == "cbs_episode_guide":
-                    all_apps.extend(scrape_cbs_episode_guide(session, url, sid, sname, today))
+                if stype == "epguides_show":
+                    rows = parse_epguides_show(url)
+                    for d, guests in rows:
+                        parsed_rows.append((d, guests, [url] if include_sources else []))
 
                 elif stype == "wikipedia_episode_table":
-                    cols = src["columns"]
-                    all_apps.extend(
-                        scrape_wikipedia_episode_table(
-                            session=session,
-                            url=url,
-                            show_id=sid,
-                            show_name=sname,
-                            today=today,
-                            date_header=cols["date"],
-                            guest_headers=cols["guests"],
-                        )
-                    )
-
-                elif stype == "interbridge_lineups_by_date":
-                    if allow_unofficial:
-                        all_apps.extend(scrape_interbridge_lineups_by_date(session, url, today))
-
-                elif stype == "tvguide_listing":
-                    if allow_unofficial:
-                        all_apps.extend(scrape_tvguide_listing(session, url, sid, sname, today))
+                    cols = src.get("columns") or {}
+                    rows = parse_wikipedia_episode_table(url, cols)
+                    for d, guests in rows:
+                        parsed_rows.append((d, guests, [url] if include_sources else []))
 
                 else:
-                    # Placeholder: instagram_graph_api, bbc_programmes_api, etc.
+                    # tipos no implementados en este “starter”
                     continue
+            except Exception:
+                continue
 
-            except Exception as e:
-                print(f"[WARN] {sname} ({stype}) falló: {e}")
+        # Si no hay nada y allow_unofficial es true, no hacemos más (podés sumar más handlers después)
+        if not parsed_rows and not allow_unofficial:
+            continue
 
-    # filtro rango
-    all_apps = [a for a in all_apps if today <= a.date <= until]
+        # Consolidar por fecha (mejor lista de guests gana)
+        by_date: dict[date, tuple[list[str], list[str]]] = {}
+        for d, guests, src_list in parsed_rows:
+            if not within_window(d, today, end):
+                continue
+            prev = by_date.get(d)
+            if not prev or len(guests) > len(prev[0]):
+                by_date[d] = (guests, src_list)
 
-    # de-dup por (show_name, date) uniendo invitados + fuentes
-    merged: dict[tuple[str, dt.date], tuple[set[str], set[str], str]] = {}
-    for a in all_apps:
-        k = (a.show_name, a.date)
-        if k not in merged:
-            merged[k] = (set(a.guests), set(a.sources), a.show_id)
-        else:
-            merged[k][0].update(a.guests)
-            merged[k][1].update(a.sources)
+        local_tz = ZoneInfo(str(tz_local))
+        hh, mm = parse_time_hhmm(str(airtime_local))
 
-    final: list[Appearance] = []
-    for (show_name, d), (guests_set, sources_set, show_id) in merged.items():
-        guests_sorted = tuple(sorted(guests_set, key=lambda x: x.lower()))
-        sources_sorted = tuple(sorted(sources_set))
-        final.append(Appearance(show_id, show_name, d, guests_sorted, sources_sorted))
+        for d in sorted(by_date.keys()):
+            guests, src_list = by_date[d]
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+            # datetime local (show tz)
+            local_dt = datetime(d.year, d.month, d.day, hh, mm, tzinfo=local_tz)
+            ar_start = local_dt.astimezone(TZ_AR)
+            ar_end = (local_dt + timedelta(minutes=duration_minutes)).astimezone(TZ_AR)
 
-    generated_at = dt.datetime.utcnow().replace(tzinfo=dt.timezone.utc)
-    ics = to_ics(final, generated_at)
+            # Guardamos start/end en sources de forma interna para build_ics
+            internal = [
+                f"__ARSTART__={ar_start.isoformat()}",
+                f"__AREND__={ar_end.isoformat()}",
+            ]
 
-    OUTPUT_ICS.write_text(ics, encoding="utf-8")
+            ep_sources = internal + (src_list if include_sources else [])
+            ep = Episode(
+                show_id=str(show_id),
+                show_name=str(show_name),
+                air_date=d,
+                guests=guests,
+                sources=ep_sources,
+            )
+            episodes.append(ep)
 
-    # JSON simple para debug/uso en web
-    import json
-    payload = {
-        "generated_at_utc": generated_at.isoformat(),
-        "days_ahead": days_ahead,
-        "count": len(final),
-        "items": [
-            {
-                "show_id": a.show_id,
-                "show_name": a.show_name,
-                "date": a.date.isoformat(),
-                "guests": list(a.guests),
-                "sources": list(a.sources),
-            }
-            for a in sorted(final, key=lambda x: (x.date, x.show_name))
-        ],
-    }
-    OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            json_items.append({
+                "show_id": show_id,
+                "show_name": show_name,
+                "air_date_local": d.isoformat(),
+                "airtime_local": airtime_local,
+                "tz_local": tz_local,
+                "start_argentina": ar_start.isoformat(),
+                "end_argentina": ar_end.isoformat(),
+                "guests": guests,
+                "sources": src_list if include_sources else [],
+            })
 
-    print(f"[OK] {len(final)} eventos → {OUTPUT_ICS} / {OUTPUT_JSON}")
+    ics_text = build_ics(episodes)
+    ICS_OUT.write_text(ics_text, encoding="utf-8")
+    JSON_OUT.write_text(json.dumps(json_items, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"OK: escrito {ICS_OUT}")
 
 
 if __name__ == "__main__":
+    import uuid
     main()
