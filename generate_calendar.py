@@ -65,18 +65,6 @@ def combine_celebs(confirmed_people: dict | None) -> list[str]:
     return out
 
 
-def filter_notes(notes: list[str]) -> list[str]:
-    out = []
-    for n in notes:
-        n = str(n).strip()
-        if not n:
-            continue
-        if n.lower().startswith("auto-updated"):
-            continue
-        out.append(n)
-    return out
-
-
 def build_event_lines(
     stamp: str,
     summary: str,
@@ -93,7 +81,6 @@ def build_event_lines(
     out.append(f"SUMMARY:{ics_escape(summary)}")
     if location:
         out.append(f"LOCATION:{ics_escape(location)}")
-
     desc = "\n".join(description_lines)
     out.append("DESCRIPTION:" + ics_escape(desc))
 
@@ -147,6 +134,8 @@ def main() -> None:
         start_local = ev.get("start_local")
         duration_minutes = ev.get("duration_minutes")
 
+        event_url = str(ev.get("event_url", "") or "").strip()
+
         broadcast = ev.get("broadcast", {}) or {}
         tv = ensure_list(broadcast.get("tv"))
         streaming = ensure_list(broadcast.get("streaming"))
@@ -169,7 +158,7 @@ def main() -> None:
         headliners = ensure_list(ev.get("headliners"))
         pop_artists = ensure_list(ev.get("pop_artists"))
 
-        notes = filter_notes(ensure_list(ev.get("notes")))
+        notes = ensure_list(ev.get("notes"))
 
         days = ev.get("days")
         day_entries: list[dict] = []
@@ -191,48 +180,56 @@ def main() -> None:
             day_set_times = day_ev.get("set_times", ev.get("set_times", [])) or []
             day_headliners = ensure_list(day_ev.get("headliners")) or headliners
             day_pop = ensure_list(day_ev.get("pop_artists")) or pop_artists
-            day_notes = filter_notes(ensure_list(day_ev.get("notes")) + notes)
+            day_notes = ensure_list(day_ev.get("notes")) + notes
 
+            # 1) Red carpet como evento separado (solo si confirmado + horario completo)
             if red_confirmed and tz_local and red_start_local and red_duration_minutes:
                 rc_local_dt = parse_local_dt(day_date, str(red_start_local), str(tz_local))
                 rc_start = rc_local_dt.astimezone(TZ_AR)
                 rc_end = (rc_local_dt + timedelta(minutes=int(red_duration_minutes))).astimezone(TZ_AR)
 
-                desc_lines: list[str] = []
-                desc_lines.append("Hora Argentina: " + ar_time_window_style(rc_start, rc_end))
+                desc_lines_rc: list[str] = []
+                desc_lines_rc.append("Hora Argentina: " + ar_time_window_style(rc_start, rc_end))
                 if tv:
-                    desc_lines.append("TV (origen): " + "; ".join(tv) + ".")
+                    desc_lines_rc.append("TV (origen): " + "; ".join(tv) + ".")
                 if streaming:
-                    desc_lines.append("Streaming (origen): " + "; ".join(streaming) + ".")
-                if red_where:
-                    desc_lines.append("Red carpet confirmado (oficial): " + red_where + ".")
+                    desc_lines_rc.append("Streaming (origen): " + "; ".join(streaming) + ".")
+
+                if event_url:
+                    desc_lines_rc.append("Fuente (evento): " + event_url)
 
                 if top_nominated:
-                    desc_lines.append("Más nominadas/os: " + "; ".join(top_nominated) + ".")
+                    desc_lines_rc.append("Más nominadas/os: " + "; ".join(top_nominated) + ".")
                     if nomination_source_url:
-                        desc_lines.append("Fuente (nominados): " + nomination_source_url)
+                        desc_lines_rc.append("Fuente (nominados): " + nomination_source_url)
 
                 if special_awards:
-                    desc_lines.append("Premios especiales confirmados: " + "; ".join(special_awards) + ".")
+                    desc_lines_rc.append("Premios especiales confirmados: " + "; ".join(special_awards) + ".")
 
                 if celebs:
-                    desc_lines.append("Celebridades que van: " + "; ".join(celebs) + ".")
+                    desc_lines_rc.append("Celebridades que van: " + "; ".join(celebs) + ".")
 
                 for n in day_notes:
-                    desc_lines.append(n)
+                    if str(n).strip():
+                        desc_lines_rc.append(str(n).strip())
+
+                rc_summary = f"{title} — Red Carpet"
+                if red_where:
+                    rc_summary = f"{title} — Red Carpet ({red_where})"
 
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
-                        summary=f"{title} — Red Carpet",
+                        summary=rc_summary,
                         location=location,
-                        description_lines=desc_lines,
+                        description_lines=desc_lines_rc,
                         dtstart_ba=rc_start,
                         dtend_ba=rc_end,
                         allday_date=None,
                     )
                 )
 
+            # 2) Evento principal (NO mencionar red carpet)
             desc_lines_main: list[str] = []
             has_time = bool(start_local and tz_local and duration_minutes)
             if has_time:
@@ -250,8 +247,8 @@ def main() -> None:
             if streaming:
                 desc_lines_main.append("Streaming (origen): " + "; ".join(streaming) + ".")
 
-            if red_confirmed and red_where:
-                desc_lines_main.append("Red carpet confirmado (oficial): " + red_where + ".")
+            if event_url:
+                desc_lines_main.append("Fuente (evento): " + event_url)
 
             if top_nominated:
                 desc_lines_main.append("Más nominadas/os: " + "; ".join(top_nominated) + ".")
@@ -295,7 +292,8 @@ def main() -> None:
                 desc_lines_main.append("Celebridades que van: " + "; ".join(celebs) + ".")
 
             for n in day_notes:
-                desc_lines_main.append(n)
+                if str(n).strip():
+                    desc_lines_main.append(str(n).strip())
 
             if has_time:
                 lines.extend(
