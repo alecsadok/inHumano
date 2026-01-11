@@ -13,6 +13,7 @@ from dateutil import parser as dtparser
 
 TZ_AR = ZoneInfo("America/Argentina/Buenos_Aires")
 UA = "Mozilla/5.0 (compatible; inHumanoCalendarBot/1.0; +https://alecsadok.github.io/inHumano/)"
+
 WATCHLIST = Path("event_watchlist.yaml")
 OUT_EVENTS = Path("events.yaml")
 WIKI_BASE = "https://en.wikipedia.org"
@@ -24,7 +25,7 @@ def http_get(url: str) -> str:
     return r.text
 
 
-def clean_wiki_text(s: str) -> str:
+def clean_text(s: str) -> str:
     s = re.sub(r"\[\d+\]", "", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
@@ -80,7 +81,6 @@ def preferred_terms_from_name(name: str) -> list[str]:
         w = w.strip()
         if len(w) >= 4 and w not in {"awards", "award", "ceremony", "the", "with", "and"}:
             toks.append(w)
-    # dedupe preserve order
     seen = set()
     out = []
     for t in toks:
@@ -95,27 +95,23 @@ def score_ceremony_link(href: str, anchor_text: str, year: int, preferred_terms:
     a = (anchor_text or "").lower()
     score = 0
 
-    # hard penalties for clearly-not-ceremony pages
     if re.search(r"/wiki/\d{4}_in_", h):
-        score -= 200
+        score -= 250
     if "help:" in h or "wikipedia:" in h or "special:" in h:
-        score -= 200
+        score -= 250
     if "list_of" in h:
-        score -= 40
+        score -= 60
 
-    # year / ordinal heuristics
     if str(year) in h or str(year) in a:
         score += 60
     if re.search(r"\b\d{1,3}(st|nd|rd|th)\b", h) or re.search(r"\b\d{1,3}(st|nd|rd|th)\b", a):
-        score += 40
+        score += 45
 
-    # ceremony-ish words
     if "award" in h or "award" in a:
         score += 15
     if "ceremon" in h or "ceremon" in a:
         score += 15
 
-    # bias toward the event name tokens
     for t in preferred_terms:
         if t in h:
             score += 18
@@ -139,7 +135,7 @@ def pick_best_ceremony_url(tr: BeautifulSoup, year: int, preferred_terms: list[s
             best_score = sc
             best_href = href
 
-    if best_href and best_score > -50:
+    if best_href and best_score > -80:
         return WIKI_BASE + best_href
     return None
 
@@ -152,12 +148,13 @@ def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int, pref
 
     soup = BeautifulSoup(html, "html.parser")
     end = today + timedelta(days=days_ahead)
+
     tables = soup.select("table.wikitable")
     candidates: list[tuple[date, str | None]] = []
 
     for table in tables:
         for tr in table.select("tr"):
-            row_text = clean_wiki_text(tr.get_text(" ", strip=True))
+            row_text = clean_text(tr.get_text(" ", strip=True))
             if not row_text:
                 continue
             ds = parse_any_date_candidates(row_text)
@@ -166,28 +163,17 @@ def next_future_from_wikipedia_list(url: str, today: date, days_ahead: int, pref
             d = ds[0]
             if not (today <= d <= end):
                 continue
-
             ceremony_url = pick_best_ceremony_url(tr, d.year, preferred_terms)
             candidates.append((d, ceremony_url))
 
     if not candidates:
-        try:
-            html2 = http_get(url)
-            soup2 = BeautifulSoup(html2, "html.parser")
-            text = soup2.get_text(" ", strip=True)
-            ds2 = parse_any_date_candidates(text)
-            for d in ds2:
-                if today <= d <= end:
-                    return d, None
-        except Exception:
-            pass
         return None, None
 
     candidates.sort(key=lambda x: x[0])
     return candidates[0][0], candidates[0][1]
 
 
-def extract_top_nominated_from_page(url: str) -> list[str]:
+def extract_top_nominated_from_infobox(url: str) -> list[str]:
     try:
         html = http_get(url)
     except Exception:
@@ -199,28 +185,30 @@ def extract_top_nominated_from_page(url: str) -> list[str]:
         return []
 
     results: list[str] = []
-
     for tr in infobox.select("tr"):
         th = tr.select_one("th")
         td = tr.select_one("td")
         if not th or not td:
             continue
-        k = clean_wiki_text(th.get_text(" ", strip=True)).lower()
-        v = clean_wiki_text(td.get_text(" ", strip=True))
+
+        k = clean_text(th.get_text(" ", strip=True)).lower()
+        v = clean_text(td.get_text(" ", strip=True))
         if not v:
             continue
 
-        # flexible matching
-        if "most nomination" in k or "most nominated" in k:
+        if ("most nomination" in k) or ("most nominated" in k):
+            # Ejemplos:
+            # - "Most nominations" (música: artistas)
+            # - "Most nominations (film)" / "(television)"
+            # - "Most nominations – Film / Television"
             parts = [p.strip() for p in re.split(r"\s*;\s*", v) if p.strip()]
             if parts:
                 results.extend(parts)
             else:
                 results.append(v)
 
-    # dedupe preserve order
-    out: list[str] = []
     seen = set()
+    out = []
     for x in results:
         if x not in seen:
             seen.add(x)
@@ -228,7 +216,16 @@ def extract_top_nominated_from_page(url: str) -> list[str]:
     return out
 
 
-def build_event_entry(item: dict, d: date, top_nominated: list[str]) -> dict:
+def infer_nomination_source_for_announcements(item_id: str) -> str | None:
+    # Para anuncios de nominaciones, usamos una página anual/ceremonias de Wikipedia para poder extraer "Most nominations"
+    # (cuando existe). Esto evita depender de la página de “key dates”, que no tiene "most nominations".
+    mapping = {
+        "oscars_noms": "https://en.wikipedia.org/wiki/List_of_Academy_Awards_ceremonies",
+    }
+    return mapping.get(item_id)
+
+
+def build_event_entry(item: dict, d: date, top_nominated: list[str], nomination_source_url: str | None) -> dict:
     entry = {
         "title": f"{item['name']}",
         "date": d.isoformat(),
@@ -237,6 +234,7 @@ def build_event_entry(item: dict, d: date, top_nominated: list[str]) -> dict:
         "broadcast": item.get("broadcast", {"tv": [], "streaming": [], "red_carpet": {"confirmed": False}}),
         "confirmed_people": {"a_list": [], "b_list": [], "argentines": []},
         "top_nominated": top_nominated,
+        "nomination_source_url": nomination_source_url or "",
         "confirmed_performers": [],
         "special_awards": [],
         "notes": [
@@ -274,10 +272,12 @@ def main() -> None:
         if not isinstance(item, dict):
             continue
 
+        item_id = str(item.get("id", "")).strip()
+        name = str(item.get("name", "")).strip()
         status = item.get("status", "active")
-        kind = item.get("kind", "")
+        kind = str(item.get("kind", "")).strip()
         sources = item.get("sources", []) or []
-        preferred_terms = preferred_terms_from_name(str(item.get("name", "")))
+        preferred_terms = preferred_terms_from_name(name)
 
         for src in sources:
             st = src.get("type")
@@ -333,13 +333,30 @@ def main() -> None:
             continue
 
         top_nominated: list[str] = []
-        if kind == "awards":
-            if ceremony_url:
-                top_nominated = extract_top_nominated_from_page(ceremony_url)
-            if not top_nominated and picked_source_url and "wikipedia.org/wiki/" in picked_source_url:
-                top_nominated = extract_top_nominated_from_page(picked_source_url)
+        nomination_source_url: str | None = None
 
-        events_out.append(build_event_entry(item, next_date, top_nominated))
+        # Para TODOS los eventos relacionados a premios/nominaciones:
+        # - awards: usamos la página anual de la ceremonia si la encontramos
+        # - announcement: intentamos mapear a la lista de ceremonias (ej Oscars noms)
+        if kind in {"awards", "announcement"}:
+            if ceremony_url:
+                top_nominated = extract_top_nominated_from_infobox(ceremony_url)
+                nomination_source_url = ceremony_url if top_nominated else ceremony_url
+
+            if not top_nominated and isinstance(picked_source_url, str) and "wikipedia.org/wiki/" in picked_source_url:
+                # fallback: si la fuente ya es una página anual con infobox
+                top_nominated = extract_top_nominated_from_infobox(picked_source_url)
+                nomination_source_url = picked_source_url if top_nominated else nomination_source_url
+
+            if not top_nominated and kind == "announcement":
+                inferred = infer_nomination_source_for_announcements(item_id)
+                if inferred:
+                    d2, cu2 = next_future_from_wikipedia_list(inferred, today, days_ahead, preferred_terms)
+                    if cu2:
+                        top_nominated = extract_top_nominated_from_infobox(cu2)
+                        nomination_source_url = cu2 if top_nominated else cu2
+
+        events_out.append(build_event_entry(item, next_date, top_nominated, nomination_source_url))
 
     OUT_EVENTS.write_text(
         yaml.safe_dump({"events": events_out}, sort_keys=False, allow_unicode=True),
