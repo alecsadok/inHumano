@@ -1,100 +1,532 @@
-events:
-  # === PREMIACIONES / TV ===
-
-  - title: "Golden Globes 2026 — Ceremonia"
-    date: "2026-01-11"
-    start_local: "20:00"
-    tz_local: "America/New_York"
-    duration_minutes: 180
-    location: "The Beverly Hilton, Beverly Hills, CA, USA"
-    broadcast:
-      tv: ["CBS"]
-      streaming: ["Paramount+"]
-      red_carpet:
-        confirmed: true
-        where: "E! / Peacock (según publicación oficial de E!)"
-        start_local: "18:00"
-        duration_minutes: 120
-    confirmed_people:
-      a_list: []
-      b_list: []
-      argentines: []
-    top_nominated: []
-    confirmed_performers: []
-    special_awards: []
-    notes:
-      - "Solo confirmados por fuentes oficiales/confiables/Wikipedia."
-
-  - title: "GRAMMY Awards 2026 — Ceremonia"
-    date: "2026-02-01"
-    start_local: "20:00"
-    tz_local: "America/New_York"
-    duration_minutes: 210
-    location: "Crypto.com Arena, Los Angeles, CA, USA"
-    broadcast:
-      tv: ["CBS"]
-      streaming: ["Paramount+"]
-      red_carpet:
-        confirmed: false
-    confirmed_people:
-      a_list: []
-      b_list: []
-      argentines: []
-    top_nominated: []
-    confirmed_performers: []
-    special_awards: []
-    notes:
-      - "Performances/red carpet: completar solo cuando esté anunciado oficialmente."
-
-  - title: "Oscars 2026 (98th) — Ceremonia"
-    date: "2026-03-15"
-    start_local: "19:00"
-    tz_local: "America/New_York"
-    duration_minutes: 210
-    location: "Dolby Theatre, Hollywood, Los Angeles, CA, USA"
-    broadcast:
-      tv: ["ABC"]
-      streaming: []
-      red_carpet:
-        confirmed: false
-    confirmed_people:
-      a_list: ["Conan O'Brien (host)"]
-      b_list: []
-      argentines: []
-    top_nominated: []
-    confirmed_performers: []
-    special_awards: []
-    notes:
-      - "Hora Argentina se calcula automáticamente con DST USA."
-
-  # === FESTIVALES (ejemplo) ===
-  - title: "Lollapalooza Argentina 2026 — Festival"
-    date: "2026-03-13"
-    tz_local: "America/Argentina/Buenos_Aires"
-    location: "Hipódromo de San Isidro, Buenos Aires, Argentina"
-    broadcast:
-      tv: []
-      streaming: []
-      red_carpet:
-        confirmed: false
-    headliners:
-      - "Sabrina Carpenter"
-      - "Tyler, The Creator"
-      - "Skrillex"
-      - "Lorde"
-    pop_artists:
-      - "Sabrina Carpenter"
-      - "Lorde"
-    confirmed_people:
-      a_list: ["Sabrina Carpenter", "Tyler, The Creator"]
-      b_list: ["Lorde"]
-      argentines: []
-    notes:
-      - "Set times por artista: agregar cuando el festival publique el timetable oficial."
-    days:
-      - date: "2026-03-13"
-        set_times: []
-      - date: "2026-03-14"
-        set_times: []
-      - date: "2026-03-15"
-        set_times: []
+{
+  "calendar_year": 2026,
+  "timezone": "America/Argentina/Buenos_Aires",
+  "updated_on": "2026-11-26",
+  "events": [
+    {
+      "id": "critics-choice-2026",
+      "title": "Critics Choice Awards 2026 — Ceremonia",
+      "date": "2026-01-04",
+      "end_date": "2026-01-05",
+      "location": "Barker Hangar, Santa Monica, California, USA",
+      "broadcast": {
+        "tv": [
+          "E!",
+          "USA Network"
+        ],
+        "streaming": [
+          "Peacock (disponible al día siguiente)"
+        ]
+      },
+      "event_url": "https://www.criticschoice.com/one-battle-after-another-wins-best-picture-at-the-31st-annual-critics-choice-awards/",
+      "notes": [
+        "Ceremonia de la 31.ª edición; Chelsea Handler fue la conductora.",
+        "One Battle After Another ganó Mejor película; Frankenstein y Sinners encabezaron categorías cinematográficas; Adolescence lideró las categorías de series."
+      ]
+    },
+    {
+      "id": "golden-globes-2026",
+      "title": "Golden Globes 2026 — Ceremonia",
+      "date": "2026-01-11",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "The Beverly Hilton, Beverly Hills, California, USA",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": [
+          "Paramount+"
+        ]
+      },
+      "event_url": "https://goldenglobes.com/winners-nominees/",
+      "notes": [
+        "La base oficial de ganadores y nominados de 2026 respalda la edición y sus resultados."
+      ]
+    },
+    {
+      "id": "grammys-2026",
+      "title": "GRAMMY Awards 2026 — Ceremonia",
+      "date": "2026-02-01",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 210,
+      "location": "Crypto.com Arena, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": [
+          "Paramount+"
+        ]
+      },
+      "event_url": "https://www.grammy.com/news/2026-grammys-nominations-full-winners-nominees-list/",
+      "notes": [
+        "Bad Bunny ganó Álbum del Año con DeBÍ TiRAR MáS FOToS, primer álbum en español en obtener el premio.",
+        "Olivia Dean ganó Mejor artista nuevo; Kendrick Lamar y SZA ganaron Grabación del Año por luther."
+      ]
+    },
+    {
+      "id": "bafta-film-2026",
+      "title": "EE BAFTA Film Awards 2026 — Ceremonia",
+      "date": "2026-02-22",
+      "end_date": "2026-02-23",
+      "location": "Royal Festival Hall, Londres, Reino Unido",
+      "broadcast": {
+        "tv": [
+          "BBC One"
+        ],
+        "streaming": [
+          "BBC iPlayer"
+        ]
+      },
+      "event_url": "https://www.bafta.org/media-centre/press-releases/winners-announced-2026-film-awards/",
+      "notes": [
+        "One Battle After Another obtuvo seis BAFTA, incluidos Mejor película y dirección.",
+        "Sinners obtuvo tres premios; Frankenstein obtuvo tres; Hamnet obtuvo dos.",
+        "Alan Cumming condujo la ceremonia."
+      ]
+    },
+    {
+      "id": "actor-awards-2026",
+      "title": "The Actor Awards 2026 — Ceremonia",
+      "date": "2026-03-01",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 150,
+      "location": "Shrine Auditorium & Expo Hall, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Netflix"
+        ]
+      },
+      "event_url": "https://www.actorawards.org/where-watch",
+      "red_carpet": {
+        "confirmed": true,
+        "title": "The Actor Awards 2026 — Red Carpet / Official Pre-Show",
+        "start_local": "19:00",
+        "duration_minutes": 60,
+        "source_url": "https://actorawards.org/media/news/releases/paige-desorbo-and-scott-evans-host-actors-red-carpet-32nd-annual-actor-awards"
+      },
+      "special_awards": [
+        "SAG-AFTRA Life Achievement Award — Harrison Ford"
+      ],
+      "presenters": [
+        "Woody Harrelson",
+        "Allison Janney",
+        "Andy Garcia",
+        "Benicio del Toro",
+        "Gwyneth Paltrow",
+        "Jacob Elordi",
+        "Jenna Ortega",
+        "Jessie Buckley"
+      ],
+      "event_extra_source": "https://www.actorawards.org/media/news/releases/presenters-announces-32nd-annual-actor-awards-presented-sag-aftra",
+      "notes": [
+        "Kristen Bell condujo la ceremonia.",
+        "El pre-show oficial The Actor’s Red Carpet se transmitió en Netflix desde las 19:00 ET."
+      ]
+    },
+    {
+      "id": "oscars-2026",
+      "title": "Oscars 2026 (98th) — Ceremonia",
+      "date": "2026-03-15",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 210,
+      "location": "Dolby Theatre, Hollywood, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.oscars.org/oscars/ceremonies/2026",
+      "presenters": [
+        "Conan O'Brien (host)"
+      ],
+      "notes": [
+        "La página oficial de la Academia contiene ganadores y nominados de la 98.ª edición."
+      ]
+    },
+    {
+      "id": "lollapalooza-argentina-2026",
+      "title": "Lollapalooza Argentina 2026 — Festival",
+      "date": "2026-03-13",
+      "end_date": "2026-03-16",
+      "location": "Hipódromo de San Isidro, San Isidro, Buenos Aires, Argentina",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Flow (canales 605–608, según cobertura publicada)"
+        ]
+      },
+      "headliners": [
+        "Tyler, The Creator",
+        "Lorde",
+        "Chappell Roan",
+        "Skrillex",
+        "Lewis Capaldi",
+        "Paulo Londra",
+        "Sabrina Carpenter",
+        "Deftones",
+        "Doechii"
+      ],
+      "pop_artists": [
+        "Lorde",
+        "Chappell Roan",
+        "Sabrina Carpenter",
+        "Doechii",
+        "Addison Rae",
+        "Katseye",
+        "Marina",
+        "Aitana",
+        "Danny Ocean"
+      ],
+      "argentine_artists": [
+        "Paulo Londra",
+        "Ratones Paranoicos",
+        "Soledad",
+        "Ángela Torres",
+        "Turf",
+        "Massacre",
+        "Yami Safdie",
+        "Joaquina",
+        "Militantes del Climax"
+      ],
+      "event_url": "https://turismo.buenosaires.gob.ar/es/propuestaslolla",
+      "lineup_source_url": "https://www.lanacion.com.ar/espectaculos/lollapalooza-argentina-2026-accesos-horarios-y-todo-lo-que-hay-que-saber-para-los-tres-dias-de-nid12032026/",
+      "notes": [
+        "Tres jornadas: 13, 14 y 15 de marzo.",
+        "La grilla por día fue publicada por medios locales; no se incorporan horarios individuales de sets en esta actualización."
+      ]
+    },
+    {
+      "id": "coachella-2026-weekend-1",
+      "title": "Coachella 2026 — Weekend 1",
+      "date": "2026-04-10",
+      "end_date": "2026-04-13",
+      "location": "Empire Polo Club, Indio, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube (livestream oficial)"
+        ]
+      },
+      "headliners": [
+        "Sabrina Carpenter",
+        "Justin Bieber",
+        "Karol G"
+      ],
+      "pop_artists": [
+        "The xx",
+        "The Strokes",
+        "Anyma",
+        "Young Thug",
+        "BigBang"
+      ],
+      "event_url": "https://www.coachella.com/lineup/",
+      "lineup_source_url": "https://coachellavalley.com/coachella-music-festival-announces-2026-lineup/",
+      "notes": [
+        "Primer fin de semana: 10 al 12 de abril."
+      ]
+    },
+    {
+      "id": "coachella-2026-weekend-2",
+      "title": "Coachella 2026 — Weekend 2",
+      "date": "2026-04-17",
+      "end_date": "2026-04-20",
+      "location": "Empire Polo Club, Indio, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube (livestream oficial)"
+        ]
+      },
+      "headliners": [
+        "Sabrina Carpenter",
+        "Justin Bieber",
+        "Karol G"
+      ],
+      "pop_artists": [
+        "The xx",
+        "The Strokes",
+        "Anyma",
+        "Young Thug",
+        "BigBang"
+      ],
+      "event_url": "https://www.coachella.com/lineup/",
+      "lineup_source_url": "https://coachellavalley.com/coachella-music-festival-announces-2026-lineup/",
+      "notes": [
+        "Segundo fin de semana: 17 al 19 de abril."
+      ]
+    },
+    {
+      "id": "amas-2026",
+      "title": "American Music Awards 2026 — Ceremonia",
+      "date": "2026-05-25",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "MGM Grand Garden Arena, Las Vegas, Nevada, USA",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": [
+          "Paramount+"
+        ]
+      },
+      "event_url": "https://www.theamas.com/2026/05/how-to-watch-the-52nd-american-music-awards/",
+      "presenters": [
+        "Queen Latifah (host)",
+        "Alysa Liu",
+        "Anthony Ramos",
+        "EJAE",
+        "Hilary Duff",
+        "Jason Derulo",
+        "John Legend",
+        "Ludacris",
+        "Mariah the Scientist",
+        "Melanie Martinez",
+        "Nikki Glaser",
+        "Paula Abdul",
+        "REI AMI"
+      ],
+      "performers": [
+        "Billy Idol",
+        "KAROL G",
+        "Darius Rucker with Hootie & the Blowfish",
+        "KATSEYE",
+        "Keith Urban",
+        "Maluma",
+        "New Kids on the Block",
+        "The Pussycat Dolls + Busta Rhymes",
+        "Riley Green",
+        "SOMBR",
+        "Teddy Swims",
+        "Teyana Taylor",
+        "Twenty One Pilots"
+      ],
+      "special_awards": [
+        "Lifetime Achievement Award — Billy Idol",
+        "International Artist Award of Excellence — KAROL G",
+        "Veterans Voice Award — Darius Rucker"
+      ],
+      "notes": [
+        "La ceremonia se emitió el Memorial Day, lunes 25 de mayo, a las 20:00 ET."
+      ]
+    },
+    {
+      "id": "governors-ball-2026",
+      "title": "The Governors Ball 2026 — Festival",
+      "date": "2026-06-05",
+      "end_date": "2026-06-08",
+      "location": "Flushing Meadows Corona Park, Queens, New York, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": []
+      },
+      "headliners": [
+        "Lorde",
+        "Stray Kids",
+        "A$AP Rocky"
+      ],
+      "pop_artists": [
+        "KATSEYE",
+        "Jennie",
+        "Kali Uchis",
+        "Dominic Fike",
+        "Baby Keem",
+        "Mariah the Scientist"
+      ],
+      "event_url": "https://news.livenationentertainment.com/news/governors-ball-2026-lineup-announced",
+      "notes": [
+        "Festival del 5 al 7 de junio de 2026."
+      ]
+    },
+    {
+      "id": "tomorrowland-2026-weekend-1",
+      "title": "Tomorrowland Belgium 2026 — Weekend 1",
+      "date": "2026-07-17",
+      "end_date": "2026-07-20",
+      "location": "De Schorre, Boom, Bélgica",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Livestream oficial en Tomorrowland.com y app de Tomorrowland"
+        ]
+      },
+      "event_url": "https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns-in-2026",
+      "lineup_source_url": "https://press.belgium.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium",
+      "notes": [
+        "Primer fin de semana: 17 al 19 de julio."
+      ]
+    },
+    {
+      "id": "tomorrowland-2026-weekend-2",
+      "title": "Tomorrowland Belgium 2026 — Weekend 2",
+      "date": "2026-07-24",
+      "end_date": "2026-07-27",
+      "location": "De Schorre, Boom, Bélgica",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Livestream oficial en Tomorrowland.com y app de Tomorrowland"
+        ]
+      },
+      "event_url": "https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns-in-2026",
+      "lineup_source_url": "https://press.belgium.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium",
+      "notes": [
+        "Segundo fin de semana: 24 al 26 de julio."
+      ]
+    },
+    {
+      "id": "outside-lands-2026",
+      "title": "Outside Lands 2026 — Festival",
+      "date": "2026-08-07",
+      "end_date": "2026-08-10",
+      "location": "Golden Gate Park, San Francisco, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Amazon Music (livestream de escenarios seleccionados)"
+        ]
+      },
+      "headliners": [
+        "Charli XCX",
+        "The xx",
+        "The Strokes",
+        "Turnstile",
+        "Death Cab for Cutie"
+      ],
+      "pop_artists": [
+        "Tinashe",
+        "Djo",
+        "Labrinth",
+        "Baby Keem",
+        "Mariah the Scientist",
+        "Lucy Dacus"
+      ],
+      "event_url": "https://www.sfoutsidelands.com/faq-app/",
+      "lineup_source_url": "https://pitchfork.com/story/outside-lands-2026-amazon-music-livestream-schedule-and-details/",
+      "notes": [
+        "Festival del 7 al 9 de agosto."
+      ]
+    },
+    {
+      "id": "creative-arts-emmys-2026-night-1",
+      "title": "Creative Arts Emmy Awards 2026 — Noche 1",
+      "date": "2026-09-05",
+      "end_date": "2026-09-06",
+      "location": "Peacock Theater, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": []
+      },
+      "event_url": "https://www.televisionacademy.com/calendar",
+      "notes": [
+        "Primera de las dos ceremonias presenciales de Creative Arts Emmy Awards."
+      ]
+    },
+    {
+      "id": "creative-arts-emmys-2026-night-2",
+      "title": "Creative Arts Emmy Awards 2026 — Noche 2",
+      "date": "2026-09-06",
+      "end_date": "2026-09-07",
+      "location": "Peacock Theater, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": []
+      },
+      "event_url": "https://www.televisionacademy.com/calendar",
+      "notes": [
+        "Segunda de las dos ceremonias presenciales de Creative Arts Emmy Awards."
+      ]
+    },
+    {
+      "id": "emmys-2026",
+      "title": "78th Primetime Emmy Awards 2026 — Telecast",
+      "date": "2026-09-14",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "Peacock Theater, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.televisionacademy.com/watch/",
+      "presenters": [
+        "Mariska Hargitay (host)",
+        "Odessa A'zion",
+        "David Boreanaz",
+        "Linda Cardellini",
+        "Macaulay Culkin",
+        "Alan Cumming",
+        "Sally Field",
+        "Sarah Michelle Gellar",
+        "Jon Hamm",
+        "David Harbour",
+        "Marcello Hernández",
+        "Dan Levy",
+        "Niecy Nash-Betts",
+        "Keke Palmer",
+        "Amy Poehler",
+        "Florence Pugh",
+        "Zendaya"
+      ],
+      "special_awards": [
+        "Bob Hope Humanitarian Award — Michael J. Fox"
+      ],
+      "event_extra_source": "https://www.televisionacademy.com/features/news/awards-news/78th-emmy-awards-release",
+      "notes": [
+        "Telecast principal del lunes 14 de septiembre, 20:00 ET / 17:00 PT.",
+        "Las ceremonias presenciales de Creative Arts se celebraron el 5 y 6 de septiembre."
+      ]
+    },
+    {
+      "id": "vmas-2026",
+      "title": "MTV Video Music Awards 2026 — Ceremonia",
+      "date": "2026-09-27",
+      "start_local": "19:30",
+      "tz_local": "America/New_York",
+      "duration_minutes": 120,
+      "location": "Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "CBS",
+          "MTV"
+        ],
+        "streaming": [
+          "Paramount+"
+        ]
+      },
+      "event_url": "https://www.paramountpressexpress.com/mtv/shows/2026-mtv-video-music-awards-vmas/",
+      "performers": [
+        "Madonna (opening performance)"
+      ],
+      "presenters": [
+        "Snoop Dogg (host)",
+        "Alex Warren",
+        "Charli xcx",
+        "Ciara Miller",
+        "David Corenswet",
+        "Jeff Probst",
+        "Teyana Taylor",
+        "Troye Sivan",
+        "Tyla"
+      ],
+      "event_extra_source": "https://www.paramountpressexpress.com/mtv/shows/2026-mtv-video-music-awards-vmas/releases/?view=113305-presenters-announced-for-the-2026-video-music-awards-vmas-airing-sunday-sept-27-on-cbs",
+      "notes": [
+        "La transmisión se emitió de 19:30 a 21:30 ET; CBS y MTV, con streaming en Paramount+."
+      ]
+    }
+  ]
+}
