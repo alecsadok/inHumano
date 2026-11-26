@@ -611,6 +611,28 @@
         "Roselyn Sánchez fue anunciada como conductora de la ceremonia televisada.",
         "La Latin GRAMMY Premiere comenzó a las 15:00 ET y se transmitió en plataformas de la Academia; la ceremonia principal fue televisada por Univision a las 20:00 ET."
       ]
+    },
+    {
+      "id": "grammys-2027",
+      "title": "69th Annual GRAMMY Awards 2027 — Ceremonia",
+      "date": "2027-02-07",
+      "location": "Crypto.com Arena, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Disney+",
+          "Hulu"
+        ]
+      },
+      "event_url": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
+      "notes": [
+        "La Recording Academy confirmó oficialmente la ceremonia para el domingo 7 de febrero de 2027.",
+        "La edición 2027 será la primera transmisión de los GRAMMY por ABC desde 1972 y la primera con simulcast en Disney+ y Hulu.",
+        "Las nominaciones se anunciaron el 16 de noviembre de 2026."
+      ],
+      "event_extra_source": "https://abc.com/news/f055deb9-3d58-4ecf-bdf2-70536dff9549/category/1138628"
     }
   ]
 }
