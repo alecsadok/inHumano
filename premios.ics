@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//inHumano//Calendario A-List AR//ES
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Eventos A-List 2026 — Argentina (GMT-3)
+X-WR-CALNAME:Calendario A-List — Premios y conciertos (Argentina UTC-3)
 X-WR-TIMEZONE:America/Argentina/Buenos_Aires
 BEGIN:VEVENT
 UID:critics-choice-2026@inhumano.github.io
@@ -28,7 +28,7 @@ LOCATION:The Beverly Hilton\, Beverly Hills\, California\, USA
 DESCRIPTION:Canal/Streaming: CBS / Paramount+\nLa base oficial de ganadores
   y nominados de 2026 respalda la edición y sus resultados.\nFuente (event
  o): https://goldenglobes.com/winners-nominees/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260111T220000
+DTSTART:20260112T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2026@inhumano.github.io
@@ -40,7 +40,7 @@ DESCRIPTION:Canal/Streaming: CBS / Paramount+\nBad Bunny ganó Álbum del A
  remio.\nOlivia Dean ganó Mejor artista nuevo\; Kendrick Lamar y SZA ganar
  on Grabación del Año por luther.\nFuente (evento): https://www.grammy.co
  m/news/2026-grammys-nominations-full-winners-nominees-list/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260201T220000
+DTSTART:20260202T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:bafta-film-2026@inhumano.github.io
@@ -68,7 +68,7 @@ DESCRIPTION:Canal/Streaming: Netflix\nPresentadores: Woody Harrelson\; Alli
  as 19:00 ET.\nFuente (evento): https://www.actorawards.org/where-watch\nFu
  ente (información adicional): https://www.actorawards.org/media/news/rele
  ases/presenters-announces-32nd-annual-actor-awards-presented-sag-aftra
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260301T220000
+DTSTART:20260302T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:actor-awards-2026-red-carpet@inhumano.github.io
@@ -78,7 +78,7 @@ LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
 DESCRIPTION:Pre-show oficial de la ceremonia.\nFuente (evento): https://act
  orawards.org/media/news/releases/paige-desorbo-and-scott-evans-host-actors
  -red-carpet-32nd-annual-actor-awards
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260301T210000
+DTSTART:20260302T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:oscars-2026@inhumano.github.io
@@ -88,7 +88,7 @@ LOCATION:Dolby Theatre\, Hollywood\, Los Angeles\, California\, USA
 DESCRIPTION:Canal/Streaming: ABC\nPresentadores: Conan O'Brien (host)\nLa p
  ágina oficial de la Academia contiene ganadores y nominados de la 98.ª e
  dición.\nFuente (evento): https://www.oscars.org/oscars/ceremonies/2026
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260315T200000
+DTSTART:20260315T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:lollapalooza-argentina-2026@inhumano.github.io
@@ -156,7 +156,7 @@ DESCRIPTION:Canal/Streaming: CBS / Paramount+\nPerformers confirmados: Bill
  La ceremonia se emitió el Memorial Day\, lunes 25 de mayo\, a las 20:00 E
  T.\nFuente (evento): https://www.theamas.com/2026/05/how-to-watch-the-52nd
  -american-music-awards/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260525T210000
+DTSTART:20260526T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:governors-ball-2026@inhumano.github.io
@@ -247,7 +247,7 @@ DESCRIPTION:Canal/Streaming: NBC / Peacock\nPresentadores: Mariska Hargitay
  rts se celebraron el 5 y 6 de septiembre.\nFuente (evento): https://www.te
  levisionacademy.com/watch/\nFuente (información adicional): https://www.t
  elevisionacademy.com/features/news/awards-news/78th-emmy-awards-release
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260914T210000
+DTSTART:20260915T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:vmas-2026@inhumano.github.io
@@ -263,8 +263,8 @@ DESCRIPTION:Canal/Streaming: CBS / MTV / Paramount+\nPerformers confirmados
  uente (información adicional): https://www.paramountpressexpress.com/mtv/
  shows/2026-mtv-video-music-awards-vmas/releases/?view=113305-presenters-an
  nounced-for-the-2026-video-music-awards-vmas-airing-sunday-sept-27-on-cbs
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260927T203000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260927T223000
+DTSTART:20260927T233000Z
+DTEND:20260928T013000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:naacp-image-awards-2026@inhumano.github.io
@@ -274,7 +274,7 @@ LOCATION:Los Angeles\, California\, USA
 DESCRIPTION:Canal/Streaming: BET\nLa ceremonia se transmitió en vivo el s
  ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento): 
  https://naacp.org/events/57th-naacp-image-awards
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260228T220000
+DTSTART:20260301T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:brit-awards-2026@inhumano.github.io
@@ -308,8 +308,8 @@ DESCRIPTION:Canal/Streaming: Univision / Plataformas oficiales de Latin GRA
  aren-lizarazo-victor-nain-jr-and-marina-sena-to-perform-at-the-latin-gramm
  y-premiere/\nFuente (información adicional): https://www.latingrammy.com/
  es/noticias/presenters-announced-for-the-27th-annual-latin-grammy-awards/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20261112T220000
-DTEND;TZID=America/Argentina/Buenos_Aires:20261113T010000
+DTSTART:20261113T010000Z
+DTEND:20261113T040000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2027@inhumano.github.io
@@ -322,7 +322,7 @@ DESCRIPTION:Canal/Streaming: ABC / Disney+ / Hulu\nCeremonia principal: 19:
  idgers suman 7 cada una.\nFuente (evento): https://www.grammy.com/news/how
  -to-watch-2027-grammys/\nFuente (nominaciones): https://www.grammy.com/new
  s/2027-grammys-nominations-announcement/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20270207T210000
+DTSTART:20270208T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2027-premiere@inhumano.github.io
@@ -333,7 +333,7 @@ DESCRIPTION:Canal/Streaming: Disney+\nCeremonia de Premiere; se entregará
  la mayoría de las categorías antes de la transmisión principal.\nComien
  za 14:30 ET / 16:30 Argentina (UTC-3).\nFuente (evento): https://www.gramm
  y.com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20270207T163000
+DTSTART:20270207T193000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:critics-choice-nominations-2026@inhumano.github.io
