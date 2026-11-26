@@ -318,4 +318,13 @@ DESCRIPTION:Canal/Streaming: Univision / Plataformas oficiales de Latin G
 DTSTART;TZID=America/Argentina/Buenos_Aires:20261112220000
 DTEND;TZID=America/Argentina/Buenos_Aires:20261113010000
 END:VEVENT
+BEGIN:VEVENT
+UID:grammys-2027@inhumano.github.io
+DTSTAMP:20261126T120000Z
+SUMMARY:69th Annual GRAMMY Awards 2027 — Ceremonia
+LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: ABC / Disney+ / Hulu\nLa Recording Academy confirmó oficialmente la ceremonia para el domingo 7 de febrero de 2027.\nPrimera transmisión de los GRAMMY por ABC desde 1972 y primera con simulcast en Disney+ y Hulu.\nLas nominaciones se anunciaron el 16 de noviembre de 2026.\nFuente (evento): https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/\nFuente (confirmación ABC): https://abc.com/news/f055deb9-3d58-4ecf-bdf2-70536dff9549/category/1138628
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+END:VEVENT
 END:VCALENDAR
