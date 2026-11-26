@@ -30,7 +30,6 @@
       "date": "2026-01-11",
       "start_local": "20:00",
       "tz_local": "America/New_York",
-      "duration_minutes": 180,
       "location": "The Beverly Hilton, Beverly Hills, California, USA",
       "broadcast": {
         "tv": [
@@ -51,7 +50,6 @@
       "date": "2026-02-01",
       "start_local": "20:00",
       "tz_local": "America/New_York",
-      "duration_minutes": 210,
       "location": "Crypto.com Arena, Los Angeles, California, USA",
       "broadcast": {
         "tv": [
@@ -94,7 +92,6 @@
       "date": "2026-03-01",
       "start_local": "20:00",
       "tz_local": "America/New_York",
-      "duration_minutes": 150,
       "location": "Shrine Auditorium & Expo Hall, Los Angeles, California, USA",
       "broadcast": {
         "tv": [],
@@ -107,7 +104,6 @@
         "confirmed": true,
         "title": "The Actor Awards 2026 — Red Carpet / Official Pre-Show",
         "start_local": "19:00",
-        "duration_minutes": 60,
         "source_url": "https://actorawards.org/media/news/releases/paige-desorbo-and-scott-evans-host-actors-red-carpet-32nd-annual-actor-awards"
       },
       "special_awards": [
@@ -135,7 +131,6 @@
       "date": "2026-03-15",
       "start_local": "19:00",
       "tz_local": "America/New_York",
-      "duration_minutes": 210,
       "location": "Dolby Theatre, Hollywood, Los Angeles, California, USA",
       "broadcast": {
         "tv": [
@@ -269,7 +264,6 @@
       "date": "2026-05-25",
       "start_local": "20:00",
       "tz_local": "America/New_York",
-      "duration_minutes": 180,
       "location": "MGM Grand Garden Arena, Las Vegas, Nevada, USA",
       "broadcast": {
         "tv": [
@@ -452,7 +446,6 @@
       "date": "2026-09-14",
       "start_local": "20:00",
       "tz_local": "America/New_York",
-      "duration_minutes": 180,
       "location": "Peacock Theater, Los Angeles, California, USA",
       "broadcast": {
         "tv": [
