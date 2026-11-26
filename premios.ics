@@ -29,7 +29,6 @@ DESCRIPTION:Canal/Streaming: CBS / Paramount+\nLa base oficial de ganador
  es y nominados de 2026 respalda la edición y sus resultados.\nFuente (ev
  ento): https://goldenglobes.com/winners-nominees/
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260111220000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260112010000
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2026@inhumano.github.io
@@ -42,7 +41,6 @@ DESCRIPTION:Canal/Streaming: CBS / Paramount+\nBad Bunny ganó Álbum del A
   Grabación del Año por luther.\nFuente (evento): https://www.grammy.com/
  news/2026-grammys-nominations-full-winners-nominees-list/
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260201220000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260202013000
 END:VEVENT
 BEGIN:VEVENT
 UID:bafta-film-2026@inhumano.github.io
@@ -72,7 +70,6 @@ DESCRIPTION:Canal/Streaming: Netflix\nPresentadores: Woody Harrelson\; Al
  ews/releases/presenters-announces-32nd-annual-actor-awards-presented-sag
  -aftra
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260301220000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260302003000
 END:VEVENT
 BEGIN:VEVENT
 UID:actor-awards-2026-red-carpet@inhumano.github.io
@@ -83,7 +80,6 @@ DESCRIPTION:Canal/Streaming: Netflix\nPre-show oficial de la ceremonia.\n
  Fuente (evento): https://actorawards.org/media/news/releases/paige-desor
  bo-and-scott-evans-host-actors-red-carpet-32nd-annual-actor-awards
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260301210000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260301220000
 END:VEVENT
 BEGIN:VEVENT
 UID:oscars-2026@inhumano.github.io
@@ -95,7 +91,6 @@ DESCRIPTION:Canal/Streaming: ABC\nPresentadores: Conan O'Brien (host)\nLa
   edición.\nFuente (evento): https://www.oscars.org/oscars/ceremonies/202
  6
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260315200000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260315233000
 END:VEVENT
 BEGIN:VEVENT
 UID:lollapalooza-argentina-2026@inhumano.github.io
@@ -164,7 +159,6 @@ DESCRIPTION:Canal/Streaming: CBS / Paramount+\nPerformers confirmados: Bi
  a las 20:00 ET.\nFuente (evento): https://www.theamas.com/2026/05/how-to
  -watch-the-52nd-american-music-awards/
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260525210000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260526000000
 END:VEVENT
 BEGIN:VEVENT
 UID:governors-ball-2026@inhumano.github.io
@@ -259,7 +253,6 @@ DESCRIPTION:Canal/Streaming: NBC / Peacock\nPresentadores: Mariska Hargit
   https://www.televisionacademy.com/features/news/awards-news/78th-emmy-a
  wards-release
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260914210000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260915000000
 END:VEVENT
 BEGIN:VEVENT
 UID:vmas-2026@inhumano.github.io
