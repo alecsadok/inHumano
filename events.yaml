@@ -1,5 +1,5 @@
 {
-  "calendar_year": 2026,
+  "calendar_year": 2027,
   "timezone": "America/Argentina/Buenos_Aires",
   "updated_on": "2026-11-26",
   "events": [
@@ -634,7 +634,19 @@
       ],
       "event_extra_source": "https://www.grammy.com/news/2027-grammys-nominations-announcement/",
       "start_local": "19:00",
-      "tz_local": "America/New_York"
+      "tz_local": "America/New_York",
+      "top_nominated": [
+        "RAYE (11)",
+        "ROSALÍA (9)",
+        "Ella Langley (7)",
+        "Miranda Lambert (7)",
+        "Olivia Rodrigo (7)",
+        "Phoebe Bridgers (7)",
+        "Bruno Mars (6)",
+        "Leon Thomas (6)",
+        "Olivia Dean (6)"
+      ],
+      "nomination_source_url": "https://www.grammy.com/news/2027-grammys-nominations-announcement/"
     },
     {
       "id": "grammys-2027-premiere",
@@ -653,6 +665,790 @@
       "notes": [
         "Ceremonia de Premiere, donde se entregará la mayoría de las categorías antes de la transmisión televisiva principal.",
         "Comienza a las 14:30 ET / 16:30 de Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "critics-choice-nominations-2026",
+      "title": "32nd Critics Choice Awards 2027 — Anuncio de nominaciones",
+      "date": "2026-12-04",
+      "start_local": "12:00",
+      "tz_local": "America/New_York",
+      "location": "Transmisión desde Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "E!",
+          "USA Network"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.criticschoice.com/shortlists-for-the-32nd-annual-critics-choice-awards-below-the-line-categories-announced/",
+      "notes": [
+        "Anuncio de nominaciones de cine y televisión, con Erin Lim Rhodes y Will Marfuggi.",
+        "Inicio: 12:00 ET / 14:00 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "critics-choice-2027",
+      "title": "32nd Critics Choice Awards 2027 — Ceremonia",
+      "date": "2027-01-03",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "The Barker Hangar, Santa Monica, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "E!",
+          "USA Network"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
+      "confirmed_hosts": [
+        "Janelle James"
+      ],
+      "notes": [
+        "Transmisión en vivo 19:00–22:00 ET / 21:00–00:00 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "golden-globes-2027",
+      "title": "84th Golden Globe Awards 2027 — Ceremonia",
+      "date": "2027-01-10",
+      "start_local": "19:30",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "The Beverly Hilton, Beverly Hills, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": [
+          "Paramount+"
+        ]
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/84th-annual-golden-globes/about/",
+      "confirmed_hosts": [
+        "Nikki Glaser"
+      ],
+      "notes": [
+        "Transmisión en vivo 19:30–22:30 ET / 21:30–00:30 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "brit-awards-2027",
+      "title": "The BRIT Awards 2027 — Ceremonia",
+      "date": "2027-02-27",
+      "location": "Co-op Live, Manchester, Reino Unido",
+      "broadcast": {
+        "tv": [
+          "ITV1"
+        ],
+        "streaming": [
+          "ITVX"
+        ]
+      },
+      "event_url": "https://www.brits.co.uk/news/2026/the-brit-awards-reveals-2027-date",
+      "notes": [
+        "Fecha y emisión confirmadas por la organización. Horario exacto no publicado; el anuncio indica franja prime-time."
+      ]
+    },
+    {
+      "id": "actor-awards-2027",
+      "title": "33rd Annual Actor Awards 2027 — Ceremonia",
+      "date": "2027-02-28",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "location": "Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Netflix"
+        ]
+      },
+      "event_url": "https://actorawards.org/awards/calendar",
+      "notes": [
+        "Transmisión en vivo por Netflix a las 20:00 ET / 22:00 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "super-bowl-lxi-2027",
+      "title": "Super Bowl LXI 2027 — Partido y Halftime Show",
+      "date": "2027-02-14",
+      "location": "SoFi Stadium, Inglewood, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ESPN",
+          "ABC",
+          "ESPN Deportes",
+          "Univision"
+        ],
+        "streaming": [
+          "Disney+",
+          "NFL+ (dispositivos móviles)"
+        ]
+      },
+      "event_url": "https://amp.nfl.com/news/jay-z-halftime-show-press-release",
+      "confirmed_performers": [
+        "JAŸ-Z — Apple Music Super Bowl LXI Halftime Show"
+      ],
+      "notes": [
+        "La NFL, Apple Music y Roc Nation confirmaron a JAŸ-Z como artista principal del show de medio tiempo.",
+        "No se carga hora de inicio: no está confirmada en la fuente consultada."
+      ]
+    },
+    {
+      "id": "oscars-2027",
+      "title": "99th Oscars 2027 — Ceremonia",
+      "date": "2027-03-14",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "location": "Dolby Theatre at Ovation Hollywood, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Hulu"
+        ]
+      },
+      "event_url": "https://press.oscars.org/news/99th-oscarsr-reunites-host-conan-obrien-and-executive-producers-raj-kapoor-and-katy-mullan",
+      "confirmed_hosts": [
+        "Conan O’Brien"
+      ],
+      "notes": [
+        "En vivo a las 19:00 ET / 20:00 Argentina (UTC-3); Estados Unidos estará en horario de verano (EDT).",
+        "La Academia anunció las nominaciones para el 21 de enero de 2027; los títulos y conteos líderes se agregarán cuando se publiquen."
+      ]
+    },
+    {
+      "id": "actor-awards-2028",
+      "title": "34th Annual Actor Awards 2028 — Ceremonia",
+      "date": "2028-02-20",
+      "location": "Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Netflix"
+        ]
+      },
+      "event_url": "https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-date-time",
+      "notes": [
+        "Netflix confirmó la fecha y la transmisión en directo. El horario todavía no fue anunciado."
+      ]
+    },
+    {
+      "id": "oscars-2028",
+      "title": "100th Oscars 2028 — Ceremonia",
+      "date": "2028-03-05",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "location": "Dolby Theatre at Ovation Hollywood, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr",
+      "notes": [
+        "La Academia y ABC confirmaron la fecha y la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "lolla-argentina-2027-day-1",
+      "title": "Lollapalooza Argentina 2027 — Viernes 12 de marzo",
+      "date": "2027-03-12",
+      "location": "Hipódromo de San Isidro, San Isidro, Buenos Aires, Argentina",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Flow — transmisión en vivo de las tres jornadas"
+        ]
+      },
+      "event_url": "https://www.lollapaloozaar.com/",
+      "lineup_source_url": "https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/",
+      "broadcast_source_url": "https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/",
+      "headliners": [
+        "The Killers",
+        "The Neighbourhood"
+      ],
+      "lineup": [
+        "The Killers",
+        "The Neighbourhood",
+        "Fontaines D.C.",
+        "The Prodigy",
+        "Dillom",
+        "Malcolm Todd",
+        "RAYE",
+        "ADÉLA",
+        "Marlon Hoffstadt",
+        "Boys Noize",
+        "Midnight Generation",
+        "Mind Enterprises",
+        "AYYBO",
+        "Ela Taubert",
+        "Princesa Alba",
+        "Folgar",
+        "Santos Bravos",
+        "Kchiporros",
+        "Natalia Lacunza",
+        "Joaco Burgos",
+        "Mai Lawson",
+        "Varese",
+        "Sol Porro",
+        "Pato Mallet",
+        "Las Sombras"
+      ],
+      "notes": [
+        "Programación diaria anunciada. Los horarios de escenario aún no fueron publicados."
+      ]
+    },
+    {
+      "id": "lolla-argentina-2027-day-2",
+      "title": "Lollapalooza Argentina 2027 — Sábado 13 de marzo",
+      "date": "2027-03-13",
+      "location": "Hipódromo de San Isidro, San Isidro, Buenos Aires, Argentina",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Flow — transmisión en vivo de las tres jornadas"
+        ]
+      },
+      "event_url": "https://www.lollapaloozaar.com/",
+      "lineup_source_url": "https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/",
+      "broadcast_source_url": "https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/",
+      "headliners": [
+        "Travis Scott",
+        "TINI",
+        "Queens of the Stone Age"
+      ],
+      "lineup": [
+        "Travis Scott",
+        "TINI",
+        "Queens of the Stone Age",
+        "Rawayana",
+        "Geese",
+        "SLAYYYTER",
+        "Un Poco de Ruido",
+        "Four Tet",
+        "Angine de Poitrine",
+        "Carlita",
+        "Sammy Virji",
+        "Julia Wolf",
+        "Die Spitz",
+        "Mateo Dufour Live",
+        "Yorghaki",
+        "Juana Rozas",
+        "Francisca Valenzuela",
+        "Broke Carrey",
+        "Tiga",
+        "Lolu Menayed",
+        "Sofía Mora",
+        "Ara",
+        "Palo",
+        "Fabrizio",
+        "Hellolola"
+      ],
+      "notes": [
+        "Programación diaria anunciada. Los horarios de escenario aún no fueron publicados."
+      ]
+    },
+    {
+      "id": "lolla-argentina-2027-day-3",
+      "title": "Lollapalooza Argentina 2027 — Domingo 14 de marzo",
+      "date": "2027-03-14",
+      "location": "Hipódromo de San Isidro, San Isidro, Buenos Aires, Argentina",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Flow — transmisión en vivo de las tres jornadas"
+        ]
+      },
+      "event_url": "https://www.lollapaloozaar.com/",
+      "lineup_source_url": "https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/",
+      "broadcast_source_url": "https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/",
+      "headliners": [
+        "Charli xcx",
+        "David Guetta",
+        "Cage the Elephant"
+      ],
+      "lineup": [
+        "Charli xcx",
+        "David Guetta",
+        "Sombr",
+        "Dominic Fike",
+        "Cage the Elephant",
+        "Lola Young",
+        "TOMORA",
+        "K4OS",
+        "Leon Bridges",
+        "Usted Señalemelo",
+        "Snow Strippers",
+        "Ninajirachi",
+        "The Avalanches",
+        "Rivo",
+        "Boy Harsher",
+        "Amaia",
+        "Juan Hansen Live",
+        "Violet Grohl",
+        "Enzocerobulto",
+        "Daniela Spalla",
+        "Zé Pequeña",
+        "Dandára",
+        "Hana Fox",
+        "Molle",
+        "La Ramona"
+      ],
+      "notes": [
+        "Programación diaria anunciada. Los horarios de escenario aún no fueron publicados."
+      ]
+    },
+    {
+      "id": "coachella-2027-weekend-1-friday",
+      "title": "Coachella 2027 — Weekend 1 — Viernes",
+      "date": "2027-04-09",
+      "location": "Empire Polo Club, Indio, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube — transmisión oficial de Coachella"
+        ]
+      },
+      "event_url": "https://www.coachella.com/lineup/",
+      "broadcast_source_url": "https://coachella.com/youtube-livestream",
+      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "headliners": [
+        "Dua Lipa"
+      ],
+      "lineup": [
+        "Dua Lipa",
+        "Madonna",
+        "Zara Larsson",
+        "Steve Lacy",
+        "JISOO",
+        "Diljit Dosanjh",
+        "Peggy Gou",
+        "Kehlani",
+        "Solid Grooves",
+        "Giorgio Moroder",
+        "Social Distortion",
+        "Pinegrove",
+        "Angine de Poitrine",
+        "Leon Thomas",
+        "Drain Gang",
+        "Snow Strippers",
+        "Mike D 5D",
+        "CHRIS STASSY",
+        "Milo J",
+        "SG Lewis",
+        "Kelela",
+        "Franky Rizardo",
+        "Fetty Wap",
+        "Vintage Culture",
+        "The Damned",
+        "ATARASHII GAKKO!",
+        "Nettspend",
+        "American Football",
+        "xaviersobased",
+        "La Dispute",
+        "Haute & Freddy",
+        "The Hellp",
+        "Disco Dom",
+        "MPH",
+        "Bella Kay",
+        "This Is Lorelei",
+        "The Womack Sisters",
+        "Mary in the Junkyard",
+        "Close Friends Only",
+        "Obskür",
+        "Jacob Lusk",
+        "LEENALCHI",
+        "Bea Miller",
+        "Gang of Youths",
+        "Love Spells",
+        "Rafael",
+        "Nirosta Steel",
+        "Ragie Ban",
+        "Eli",
+        "Las Petunias",
+        "Violet Grohl",
+        "Jackie Hollander",
+        "Jamback x Marsolo",
+        "NOYA"
+      ],
+      "notes": [
+        "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
+      ]
+    },
+    {
+      "id": "coachella-2027-weekend-1-saturday",
+      "title": "Coachella 2027 — Weekend 1 — Sábado",
+      "date": "2027-04-10",
+      "location": "Empire Polo Club, Indio, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube — transmisión oficial de Coachella"
+        ]
+      },
+      "event_url": "https://www.coachella.com/lineup/",
+      "broadcast_source_url": "https://coachella.com/youtube-livestream",
+      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "headliners": [
+        "Tame Impala"
+      ],
+      "lineup": [
+        "Tame Impala",
+        "Phoebe Bridgers",
+        "Weezer",
+        "Tiësto",
+        "Martin Garrix",
+        "Robyn",
+        "Role Model",
+        "ADÉLA",
+        "Måneskin",
+        "Solomun",
+        "NCT",
+        "Enigma",
+        "Underworld",
+        "Charlotte de Witte",
+        "Leon Bridges",
+        "Cloonee",
+        "Magdalena Bay",
+        "Barry Can’t Swim",
+        "Boy Harsher",
+        "KI/KI",
+        "Mariah the Scientist",
+        "Bad Gyal",
+        "Basement",
+        "Brutalismus 3000",
+        "Beltran",
+        "underscores",
+        "SB19",
+        "Twin Tribes",
+        "Odeal",
+        "Bassvictim",
+        "Los Pibes Chorros",
+        "Tiffany Day",
+        "no na",
+        "Mathame",
+        "ear",
+        "Vandelux",
+        "rommulas",
+        "Apollonia",
+        "Getdown Services",
+        "Good Neighbours",
+        "First Day Back",
+        "Jimi Jules",
+        "Twisted Teens",
+        "Murda Beatz",
+        "Villanelle",
+        "Kolter x Sidney Charles",
+        "La Texana",
+        "OMRI.",
+        "Volkoder",
+        "Zimmer90",
+        "LuSiD",
+        "Dream Boat"
+      ],
+      "notes": [
+        "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
+      ]
+    },
+    {
+      "id": "coachella-2027-weekend-1-sunday",
+      "title": "Coachella 2027 — Weekend 1 — Domingo",
+      "date": "2027-04-11",
+      "location": "Empire Polo Club, Indio, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube — transmisión oficial de Coachella"
+        ]
+      },
+      "event_url": "https://www.coachella.com/lineup/",
+      "broadcast_source_url": "https://coachella.com/youtube-livestream",
+      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "headliners": [
+        "SZA"
+      ],
+      "lineup": [
+        "SZA",
+        "Don Toliver",
+        "DOM DOLLA",
+        "Kygo",
+        "Empire of the Sun",
+        "Four Tet",
+        "The Neighbourhood",
+        "Becky G",
+        "BABYMONSTER",
+        "Amelie Lens x Sara Landry",
+        "Remi Wolf",
+        "Trove Lo",
+        "Victoria Monét",
+        "EsDeeKid",
+        "Caroline Polachek",
+        "Chase & Status",
+        "MUNA",
+        "Boris Brejcha",
+        "Jorja Smith",
+        "The Avalanches",
+        "BOLO",
+        "Pennywise",
+        "Freddie Gibbs",
+        "Shygirl",
+        "Julia Wolf",
+        "Odd Mob",
+        "Ayra Starr",
+        "Lambrini Girls",
+        "AKRIILA",
+        "Dinner Party",
+        "Silva Bumpa",
+        "DJ Habibeats",
+        "Chanel Beads",
+        "Adam Ten",
+        "After",
+        "Zack Fox",
+        "Fat Dog",
+        "Omar+",
+        "Genesis Owusu",
+        "Joshua Slone",
+        "The Mainliners",
+        "Marten Lou x Alex Wann",
+        "ChaseWest",
+        "Florence Road",
+        "Jazzy",
+        "TUL8TE",
+        "Jakob Nowell and THE CASTLE",
+        "Talón",
+        "Klave Efectiva"
+      ],
+      "notes": [
+        "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
+      ]
+    },
+    {
+      "id": "coachella-2027-weekend-2-friday",
+      "title": "Coachella 2027 — Weekend 2 — Viernes",
+      "date": "2027-04-16",
+      "location": "Empire Polo Club, Indio, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube — transmisión oficial de Coachella"
+        ]
+      },
+      "event_url": "https://www.coachella.com/lineup/",
+      "broadcast_source_url": "https://coachella.com/youtube-livestream",
+      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "headliners": [
+        "Dua Lipa"
+      ],
+      "lineup": [
+        "Dua Lipa",
+        "Madonna",
+        "Zara Larsson",
+        "Steve Lacy",
+        "JISOO",
+        "Diljit Dosanjh",
+        "Peggy Gou",
+        "Kehlani",
+        "Solid Grooves",
+        "Giorgio Moroder",
+        "Social Distortion",
+        "Pinegrove",
+        "Angine de Poitrine",
+        "Leon Thomas",
+        "Drain Gang",
+        "Snow Strippers",
+        "Mike D 5D",
+        "CHRIS STASSY",
+        "Milo J",
+        "SG Lewis",
+        "Kelela",
+        "Franky Rizardo",
+        "Fetty Wap",
+        "Vintage Culture",
+        "The Damned",
+        "ATARASHII GAKKO!",
+        "Nettspend",
+        "American Football",
+        "xaviersobased",
+        "La Dispute",
+        "Haute & Freddy",
+        "The Hellp",
+        "Disco Dom",
+        "MPH",
+        "Bella Kay",
+        "This Is Lorelei",
+        "The Womack Sisters",
+        "Mary in the Junkyard",
+        "Close Friends Only",
+        "Obskür",
+        "Jacob Lusk",
+        "LEENALCHI",
+        "Bea Miller",
+        "Gang of Youths",
+        "Love Spells",
+        "Rafael",
+        "Nirosta Steel",
+        "Ragie Ban",
+        "Eli",
+        "Las Petunias",
+        "Violet Grohl",
+        "Jackie Hollander",
+        "Jamback x Marsolo",
+        "NOYA"
+      ],
+      "notes": [
+        "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
+      ]
+    },
+    {
+      "id": "coachella-2027-weekend-2-saturday",
+      "title": "Coachella 2027 — Weekend 2 — Sábado",
+      "date": "2027-04-17",
+      "location": "Empire Polo Club, Indio, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube — transmisión oficial de Coachella"
+        ]
+      },
+      "event_url": "https://www.coachella.com/lineup/",
+      "broadcast_source_url": "https://coachella.com/youtube-livestream",
+      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "headliners": [
+        "Tame Impala"
+      ],
+      "lineup": [
+        "Tame Impala",
+        "Phoebe Bridgers",
+        "Weezer",
+        "Tiësto",
+        "Martin Garrix",
+        "Robyn",
+        "Role Model",
+        "ADÉLA",
+        "Måneskin",
+        "Solomun",
+        "NCT",
+        "Enigma",
+        "Underworld",
+        "Charlotte de Witte",
+        "Leon Bridges",
+        "Cloonee",
+        "Magdalena Bay",
+        "Barry Can’t Swim",
+        "Boy Harsher",
+        "KI/KI",
+        "Mariah the Scientist",
+        "Bad Gyal",
+        "Basement",
+        "Brutalismus 3000",
+        "Beltran",
+        "underscores",
+        "SB19",
+        "Twin Tribes",
+        "Odeal",
+        "Bassvictim",
+        "Los Pibes Chorros",
+        "Tiffany Day",
+        "no na",
+        "Mathame",
+        "ear",
+        "Vandelux",
+        "rommulas",
+        "Apollonia",
+        "Getdown Services",
+        "Good Neighbours",
+        "First Day Back",
+        "Jimi Jules",
+        "Twisted Teens",
+        "Murda Beatz",
+        "Villanelle",
+        "Kolter x Sidney Charles",
+        "La Texana",
+        "OMRI.",
+        "Volkoder",
+        "Zimmer90",
+        "LuSiD",
+        "Dream Boat"
+      ],
+      "notes": [
+        "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
+      ]
+    },
+    {
+      "id": "coachella-2027-weekend-2-sunday",
+      "title": "Coachella 2027 — Weekend 2 — Domingo",
+      "date": "2027-04-18",
+      "location": "Empire Polo Club, Indio, California, Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "YouTube — transmisión oficial de Coachella"
+        ]
+      },
+      "event_url": "https://www.coachella.com/lineup/",
+      "broadcast_source_url": "https://coachella.com/youtube-livestream",
+      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "headliners": [
+        "SZA"
+      ],
+      "lineup": [
+        "SZA",
+        "Don Toliver",
+        "DOM DOLLA",
+        "Kygo",
+        "Empire of the Sun",
+        "Four Tet",
+        "The Neighbourhood",
+        "Becky G",
+        "BABYMONSTER",
+        "Amelie Lens x Sara Landry",
+        "Remi Wolf",
+        "Trove Lo",
+        "Victoria Monét",
+        "EsDeeKid",
+        "Caroline Polachek",
+        "Chase & Status",
+        "MUNA",
+        "Boris Brejcha",
+        "Jorja Smith",
+        "The Avalanches",
+        "BOLO",
+        "Pennywise",
+        "Freddie Gibbs",
+        "Shygirl",
+        "Julia Wolf",
+        "Odd Mob",
+        "Ayra Starr",
+        "Lambrini Girls",
+        "AKRIILA",
+        "Dinner Party",
+        "Silva Bumpa",
+        "DJ Habibeats",
+        "Chanel Beads",
+        "Adam Ten",
+        "After",
+        "Zack Fox",
+        "Fat Dog",
+        "Omar+",
+        "Genesis Owusu",
+        "Joshua Slone",
+        "The Mainliners",
+        "Marten Lou x Alex Wann",
+        "ChaseWest",
+        "Florence Road",
+        "Jazzy",
+        "TUL8TE",
+        "Jakob Nowell and THE CASTLE",
+        "Talón",
+        "Klave Efectiva"
+      ],
+      "notes": [
+        "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
       ]
     }
   ]
