@@ -4,7 +4,6 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-import uuid
 import yaml
 
 TZ_AR = ZoneInfo("America/Argentina/Buenos_Aires")
@@ -18,6 +17,24 @@ def ics_escape(s: str) -> str:
     s = s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,")
     s = s.replace("\r\n", "\n").replace("\r", "\n").replace("\n", "\\n")
     return s
+
+
+def fold_ics_line(line: str, limit: int = 75) -> str:
+    parts: list[str] = []
+    current = ""
+    octets = 0
+    for char in line:
+        size = len(char.encode("utf-8"))
+        if current and octets + size > limit:
+            parts.append(current)
+            current = " " + char
+            octets = 1 + size
+        else:
+            current += char
+            octets += size
+    if current:
+        parts.append(current)
+    return "\r\n".join(parts)
 
 
 def dtstamp_utc() -> str:
@@ -98,6 +115,7 @@ def build_description(
 
 def build_event_lines(
     stamp: str,
+    uid: str,
     summary: str,
     location: str,
     description_lines: list[str],
@@ -107,7 +125,7 @@ def build_event_lines(
 ) -> list[str]:
     out: list[str] = []
     out.append("BEGIN:VEVENT")
-    out.append(f"UID:{uuid.uuid4()}@inhumano")
+    out.append(f"UID:{uid}@inhumano.github.io")
     out.append(f"DTSTAMP:{stamp}")
     out.append(f"SUMMARY:{ics_escape(summary)}")
     if location:
@@ -116,9 +134,10 @@ def build_event_lines(
     desc = "\n".join(description_lines)
     out.append("DESCRIPTION:" + ics_escape(desc))
 
-    if dtstart_ba and dtend_ba:
+    if dtstart_ba:
         out.append(f"DTSTART;TZID=America/Argentina/Buenos_Aires:{fmt_dt(dtstart_ba)}")
-        out.append(f"DTEND;TZID=America/Argentina/Buenos_Aires:{fmt_dt(dtend_ba)}")
+        if dtend_ba:
+            out.append(f"DTEND;TZID=America/Argentina/Buenos_Aires:{fmt_dt(dtend_ba)}")
     else:
         if allday_date is None:
             raise ValueError("All-day event requires allday_date")
@@ -156,6 +175,7 @@ def main() -> None:
             continue
 
         title = str(ev.get("title", "")).strip()
+        event_id = str(ev.get("id", title.lower().replace(" ", "-"))).strip()
         if not title:
             continue
 
@@ -228,7 +248,8 @@ def main() -> None:
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
-                        summary=rc_summary,
+                        uid=f"{event_id}-red-carpet",
+                        summary=str(red.get("title") or rc_summary),
                         location=location,
                         description_lines=desc_rc,
                         dtstart_ba=rc_start,
@@ -249,14 +270,28 @@ def main() -> None:
                 guests_source_urls=guests_source_urls,
             )
 
-            has_time = bool(start_local and tz_local and duration_minutes)
+            # Añadir información complementaria que solo se carga cuando está confirmada.
+            for key, label in (("lineup", "Line-up del día"), ("confirmed_hosts", "Conducción confirmada"), ("confirmed_presenters", "Presentadores confirmados"), ("confirmed_performers", "Performers confirmados")):
+                vals = ensure_list(ev.get(key))
+                if vals:
+                    desc_main.append(label + ": " + "; ".join(vals))
+            for source_key, label in (("lineup_source_url", "Fuente (line-up)"), ("broadcast_source_url", "Fuente (transmisión)"), ("event_extra_source", "Fuente (información adicional)")):
+                source = str(ev.get(source_key, "") or "").strip()
+                if source:
+                    desc_main.append(label + ": " + source)
+            for note in ensure_list(ev.get("notes")):
+                desc_main.append(str(note))
+
+            has_time = bool(start_local and tz_local)
             if has_time:
                 local_dt = parse_local_dt(day_date, str(start_local), str(tz_local))
                 ar_start = local_dt.astimezone(TZ_AR)
-                ar_end = (local_dt + timedelta(minutes=int(duration_minutes))).astimezone(TZ_AR)
+                ar_end = (local_dt + timedelta(minutes=int(duration_minutes))).astimezone(TZ_AR) if duration_minutes else None
+                desc_main.append("Hora Argentina: " + ar_start.strftime("%d/%m %H:%M") + (("–" + ar_end.strftime("%d/%m %H:%M")) if ar_end else "") + " (UTC-3)")
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
+                        uid=event_id,
                         summary=title,
                         location=location,
                         description_lines=desc_main,
@@ -270,6 +305,7 @@ def main() -> None:
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
+                        uid=event_id,
                         summary=title,
                         location=location,
                         description_lines=desc_main,
@@ -281,7 +317,7 @@ def main() -> None:
 
     lines.append("END:VCALENDAR")
 
-    ics_text = "\r\n".join(lines) + "\r\n"
+    ics_text = "\r\n".join(fold_ics_line(line) for line in lines) + "\r\n"
     (OUTPUT_DIR / OUTPUT_ICS_NAME).write_text(ics_text, encoding="utf-8")
     (OUTPUT_DIR / OUTPUT_LAST_UPDATED).write_text(datetime.utcnow().isoformat() + "Z\n", encoding="utf-8")
     print(f"OK: generado {OUTPUT_ICS_NAME}")
