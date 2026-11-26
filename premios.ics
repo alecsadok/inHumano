@@ -10,13 +10,13 @@ UID:critics-choice-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Critics Choice Awards 2026 — Ceremonia
 LOCATION:Barker Hangar\, Santa Monica\, California\, USA
-DESCRIPTION:Canal/Streaming: E! / USA Network / Peacock (disponible al dí
- a siguiente)\nCeremonia de la 31.ª edición\; Chelsea Handler fue la cond
- uctora.\nOne Battle After Another ganó Mejor película\; Frankenstein y S
- inners encabezaron categorías cinematográficas\; Adolescence lideró las 
- categorías de series.\nFuente (evento): https://www.criticschoice.com/on
- e-battle-after-another-wins-best-picture-at-the-31st-annual-critics-choi
- ce-awards/
+DESCRIPTION:Canal/Streaming: E! / USA Network / Peacock (disponible al día
+  siguiente)\nCeremonia de la 31.ª edición\; Chelsea Handler fue la condu
+ ctora.\nOne Battle After Another ganó Mejor película\; Frankenstein y Si
+ nners encabezaron categorías cinematográficas\; Adolescence lideró las 
+ categorías de series.\nFuente (evento): https://www.criticschoice.com/one
+ -battle-after-another-wins-best-picture-at-the-31st-annual-critics-choice-
+ awards/
 DTSTART;VALUE=DATE:20260104
 DTEND;VALUE=DATE:20260105
 END:VEVENT
@@ -25,10 +25,10 @@ UID:golden-globes-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Golden Globes 2026 — Ceremonia
 LOCATION:The Beverly Hilton\, Beverly Hills\, California\, USA
-DESCRIPTION:Canal/Streaming: CBS / Paramount+\nLa base oficial de ganador
- es y nominados de 2026 respalda la edición y sus resultados.\nFuente (ev
- ento): https://goldenglobes.com/winners-nominees/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260111220000
+DESCRIPTION:Canal/Streaming: CBS / Paramount+\nLa base oficial de ganadores
+  y nominados de 2026 respalda la edición y sus resultados.\nFuente (event
+ o): https://goldenglobes.com/winners-nominees/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260111T220000
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2026@inhumano.github.io
@@ -36,22 +36,22 @@ DTSTAMP:20261126T120000Z
 SUMMARY:GRAMMY Awards 2026 — Ceremonia
 LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
 DESCRIPTION:Canal/Streaming: CBS / Paramount+\nBad Bunny ganó Álbum del A
- ño con DeBÍ TiRAR MáS FOToS\, primer álbum en español en obtener el prem
- io.\nOlivia Dean ganó Mejor artista nuevo\; Kendrick Lamar y SZA ganaron
-  Grabación del Año por luther.\nFuente (evento): https://www.grammy.com/
- news/2026-grammys-nominations-full-winners-nominees-list/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260201220000
+ ño con DeBÍ TiRAR MáS FOToS\, primer álbum en español en obtener el p
+ remio.\nOlivia Dean ganó Mejor artista nuevo\; Kendrick Lamar y SZA ganar
+ on Grabación del Año por luther.\nFuente (evento): https://www.grammy.co
+ m/news/2026-grammys-nominations-full-winners-nominees-list/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260201T220000
 END:VEVENT
 BEGIN:VEVENT
 UID:bafta-film-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:EE BAFTA Film Awards 2026 — Ceremonia
 LOCATION:Royal Festival Hall\, Londres\, Reino Unido
-DESCRIPTION:Canal/Streaming: BBC One / BBC iPlayer\nOne Battle After Anot
- her obtuvo seis BAFTA\, incluidos Mejor película y dirección.\nSinners o
- btuvo tres premios\; Frankenstein obtuvo tres\; Hamnet obtuvo dos.\nAlan
-  Cumming condujo la ceremonia.\nFuente (evento): https://www.bafta.org/m
- edia-centre/press-releases/winners-announced-2026-film-awards/
+DESCRIPTION:Canal/Streaming: BBC One / BBC iPlayer\nOne Battle After Anothe
+ r obtuvo seis BAFTA\, incluidos Mejor película y dirección.\nSinners obt
+ uvo tres premios\; Frankenstein obtuvo tres\; Hamnet obtuvo dos.\nAlan Cum
+ ming condujo la ceremonia.\nFuente (evento): https://www.bafta.org/media-c
+ entre/press-releases/winners-announced-2026-film-awards/
 DTSTART;VALUE=DATE:20260222
 DTEND;VALUE=DATE:20260223
 END:VEVENT
@@ -60,56 +60,54 @@ UID:actor-awards-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:The Actor Awards 2026 — Ceremonia
 LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: Netflix\nPresentadores: Woody Harrelson\; Al
- lison Janney\; Andy Garcia\; Benicio del Toro\; Gwyneth Paltrow\; Jacob 
- Elordi\; Jenna Ortega\; Jessie Buckley\nPremios especiales: SAG-AFTRA Li
- fe Achievement Award — Harrison Ford\nKristen Bell condujo la ceremonia.
- \nEl pre-show oficial The Actor’s Red Carpet se transmitió en Netflix de
- sde las 19:00 ET.\nFuente (evento): https://www.actorawards.org/where-wa
- tch\nFuente (información adicional): https://www.actorawards.org/media/n
- ews/releases/presenters-announces-32nd-annual-actor-awards-presented-sag
- -aftra
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260301220000
+DESCRIPTION:Canal/Streaming: Netflix\nPresentadores: Woody Harrelson\; Alli
+ son Janney\; Andy Garcia\; Benicio del Toro\; Gwyneth Paltrow\; Jacob Elor
+ di\; Jenna Ortega\; Jessie Buckley\nPremios especiales: SAG-AFTRA Life Ach
+ ievement Award — Harrison Ford\nKristen Bell condujo la ceremonia.\nEl p
+ re-show oficial The Actor’s Red Carpet se transmitió en Netflix desde l
+ as 19:00 ET.\nFuente (evento): https://www.actorawards.org/where-watch\nFu
+ ente (información adicional): https://www.actorawards.org/media/news/rele
+ ases/presenters-announces-32nd-annual-actor-awards-presented-sag-aftra
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260301T220000
 END:VEVENT
 BEGIN:VEVENT
 UID:actor-awards-2026-red-carpet@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:The Actor Awards 2026 — Red Carpet / Official Pre-Show
 LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
-DESCRIPTION:Pre-show oficial de la ceremonia.\nFuente (evento): https://a
- ctorawards.org/media/news/releases/paige-desorbo-and-scott-evans-host-ac
- tors-red-carpet-32nd-annual-actor-awards
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260301210000
+DESCRIPTION:Pre-show oficial de la ceremonia.\nFuente (evento): https://act
+ orawards.org/media/news/releases/paige-desorbo-and-scott-evans-host-actors
+ -red-carpet-32nd-annual-actor-awards
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260301T210000
 END:VEVENT
 BEGIN:VEVENT
 UID:oscars-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Oscars 2026 (98th) — Ceremonia
 LOCATION:Dolby Theatre\, Hollywood\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: ABC\nPresentadores: Conan O'Brien (host)\nLa
-  página oficial de la Academia contiene ganadores y nominados de la 98.ª
-  edición.\nFuente (evento): https://www.oscars.org/oscars/ceremonies/202
- 6
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260315200000
+DESCRIPTION:Canal/Streaming: ABC\nPresentadores: Conan O'Brien (host)\nLa p
+ ágina oficial de la Academia contiene ganadores y nominados de la 98.ª e
+ dición.\nFuente (evento): https://www.oscars.org/oscars/ceremonies/2026
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260315T200000
 END:VEVENT
 BEGIN:VEVENT
 UID:lollapalooza-argentina-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Lollapalooza Argentina 2026 — Festival
 LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
-DESCRIPTION:Canal/Streaming: Flow (canales 605–608\, según cobertura publ
- icada)\nHeadliners: Tyler\, The Creator\; Lorde\; Chappell Roan\; Skrill
- ex\; Lewis Capaldi\; Paulo Londra\; Sabrina Carpenter\; Deftones\; Doech
- ii\nArtistas pop destacados: Lorde\; Chappell Roan\; Sabrina Carpenter\;
-  Doechii\; Addison Rae\; Katseye\; Marina\; Aitana\; Danny Ocean\nArtist
- as argentinos: Paulo Londra\; Ratones Paranoicos\; Soledad\; Ángela Torr
- es\; Turf\; Massacre\; Yami Safdie\; Joaquina\; Militantes del Climax\nT
- res jornadas: 13\, 14 y 15 de marzo.\nLa grilla por día fue publicada po
- r medios locales\; no se incorporan horarios individuales de sets en est
- a actualización.\nFuente (evento): https://turismo.buenosaires.gob.ar/es
- /propuestaslolla\nFuente (lineup/horarios): https://www.lanacion.com.ar/
- espectaculos/lollapalooza-argentina-2026-accesos-horarios-y-todo-lo-que-
- hay-que-saber-para-los-tres-dias-de-nid12032026/
+DESCRIPTION:Canal/Streaming: Flow (canales 605–608\, según cobertura pub
+ licada)\nHeadliners: Tyler\, The Creator\; Lorde\; Chappell Roan\; Skrille
+ x\; Lewis Capaldi\; Paulo Londra\; Sabrina Carpenter\; Deftones\; Doechii\
+ nArtistas pop destacados: Lorde\; Chappell Roan\; Sabrina Carpenter\; Doec
+ hii\; Addison Rae\; Katseye\; Marina\; Aitana\; Danny Ocean\nArtistas arge
+ ntinos: Paulo Londra\; Ratones Paranoicos\; Soledad\; Ángela Torres\; Tur
+ f\; Massacre\; Yami Safdie\; Joaquina\; Militantes del Climax\nTres jornad
+ as: 13\, 14 y 15 de marzo.\nLa grilla por día fue publicada por medios lo
+ cales\; no se incorporan horarios individuales de sets en esta actualizaci
+ ón.\nFuente (evento): https://turismo.buenosaires.gob.ar/es/propuestaslol
+ la\nFuente (lineup/horarios): https://www.lanacion.com.ar/espectaculos/lol
+ lapalooza-argentina-2026-accesos-horarios-y-todo-lo-que-hay-que-saber-para
+ -los-tres-dias-de-nid12032026/
 DTSTART;VALUE=DATE:20260313
 DTEND;VALUE=DATE:20260316
 END:VEVENT
@@ -118,12 +116,12 @@ UID:coachella-2026-weekend-1@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Coachella 2026 — Weekend 1
 LOCATION:Empire Polo Club\, Indio\, California\, USA
-DESCRIPTION:Canal/Streaming: YouTube (livestream oficial)\nHeadliners: Sa
- brina Carpenter\; Justin Bieber\; Karol G\nArtistas pop destacados: The 
- xx\; The Strokes\; Anyma\; Young Thug\; BigBang\nPrimer fin de semana: 1
- 0 al 12 de abril.\nFuente (evento): https://www.coachella.com/lineup/\nF
- uente (lineup/horarios): https://coachellavalley.com/coachella-music-fes
- tival-announces-2026-lineup/
+DESCRIPTION:Canal/Streaming: YouTube (livestream oficial)\nHeadliners: Sabr
+ ina Carpenter\; Justin Bieber\; Karol G\nArtistas pop destacados: The xx\;
+  The Strokes\; Anyma\; Young Thug\; BigBang\nPrimer fin de semana: 10 al 1
+ 2 de abril.\nFuente (evento): https://www.coachella.com/lineup/\nFuente (l
+ ineup/horarios): https://coachellavalley.com/coachella-music-festival-anno
+ unces-2026-lineup/
 DTSTART;VALUE=DATE:20260410
 DTEND;VALUE=DATE:20260413
 END:VEVENT
@@ -132,12 +130,12 @@ UID:coachella-2026-weekend-2@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Coachella 2026 — Weekend 2
 LOCATION:Empire Polo Club\, Indio\, California\, USA
-DESCRIPTION:Canal/Streaming: YouTube (livestream oficial)\nHeadliners: Sa
- brina Carpenter\; Justin Bieber\; Karol G\nArtistas pop destacados: The 
- xx\; The Strokes\; Anyma\; Young Thug\; BigBang\nSegundo fin de semana: 
- 17 al 19 de abril.\nFuente (evento): https://www.coachella.com/lineup/\n
- Fuente (lineup/horarios): https://coachellavalley.com/coachella-music-fe
- stival-announces-2026-lineup/
+DESCRIPTION:Canal/Streaming: YouTube (livestream oficial)\nHeadliners: Sabr
+ ina Carpenter\; Justin Bieber\; Karol G\nArtistas pop destacados: The xx\;
+  The Strokes\; Anyma\; Young Thug\; BigBang\nSegundo fin de semana: 17 al 
+ 19 de abril.\nFuente (evento): https://www.coachella.com/lineup/\nFuente (
+ lineup/horarios): https://coachellavalley.com/coachella-music-festival-ann
+ ounces-2026-lineup/
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260420
 END:VEVENT
@@ -146,30 +144,30 @@ UID:amas-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:American Music Awards 2026 — Ceremonia
 LOCATION:MGM Grand Garden Arena\, Las Vegas\, Nevada\, USA
-DESCRIPTION:Canal/Streaming: CBS / Paramount+\nPerformers confirmados: Bi
- lly Idol\; KAROL G\; Darius Rucker with Hootie & the Blowfish\; KATSEYE\
- ; Keith Urban\; Maluma\; New Kids on the Block\; The Pussycat Dolls + Bu
- sta Rhymes\; Riley Green\; SOMBR\; Teddy Swims\; Teyana Taylor\; Twenty 
- One Pilots\nPresentadores: Queen Latifah (host)\; Alysa Liu\; Anthony Ra
- mos\; EJAE\; Hilary Duff\; Jason Derulo\; John Legend\; Ludacris\; Maria
- h the Scientist\; Melanie Martinez\; Nikki Glaser\; Paula Abdul\; REI AM
- I\nPremios especiales: Lifetime Achievement Award — Billy Idol\; Interna
- tional Artist Award of Excellence — KAROL G\; Veterans Voice Award — Dar
- ius Rucker\nLa ceremonia se emitió el Memorial Day\, lunes 25 de mayo\, 
- a las 20:00 ET.\nFuente (evento): https://www.theamas.com/2026/05/how-to
- -watch-the-52nd-american-music-awards/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260525210000
+DESCRIPTION:Canal/Streaming: CBS / Paramount+\nPerformers confirmados: Bill
+ y Idol\; KAROL G\; Darius Rucker with Hootie & the Blowfish\; KATSEYE\; Ke
+ ith Urban\; Maluma\; New Kids on the Block\; The Pussycat Dolls + Busta Rh
+ ymes\; Riley Green\; SOMBR\; Teddy Swims\; Teyana Taylor\; Twenty One Pilo
+ ts\nPresentadores: Queen Latifah (host)\; Alysa Liu\; Anthony Ramos\; EJAE
+ \; Hilary Duff\; Jason Derulo\; John Legend\; Ludacris\; Mariah the Scient
+ ist\; Melanie Martinez\; Nikki Glaser\; Paula Abdul\; REI AMI\nPremios esp
+ eciales: Lifetime Achievement Award — Billy Idol\; International Artist 
+ Award of Excellence — KAROL G\; Veterans Voice Award — Darius Rucker\n
+ La ceremonia se emitió el Memorial Day\, lunes 25 de mayo\, a las 20:00 E
+ T.\nFuente (evento): https://www.theamas.com/2026/05/how-to-watch-the-52nd
+ -american-music-awards/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260525T210000
 END:VEVENT
 BEGIN:VEVENT
 UID:governors-ball-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:The Governors Ball 2026 — Festival
 LOCATION:Flushing Meadows Corona Park\, Queens\, New York\, USA
-DESCRIPTION:Headliners: Lorde\; Stray Kids\; A$AP Rocky\nArtistas pop des
- tacados: KATSEYE\; Jennie\; Kali Uchis\; Dominic Fike\; Baby Keem\; Mari
- ah the Scientist\nFestival del 5 al 7 de junio de 2026.\nFuente (evento)
- : https://news.livenationentertainment.com/news/governors-ball-2026-line
- up-announced
+DESCRIPTION:Headliners: Lorde\; Stray Kids\; A$AP Rocky\nArtistas pop desta
+ cados: KATSEYE\; Jennie\; Kali Uchis\; Dominic Fike\; Baby Keem\; Mariah t
+ he Scientist\nFestival del 5 al 7 de junio de 2026.\nFuente (evento): http
+ s://news.livenationentertainment.com/news/governors-ball-2026-lineup-annou
+ nced
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260608
 END:VEVENT
@@ -178,12 +176,11 @@ UID:tomorrowland-2026-weekend-1@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Tomorrowland Belgium 2026 — Weekend 1
 LOCATION:De Schorre\, Boom\, Bélgica
-DESCRIPTION:Canal/Streaming: Livestream oficial en Tomorrowland.com y app
-  de Tomorrowland\nPrimer fin de semana: 17 al 19 de julio.\nFuente (even
- to): https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns
- -in-2026\nFuente (lineup/horarios): https://press.belgium.tomorrowland.c
- om/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-i
- n-belgium
+DESCRIPTION:Canal/Streaming: Livestream oficial en Tomorrowland.com y app d
+ e Tomorrowland\nPrimer fin de semana: 17 al 19 de julio.\nFuente (evento):
+  https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns-in-20
+ 26\nFuente (lineup/horarios): https://press.belgium.tomorrowland.com/tomor
+ rowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260720
 END:VEVENT
@@ -192,12 +189,11 @@ UID:tomorrowland-2026-weekend-2@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Tomorrowland Belgium 2026 — Weekend 2
 LOCATION:De Schorre\, Boom\, Bélgica
-DESCRIPTION:Canal/Streaming: Livestream oficial en Tomorrowland.com y app
-  de Tomorrowland\nSegundo fin de semana: 24 al 26 de julio.\nFuente (eve
- nto): https://press.belgium.tomorrowland.com/tomorrowland-belgium-return
- s-in-2026\nFuente (lineup/horarios): https://press.belgium.tomorrowland.
- com/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-
- in-belgium
+DESCRIPTION:Canal/Streaming: Livestream oficial en Tomorrowland.com y app d
+ e Tomorrowland\nSegundo fin de semana: 24 al 26 de julio.\nFuente (evento)
+ : https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns-in-2
+ 026\nFuente (lineup/horarios): https://press.belgium.tomorrowland.com/tomo
+ rrowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium
 DTSTART;VALUE=DATE:20260724
 DTEND;VALUE=DATE:20260727
 END:VEVENT
@@ -206,13 +202,13 @@ UID:outside-lands-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Outside Lands 2026 — Festival
 LOCATION:Golden Gate Park\, San Francisco\, California\, USA
-DESCRIPTION:Canal/Streaming: Amazon Music (livestream de escenarios selec
- cionados)\nHeadliners: Charli XCX\; The xx\; The Strokes\; Turnstile\; D
- eath Cab for Cutie\nArtistas pop destacados: Tinashe\; Djo\; Labrinth\; 
- Baby Keem\; Mariah the Scientist\; Lucy Dacus\nFestival del 7 al 9 de ag
- osto.\nFuente (evento): https://www.sfoutsidelands.com/faq-app/\nFuente 
- (lineup/horarios): https://pitchfork.com/story/outside-lands-2026-amazon
- -music-livestream-schedule-and-details/
+DESCRIPTION:Canal/Streaming: Amazon Music (livestream de escenarios selecci
+ onados)\nHeadliners: Charli XCX\; The xx\; The Strokes\; Turnstile\; Death
+  Cab for Cutie\nArtistas pop destacados: Tinashe\; Djo\; Labrinth\; Baby K
+ eem\; Mariah the Scientist\; Lucy Dacus\nFestival del 7 al 9 de agosto.\nF
+ uente (evento): https://www.sfoutsidelands.com/faq-app/\nFuente (lineup/ho
+ rarios): https://pitchfork.com/story/outside-lands-2026-amazon-music-lives
+ tream-schedule-and-details/
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260810
 END:VEVENT
@@ -221,8 +217,8 @@ UID:creative-arts-emmys-2026-night-1@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Creative Arts Emmy Awards 2026 — Noche 1
 LOCATION:Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Primera de las dos ceremonias presenciales de Creative Arts E
- mmy Awards.\nFuente (evento): https://www.televisionacademy.com/calendar
+DESCRIPTION:Primera de las dos ceremonias presenciales de Creative Arts Emm
+ y Awards.\nFuente (evento): https://www.televisionacademy.com/calendar
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 END:VEVENT
@@ -231,8 +227,8 @@ UID:creative-arts-emmys-2026-night-2@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:Creative Arts Emmy Awards 2026 — Noche 2
 LOCATION:Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Segunda de las dos ceremonias presenciales de Creative Arts E
- mmy Awards.\nFuente (evento): https://www.televisionacademy.com/calendar
+DESCRIPTION:Segunda de las dos ceremonias presenciales de Creative Arts Emm
+ y Awards.\nFuente (evento): https://www.televisionacademy.com/calendar
 DTSTART;VALUE=DATE:20260906
 DTEND;VALUE=DATE:20260907
 END:VEVENT
@@ -241,36 +237,34 @@ UID:emmys-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:78th Primetime Emmy Awards 2026 — Telecast
 LOCATION:Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: NBC / Peacock\nPresentadores: Mariska Hargit
- ay (host)\; Odessa A'zion\; David Boreanaz\; Linda Cardellini\; Macaulay
-  Culkin\; Alan Cumming\; Sally Field\; Sarah Michelle Gellar\; Jon Hamm\
- ; David Harbour\; Marcello Hernández\; Dan Levy\; Niecy Nash-Betts\; Kek
- e Palmer\; Amy Poehler\; Florence Pugh\; Zendaya\nPremios especiales: Bo
- b Hope Humanitarian Award — Michael J. Fox\nTelecast principal del lunes
-  14 de septiembre\, 20:00 ET / 17:00 PT.\nLas ceremonias presenciales de
-  Creative Arts se celebraron el 5 y 6 de septiembre.\nFuente (evento): h
- ttps://www.televisionacademy.com/watch/\nFuente (información adicional):
-  https://www.televisionacademy.com/features/news/awards-news/78th-emmy-a
- wards-release
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260914210000
+DESCRIPTION:Canal/Streaming: NBC / Peacock\nPresentadores: Mariska Hargitay
+  (host)\; Odessa A'zion\; David Boreanaz\; Linda Cardellini\; Macaulay Cul
+ kin\; Alan Cumming\; Sally Field\; Sarah Michelle Gellar\; Jon Hamm\; Davi
+ d Harbour\; Marcello Hernández\; Dan Levy\; Niecy Nash-Betts\; Keke Palme
+ r\; Amy Poehler\; Florence Pugh\; Zendaya\nPremios especiales: Bob Hope Hu
+ manitarian Award — Michael J. Fox\nTelecast principal del lunes 14 de se
+ ptiembre\, 20:00 ET / 17:00 PT.\nLas ceremonias presenciales de Creative A
+ rts se celebraron el 5 y 6 de septiembre.\nFuente (evento): https://www.te
+ levisionacademy.com/watch/\nFuente (información adicional): https://www.t
+ elevisionacademy.com/features/news/awards-news/78th-emmy-awards-release
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260914T210000
 END:VEVENT
 BEGIN:VEVENT
 UID:vmas-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:MTV Video Music Awards 2026 — Ceremonia
 LOCATION:Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: CBS / MTV / Paramount+\nPerformers confirmad
- os: Madonna (opening performance)\nPresentadores: Snoop Dogg (host)\; Al
- ex Warren\; Charli xcx\; Ciara Miller\; David Corenswet\; Jeff Probst\; 
- Teyana Taylor\; Troye Sivan\; Tyla\nLa transmisión se emitió de 19:30 a 
- 21:30 ET\; CBS y MTV\, con streaming en Paramount+.\nFuente (evento): ht
- tps://www.paramountpressexpress.com/mtv/shows/2026-mtv-video-music-award
- s-vmas/\nFuente (información adicional): https://www.paramountpressexpre
- ss.com/mtv/shows/2026-mtv-video-music-awards-vmas/releases/?view=113305-
- presenters-announced-for-the-2026-video-music-awards-vmas-airing-sunday-
- sept-27-on-cbs
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260927203000
-DTEND;TZID=America/Argentina/Buenos_Aires:20260927223000
+DESCRIPTION:Canal/Streaming: CBS / MTV / Paramount+\nPerformers confirmados
+ : Madonna (opening performance)\nPresentadores: Snoop Dogg (host)\; Alex W
+ arren\; Charli xcx\; Ciara Miller\; David Corenswet\; Jeff Probst\; Teyana
+  Taylor\; Troye Sivan\; Tyla\nLa transmisión se emitió de 19:30 a 21:30 
+ ET\; CBS y MTV\, con streaming en Paramount+.\nFuente (evento): https://ww
+ w.paramountpressexpress.com/mtv/shows/2026-mtv-video-music-awards-vmas/\nF
+ uente (información adicional): https://www.paramountpressexpress.com/mtv/
+ shows/2026-mtv-video-music-awards-vmas/releases/?view=113305-presenters-an
+ nounced-for-the-2026-video-music-awards-vmas-airing-sunday-sept-27-on-cbs
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260927T203000
+DTEND;TZID=America/Argentina/Buenos_Aires:20260927T223000
 END:VEVENT
 BEGIN:VEVENT
 UID:naacp-image-awards-2026@inhumano.github.io
@@ -278,9 +272,9 @@ DTSTAMP:20261126T120000Z
 SUMMARY:57th NAACP Image Awards 2026 — Ceremonia
 LOCATION:Los Angeles\, California\, USA
 DESCRIPTION:Canal/Streaming: BET\nLa ceremonia se transmitió en vivo el s
- ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento):
-  https://naacp.org/events/57th-naacp-image-awards
-DTSTART;TZID=America/Argentina/Buenos_Aires:20260228220000
+ ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento): 
+ https://naacp.org/events/57th-naacp-image-awards
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260228T220000
 END:VEVENT
 BEGIN:VEVENT
 UID:brit-awards-2026@inhumano.github.io
@@ -288,9 +282,9 @@ DTSTAMP:20261126T120000Z
 SUMMARY:The BRIT Awards 2026 — Ceremonia
 LOCATION:Co-op Live\, Manchester\, Reino Unido
 DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nLa edición 2026 se celebró el s
- ábado 28 de febrero en Manchester\; primera vez que la ceremonia se real
- izó fuera de Londres.\nFuente (evento): https://www.brits.co.uk/news/202
- 6/2026-brit-award-revealed/
+ ábado 28 de febrero en Manchester\; primera vez que la ceremonia se reali
+ zó fuera de Londres.\nFuente (evento): https://www.brits.co.uk/news/2026/
+ 2026-brit-award-revealed/
 DTSTART;VALUE=DATE:20260228
 DTEND;VALUE=DATE:20260301
 END:VEVENT
@@ -299,56 +293,47 @@ UID:latin-grammy-2026@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:27th Annual Latin GRAMMY Awards 2026 — Ceremonia
 LOCATION:MGM Grand Garden Arena\, Las Vegas\, Nevada\, USA
-DESCRIPTION:Canal/Streaming: Univision / Plataformas oficiales de Latin G
- RAMMY (Premiere)\nPerformers confirmados: Anitta\; Banda Los Recoditos\;
-  Daddy Yankee\; Jorge Drexler\; Silvana Estrada\; Kany García\; Juanes\;
-  Carín León\; Mon Laferte\; Vivir Quintana\; Rawayana\; Rosalía\; Elena 
- Rose\; Xavi\nPresentadores: Pablo Alborán\; Camila Cabello\; Ryan Castro
- \; William Contreras\; Howie D\; Lila Downs\; Greeicy\; Joaquina\; Danie
- la Mercury\; Debi Nova\; Memo Ochoa\; Anthony Ramos\; Luísa Sonza\; True
- no\nRoselyn Sánchez fue anunciada como conductora de la ceremonia televi
- sada.\nLa Latin GRAMMY Premiere comenzó a las 15:00 ET y se transmitió e
- n plataformas de la Academia\; la ceremonia principal fue televisada por
-  Univision a las 20:00 ET.\nFuente (evento): https://www.latingrammy.com
- /es/noticias/akapellah-pablo-alboran-carminho-jorge-celedon-yerai-cortes
- -gusi-kakalo-karen-lizarazo-victor-nain-jr-and-marina-sena-to-perform-at
- -the-latin-grammy-premiere/\nFuente (información adicional): https://www
- .latingrammy.com/es/noticias/presenters-announced-for-the-27th-annual-la
- tin-grammy-awards/
-DTSTART;TZID=America/Argentina/Buenos_Aires:20261112220000
-DTEND;TZID=America/Argentina/Buenos_Aires:20261113010000
+DESCRIPTION:Canal/Streaming: Univision / Plataformas oficiales de Latin GRA
+ MMY (Premiere)\nPerformers confirmados: Anitta\; Banda Los Recoditos\; Dad
+ dy Yankee\; Jorge Drexler\; Silvana Estrada\; Kany García\; Juanes\; Car
+ ín León\; Mon Laferte\; Vivir Quintana\; Rawayana\; Rosalía\; Elena Ros
+ e\; Xavi\nPresentadores: Pablo Alborán\; Camila Cabello\; Ryan Castro\; W
+ illiam Contreras\; Howie D\; Lila Downs\; Greeicy\; Joaquina\; Daniela Mer
+ cury\; Debi Nova\; Memo Ochoa\; Anthony Ramos\; Luísa Sonza\; Trueno\nRos
+ elyn Sánchez fue anunciada como conductora de la ceremonia televisada.\nL
+ a Latin GRAMMY Premiere comenzó a las 15:00 ET y se transmitió en plataf
+ ormas de la Academia\; la ceremonia principal fue televisada por Univision
+  a las 20:00 ET.\nFuente (evento): https://www.latingrammy.com/es/noticias
+ /akapellah-pablo-alboran-carminho-jorge-celedon-yerai-cortes-gusi-kakalo-k
+ aren-lizarazo-victor-nain-jr-and-marina-sena-to-perform-at-the-latin-gramm
+ y-premiere/\nFuente (información adicional): https://www.latingrammy.com/
+ es/noticias/presenters-announced-for-the-27th-annual-latin-grammy-awards/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261112T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261113T010000
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2027@inhumano.github.io
-DTSTAMP:20261126T12000
- 0Z
+DTSTAMP:20261126T120000Z
 SUMMARY:69th Annual GRAMMY Awards 2027 — Ceremonia
-LOCATION:Crypto.
- com Arena\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming:
-  ABC / Disney+ / Hulu\nCeremonia principal: 19:00 ET / 21:00 Argentina (
- UTC-3).\nRAYE lidera las nominaciones con 11; ROSALÍA tiene 9; Ella Lang
- ley\, Miranda Lambert\, Olivia Rodrigo y Phoebe Bridgers suman 7 cada un
- a.\nFuente (evento): https://www.grammy.com/news/how-to-watch-2027-gramm
- ys/\nFuente (nominaciones): https://www.grammy.com/news/2027-grammys-nom
- inations-announcement/
-DTSTART;TZID=America/Argentina/Buenos_Aires:2027
- 0207210000
+LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: ABC / Disney+ / Hulu\nCeremonia principal: 19:
+ 00 ET / 21:00 Argentina (UTC-3).\nRAYE lidera las nominaciones con 11; ROS
+ ALÍA tiene 9; Ella Langley\, Miranda Lambert\, Olivia Rodrigo y Phoebe Br
+ idgers suman 7 cada una.\nFuente (evento): https://www.grammy.com/news/how
+ -to-watch-2027-grammys/\nFuente (nominaciones): https://www.grammy.com/new
+ s/2027-grammys-nominations-announcement/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20270207T210000
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2027-premiere@inhumano.github.io
-DTSTAMP:20261
- 126T120000Z
+DTSTAMP:20261126T120000Z
 SUMMARY:69th GRAMMY Awards Premiere Ceremony 2027
-LOCATION
- :Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Str
- eaming: Disney+\nCeremonia de Premiere; se entregará la mayoría de las c
- ategorías antes de la transmisión principal.\nComienza 14:30 ET / 16:30 
- Argentina (UTC-3).\nFuente (evento): https://www.grammy.com/news/2027-gr
- ammys-premiere-ceremony-disney-plus-streaming/
-DTSTART;TZID=America/Arg
- entina/Buenos_Aires:20270207163000
+LOCATION:Peacock Theater\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: Disney+\nCeremonia de Premiere; se entregará 
+ la mayoría de las categorías antes de la transmisión principal.\nComien
+ za 14:30 ET / 16:30 Argentina (UTC-3).\nFuente (evento): https://www.gramm
+ y.com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20270207T163000
 END:VEVENT
 BEGIN:VEVENT
 UID:critics-choice-nominations-2026@inhumano.github.io
