@@ -99,7 +99,7 @@ def build_description(
         lines.append("Premios especiales: " + "; ".join(special_awards))
 
     if guests_confirmed:
-        lines.append("Famosos invitados: " + "; ".join(guests_confirmed))
+        lines.append("Celebridades que van: " + "; ".join(guests_confirmed))
 
     # Obligatorio
     lines.append("Fuente (evento): " + event_url)
@@ -122,6 +122,7 @@ def build_event_lines(
     dtstart_ba: datetime | None,
     dtend_ba: datetime | None,
     allday_date: datetime.date | None,
+    allday_end_date: datetime.date | None = None,
 ) -> list[str]:
     out: list[str] = []
     out.append("BEGIN:VEVENT")
@@ -142,7 +143,8 @@ def build_event_lines(
         if allday_date is None:
             raise ValueError("All-day event requires allday_date")
         out.append(f"DTSTART;VALUE=DATE:{fmt_date(allday_date)}")
-        out.append(f"DTEND;VALUE=DATE:{fmt_date(allday_date + timedelta(days=1))}")
+        end_date = allday_end_date or (allday_date + timedelta(days=1))
+        out.append(f"DTEND;VALUE=DATE:{fmt_date(end_date)}")
 
     out.append("END:VEVENT")
     return out
@@ -196,6 +198,9 @@ def main() -> None:
         broadcast = ev.get("broadcast", {}) or {}
         tv = ensure_list(broadcast.get("tv"))
         streaming = ensure_list(broadcast.get("streaming"))
+        if not tv and not streaming:
+            # Solo publicar eventos con transmisión confirmada para esta edición.
+            continue
 
         red = broadcast.get("red_carpet", {}) or {}
         red_confirmed = bool(red.get("confirmed", False))
@@ -221,14 +226,16 @@ def main() -> None:
 
         for day_ev in day_entries:
             day_date = str(day_ev.get("date", "")).strip()
+            event_uid = event_id if len(day_entries) == 1 else f"{event_id}-{day_date}"
             if not day_date:
                 continue
 
             # Red carpet separado (solo confirmado + horario)
-            if red_confirmed and tz_local and red_start_local and red_duration_minutes:
+            if red_confirmed and tz_local and red_start_local:
                 rc_local_dt = parse_local_dt(day_date, str(red_start_local), str(tz_local))
                 rc_start = rc_local_dt.astimezone(TZ_AR)
-                rc_end = (rc_local_dt + timedelta(minutes=int(red_duration_minutes))).astimezone(TZ_AR)
+                rc_end = ((rc_local_dt + timedelta(minutes=int(red_duration_minutes))).astimezone(TZ_AR)
+                          if red_duration_minutes else None)
 
                 desc_rc = build_description(
                     tv=tv,
@@ -241,14 +248,17 @@ def main() -> None:
                     guests_source_urls=guests_source_urls,
                 )
 
-                rc_summary = f"{title} — Red Carpet"
-                if red_where:
+                if red.get("source_url"):
+                    desc_rc.append("Fuente (red carpet): " + str(red.get("source_url")))
+                desc_rc.append("Hora Argentina: " + rc_start.strftime("%d/%m %H:%M") + (("–" + rc_end.strftime("%d/%m %H:%M")) if rc_end else "") + " (UTC-3)")
+                rc_summary = str(red.get("title") or f"{title} — Red Carpet")
+                if not red.get("title") and red_where:
                     rc_summary = f"{title} — {red_where}"
 
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
-                        uid=f"{event_id}-red-carpet",
+                        uid=f"{event_uid}-red-carpet",
                         summary=str(red.get("title") or rc_summary),
                         location=location,
                         description_lines=desc_rc,
@@ -291,7 +301,7 @@ def main() -> None:
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
-                        uid=event_id,
+                        uid=event_uid,
                         summary=title,
                         location=location,
                         description_lines=desc_main,
@@ -305,13 +315,14 @@ def main() -> None:
                 lines.extend(
                     build_event_lines(
                         stamp=stamp,
-                        uid=event_id,
+                        uid=event_uid,
                         summary=title,
                         location=location,
                         description_lines=desc_main,
                         dtstart_ba=None,
                         dtend_ba=None,
                         allday_date=d0,
+                        allday_end_date=(datetime.fromisoformat(str(ev.get("end_date"))).date() if ev.get("end_date") and len(day_entries) == 1 else None),
                     )
                 )
 
