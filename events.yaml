@@ -520,6 +520,97 @@
       "notes": [
         "La transmisión se emitió de 19:30 a 21:30 ET; CBS y MTV, con streaming en Paramount+."
       ]
+    },
+    {
+      "id": "naacp-image-awards-2026",
+      "title": "57th NAACP Image Awards 2026 — Ceremonia",
+      "date": "2026-02-28",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "location": "Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "BET"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://naacp.org/events/57th-naacp-image-awards",
+      "notes": [
+        "La ceremonia se transmitió en vivo el sábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT."
+      ]
+    },
+    {
+      "id": "brit-awards-2026",
+      "title": "The BRIT Awards 2026 — Ceremonia",
+      "date": "2026-02-28",
+      "location": "Co-op Live, Manchester, Reino Unido",
+      "broadcast": {
+        "tv": [
+          "ITV1"
+        ],
+        "streaming": [
+          "ITVX"
+        ]
+      },
+      "event_url": "https://www.brits.co.uk/news/2026/2026-brit-award-revealed/",
+      "notes": [
+        "La edición 2026 se celebró el sábado 28 de febrero en Manchester; primera vez que la ceremonia se realizó fuera de Londres."
+      ]
+    },
+    {
+      "id": "latin-grammy-2026",
+      "title": "27th Annual Latin GRAMMY Awards 2026 — Ceremonia",
+      "date": "2026-11-12",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "MGM Grand Garden Arena, Las Vegas, Nevada, USA",
+      "broadcast": {
+        "tv": [
+          "Univision"
+        ],
+        "streaming": [
+          "Plataformas oficiales de Latin GRAMMY (Premiere)"
+        ]
+      },
+      "event_url": "https://www.latingrammy.com/es/noticias/akapellah-pablo-alboran-carminho-jorge-celedon-yerai-cortes-gusi-kakalo-karen-lizarazo-victor-nain-jr-and-marina-sena-to-perform-at-the-latin-grammy-premiere/",
+      "performers": [
+        "Anitta",
+        "Banda Los Recoditos",
+        "Daddy Yankee",
+        "Jorge Drexler",
+        "Silvana Estrada",
+        "Kany García",
+        "Juanes",
+        "Carín León",
+        "Mon Laferte",
+        "Vivir Quintana",
+        "Rawayana",
+        "Rosalía",
+        "Elena Rose",
+        "Xavi"
+      ],
+      "presenters": [
+        "Pablo Alborán",
+        "Camila Cabello",
+        "Ryan Castro",
+        "William Contreras",
+        "Howie D",
+        "Lila Downs",
+        "Greeicy",
+        "Joaquina",
+        "Daniela Mercury",
+        "Debi Nova",
+        "Memo Ochoa",
+        "Anthony Ramos",
+        "Luísa Sonza",
+        "Trueno"
+      ],
+      "event_extra_source": "https://www.latingrammy.com/es/noticias/presenters-announced-for-the-27th-annual-latin-grammy-awards/",
+      "notes": [
+        "Roselyn Sánchez fue anunciada como conductora de la ceremonia televisada.",
+        "La Latin GRAMMY Premiere comenzó a las 15:00 ET y se transmitió en plataformas de la Academia; la ceremonia principal fue televisada por Univision a las 20:00 ET."
+      ]
     }
   ]
 }
