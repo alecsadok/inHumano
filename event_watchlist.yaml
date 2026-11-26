@@ -310,3 +310,390 @@ watchlist:
     sources:
       - type: news_status
         url: "https://www.nbcsandiego.com/news/local/kaaboo-music-festival-will-not-return-to-del-mar-this-summer/3766919/"
+
+  - id: billboard_music_awards
+    name: "Billboard Music Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.billboard.com/music/awards/"
+
+  - id: billboard_latin_music_awards
+    name: "Billboard Latin Music Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.billboard.com/latin/"
+
+  - id: billboard_women_in_music
+    name: "Billboard Women in Music"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.billboard.com/music/awards/"
+
+  - id: people_choice_awards
+    name: "People's Choice Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.votepca.com/"
+
+  - id: mtv_emas
+    name: "MTV Europe Music Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.mtvema.com/"
+
+  - id: american_music_awards
+    name: "American Music Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.theamas.com/"
+
+  - id: latin_grammy_awards
+    name: "Latin GRAMMY Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.latingrammy.com/"
+
+  - id: juno_awards
+    name: "JUNO Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://junoawards.ca/"
+
+  - id: premio_lo_nuestro
+    name: "Premio Lo Nuestro"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.premiolonuestro.com/"
+
+  - id: independent_spirit_awards
+    name: "Film Independent Spirit Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.filmindependent.org/spirit-awards/"
+
+  - id: satellite_awards
+    name: "Satellite Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.pressacademy.com/"
+
+  - id: bafta_film
+    name: "EE BAFTA Film Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.bafta.org/awards/film/"
+
+  - id: bafta_television
+    name: "BAFTA Television Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.bafta.org/awards/television/"
+
+  - id: cannes_film_festival
+    name: "Festival de Cannes"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.festival-cannes.com/"
+
+  - id: venice_film_festival
+    name: "Venice International Film Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.labiennale.org/en/cinema"
+
+  - id: tiff
+    name: "Toronto International Film Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://tiff.net/"
+
+  - id: kids_choice_awards
+    name: "Nickelodeon Kids' Choice Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.nick.com/kids-choice-awards"
+
+  - id: bet_awards
+    name: "BET Awards"
+    kind: awards
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.bet.com/bet-awards"
+
+  - id: new_orleans_jazz_fest
+    name: "New Orleans Jazz & Heritage Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.nojazzfest.com/"
+
+  - id: rolling_loud
+    name: "Rolling Loud"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.rollingloud.com/"
+
+  - id: bbc_radio1_big_weekend
+    name: "BBC Radio 1 Big Weekend"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.bbc.co.uk/events"
+
+  - id: summertime_ball
+    name: "Capital Summertime Ball"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.capitalfm.com/events/summertime-ball/"
+
+  - id: bonnaroo
+    name: "Bonnaroo Music & Arts Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.bonnaroo.com/"
+
+  - id: wango_tango
+    name: "Wango Tango"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.iheart.com/"
+
+  - id: isle_of_wight
+    name: "Isle of Wight Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://isleofwightfestival.com/"
+
+  - id: lollapalooza_argentina
+    name: "Lollapalooza Argentina"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.lollapaloozaar.com/"
+
+  - id: lollapalooza_chicago
+    name: "Lollapalooza Chicago"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.lollapalooza.com/"
+
+  - id: lollapalooza_brazil
+    name: "Lollapalooza Brasil"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.lollapaloozabr.com/"
+
+  - id: chasing_summer
+    name: "Chasing Summer Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.chasingsummerfestival.com/"
+
+  - id: veld
+    name: "VELD Music Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://en.wikipedia.org/wiki/VELD_Music_Festival"
+
+  - id: summer_sonic
+    name: "SUMMER SONIC"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.summersonic.com/"
+
+  - id: rock_in_rio
+    name: "Rock in Rio"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://rockinrio.com/"
+
+  - id: iheart_music_festival
+    name: "iHeartRadio Music Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.iheart.com/music-festival/"
+
+  - id: iheart_summer_pool_party
+    name: "iHeartRadio Summer Pool Party"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.iheart.com/"
+
+  - id: iheart_jingle_ball
+    name: "iHeartRadio Jingle Ball Tour"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.iheart.com/jingle-ball/"
+
+  - id: capital_jingle_bell_ball
+    name: "Capital's Jingle Bell Ball"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.capitalfm.com/events/jingle-bell-ball/"
+
+  - id: b96_jingle_bash
+    name: "B96 Jingle Bash"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://b96.com/"
+
+  - id: global_citizen
+    name: "Global Citizen Festival"
+    kind: festival
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.globalcitizen.org/en/festival/"
+
+  - id: q_awards
+    name: "Q Awards"
+    kind: awards
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.qthemusic.com/q-awards"
+
+  - id: woodstock_festival
+    name: "Woodstock Festival"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.woodstock.com/lineup/"
+
+  - id: hangout_fest
+    name: "Hangout Music Festival"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.hangoutmusicfest.com/lineup/"
+
+  - id: pilgrimage_festival
+    name: "Pilgrimage Festival"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://pilgrimagefestival.com/"
+
+  - id: billboard_hot_100_fest
+    name: "Billboard Hot 100 Festival"
+    kind: festival
+    status: inactive
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_homepage
+        url: "https://www.billboard.com/"
