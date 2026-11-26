@@ -626,13 +626,34 @@
           "Hulu"
         ]
       },
-      "event_url": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
+      "event_url": "https://www.grammy.com/news/how-to-watch-2027-grammys/",
       "notes": [
-        "La Recording Academy confirmó oficialmente la ceremonia para el domingo 7 de febrero de 2027.",
-        "La edición 2027 será la primera transmisión de los GRAMMY por ABC desde 1972 y la primera con simulcast en Disney+ y Hulu.",
-        "Las nominaciones se anunciaron el 16 de noviembre de 2026."
+        "La ceremonia principal comienza a las 19:00 ET / 21:00 de Argentina (UTC-3), en el Crypto.com Arena.",
+        "La 69.ª edición marca el regreso de los GRAMMY a ABC y el debut de la transmisión simultánea en Disney+ y Hulu.",
+        "Nominaciones: RAYE lidera con 11; ROSALÍA tiene 9; Ella Langley, Miranda Lambert, Olivia Rodrigo y Phoebe Bridgers suman 7 cada una."
       ],
-      "event_extra_source": "https://abc.com/news/f055deb9-3d58-4ecf-bdf2-70536dff9549/category/1138628"
+      "event_extra_source": "https://www.grammy.com/news/2027-grammys-nominations-announcement/",
+      "start_local": "19:00",
+      "tz_local": "America/New_York"
+    },
+    {
+      "id": "grammys-2027-premiere",
+      "title": "69th GRAMMY Awards Premiere Ceremony 2027",
+      "date": "2027-02-07",
+      "start_local": "14:30",
+      "tz_local": "America/New_York",
+      "location": "Peacock Theater, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Disney+"
+        ]
+      },
+      "event_url": "https://www.grammy.com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/",
+      "notes": [
+        "Ceremonia de Premiere, donde se entregará la mayoría de las categorías antes de la transmisión televisiva principal.",
+        "Comienza a las 14:30 ET / 16:30 de Argentina (UTC-3)."
+      ]
     }
   ]
 }
