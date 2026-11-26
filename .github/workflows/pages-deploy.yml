@@ -1,17 +1,23 @@
-name: Build & Deploy site (premios + talkshows)
+name: Publish inHumano calendars
 
 on:
-  schedule:
-    - cron: "0 0 * * *"   # Todos los días 00:00 UTC (GMT-0)
+  push:
+    branches:
+      - main
+    paths:
+      - "premios.ics"
+      - "talkshow-guest-calendar/output/talkshow-guests.ics"
+      - "pages/**"
+      - ".github/workflows/pages-deploy.yml"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -21,39 +27,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Update events.yaml (watchlist + discovery)
-        run: |
-          python update_events.py
-
-      - name: Build premios.ics
-        run: |
-          python generate_calendar.py
-
-      - name: Build talkshow-guests.ics
-        working-directory: talkshow-guest-calendar
-        run: |
-          python update_calendar.py
-
-      - name: Prepare Pages site (_site)
+      - name: Prepare Pages site
         run: |
           rm -rf _site
           mkdir -p _site
-          cp -r pages/* _site/
-          cp premios.ics _site/premios.ics
-          cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
+          cp -R pages/. _site/
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+          if [ -f premios.ics ]; then
+            cp premios.ics _site/premios.ics
+          else
+            printf 'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//inHumano//Premios//ES\r\nCALSCALE:GREGORIAN\r\nEND:VCALENDAR\r\n' > _site/premios.ics
+          fi
+
+          if [ -f talkshow-guest-calendar/output/talkshow-guests.ics ]; then
+            cp talkshow-guest-calendar/output/talkshow-guests.ics _site/talkshow-guests.ics
+          else
+            printf 'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//inHumano//Talkshows//ES\r\nCALSCALE:GREGORIAN\r\nEND:VCALENDAR\r\n' > _site/talkshow-guests.ics
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -61,4 +54,5 @@ jobs:
           path: _site
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
