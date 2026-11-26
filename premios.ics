@@ -350,4 +350,329 @@ DESCRIPTION:Canal/Str
 DTSTART;TZID=America/Arg
  entina/Buenos_Aires:20270207163000
 END:VEVENT
+BEGIN:VEVENT
+UID:critics-choice-nominations-2026@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:32nd Critics Choice Awards 2027 — Anuncio de nominaciones
+LOCATION:Transmisión desde Estados Unidos
+DESCRIPTION:Canal/Streaming: E! / USA Network\nHora Argentina: 4/12 14:00 (
+ UTC-3)\nAnuncio de nominaciones de cine y televisión\, con Erin Lim Rhode
+ s y Will Marfuggi.\nInicio: 12:00 ET / 14:00 Argentina (UTC-3).\nFuente (e
+ vento): https://www.criticschoice.com/shortlists-for-the-32nd-annual-criti
+ cs-choice-awards-below-the-line-categories-announced/
+DTSTART:20261204T170000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:critics-choice-2027@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:32nd Critics Choice Awards 2027 — Ceremonia
+LOCATION:The Barker Hangar\, Santa Monica\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: E! / USA Network\nHora Argentina: 3/1 21:00–
+ 4/1 00:00 (UTC-3)\nConducción confirmada: Janelle James\nTransmisión en 
+ vivo 19:00–22:00 ET / 21:00–00:00 Argentina (UTC-3).\nFuente (evento):
+  https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-c
+ hoice-awards/
+DTSTART:20270104T000000Z
+DTEND:20270104T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:golden-globes-2027@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:84th Golden Globe Awards 2027 — Ceremonia
+LOCATION:The Beverly Hilton\, Beverly Hills\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS / Paramount+\nHora Argentina: 10/1 21:30
+ –11/1 00:30 (UTC-3)\nConducción confirmada: Nikki Glaser\nTransmisión 
+ en vivo 19:30–22:30 ET / 21:30–00:30 Argentina (UTC-3).\nFuente (event
+ o): https://www.paramountpressexpress.com/cbs-entertainment/shows/84th-ann
+ ual-golden-globes/about/
+DTSTART:20270111T003000Z
+DTEND:20270111T033000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:brit-awards-2027@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:The BRIT Awards 2027 — Ceremonia
+LOCATION:Co-op Live\, Manchester\, Reino Unido
+DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nFecha y emisión confirmadas por 
+ la organización. Horario exacto no publicado\; el anuncio indica franja p
+ rime-time.\nFuente (evento): https://www.brits.co.uk/news/2026/the-brit-aw
+ ards-reveals-2027-date
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+END:VEVENT
+BEGIN:VEVENT
+UID:actor-awards-2027@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:33rd Annual Actor Awards 2027 — Ceremonia
+LOCATION:Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: Netflix\nHora Argentina: 28/2 22:00 (UTC-3)\nT
+ ransmisión en vivo por Netflix a las 20:00 ET / 22:00 Argentina (UTC-3).\
+ nFuente (evento): https://actorawards.org/awards/calendar
+DTSTART:20270301T010000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:super-bowl-lxi-2027@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Super Bowl LXI 2027 — Partido y Halftime Show
+LOCATION:SoFi Stadium\, Inglewood\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: ESPN / ABC / ESPN Deportes / Univision / Disne
+ y+ / NFL+ (dispositivos móviles)\nPerformers confirmados: JAŸ-Z — Appl
+ e Music Super Bowl LXI Halftime Show\nLa NFL\, Apple Music y Roc Nation co
+ nfirmaron a JAŸ-Z como artista principal del show de medio tiempo.\nNo se
+  carga hora de inicio: no está confirmada en la fuente consultada.\nFuent
+ e (evento): https://amp.nfl.com/news/jay-z-halftime-show-press-release
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+END:VEVENT
+BEGIN:VEVENT
+UID:oscars-2027@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:99th Oscars 2027 — Ceremonia
+LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
+ tados Unidos
+DESCRIPTION:Canal/Streaming: ABC / Hulu\nHora Argentina: 14/3 20:00 (UTC-3)
+ \nConducción confirmada: Conan O’Brien\nEn vivo a las 19:00 ET / 20:00 
+ Argentina (UTC-3)\; Estados Unidos estará en horario de verano (EDT).\nLa
+  Academia anunció las nominaciones para el 21 de enero de 2027\; los tít
+ ulos y conteos líderes se agregarán cuando se publiquen.\nFuente (evento
+ ): https://press.oscars.org/news/99th-oscarsr-reunites-host-conan-obrien-a
+ nd-executive-producers-raj-kapoor-and-katy-mullan
+DTSTART:20270314T230000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:actor-awards-2028@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:34th Annual Actor Awards 2028 — Ceremonia
+LOCATION:Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: Netflix\nNetflix confirmó la fecha y la trans
+ misión en directo. El horario todavía no fue anunciado.\nFuente (evento)
+ : https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-
+ date-time
+DTSTART;VALUE=DATE:20280220
+DTEND;VALUE=DATE:20280221
+END:VEVENT
+BEGIN:VEVENT
+UID:oscars-2028@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:100th Oscars 2028 — Ceremonia
+LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
+ tados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nHora Argentina: 5/3 21:00 (UTC-3)\nLa Aca
+ demia y ABC confirmaron la fecha y la emisión en directo a las 19:00 ET /
+  21:00 Argentina (UTC-3).\nFuente (evento): https://press.oscars.org/news/
+ academy-and-abc-announce-show-dates-99th-and-100th-oscarsr
+DTSTART:20280306T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:lolla-argentina-2027-day-1@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Lollapalooza Argentina 2027 — Viernes 12 de marzo
+LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
+DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
+ adas\nHeadliners: The Killers\; The Neighbourhood\nLine-up del día: The K
+ illers\; The Neighbourhood\; Fontaines D.C.\; The Prodigy\; Dillom\; Malco
+ lm Todd\; RAYE\; ADÉLA\; Marlon Hoffstadt\; Boys Noize\; Midnight Generat
+ ion\; Mind Enterprises\; AYYBO\; Ela Taubert\; Princesa Alba\; Folgar\; Sa
+ ntos Bravos\; Kchiporros\; Natalia Lacunza\; Joaco Burgos\; Mai Lawson\; V
+ arese\; Sol Porro\; Pato Mallet\; Las Sombras\nProgramación diaria anunci
+ ada. Los horarios de escenario aún no fueron publicados.\nFuente (evento)
+ : https://www.lollapaloozaar.com/\nFuente (line-up): https://www.lanacion.
+ com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-art
+ istas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/\nFuente 
+ (transmisión): https://www.lanacion.com.ar/espectaculos/musica/lollapaloo
+ za-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuest
+ an-las-entradas-nid03112026/
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+END:VEVENT
+BEGIN:VEVENT
+UID:lolla-argentina-2027-day-2@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Lollapalooza Argentina 2027 — Sábado 13 de marzo
+LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
+DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
+ adas\nHeadliners: Travis Scott\; TINI\; Queens of the Stone Age\nLine-up d
+ el día: Travis Scott\; TINI\; Queens of the Stone Age\; Rawayana\; Geese\
+ ; SLAYYYTER\; Un Poco de Ruido\; Four Tet\; Angine de Poitrine\; Carlita\;
+  Sammy Virji\; Julia Wolf\; Die Spitz\; Mateo Dufour Live\; Yorghaki\; Jua
+ na Rozas\; Francisca Valenzuela\; Broke Carrey\; Tiga\; Lolu Menayed\; Sof
+ ía Mora\; Ara\; Palo\; Fabrizio\; Hellolola\nProgramación diaria anuncia
+ da. Los horarios de escenario aún no fueron publicados.\nFuente (evento):
+  https://www.lollapaloozaar.com/\nFuente (line-up): https://www.lanacion.c
+ om.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-arti
+ stas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/\nFuente (
+ transmisión): https://www.lanacion.com.ar/espectaculos/musica/lollapalooz
+ a-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuesta
+ n-las-entradas-nid03112026/
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+END:VEVENT
+BEGIN:VEVENT
+UID:lolla-argentina-2027-day-3@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Lollapalooza Argentina 2027 — Domingo 14 de marzo
+LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
+DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
+ adas\nHeadliners: Charli xcx\; David Guetta\; Cage the Elephant\nLine-up d
+ el día: Charli xcx\; David Guetta\; Sombr\; Dominic Fike\; Cage the Eleph
+ ant\; Lola Young\; TOMORA\; K4OS\; Leon Bridges\; Usted Señalemelo\; Snow
+  Strippers\; Ninajirachi\; The Avalanches\; Rivo\; Boy Harsher\; Amaia\; J
+ uan Hansen Live\; Violet Grohl\; Enzocerobulto\; Daniela Spalla\; Zé Pequ
+ eña\; Dandára\; Hana Fox\; Molle\; La Ramona\nProgramación diaria anunc
+ iada. Los horarios de escenario aún no fueron publicados.\nFuente (evento
+ ): https://www.lollapaloozaar.com/\nFuente (line-up): https://www.lanacion
+ .com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-ar
+ tistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/\nFuente
+  (transmisión): https://www.lanacion.com.ar/espectaculos/musica/lollapalo
+ oza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cues
+ tan-las-entradas-nid03112026/
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+END:VEVENT
+BEGIN:VEVENT
+UID:coachella-2027-weekend-1-friday@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Coachella 2027 — Weekend 1 — Viernes
+LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
+ nHeadliners: Dua Lipa\nLine-up del día: Dua Lipa\; Madonna\; Zara Larsson
+ \; Steve Lacy\; JISOO\; Diljit Dosanjh\; Peggy Gou\; Kehlani\; Solid Groov
+ es\; Giorgio Moroder\; Social Distortion\; Pinegrove\; Angine de Poitrine\
+ ; Leon Thomas\; Drain Gang\; Snow Strippers\; Mike D 5D\; CHRIS STASSY\; M
+ ilo J\; SG Lewis\; Kelela\; Franky Rizardo\; Fetty Wap\; Vintage Culture\;
+  The Damned\; ATARASHII GAKKO!\; Nettspend\; American Football\; xaviersob
+ ased\; La Dispute\; Haute & Freddy\; The Hellp\; Disco Dom\; MPH\; Bella K
+ ay\; This Is Lorelei\; The Womack Sisters\; Mary in the Junkyard\; Close F
+ riends Only\; Obskür\; Jacob Lusk\; LEENALCHI\; Bea Miller\; Gang of Yout
+ hs\; Love Spells\; Rafael\; Nirosta Steel\; Ragie Ban\; Eli\; Las Petunias
+ \; Violet Grohl\; Jackie Hollander\; Jamback x Marsolo\; NOYA\nLa programa
+ ción de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de esce
+ narios aún no publicados.\nFuente (evento): https://www.coachella.com/lin
+ eup/\nFuente (line-up): https://www.thefader.com/2026/11/11/coachella-2027
+ -lineup-sza-dua-lipa-tame-impala-and-more\nFuente (transmisión): https://
+ coachella.com/youtube-livestream
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+END:VEVENT
+BEGIN:VEVENT
+UID:coachella-2027-weekend-1-saturday@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Coachella 2027 — Weekend 1 — Sábado
+LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
+ nHeadliners: Tame Impala\nLine-up del día: Tame Impala\; Phoebe Bridgers\
+ ; Weezer\; Tiësto\; Martin Garrix\; Robyn\; Role Model\; ADÉLA\; Månesk
+ in\; Solomun\; NCT\; Enigma\; Underworld\; Charlotte de Witte\; Leon Bridg
+ es\; Cloonee\; Magdalena Bay\; Barry Can’t Swim\; Boy Harsher\; KI/KI\; 
+ Mariah the Scientist\; Bad Gyal\; Basement\; Brutalismus 3000\; Beltran\; 
+ underscores\; SB19\; Twin Tribes\; Odeal\; Bassvictim\; Los Pibes Chorros\
+ ; Tiffany Day\; no na\; Mathame\; ear\; Vandelux\; rommulas\; Apollonia\; 
+ Getdown Services\; Good Neighbours\; First Day Back\; Jimi Jules\; Twisted
+  Teens\; Murda Beatz\; Villanelle\; Kolter x Sidney Charles\; La Texana\; 
+ OMRI.\; Volkoder\; Zimmer90\; LuSiD\; Dream Boat\nLa programación de esta
+  jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún n
+ o publicados.\nFuente (evento): https://www.coachella.com/lineup/\nFuente 
+ (line-up): https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-d
+ ua-lipa-tame-impala-and-more\nFuente (transmisión): https://coachella.com
+ /youtube-livestream
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+END:VEVENT
+BEGIN:VEVENT
+UID:coachella-2027-weekend-1-sunday@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Coachella 2027 — Weekend 1 — Domingo
+LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
+ nHeadliners: SZA\nLine-up del día: SZA\; Don Toliver\; DOM DOLLA\; Kygo\;
+  Empire of the Sun\; Four Tet\; The Neighbourhood\; Becky G\; BABYMONSTER\
+ ; Amelie Lens x Sara Landry\; Remi Wolf\; Trove Lo\; Victoria Monét\; EsD
+ eeKid\; Caroline Polachek\; Chase & Status\; MUNA\; Boris Brejcha\; Jorja 
+ Smith\; The Avalanches\; BOLO\; Pennywise\; Freddie Gibbs\; Shygirl\; Juli
+ a Wolf\; Odd Mob\; Ayra Starr\; Lambrini Girls\; AKRIILA\; Dinner Party\; 
+ Silva Bumpa\; DJ Habibeats\; Chanel Beads\; Adam Ten\; After\; Zack Fox\; 
+ Fat Dog\; Omar+\; Genesis Owusu\; Joshua Slone\; The Mainliners\; Marten L
+ ou x Alex Wann\; ChaseWest\; Florence Road\; Jazzy\; TUL8TE\; Jakob Nowell
+  and THE CASTLE\; Talón\; Klave Efectiva\nLa programación de esta jornad
+ a se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publi
+ cados.\nFuente (evento): https://www.coachella.com/lineup/\nFuente (line-u
+ p): https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa
+ -tame-impala-and-more\nFuente (transmisión): https://coachella.com/youtub
+ e-livestream
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+END:VEVENT
+BEGIN:VEVENT
+UID:coachella-2027-weekend-2-friday@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Coachella 2027 — Weekend 2 — Viernes
+LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
+ nHeadliners: Dua Lipa\nLine-up del día: Dua Lipa\; Madonna\; Zara Larsson
+ \; Steve Lacy\; JISOO\; Diljit Dosanjh\; Peggy Gou\; Kehlani\; Solid Groov
+ es\; Giorgio Moroder\; Social Distortion\; Pinegrove\; Angine de Poitrine\
+ ; Leon Thomas\; Drain Gang\; Snow Strippers\; Mike D 5D\; CHRIS STASSY\; M
+ ilo J\; SG Lewis\; Kelela\; Franky Rizardo\; Fetty Wap\; Vintage Culture\;
+  The Damned\; ATARASHII GAKKO!\; Nettspend\; American Football\; xaviersob
+ ased\; La Dispute\; Haute & Freddy\; The Hellp\; Disco Dom\; MPH\; Bella K
+ ay\; This Is Lorelei\; The Womack Sisters\; Mary in the Junkyard\; Close F
+ riends Only\; Obskür\; Jacob Lusk\; LEENALCHI\; Bea Miller\; Gang of Yout
+ hs\; Love Spells\; Rafael\; Nirosta Steel\; Ragie Ban\; Eli\; Las Petunias
+ \; Violet Grohl\; Jackie Hollander\; Jamback x Marsolo\; NOYA\nLa programa
+ ción de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de esce
+ narios aún no publicados.\nFuente (evento): https://www.coachella.com/lin
+ eup/\nFuente (line-up): https://www.thefader.com/2026/11/11/coachella-2027
+ -lineup-sza-dua-lipa-tame-impala-and-more\nFuente (transmisión): https://
+ coachella.com/youtube-livestream
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+END:VEVENT
+BEGIN:VEVENT
+UID:coachella-2027-weekend-2-saturday@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Coachella 2027 — Weekend 2 — Sábado
+LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
+ nHeadliners: Tame Impala\nLine-up del día: Tame Impala\; Phoebe Bridgers\
+ ; Weezer\; Tiësto\; Martin Garrix\; Robyn\; Role Model\; ADÉLA\; Månesk
+ in\; Solomun\; NCT\; Enigma\; Underworld\; Charlotte de Witte\; Leon Bridg
+ es\; Cloonee\; Magdalena Bay\; Barry Can’t Swim\; Boy Harsher\; KI/KI\; 
+ Mariah the Scientist\; Bad Gyal\; Basement\; Brutalismus 3000\; Beltran\; 
+ underscores\; SB19\; Twin Tribes\; Odeal\; Bassvictim\; Los Pibes Chorros\
+ ; Tiffany Day\; no na\; Mathame\; ear\; Vandelux\; rommulas\; Apollonia\; 
+ Getdown Services\; Good Neighbours\; First Day Back\; Jimi Jules\; Twisted
+  Teens\; Murda Beatz\; Villanelle\; Kolter x Sidney Charles\; La Texana\; 
+ OMRI.\; Volkoder\; Zimmer90\; LuSiD\; Dream Boat\nLa programación de esta
+  jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún n
+ o publicados.\nFuente (evento): https://www.coachella.com/lineup/\nFuente 
+ (line-up): https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-d
+ ua-lipa-tame-impala-and-more\nFuente (transmisión): https://coachella.com
+ /youtube-livestream
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+END:VEVENT
+BEGIN:VEVENT
+UID:coachella-2027-weekend-2-sunday@inhumano.github.io
+DTSTAMP:20261126T233317Z
+SUMMARY:Coachella 2027 — Weekend 2 — Domingo
+LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
+ nHeadliners: SZA\nLine-up del día: SZA\; Don Toliver\; DOM DOLLA\; Kygo\;
+  Empire of the Sun\; Four Tet\; The Neighbourhood\; Becky G\; BABYMONSTER\
+ ; Amelie Lens x Sara Landry\; Remi Wolf\; Trove Lo\; Victoria Monét\; EsD
+ eeKid\; Caroline Polachek\; Chase & Status\; MUNA\; Boris Brejcha\; Jorja 
+ Smith\; The Avalanches\; BOLO\; Pennywise\; Freddie Gibbs\; Shygirl\; Juli
+ a Wolf\; Odd Mob\; Ayra Starr\; Lambrini Girls\; AKRIILA\; Dinner Party\; 
+ Silva Bumpa\; DJ Habibeats\; Chanel Beads\; Adam Ten\; After\; Zack Fox\; 
+ Fat Dog\; Omar+\; Genesis Owusu\; Joshua Slone\; The Mainliners\; Marten L
+ ou x Alex Wann\; ChaseWest\; Florence Road\; Jazzy\; TUL8TE\; Jakob Nowell
+  and THE CASTLE\; Talón\; Klave Efectiva\nLa programación de esta jornad
+ a se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publi
+ cados.\nFuente (evento): https://www.coachella.com/lineup/\nFuente (line-u
+ p): https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa
+ -tame-impala-and-more\nFuente (transmisión): https://coachella.com/youtub
+ e-livestream
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+END:VEVENT
 END:VCALENDAR
