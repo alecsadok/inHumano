@@ -4,6 +4,7 @@ PRODID:-//inHumano//Calendario A-List AR//ES
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Calendario A-List — Premios y conciertos (Argentina UTC-3)
+X-WR-CALDESC:Premiaciones, festivales y conciertos con TV o streaming confirmado; horarios en Argentina (UTC-3).
 X-WR-TIMEZONE:America/Argentina/Buenos_Aires
 BEGIN:VEVENT
 UID:critics-choice-2026@inhumano.github.io
