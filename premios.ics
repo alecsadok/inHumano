@@ -76,9 +76,9 @@ UID:actor-awards-2026-red-carpet@inhumano.github.io
 DTSTAMP:20261126T120000Z
 SUMMARY:The Actor Awards 2026 — Red Carpet / Official Pre-Show
 LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: Netflix\nPre-show oficial de la ceremonia.\n
- Fuente (evento): https://actorawards.org/media/news/releases/paige-desor
- bo-and-scott-evans-host-actors-red-carpet-32nd-annual-actor-awards
+DESCRIPTION:Pre-show oficial de la ceremonia.\nFuente (evento): https://a
+ ctorawards.org/media/news/releases/paige-desorbo-and-scott-evans-host-ac
+ tors-red-carpet-32nd-annual-actor-awards
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260301210000
 END:VEVENT
 BEGIN:VEVENT
@@ -271,5 +271,51 @@ DESCRIPTION:Canal/Streaming: CBS / MTV / Paramount+\nPerformers confirmad
  sept-27-on-cbs
 DTSTART;TZID=America/Argentina/Buenos_Aires:20260927203000
 DTEND;TZID=America/Argentina/Buenos_Aires:20260927223000
+END:VEVENT
+BEGIN:VEVENT
+UID:naacp-image-awards-2026@inhumano.github.io
+DTSTAMP:20261126T120000Z
+SUMMARY:57th NAACP Image Awards 2026 — Ceremonia
+LOCATION:Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: BET\nLa ceremonia se transmitió en vivo el s
+ ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento):
+  https://naacp.org/events/57th-naacp-image-awards
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260228220000
+END:VEVENT
+BEGIN:VEVENT
+UID:brit-awards-2026@inhumano.github.io
+DTSTAMP:20261126T120000Z
+SUMMARY:The BRIT Awards 2026 — Ceremonia
+LOCATION:Co-op Live\, Manchester\, Reino Unido
+DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nLa edición 2026 se celebró el s
+ ábado 28 de febrero en Manchester\; primera vez que la ceremonia se real
+ izó fuera de Londres.\nFuente (evento): https://www.brits.co.uk/news/202
+ 6/2026-brit-award-revealed/
+DTSTART;VALUE=DATE:20260228
+DTEND;VALUE=DATE:20260301
+END:VEVENT
+BEGIN:VEVENT
+UID:latin-grammy-2026@inhumano.github.io
+DTSTAMP:20261126T120000Z
+SUMMARY:27th Annual Latin GRAMMY Awards 2026 — Ceremonia
+LOCATION:MGM Grand Garden Arena\, Las Vegas\, Nevada\, USA
+DESCRIPTION:Canal/Streaming: Univision / Plataformas oficiales de Latin G
+ RAMMY (Premiere)\nPerformers confirmados: Anitta\; Banda Los Recoditos\;
+  Daddy Yankee\; Jorge Drexler\; Silvana Estrada\; Kany García\; Juanes\;
+  Carín León\; Mon Laferte\; Vivir Quintana\; Rawayana\; Rosalía\; Elena 
+ Rose\; Xavi\nPresentadores: Pablo Alborán\; Camila Cabello\; Ryan Castro
+ \; William Contreras\; Howie D\; Lila Downs\; Greeicy\; Joaquina\; Danie
+ la Mercury\; Debi Nova\; Memo Ochoa\; Anthony Ramos\; Luísa Sonza\; True
+ no\nRoselyn Sánchez fue anunciada como conductora de la ceremonia televi
+ sada.\nLa Latin GRAMMY Premiere comenzó a las 15:00 ET y se transmitió e
+ n plataformas de la Academia\; la ceremonia principal fue televisada por
+  Univision a las 20:00 ET.\nFuente (evento): https://www.latingrammy.com
+ /es/noticias/akapellah-pablo-alboran-carminho-jorge-celedon-yerai-cortes
+ -gusi-kakalo-karen-lizarazo-victor-nain-jr-and-marina-sena-to-perform-at
+ -the-latin-grammy-premiere/\nFuente (información adicional): https://www
+ .latingrammy.com/es/noticias/presenters-announced-for-the-27th-annual-la
+ tin-grammy-awards/
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261112220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261113010000
 END:VEVENT
 END:VCALENDAR
