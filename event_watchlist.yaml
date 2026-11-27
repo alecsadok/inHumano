@@ -61,8 +61,8 @@ watchlist:
     default_start_local: "20:00"
     duration_minutes: 210
     broadcast:
-      tv: ["CBS"]
-      streaming: ["Paramount+"]
+      tv: ["ABC"]
+      streaming: ["Disney+","Hulu"]
       red_carpet: { confirmed: false }
 
   - id: critics_choice
@@ -91,8 +91,8 @@ watchlist:
     default_start_local: "18:30"
     duration_minutes: 240
     broadcast:
-      tv: []
-      streaming: []
+      tv: ["ESPN","ABC"]
+      streaming: ["Disney+","NFL+ (dispositivos móviles)"]
       red_carpet: { confirmed: false }
 
   - id: naacp_image_awards
@@ -137,7 +137,7 @@ watchlist:
     duration_minutes: 210
     broadcast:
       tv: ["ABC"]
-      streaming: []
+      streaming: ["Hulu"]
       red_carpet: { confirmed: false }
 
   - id: queerties
