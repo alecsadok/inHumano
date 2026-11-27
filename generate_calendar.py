@@ -202,7 +202,7 @@ def main() -> None:
             # Solo publicar eventos con transmisión confirmada para esta edición.
             continue
 
-        red = broadcast.get("red_carpet", {}) or {}
+        red = ev.get("red_carpet", {}) or broadcast.get("red_carpet", {}) or {}
         red_confirmed = bool(red.get("confirmed", False))
         red_where = str(red.get("where", "")).strip()
         red_start_local = red.get("start_local")
@@ -281,7 +281,7 @@ def main() -> None:
             )
 
             # Añadir información complementaria que solo se carga cuando está confirmada.
-            for key, label in (("lineup", "Line-up del día"), ("confirmed_hosts", "Conducción confirmada"), ("confirmed_presenters", "Presentadores confirmados"), ("confirmed_performers", "Performers confirmados")):
+            for key, label in (("headliners", "Headliners"), ("pop_artists", "Artistas pop destacados"), ("argentine_artists", "Artistas argentinos"), ("lineup", "Line-up del día"), ("confirmed_hosts", "Conducción confirmada"), ("confirmed_presenters", "Presentadores confirmados"), ("confirmed_performers", "Performers confirmados")):
                 vals = ensure_list(ev.get(key))
                 if vals:
                     desc_main.append(label + ": " + "; ".join(vals))
