@@ -154,11 +154,31 @@ La ejecución termina al completar la actualización solicitada. No programar tr
 
 ## Verificación de televisión: guías y grillas
 
-Usar **TV Passport** (https://www.tvpassport.com/tv-listings) y **TitanTV** (https://www.titantv.com/) como fuentes complementarias para descubrir y cotejar emisiones televisivas. Consultar la grilla correspondiente a la señal o estación concreta; cuando sea posible, usar el feed East Coast / Eastern para las cadenas nacionales de Estados Unidos y comprobar la zona horaria que muestra la guía.
+Usar **TV Passport** (https://www.tvpassport.com/tv-listings) y **TitanTV** (https://www.titantv.com/) de forma sistemática para descubrir eventos televisivos nuevos/en vivo, detectar títulos no incluidos en la watchlist y obtener horarios de emisión. No limitar la consulta a los eventos ya conocidos: revisar grillas de cadenas y señales relevantes para encontrar especiales, anuncios de nominaciones, ceremonias, galas, tributos y otros eventos que cumplan el alcance editorial.
 
-- Ambas guías dependen de una selección de proveedor, señal, ubicación o lineup. No tomar una grilla local como si fuera la programación nacional de todas las filiales.
-- Contrastar título, fecha y hora en ambas guías con el comunicado más reciente de la cadena o del organizador. Las guías sirven como segunda comprobación; no confirman por sí solas derechos de streaming, invitados ni performers.
-- Si existe una discrepancia, priorizar la actualización oficial más reciente y registrar si una guía todavía conserva la fecha u hora anterior.
-- Revisar las etiquetas de estreno / New, Live y Repeat. Excluir repeticiones, episodios regulares, películas, maratones y bloques de programación; no convertir una película o un especial repetido en un evento nuevo por el solo hecho de aparecer en una grilla.
-- Incluir programas televisivos solo cuando sean eventos en vivo o especiales originales de una sola emisión / estreno, con fecha y canal confirmados. Para streaming, exigir confirmación específica de la plataforma para esa edición.
-- Registrar por separado la fuente oficial del evento y, cuando aporte valor, la grilla utilizada para el cotejo. Convertir los horarios a Argentina con la zona IANA del mercado de origen; no asumir que la hora que muestra la guía es hora argentina.
+### TV Passport: etiquetas y lectura de grilla
+
+- Revisar las páginas de programación de la estación/señal concreta y la fecha exacta. Para cadenas nacionales estadounidenses, priorizar señales **East / Eastern** cuando estén disponibles; verificar siempre el nombre completo de la estación y el huso que muestra la página.
+- En TV Passport, tratar las etiquetas **“New”** y **“Live”** como indicadores positivos de descubrimiento: señalan que la emisión es nueva y/o en vivo. Registrar cuál de las dos aparece. Si aparecen ambas, es una señal especialmente fuerte para investigar e incorporar el evento, siempre que cumpla el alcance editorial.
+- La etiqueta **“Repeat”** (o una indicación equivalente de repetición) es motivo de exclusión, salvo que se trate de una nueva emisión en vivo distinta y comprobable. No confundir una descripción que menciona “live” dentro de la sinopsis con la etiqueta de estado de la emisión.
+- Si la extracción de la página no devuelve las etiquetas visuales, inspeccionar la página renderizada o la grilla original antes de concluir que no están presentes. No interpretar la ausencia de una etiqueta en una extracción de texto como prueba de que la emisión no es nueva/en vivo.
+- Ejemplo de detección: la grilla de E! Entertainment USA HD - East del 4/12/2026 muestra a las 9:00 AM el anuncio en vivo de nominaciones seleccionadas de los **32nd Annual Critics Choice Awards**. La ficha debe revisarse por sus marcas “New” y “Live” y contrastarse con la organización/cadena. Al ser una grilla East/Eastern en diciembre (EST, UTC−5), las 9:00 AM equivalen a **11:00 en Argentina (UTC−3)**. URL: https://www.tvpassport.com/tv-listings/stations/e-entertainment-usa-hd-east/6659/2026-12-04.
+
+### TitanTV y contraste
+
+- Usar TitanTV como segunda guía de detección y cotejo de fecha, título, señal y hora. Consultar el lineup/mercado correspondiente; no asumir que una grilla local representa a todas las filiales.
+- Comparar TV Passport y TitanTV cuando ambas publiquen la emisión. Una diferencia de horario puede deberse a zona, proveedor, estación o actualización; resolverla con la página oficial de la cadena/organizador más reciente.
+- Las guías pueden descubrir y corroborar la hora/canal, pero no confirman por sí solas derechos de streaming, invitados, performers, nominaciones ni asistencia de celebridades.
+
+### Reglas de inclusión
+
+- Las etiquetas “New” y “Live” habilitan la investigación, pero no sustituyen la verificación editorial. Incorporar solo eventos especiales nuevos/en vivo, anuncios de premios o nominaciones, galas, ceremonias, tributos, especiales originales de una sola emisión y programación-evento confirmada.
+- Excluir repeticiones, episodios regulares, películas, maratones, bloques genéricos de programación y títulos que solo ingresan a un catálogo de streaming. No agregar un programa solo porque aparece en una grilla.
+- Para cada candidato, verificar título, fecha, hora, canal y naturaleza de la emisión con la cadena, organizador o fuente oficial más reciente. Si no se puede verificar si es nuevo/en vivo, dejarlo como candidato pendiente y no publicarlo en el ICS.
+- Guardar la URL específica de la grilla consultada y la URL oficial que confirma el evento. Las guías son fuentes de detección/cotejo, no sustitutos de la fuente primaria.
+
+### Conversión horaria de grillas
+
+- Registrar el huso horario que corresponde a la estación y a la opción seleccionada en la guía. Para señales estadounidenses East/Eastern, usar `America/New_York`; en diciembre corresponde EST (UTC−5), mientras que durante el horario de verano corresponde EDT (UTC−4).
+- Convertir cada hora con la base IANA/tzdata a `America/Argentina/Buenos_Aires` (UTC−3). No aplicar una diferencia fija durante todo el año ni confundir ET con EST: ET cambia entre EST y EDT.
+- Mantener la fecha local correcta después de la conversión; si el cambio de huso cruza la medianoche, guardar la fecha argentina resultante.
