@@ -148,3 +148,15 @@ La ejecución termina al completar la actualización solicitada. No programar tr
 - Luego del commit, revisar GitHub Actions y abrir https://alecsadok.github.io/inHumano/premios.ics para comprobar que Pages publicó el archivo. Un commit exitoso no equivale a publicación verificada.
 - Mantener en watchlist los eventos históricos, pausados o discontinuados (marcados inactivos), pero no publicarlos hasta que exista una edición vigente y una emisión confirmada.
 - Catálogo a vigilar: Golden Globes; SAG/Actor Awards; anuncios de nominaciones Oscar; GRAMMYs; Critics Choice; Super Bowl/Halftime Show; NAACP Image Awards; BRIT Awards; Oscars; Queerties; iHeartRadio Music Awards; GLAAD; Coachella; New Orleans Jazz & Heritage; Billboard Music Awards; Met Gala; Rolling Loud; BBC Radio 1 Big Weekend; Kids' Choice; Governors Ball; Summertime Ball; Bonnaroo; Wango Tango; Glastonbury; Isle of Wight; BET Awards; Tomorrowland; Lollapalooza Argentina/Chicago/Brasil; Chasing Summer; VELD; Outside Lands; Summer Sonic; MTV VMAs; Emmy Awards (incluidos Creative Arts); iHeartRadio Music Festival; Rock in Rio; Billboard Latin Music Awards; People's Choice; Billboard Women in Music; Jingle Ball/Jingle Bell Ball; Global Citizen; BAFTA Film/TV; Independent Spirit; Satellite; JUNO; Premio Lo Nuestro; Latin GRAMMYs; MTV EMAs; AMAs; Cannes; Venice; TIFF; iHeart Summer Pool Party; B96 Jingle Bash.
+
+
+## Verificación de televisión: guías y grillas
+
+Usar **TV Passport** (https://www.tvpassport.com/tv-listings) y **TitanTV** (https://www.titantv.com/) como fuentes complementarias para descubrir y cotejar emisiones televisivas. Consultar la grilla correspondiente a la señal o estación concreta; cuando sea posible, usar el feed East Coast / Eastern para las cadenas nacionales de Estados Unidos y comprobar la zona horaria que muestra la guía.
+
+- Ambas guías dependen de una selección de proveedor, señal, ubicación o lineup. No tomar una grilla local como si fuera la programación nacional de todas las filiales.
+- Contrastar título, fecha y hora en ambas guías con el comunicado más reciente de la cadena o del organizador. Las guías sirven como segunda comprobación; no confirman por sí solas derechos de streaming, invitados ni performers.
+- Si existe una discrepancia, priorizar la actualización oficial más reciente y registrar si una guía todavía conserva la fecha u hora anterior.
+- Revisar las etiquetas de estreno / New, Live y Repeat. Excluir repeticiones, episodios regulares, películas, maratones y bloques de programación; no convertir una película o un especial repetido en un evento nuevo por el solo hecho de aparecer en una grilla.
+- Incluir programas televisivos solo cuando sean eventos en vivo o especiales originales de una sola emisión / estreno, con fecha y canal confirmados. Para streaming, exigir confirmación específica de la plataforma para esa edición.
+- Registrar por separado la fuente oficial del evento y, cuando aporte valor, la grilla utilizada para el cotejo. Convertir los horarios a Argentina con la zona IANA del mercado de origen; no asumir que la hora que muestra la guía es hora argentina.

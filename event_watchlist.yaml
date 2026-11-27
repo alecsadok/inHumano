@@ -710,8 +710,14 @@ watchlist:
         url: "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup"
       - type: official_streaming_schedule
         url: "https://www.apple.com/tv-pr/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-special-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/"
-      - type: official_streaming_schedule
-        url: "https://www.disneyplus.com/explore/articles/diary-of-a-wimpy-kid-christmas-the-getaway-movie"
+      - type: tv_schedule_guide
+        url: "https://www.tvpassport.com/tv-listings"
+      - type: tv_schedule_guide
+        url: "https://www.titantv.com/"
+      - type: official_event_announcement
+        url: "https://www.nbcuniversal.com/article/100th-macys-thanksgiving-day-parader-air-live-nbc-and-peacock-saturday-nov-28"
+      - type: official_network_schedule
+        url: "https://www.detpress.com/abc/pressrelease/abc-decks-the-halls-with-festive-holiday-programming-for-2026/"
       - type: official_event_announcement
         url: "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/"
     tz_local: "America/New_York"

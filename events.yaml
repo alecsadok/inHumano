@@ -87,6 +87,42 @@
       ]
     },
     {
+      "id": "brit-awards-2026",
+      "title": "The BRIT Awards 2026 — Ceremonia",
+      "date": "2026-02-28",
+      "location": "Co-op Live, Manchester, Reino Unido",
+      "broadcast": {
+        "tv": [
+          "ITV1"
+        ],
+        "streaming": [
+          "ITVX"
+        ]
+      },
+      "event_url": "https://www.brits.co.uk/news/2026/2026-brit-award-revealed/",
+      "notes": [
+        "La edición 2026 se celebró el sábado 28 de febrero en Manchester; primera vez que la ceremonia se realizó fuera de Londres."
+      ]
+    },
+    {
+      "id": "naacp-image-awards-2026",
+      "title": "57th NAACP Image Awards 2026 — Ceremonia",
+      "date": "2026-02-28",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "location": "Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "BET"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://naacp.org/events/57th-naacp-image-awards",
+      "notes": [
+        "La ceremonia se transmitió en vivo el sábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT."
+      ]
+    },
+    {
       "id": "actor-awards-2026",
       "title": "The Actor Awards 2026 — Ceremonia",
       "date": "2026-03-01",
@@ -123,27 +159,6 @@
       "notes": [
         "Kristen Bell condujo la ceremonia.",
         "El pre-show oficial The Actor’s Red Carpet se transmitió en Netflix desde las 19:00 ET."
-      ]
-    },
-    {
-      "id": "oscars-2026",
-      "title": "Oscars 2026 (98th) — Ceremonia",
-      "date": "2026-03-15",
-      "start_local": "19:00",
-      "tz_local": "America/New_York",
-      "location": "Dolby Theatre, Hollywood, Los Angeles, California, USA",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.oscars.org/oscars/ceremonies/2026",
-      "presenters": [
-        "Conan O'Brien (host)"
-      ],
-      "notes": [
-        "La página oficial de la Academia contiene ganadores y nominados de la 98.ª edición."
       ]
     },
     {
@@ -196,6 +211,27 @@
       "notes": [
         "Tres jornadas: 13, 14 y 15 de marzo.",
         "La grilla por día fue publicada por medios locales; no se incorporan horarios individuales de sets en esta actualización."
+      ]
+    },
+    {
+      "id": "oscars-2026",
+      "title": "Oscars 2026 (98th) — Ceremonia",
+      "date": "2026-03-15",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "location": "Dolby Theatre, Hollywood, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.oscars.org/oscars/ceremonies/2026",
+      "presenters": [
+        "Conan O'Brien (host)"
+      ],
+      "notes": [
+        "La página oficial de la Academia contiene ganadores y nominados de la 98.ª edición."
       ]
     },
     {
@@ -314,34 +350,6 @@
       ]
     },
     {
-      "id": "governors-ball-2026",
-      "title": "The Governors Ball 2026 — Festival",
-      "date": "2026-06-05",
-      "end_date": "2026-06-08",
-      "location": "Flushing Meadows Corona Park, Queens, New York, USA",
-      "broadcast": {
-        "tv": [],
-        "streaming": []
-      },
-      "headliners": [
-        "Lorde",
-        "Stray Kids",
-        "A$AP Rocky"
-      ],
-      "pop_artists": [
-        "KATSEYE",
-        "Jennie",
-        "Kali Uchis",
-        "Dominic Fike",
-        "Baby Keem",
-        "Mariah the Scientist"
-      ],
-      "event_url": "https://news.livenationentertainment.com/news/governors-ball-2026-lineup-announced",
-      "notes": [
-        "Festival del 5 al 7 de junio de 2026."
-      ]
-    },
-    {
       "id": "tomorrowland-2026-weekend-1",
       "title": "Tomorrowland Belgium 2026 — Weekend 1",
       "date": "2026-07-17",
@@ -408,36 +416,6 @@
       "lineup_source_url": "https://pitchfork.com/story/outside-lands-2026-amazon-music-livestream-schedule-and-details/",
       "notes": [
         "Festival del 7 al 9 de agosto."
-      ]
-    },
-    {
-      "id": "creative-arts-emmys-2026-night-1",
-      "title": "Creative Arts Emmy Awards 2026 — Noche 1",
-      "date": "2026-09-05",
-      "end_date": "2026-09-06",
-      "location": "Peacock Theater, Los Angeles, California, USA",
-      "broadcast": {
-        "tv": [],
-        "streaming": []
-      },
-      "event_url": "https://www.televisionacademy.com/calendar",
-      "notes": [
-        "Primera de las dos ceremonias presenciales de Creative Arts Emmy Awards."
-      ]
-    },
-    {
-      "id": "creative-arts-emmys-2026-night-2",
-      "title": "Creative Arts Emmy Awards 2026 — Noche 2",
-      "date": "2026-09-06",
-      "end_date": "2026-09-07",
-      "location": "Peacock Theater, Los Angeles, California, USA",
-      "broadcast": {
-        "tv": [],
-        "streaming": []
-      },
-      "event_url": "https://www.televisionacademy.com/calendar",
-      "notes": [
-        "Segunda de las dos ceremonias presenciales de Creative Arts Emmy Awards."
       ]
     },
     {
@@ -522,42 +500,6 @@
       ]
     },
     {
-      "id": "naacp-image-awards-2026",
-      "title": "57th NAACP Image Awards 2026 — Ceremonia",
-      "date": "2026-02-28",
-      "start_local": "20:00",
-      "tz_local": "America/New_York",
-      "location": "Los Angeles, California, USA",
-      "broadcast": {
-        "tv": [
-          "BET"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://naacp.org/events/57th-naacp-image-awards",
-      "notes": [
-        "La ceremonia se transmitió en vivo el sábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT."
-      ]
-    },
-    {
-      "id": "brit-awards-2026",
-      "title": "The BRIT Awards 2026 — Ceremonia",
-      "date": "2026-02-28",
-      "location": "Co-op Live, Manchester, Reino Unido",
-      "broadcast": {
-        "tv": [
-          "ITV1"
-        ],
-        "streaming": [
-          "ITVX"
-        ]
-      },
-      "event_url": "https://www.brits.co.uk/news/2026/2026-brit-award-revealed/",
-      "notes": [
-        "La edición 2026 se celebró el sábado 28 de febrero en Manchester; primera vez que la ceremonia se realizó fuera de Londres."
-      ]
-    },
-    {
       "id": "latin-grammy-2026",
       "title": "27th Annual Latin GRAMMY Awards 2026 — Ceremonia",
       "date": "2026-11-12",
@@ -610,6 +552,586 @@
       "notes": [
         "Roselyn Sánchez fue anunciada como conductora de la ceremonia televisada.",
         "La Latin GRAMMY Premiere comenzó a las 15:00 ET y se transmitió en plataformas de la Academia; la ceremonia principal fue televisada por Univision a las 20:00 ET."
+      ]
+    },
+    {
+      "id": "soul-train-awards-2026",
+      "title": "Soul Train Awards 2026 — Ceremonia",
+      "date": "2026-11-27",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "location": "Harris Theater, Chicago, Illinois, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "BET",
+          "CBS",
+          "BET HER",
+          "VH1",
+          "MTV2",
+          "LOGO"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/soul-train-awards-2026/releases/?view=113214-soul-train-awards-returns-to-bet-and-makes-debut-on-cbs",
+      "event_extra_source": "https://www.paramountpressexpress.com/bet/releases/?view=113346-bet-names-anthony-anderson-host-of-soul-train-awards-2026",
+      "notes": [
+        "Emisión televisiva confirmada para el viernes 27 de noviembre a las 20:00 ET/PT; primera emisión simultánea en CBS.",
+        "Anthony Anderson conduce la ceremonia. La edición fue grabada en Chicago."
+      ]
+    },
+    {
+      "id": "macys-thanksgiving-parade-2026",
+      "title": "100th Macy’s Thanksgiving Day Parade 2026",
+      "date": "2026-11-28",
+      "start_local": "08:30",
+      "tz_local": "America/New_York",
+      "location": "New York City, New York, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC",
+          "Telemundo"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/100th-macys-thanksgiving-day-parader-air-live-nbc-and-peacock-saturday-nov-28",
+      "notes": [
+        "Desfile en vivo reprogramado del jueves 26 al sábado 28 de noviembre por condiciones meteorológicas extremas en Nueva York.",
+        "NBC, Telemundo y Peacock confirmaron la transmisión a las 08:30 ET/CT/MT; 07:30 PT."
+      ]
+    },
+    {
+      "id": "christmas-at-graceland-2026",
+      "title": "Christmas at Graceland 2026 — Especial musical",
+      "date": "2026-11-30",
+      "start_local": "22:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 60,
+      "location": "Graceland, Memphis, Tennessee, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial televisivo dedicado a Elvis Presley, su música y la temporada navideña.",
+        "Horario anunciado por NBC: 22:00–23:00 ET."
+      ]
+    },
+    {
+      "id": "wonderful-world-disney-holiday-2026",
+      "title": "The Wonderful World of Disney: Holiday Spectacular 2026",
+      "date": "2026-11-30",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Disney+ (al día siguiente)",
+          "Hulu (al día siguiente)"
+        ]
+      },
+      "event_url": "https://abc.com/news/28ae4a1a-1312-4e16-b964-ac6ee1bd909e/category/3536114",
+      "notes": [
+        "Especial musical con presentaciones desde Walt Disney World y Disneyland.",
+        "ABC confirmó el estreno televisivo el 30 de noviembre; disponibilidad en Disney+ y Hulu al día siguiente."
+      ]
+    },
+    {
+      "id": "cma-country-christmas-2026",
+      "title": "CMA Country Christmas 2026",
+      "date": "2026-12-01",
+      "tz_local": "America/New_York",
+      "start_local": "21:00",
+      "duration_minutes": 61,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "17.ª edición del especial musical country navideño, grabado en Nashville."
+      ]
+    },
+    {
+      "id": "dancing-with-holidays-2026",
+      "title": "Dancing with the Holidays 2026",
+      "date": "2026-12-01",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Especial de Dancing with the Stars con 12 coreografías festivas."
+      ]
+    },
+    {
+      "id": "christmas-with-snoop-2026",
+      "title": "Christmas with Snoop 2026",
+      "date": "2026-12-02",
+      "tz_local": "America/New_York",
+      "start_local": "22:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-and-peacock-celebrate-holidays-snoop-dogg-new-special-christmas-snoop",
+      "notes": [
+        "Especial navideño con Snoop Dogg y sus invitados."
+      ]
+    },
+    {
+      "id": "rockefeller-center-2026",
+      "title": "Christmas in Rockefeller Center 2026",
+      "date": "2026-12-02",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC",
+          "Telemundo"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbcs-annual-christmas-rockefeller-center-lights-holiday-season-dec-2",
+      "notes": [
+        "Cynthia Erivo conduce y actúa.",
+        "Presentaciones de Kelly Clarkson, EJAE, Kirk Franklin, Wynonna Judd, JYT, Alanis Morissette, Brad Paisley, Alex Warren y Radio City Rockettes."
+      ]
+    },
+    {
+      "id": "critics-choice-nominations-2026",
+      "title": "32nd Critics Choice Awards 2027 — Anuncio de nominaciones",
+      "date": "2026-12-04",
+      "start_local": "12:00",
+      "tz_local": "America/New_York",
+      "location": "Transmisión desde Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "E!",
+          "USA Network"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
+      "notes": [
+        "Anuncio de nominaciones de cine y televisión, con Erin Lim Rhodes y Will Marfuggi.",
+        "La señal televisiva comienza a las 12:00 ET / 14:00 de Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "fraggle-rock-holiday-gift-2026",
+      "title": "Fraggle Rock: A Holiday Gift — Estreno Apple TV",
+      "date": "2026-12-04",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Apple TV"
+        ]
+      },
+      "event_url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-special-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/",
+      "notes": [
+        "Especial musical navideño con Nicole Scherzinger y Lilli Cooper."
+      ]
+    },
+    {
+      "id": "alan-jackson-last-show-2026",
+      "title": "Alan Jackson: The Last Show — Especial televisivo",
+      "date": "2026-12-08",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 120,
+      "location": "Nissan Stadium, Nashville, Tennessee, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": [
+          "Peacock (al día siguiente)"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial televisivo que presenta el concierto final de Alan Jackson, grabado en el Nissan Stadium de Nashville.",
+        "Emisión confirmada por NBC el 8 de diciembre, de 20:00 a 22:00 ET; disponible en Peacock al día siguiente."
+      ]
+    },
+    {
+      "id": "rock-hall-induction-2026",
+      "title": "2026 Rock & Roll Hall of Fame Induction Ceremony — Emisión televisiva",
+      "date": "2026-12-08",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "Peacock Theater, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.detpress.com/abc/2026-rock-roll-hall-of-fame-induction-ceremony/",
+      "event_extra_source": "https://www.detpress.com/abc/pressrelease/abc-decks-the-halls-with-festive-holiday-programming-for-2026/",
+      "notes": [
+        "Emisión televisiva confirmada por ABC el martes 8 de diciembre, de 20:00 a 23:00 ET.",
+        "La ceremonia fue grabada en vivo en el Peacock Theater; no confundir la fecha de emisión con la fecha de grabación."
+      ]
+    },
+    {
+      "id": "nbc100-live-celebration-2026",
+      "title": "NBC100: The Live Celebration",
+      "date": "2026-12-10",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "Dolby Theatre, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial en vivo de tres horas por el centenario de NBC, con actuaciones musicales, homenajes, reencuentros y figuras históricas de la televisión.",
+        "Transmisión simultánea por NBC y Peacock el jueves 10 de diciembre, de 20:00 a 23:00 ET."
+      ]
+    },
+    {
+      "id": "mananitas-guadalupe-2026",
+      "title": "Mañanitas a la Virgen de Guadalupe 2026",
+      "date": "2026-12-11",
+      "start_local": "23:35",
+      "tz_local": "America/New_York",
+      "location": "Basílica de Nuestra Señora de Guadalupe, Ciudad de México, México",
+      "broadcast": {
+        "tv": [
+          "Telemundo"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Transmisión en vivo desde la Basílica de Nuestra Señora de Guadalupe, en Ciudad de México.",
+        "Conducen Penélope Menchaca y Arturo Peniche. Horario anunciado: 23:35 ET/22:35 CT."
+      ]
+    },
+    {
+      "id": "price-is-right-live-holiday-2026",
+      "title": "The Price Is Right at Night: Live Holiday Special",
+      "date": "2026-12-13",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 60,
+      "location": "CBS Television City, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/releases/?view=113384-cbs-announces-airdates-for-the-price-is-right-at-night-live-holiday-special-and-the-price-is-right-20-seasons-of-drew-carey-airing-dec-13-and-15-on-cb",
+      "notes": [
+        "Especial navideño completamente en vivo; por primera vez en sus 54 años en CBS, el programa se emitirá en tiempo real.",
+        "Drew Carey conduce. Emisión confirmada para el domingo 13 de diciembre, de 20:00 a 21:00 ET."
+      ]
+    },
+    {
+      "id": "iheart-radio-jingle-ball-2026",
+      "title": "iHeartRadio Jingle Ball 2026 — Especial televisivo",
+      "date": "2026-12-17",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.detpress.com/abc/pressrelease/abc-decks-the-halls-with-festive-holiday-programming-for-2026/",
+      "notes": [
+        "Especial televisivo del tour navideño iHeartRadio Jingle Ball.",
+        "Cartel anunciado: Olivia Rodrigo, Hilary Duff, Jonas Brothers, SOMBR, Charlie Puth, KATSEYE y RAYE, entre otros.",
+        "Emisión confirmada por ABC para el 17 de diciembre; no se publicaron horarios individuales de actuaciones."
+      ],
+      "broadcast_source_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628"
+    },
+    {
+      "id": "light-of-christmas-2026",
+      "title": "The Light of Christmas 2026",
+      "date": "2026-12-17",
+      "broadcast": {
+        "tv": [
+          "The CW"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.thetabernaclechoir.org/christmas",
+      "notes": [
+        "Especial musical navideño del Tabernacle Choir, con Kristin Chenoweth, Neal McDonough, Megan Hilty y Michael Maliakel.",
+        "La emisión por The CW está confirmada para el jueves 17 de diciembre; la hora no fue publicada."
+      ]
+    },
+    {
+      "id": "christmas-eve-mass-2026",
+      "title": "Christmas Eve Mass from St. Peter’s Basilica 2026",
+      "date": "2026-12-24",
+      "tz_local": "America/New_York",
+      "start_local": "23:30",
+      "duration_minutes": 90,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC",
+          "Telemundo"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Misa de Nochebuena desde la Basílica de San Pedro, con el papa León XIV."
+      ]
+    },
+    {
+      "id": "christmas-message-pope-2026",
+      "title": "Mensaje Navideño del Papa 2026",
+      "date": "2026-12-25",
+      "tz_local": "America/New_York",
+      "start_local": "06:00",
+      "duration_minutes": 30,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "Telemundo"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Transmisión del tradicional mensaje navideño desde el Vaticano."
+      ]
+    },
+    {
+      "id": "disney-parks-christmas-parade-2026",
+      "title": "Disney Parks Magical Christmas Day Parade 2026",
+      "date": "2026-12-25",
+      "tz_local": "America/New_York",
+      "start_local": "10:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.detpress.com/abc/pressrelease/abc-decks-the-halls-with-festive-holiday-programming-for-2026/",
+      "notes": [
+        "Desfile y actuaciones desde Walt Disney World y Disneyland."
+      ]
+    },
+    {
+      "id": "family-film-tv-awards-2026",
+      "title": "29th Annual Family Film & TV Awards 2026",
+      "date": "2026-12-26",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/reindeer-in-here/releases/?view=113498-star-studded-specials-take-center-stage-this-november-and-december-on-cbs",
+      "notes": [
+        "Premios a películas, programas y figuras del entretenimiento familiar.",
+        "Emisión confirmada por CBS el sábado 26 de diciembre, de 20:00 a 21:00 ET."
+      ]
+    },
+    {
+      "id": "voices-of-hope-2026",
+      "title": "Voices of Hope — The Tabernacle Choir 2026",
+      "date": "2026-12-26",
+      "tz_local": "America/New_York",
+      "start_local": "21:00",
+      "duration_minutes": 120,
+      "location": "Hollywood Bowl, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/reindeer-in-here/releases/?view=113498-star-studded-specials-take-center-stage-this-november-and-december-on-cbs",
+      "notes": [
+        "Kevin Frazier y Nischelle Turner conducen el concierto benéfico del Tabernacle Choir, grabado en vivo en el Hollywood Bowl.",
+        "Participan Donny Osmond, David Foster, Katharine McPhee y otros invitados.",
+        "Emisión confirmada por CBS el sábado 26 de diciembre, de 21:00 a 22:00 ET."
+      ]
+    },
+    {
+      "id": "bienvenido-2027-telemundo",
+      "title": "Bienvenido 2027 — Especial de Año Nuevo",
+      "date": "2026-12-31",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Telemundo"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial musical en vivo de Telemundo para recibir el año 2027.",
+        "Artistas anunciados: Olga Tañón, Ozuna, Gente de Zona, Fanny Lu, Tito Nieves, Guaynaa, Emmanuel, Piso 21, Ha*Ash, Pedro Fernández y Howie D."
+      ]
+    },
+    {
+      "id": "dick-clarks-rockin-eve-2027",
+      "title": "Dick Clark’s New Year’s Rockin’ Eve with Ryan Seacrest 2027",
+      "date": "2026-12-31",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 480,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Disney+",
+          "iHeartRadio (simulcast de radio)"
+        ]
+      },
+      "event_url": "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/",
+      "notes": [
+        "Conduce Ryan Seacrest; Rita Ora desde Nueva York, Julianne Hough y Rob Gronkowski desde Las Vegas, y Druski desde Chicago.",
+        "La transmisión en vivo comienza a las 20:00 ET / 22:00 de Argentina (UTC-3).",
+        "La grilla completa de artistas aún no fue anunciada en la fuente oficial."
+      ],
+      "broadcast_source_url": "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/"
+    },
+    {
+      "id": "new-years-eve-nashville-2026",
+      "title": "New Year’s Eve Live: Nashville’s Big Bash 2026",
+      "date": "2026-12-31",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/reindeer-in-here/releases/?view=113498-star-studded-specials-take-center-stage-this-november-and-december-on-cbs",
+      "notes": [
+        "Celebración musical de Año Nuevo desde Nashville, con transmisión en vivo por CBS.",
+        "Artistas anunciados: HARDY, Little Big Town y The Red Clay Strays, entre otros.",
+        "La señal tiene dos bloques anunciados: 20:00–22:00 y 22:30–01:05 ET."
+      ]
+    },
+    {
+      "id": "rose-parade-2027",
+      "title": "The Rose Parade Presented by Honda 2027",
+      "date": "2027-01-01",
+      "start_local": "11:00",
+      "tz_local": "America/New_York",
+      "location": "Pasadena, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC",
+          "Telemundo"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Desfile en vivo del 1 de enero de 2027, con carrozas florales y bandas musicales.",
+        "Transmisión confirmada por NBC desde las 11:00 ET, con simultánea en Peacock y Telemundo."
+      ]
+    },
+    {
+      "id": "critics-choice-2027",
+      "title": "32nd Critics Choice Awards 2027 — Ceremonia",
+      "date": "2027-01-03",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "The Barker Hangar, Santa Monica, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "E!",
+          "USA Network"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
+      "confirmed_hosts": [
+        "Janelle James"
+      ],
+      "notes": [
+        "Transmisión en vivo 19:00–22:00 ET / 21:00–00:00 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "golden-globes-2027",
+      "title": "84th Golden Globe Awards 2027 — Ceremonia",
+      "date": "2027-01-10",
+      "start_local": "19:30",
+      "tz_local": "America/New_York",
+      "duration_minutes": 180,
+      "location": "The Beverly Hilton, Beverly Hills, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": [
+          "Paramount+"
+        ]
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/84th-annual-golden-globes/about/",
+      "confirmed_hosts": [
+        "Nikki Glaser"
+      ],
+      "notes": [
+        "Transmisión en vivo 19:30–22:30 ET / 21:30–00:30 Argentina (UTC-3)."
       ]
     },
     {
@@ -668,70 +1190,28 @@
       "broadcast_source_url": "https://www.grammy.com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/"
     },
     {
-      "id": "critics-choice-nominations-2026",
-      "title": "32nd Critics Choice Awards 2027 — Anuncio de nominaciones",
-      "date": "2026-12-04",
-      "start_local": "12:00",
-      "tz_local": "America/New_York",
-      "location": "Transmisión desde Estados Unidos",
+      "id": "super-bowl-lxi-2027",
+      "title": "Super Bowl LXI 2027 — Partido y Halftime Show",
+      "date": "2027-02-14",
+      "location": "SoFi Stadium, Inglewood, California, Estados Unidos",
       "broadcast": {
         "tv": [
-          "E!",
-          "USA Network"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
-      "notes": [
-        "Anuncio de nominaciones de cine y televisión, con Erin Lim Rhodes y Will Marfuggi.",
-        "La señal televisiva comienza a las 12:00 ET / 14:00 de Argentina (UTC-3)."
-      ]
-    },
-    {
-      "id": "critics-choice-2027",
-      "title": "32nd Critics Choice Awards 2027 — Ceremonia",
-      "date": "2027-01-03",
-      "start_local": "19:00",
-      "tz_local": "America/New_York",
-      "duration_minutes": 180,
-      "location": "The Barker Hangar, Santa Monica, California, Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "E!",
-          "USA Network"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
-      "confirmed_hosts": [
-        "Janelle James"
-      ],
-      "notes": [
-        "Transmisión en vivo 19:00–22:00 ET / 21:00–00:00 Argentina (UTC-3)."
-      ]
-    },
-    {
-      "id": "golden-globes-2027",
-      "title": "84th Golden Globe Awards 2027 — Ceremonia",
-      "date": "2027-01-10",
-      "start_local": "19:30",
-      "tz_local": "America/New_York",
-      "duration_minutes": 180,
-      "location": "The Beverly Hilton, Beverly Hills, California, Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "CBS"
+          "ESPN",
+          "ABC"
         ],
         "streaming": [
-          "Paramount+"
+          "Disney+",
+          "NFL+ (dispositivos móviles)"
         ]
       },
-      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/84th-annual-golden-globes/about/",
-      "confirmed_hosts": [
-        "Nikki Glaser"
+      "event_url": "https://www.nfl.com/super-bowl/halftime-show",
+      "confirmed_performers": [
+        "JAY-Z — artista principal del show de medio tiempo"
       ],
       "notes": [
-        "Transmisión en vivo 19:30–22:30 ET / 21:30–00:30 Argentina (UTC-3)."
+        "La NFL confirmó a JAY-Z como artista principal del Halftime Show.",
+        "La transmisión del evento está confirmada por ESPN y ABC; Disney+ y NFL+ (en dispositivos móviles) también figuran como opciones de acceso.",
+        "El horario de inicio del partido todavía no se anunció en la fuente consultada."
       ]
     },
     {
@@ -773,89 +1253,6 @@
         "Premio SAG-AFTRA a la Trayectoria (62.ª edición) — Al Pacino"
       ],
       "event_extra_source": "https://www.actorawards.org/media/news/releases/al-pacino-be-honored-2026-sag-aftra-life-achievement-award"
-    },
-    {
-      "id": "super-bowl-lxi-2027",
-      "title": "Super Bowl LXI 2027 — Partido y Halftime Show",
-      "date": "2027-02-14",
-      "location": "SoFi Stadium, Inglewood, California, Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ESPN",
-          "ABC"
-        ],
-        "streaming": [
-          "Disney+",
-          "NFL+ (dispositivos móviles)"
-        ]
-      },
-      "event_url": "https://www.nfl.com/super-bowl/halftime-show",
-      "confirmed_performers": [
-        "JAY-Z — artista principal del show de medio tiempo"
-      ],
-      "notes": [
-        "La NFL confirmó a JAY-Z como artista principal del Halftime Show.",
-        "La transmisión del evento está confirmada por ESPN y ABC; Disney+ y NFL+ (en dispositivos móviles) también figuran como opciones de acceso.",
-        "El horario de inicio del partido todavía no se anunció en la fuente consultada."
-      ]
-    },
-    {
-      "id": "oscars-2027",
-      "title": "99th Oscars 2027 — Ceremonia",
-      "date": "2027-03-14",
-      "start_local": "19:00",
-      "tz_local": "America/New_York",
-      "location": "Dolby Theatre at Ovation Hollywood, Los Angeles, California, Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": [
-          "Hulu"
-        ]
-      },
-      "event_url": "https://press.oscars.org/news/99th-oscarsr-reunites-host-conan-obrien-and-executive-producers-raj-kapoor-and-katy-mullan",
-      "confirmed_hosts": [
-        "Conan O’Brien"
-      ],
-      "notes": [
-        "Transmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3); Estados Unidos estará en horario de verano (EDT).",
-        "La Academia anunció el 21 de enero de 2027 como fecha de revelación de las nominaciones."
-      ]
-    },
-    {
-      "id": "actor-awards-2028",
-      "title": "34th Annual Actor Awards 2028 — Ceremonia",
-      "date": "2028-02-20",
-      "location": "Los Angeles, California, Estados Unidos",
-      "broadcast": {
-        "tv": [],
-        "streaming": [
-          "Netflix"
-        ]
-      },
-      "event_url": "https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-date-time",
-      "notes": [
-        "Netflix confirmó la fecha y la transmisión en directo. El horario todavía no fue anunciado."
-      ]
-    },
-    {
-      "id": "oscars-2028",
-      "title": "100th Oscars 2028 — Ceremonia",
-      "date": "2028-03-05",
-      "start_local": "19:00",
-      "tz_local": "America/New_York",
-      "location": "Dolby Theatre at Ovation Hollywood, Los Angeles, California, Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr",
-      "notes": [
-        "La Academia y ABC confirmaron la fecha y la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3)."
-      ]
     },
     {
       "id": "lolla-argentina-2027-day-1",
@@ -1004,6 +1401,30 @@
       ],
       "notes": [
         "Programación diaria anunciada. Los horarios de escenario aún no fueron publicados."
+      ]
+    },
+    {
+      "id": "oscars-2027",
+      "title": "99th Oscars 2027 — Ceremonia",
+      "date": "2027-03-14",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "location": "Dolby Theatre at Ovation Hollywood, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Hulu"
+        ]
+      },
+      "event_url": "https://press.oscars.org/news/99th-oscarsr-reunites-host-conan-obrien-and-executive-producers-raj-kapoor-and-katy-mullan",
+      "confirmed_hosts": [
+        "Conan O’Brien"
+      ],
+      "notes": [
+        "Transmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3); Estados Unidos estará en horario de verano (EDT).",
+        "La Academia anunció el 21 de enero de 2027 como fecha de revelación de las nominaciones."
       ]
     },
     {
@@ -1461,281 +1882,37 @@
       "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     },
     {
-      "id": "rockefeller-center-2026",
-      "title": "Christmas in Rockefeller Center 2026",
-      "date": "2026-12-02",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 120,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "NBC",
-          "Telemundo"
-        ],
-        "streaming": [
-          "Peacock"
-        ]
-      },
-      "event_url": "https://www.nbcuniversal.com/article/nbcs-annual-christmas-rockefeller-center-lights-holiday-season-dec-2",
-      "notes": [
-        "Cynthia Erivo conduce y actúa.",
-        "Presentaciones de Kelly Clarkson, EJAE, Kirk Franklin, Wynonna Judd, JYT, Alanis Morissette, Brad Paisley, Alex Warren y Radio City Rockettes."
-      ]
-    },
-    {
-      "id": "christmas-with-snoop-2026",
-      "title": "Christmas with Snoop 2026",
-      "date": "2026-12-02",
-      "tz_local": "America/New_York",
-      "start_local": "22:00",
-      "duration_minutes": 60,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "NBC"
-        ],
-        "streaming": [
-          "Peacock"
-        ]
-      },
-      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
-      "notes": [
-        "Especial navideño con Snoop Dogg y sus invitados."
-      ]
-    },
-    {
-      "id": "wonderful-world-disney-holiday-2026",
-      "title": "The Wonderful World of Disney: Holiday Spectacular 2026",
-      "date": "2026-11-30",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 120,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
-      "notes": [
-        "Especial musical con presentaciones desde Walt Disney World y Disneyland."
-      ]
-    },
-    {
-      "id": "dancing-with-holidays-2026",
-      "title": "Dancing with the Holidays 2026",
-      "date": "2026-12-01",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 60,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
-      "notes": [
-        "Especial de Dancing with the Stars con 12 coreografías festivas."
-      ]
-    },
-    {
-      "id": "cma-country-christmas-2026",
-      "title": "CMA Country Christmas 2026",
-      "date": "2026-12-01",
-      "tz_local": "America/New_York",
-      "start_local": "21:00",
-      "duration_minutes": 61,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
-      "notes": [
-        "17.ª edición del especial musical country navideño, grabado en Nashville."
-      ]
-    },
-    {
-      "id": "iheart-radio-jingle-ball-2026",
-      "title": "iHeartRadio Jingle Ball 2026 — Especial televisivo",
-      "date": "2026-12-17",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 120,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
-      "notes": [
-        "Especial televisivo del tour navideño iHeartRadio Jingle Ball.",
-        "Cartel anunciado: Olivia Rodrigo, Hilary Duff, Jonas Brothers, SOMBR, Charlie Puth, KATSEYE y RAYE, entre otros."
-      ],
-      "broadcast_source_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628"
-    },
-    {
-      "id": "disney-parks-christmas-parade-2026",
-      "title": "Disney Parks Magical Christmas Day Parade 2026",
-      "date": "2026-12-25",
-      "tz_local": "America/New_York",
-      "start_local": "10:00",
-      "duration_minutes": 120,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
-      "notes": [
-        "Desfile y actuaciones desde Walt Disney World y Disneyland."
-      ]
-    },
-    {
-      "id": "christmas-eve-mass-2026",
-      "title": "Christmas Eve Mass from St. Peter’s Basilica 2026",
-      "date": "2026-12-24",
-      "tz_local": "America/New_York",
-      "start_local": "23:30",
-      "duration_minutes": 90,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "NBC",
-          "Telemundo"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
-      "notes": [
-        "Misa de Nochebuena desde la Basílica de San Pedro, con el papa León XIV."
-      ]
-    },
-    {
-      "id": "christmas-message-pope-2026",
-      "title": "Mensaje Navideño del Papa 2026",
-      "date": "2026-12-25",
-      "tz_local": "America/New_York",
-      "start_local": "06:00",
-      "duration_minutes": 30,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "Telemundo"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
-      "notes": [
-        "Transmisión del tradicional mensaje navideño desde el Vaticano."
-      ]
-    },
-    {
-      "id": "voices-of-hope-2026",
-      "title": "Voices of Hope — The Tabernacle Choir 2026",
-      "date": "2026-12-26",
-      "tz_local": "America/New_York",
-      "start_local": "21:00",
-      "duration_minutes": 120,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "CBS"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
-      "notes": [
-        "Concierto especial por el centenario del debut del coro en Hollywood Bowl; participan Donny Osmond, David Foster y Katharine McPhee."
-      ]
-    },
-    {
-      "id": "family-film-tv-awards-2026",
-      "title": "29th Annual Family Film & TV Awards 2026",
-      "date": "2026-12-26",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 60,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "CBS"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
-      "notes": [
-        "Premios a películas y programas familiares."
-      ]
-    },
-    {
-      "id": "new-years-eve-nashville-2026",
-      "title": "New Year’s Eve Live: Nashville’s Big Bash 2026",
-      "date": "2026-12-31",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 240,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "CBS"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
-      "notes": [
-        "Celebración musical de Año Nuevo desde Nashville.",
-        "Artistas anunciados: HARDY, Little Big Town y The Red Clay Strays, entre otros."
-      ]
-    },
-    {
-      "id": "dick-clarks-rockin-eve-2027",
-      "title": "Dick Clark’s New Year’s Rockin’ Eve with Ryan Seacrest 2027",
-      "date": "2026-12-31",
-      "tz_local": "America/New_York",
-      "start_local": "20:00",
-      "duration_minutes": 480,
-      "location": "Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "ABC"
-        ],
-        "streaming": [
-          "Disney+",
-          "iHeartRadio (simulcast de radio)"
-        ]
-      },
-      "event_url": "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/",
-      "notes": [
-        "Conduce Ryan Seacrest; Rita Ora desde Nueva York, Julianne Hough y Rob Gronkowski desde Las Vegas, y Druski desde Chicago.",
-        "La transmisión en vivo comienza a las 20:00 ET / 22:00 de Argentina (UTC-3).",
-        "La grilla completa de artistas aún no fue anunciada en la fuente oficial."
-      ],
-      "broadcast_source_url": "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/"
-    },
-    {
-      "id": "fraggle-rock-holiday-gift-2026",
-      "title": "Fraggle Rock: A Holiday Gift — Estreno Apple TV",
-      "date": "2026-12-04",
+      "id": "actor-awards-2028",
+      "title": "34th Annual Actor Awards 2028 — Ceremonia",
+      "date": "2028-02-20",
+      "location": "Los Angeles, California, Estados Unidos",
       "broadcast": {
         "tv": [],
         "streaming": [
-          "Apple TV"
+          "Netflix"
         ]
       },
-      "event_url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-special-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/",
+      "event_url": "https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-date-time",
       "notes": [
-        "Especial musical navideño con Nicole Scherzinger y Lilli Cooper."
+        "Netflix confirmó la fecha y la transmisión en directo. El horario todavía no fue anunciado."
+      ]
+    },
+    {
+      "id": "oscars-2028",
+      "title": "100th Oscars 2028 — Ceremonia",
+      "date": "2028-03-05",
+      "start_local": "19:00",
+      "tz_local": "America/New_York",
+      "location": "Dolby Theatre at Ovation Hollywood, Los Angeles, California, Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr",
+      "notes": [
+        "La Academia y ABC confirmaron la fecha y la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3)."
       ]
     }
   ]

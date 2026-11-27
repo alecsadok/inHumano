@@ -59,6 +59,40 @@ DTSTART;VALUE=DATE:20260222
 DTEND;VALUE=DATE:20260223
 END:VEVENT
 BEGIN:VEVENT
+UID:brit-awards-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:The BRIT Awards 2026 — Ceremonia
+LOCATION:Co-op Live\, Manchester\, Reino Unido
+DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nLa edición 2026 se celebró el s
+ ábado 28 de febrero en Manchester\; primera vez que la ceremonia se reali
+ zó fuera de Londres.\nFuente (evento): https://www.brits.co.uk/news/2026/
+ 2026-brit-award-revealed/
+DTSTART;VALUE=DATE:20260228
+DTEND;VALUE=DATE:20260301
+END:VEVENT
+BEGIN:VEVENT
+UID:naacp-image-awards-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:57th NAACP Image Awards 2026 — Ceremonia
+LOCATION:Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: BET\nLa ceremonia se transmitió en vivo el s
+ ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento): 
+ https://naacp.org/events/57th-naacp-image-awards
+DTSTART:20260301T010000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:actor-awards-2026-red-carpet@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:The Actor Awards 2026 — Red Carpet / Official Pre-Show
+LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: Netflix\nPremios especiales: SAG-AFTRA Life Ac
+ hievement Award — Harrison Ford\nFuente (evento): https://www.actoraward
+ s.org/where-watch\nFuente (red carpet): https://actorawards.org/media/news
+ /releases/paige-desorbo-and-scott-evans-host-actors-red-carpet-32nd-annual
+ -actor-awards\nHora Argentina: 01/03 21:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20260301T210000
+END:VEVENT
+BEGIN:VEVENT
 UID:actor-awards-2026@inhumano.github.io
 DTSTAMP:20261127T014738Z
 SUMMARY:The Actor Awards 2026 — Ceremonia
@@ -69,16 +103,6 @@ DESCRIPTION:Canal/Streaming: Netflix\nKristen Bell condujo la ceremonia.\nE
  nFuente adicional: https://www.actorawards.org/media/news/releases/present
  ers-announces-32nd-annual-actor-awards-presented-sag-aftra
 DTSTART:20260302T010000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:oscars-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Oscars 2026 (98th) — Ceremonia
-LOCATION:Dolby Theatre\, Hollywood\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: ABC\nLa página oficial de la Academia contien
- e ganadores y nominados de la 98.ª edición.\nFuente (evento): https://ww
- w.oscars.org/oscars/ceremonies/2026
-DTSTART:20260315T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:lollapalooza-argentina-2026@inhumano.github.io
@@ -94,6 +118,16 @@ DESCRIPTION:Canal/Streaming: Flow (canales 605–608\, según cobertura pub
  ropuestaslolla
 DTSTART;VALUE=DATE:20260313
 DTEND;VALUE=DATE:20260316
+END:VEVENT
+BEGIN:VEVENT
+UID:oscars-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Oscars 2026 (98th) — Ceremonia
+LOCATION:Dolby Theatre\, Hollywood\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: ABC\nLa página oficial de la Academia contien
+ e ganadores y nominados de la 98.ª edición.\nFuente (evento): https://ww
+ w.oscars.org/oscars/ceremonies/2026
+DTSTART:20260315T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2026-weekend-1@inhumano.github.io
@@ -191,28 +225,6 @@ DTSTART:20260927T233000Z
 DTEND:20260928T013000Z
 END:VEVENT
 BEGIN:VEVENT
-UID:naacp-image-awards-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:57th NAACP Image Awards 2026 — Ceremonia
-LOCATION:Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: BET\nLa ceremonia se transmitió en vivo el s
- ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento): 
- https://naacp.org/events/57th-naacp-image-awards
-DTSTART:20260301T010000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:brit-awards-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:The BRIT Awards 2026 — Ceremonia
-LOCATION:Co-op Live\, Manchester\, Reino Unido
-DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nLa edición 2026 se celebró el s
- ábado 28 de febrero en Manchester\; primera vez que la ceremonia se reali
- zó fuera de Londres.\nFuente (evento): https://www.brits.co.uk/news/2026/
- 2026-brit-award-revealed/
-DTSTART;VALUE=DATE:20260228
-DTEND;VALUE=DATE:20260301
-END:VEVENT
-BEGIN:VEVENT
 UID:latin-grammy-2026@inhumano.github.io
 DTSTAMP:20261127T014738Z
 SUMMARY:27th Annual Latin GRAMMY Awards 2026 — Ceremonia
@@ -231,32 +243,118 @@ DTSTART:20261113T010000Z
 DTEND:20261113T040000Z
 END:VEVENT
 BEGIN:VEVENT
-UID:grammys-2027@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:69th Annual GRAMMY Awards 2027 — Ceremonia
-LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: ABC / Disney+ / Hulu\nMás nominaciones: RAYE 
- (11)\; ROSALÍA (9)\; Ella Langley (7)\; Miranda Lambert (7)\; Olivia Rodr
- igo (7)\; Phoebe Bridgers (7)\; Bruno Mars (6)\; Leon Thomas (6)\; Olivia 
- Dean (6)\nTransmisión en vivo desde Crypto.com Arena a las 19:00 ET / 21:
- 00 de Argentina (UTC-3).\nPrimera edición de los GRAMMY con transmisión 
- simultánea en ABC\, Disney+ y Hulu.\nFuente (evento): https://www.grammy.
- com/news/2027-grammys-show-air-date-nominations-announced/\nFuente adicion
- al: https://www.grammy.com/news/2027-grammys-nominations-announcement/
-DTSTART:20270208T000000Z
+UID:soul-train-awards-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Soul Train Awards 2026 — Ceremonia
+LOCATION:Harris Theater\, Chicago\, Illinois\, Estados Unidos
+DESCRIPTION:Canal/Streaming: BET / CBS / BET HER / VH1 / MTV2 / LOGO\nFuent
+ e (evento): https://www.paramountpressexpress.com/cbs-entertainment/shows/
+ soul-train-awards-2026/releases/?view=113214-soul-train-awards-returns-to-
+ bet-and-makes-debut-on-cbs\nFuente (información adicional): https://www.p
+ aramountpressexpress.com/bet/releases/?view=113346-bet-names-anthony-ander
+ son-host-of-soul-train-awards-2026\nEmisión televisiva confirmada para el
+  viernes 27 de noviembre a las 20:00 ET/PT\; primera emisión simultánea 
+ en CBS.\nAnthony Anderson conduce la ceremonia. La edición fue grabada en
+  Chicago.\nHora Argentina: 27/11 22:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261127T220000
 END:VEVENT
 BEGIN:VEVENT
-UID:grammys-2027-premiere@inhumano.github.io
+UID:macys-thanksgiving-parade-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:100th Macy’s Thanksgiving Day Parade 2026
+LOCATION:New York City\, New York\, Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Telemundo / Peacock\nFuente (evento): ht
+ tps://www.nbcuniversal.com/article/100th-macys-thanksgiving-day-parader-ai
+ r-live-nbc-and-peacock-saturday-nov-28\nDesfile en vivo reprogramado del j
+ ueves 26 al sábado 28 de noviembre por condiciones meteorológicas extrem
+ as en Nueva York.\nNBC\, Telemundo y Peacock confirmaron la transmisión a
+  las 08:30 ET/CT/MT\; 07:30 PT.\nHora Argentina: 28/11 10:30 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261128T103000
+END:VEVENT
+BEGIN:VEVENT
+UID:wonderful-world-disney-holiday-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:The Wonderful World of Disney: Holiday Spectacular 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC / Disney+ (al día siguiente) / Hulu (al d
+ ía siguiente)\nFuente (evento): https://abc.com/news/28ae4a1a-1312-4e16-b
+ 964-ac6ee1bd909e/category/3536114\nEspecial musical con presentaciones des
+ de Walt Disney World y Disneyland.\nABC confirmó el estreno televisivo el
+  30 de noviembre\; disponibilidad en Disney+ y Hulu al día siguiente.\nHo
+ ra Argentina: 30/11 22:00–01/12 00:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261130T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261201T000000
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-at-graceland-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Christmas at Graceland 2026 — Especial musical
+LOCATION:Graceland\, Memphis\, Tennessee\, Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nFuente (evento): https://www.nbcuniversal
+ .com/article/nbc-announces-full-2026-holiday-programming-lineup\nEspecial 
+ televisivo dedicado a Elvis Presley\, su música y la temporada navideña.
+ \nHorario anunciado por NBC: 22:00–23:00 ET.\nHora Argentina: 01/12 00:0
+ 0–01/12 01:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261201T000000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261201T010000
+END:VEVENT
+BEGIN:VEVENT
+UID:dancing-with-holidays-2026@inhumano.github.io
 DTSTAMP:20261127T014738Z
-SUMMARY:69th GRAMMY Awards Premiere Ceremony 2027
-LOCATION:Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: Disney+\nLa Premiere Ceremony anuncia y entreg
- a numerosas categorías antes de la ceremonia principal.\nComienza a las 1
- 4:30 ET / 16:30 de Argentina (UTC-3).\nFuente (evento): https://www.grammy
- .com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/\nFuente (t
- ransmisión): https://www.grammy.com/news/2027-grammys-premiere-ceremony-d
- isney-plus-streaming/
-DTSTART:20270207T193000Z
+SUMMARY:Dancing with the Holidays 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nEspecial de Dancing with the Stars con 12
+  coreografías festivas.\nFuente (evento): https://abc.com/news/991c57c5-6
+ bf2-40ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261202T010000Z
+DTEND:20261202T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:cma-country-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:CMA Country Christmas 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\n17.ª edición del especial musical count
+ ry navideño\, grabado en Nashville.\nFuente (evento): https://abc.com/new
+ s/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261202T020000Z
+DTEND:20261202T030100Z
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-with-snoop-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Christmas with Snoop 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Peacock\nFuente (evento): https://www.nb
+ cuniversal.com/article/nbc-and-peacock-celebrate-holidays-snoop-dogg-new-s
+ pecial-christmas-snoop\nEspecial navideño con Snoop Dogg y sus invitados.
+ \nHora Argentina: 03/12 00:00–03/12 01:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261203T000000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261203T010000
+END:VEVENT
+BEGIN:VEVENT
+UID:rockefeller-center-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Christmas in Rockefeller Center 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Telemundo / Peacock\nCynthia Erivo condu
+ ce y actúa.\nPresentaciones de Kelly Clarkson\, EJAE\, Kirk Franklin\, Wy
+ nonna Judd\, JYT\, Alanis Morissette\, Brad Paisley\, Alex Warren y Radio 
+ City Rockettes.\nFuente (evento): https://www.nbcuniversal.com/article/nbc
+ s-annual-christmas-rockefeller-center-lights-holiday-season-dec-2
+DTSTART:20261203T010000Z
+DTEND:20261203T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:fraggle-rock-holiday-gift-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Fraggle Rock: A Holiday Gift — Estreno Apple TV
+DESCRIPTION:Canal/Streaming: Apple TV\nEspecial musical navideño con Nicol
+ e Scherzinger y Lilli Cooper.\nFuente (evento): https://www.apple.com/tv-p
+ r/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-sp
+ ecial-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
 END:VEVENT
 BEGIN:VEVENT
 UID:critics-choice-nominations-2026@inhumano.github.io
@@ -269,6 +367,231 @@ DESCRIPTION:Canal/Streaming: E! / USA Network\nAnuncio de nominaciones de c
  ): https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics
  -choice-awards/
 DTSTART:20261204T170000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:alan-jackson-last-show-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Alan Jackson: The Last Show — Especial televisivo
+LOCATION:Nissan Stadium\, Nashville\, Tennessee\, Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Peacock (al día siguiente)\nFuente (eve
+ nto): https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday
+ -programming-lineup\nEspecial televisivo que presenta el concierto final d
+ e Alan Jackson\, grabado en el Nissan Stadium de Nashville.\nEmisión conf
+ irmada por NBC el 8 de diciembre\, de 20:00 a 22:00 ET\; disponible en Pea
+ cock al día siguiente.\nHora Argentina: 08/12 22:00–09/12 00:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261208T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261209T000000
+END:VEVENT
+BEGIN:VEVENT
+UID:rock-hall-induction-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:2026 Rock & Roll Hall of Fame Induction Ceremony — Emisión telev
+ isiva
+LOCATION:Peacock Theater\, Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nFuente (evento): https://www.detpress.com
+ /abc/2026-rock-roll-hall-of-fame-induction-ceremony/\nFuente (información
+  adicional): https://www.detpress.com/abc/pressrelease/abc-decks-the-halls
+ -with-festive-holiday-programming-for-2026/\nEmisión televisiva confirmad
+ a por ABC el martes 8 de diciembre\, de 20:00 a 23:00 ET.\nLa ceremonia fu
+ e grabada en vivo en el Peacock Theater\; no confundir la fecha de emisió
+ n con la fecha de grabación.\nHora Argentina: 08/12 22:00–09/12 01:00 (
+ UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261208T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261209T010000
+END:VEVENT
+BEGIN:VEVENT
+UID:nbc100-live-celebration-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:NBC100: The Live Celebration
+LOCATION:Dolby Theatre\, Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Peacock\nFuente (evento): https://www.nb
+ cuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup\
+ nEspecial en vivo de tres horas por el centenario de NBC\, con actuaciones
+  musicales\, homenajes\, reencuentros y figuras históricas de la televisi
+ ón.\nTransmisión simultánea por NBC y Peacock el jueves 10 de diciembre
+ \, de 20:00 a 23:00 ET.\nHora Argentina: 10/12 22:00–11/12 01:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261210T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261211T010000
+END:VEVENT
+BEGIN:VEVENT
+UID:mananitas-guadalupe-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Mañanitas a la Virgen de Guadalupe 2026
+LOCATION:Basílica de Nuestra Señora de Guadalupe\, Ciudad de México\, M
+ éxico
+DESCRIPTION:Canal/Streaming: Telemundo\nFuente (evento): https://www.nbcuni
+ versal.com/article/nbc-announces-full-2026-holiday-programming-lineup\nTra
+ nsmisión en vivo desde la Basílica de Nuestra Señora de Guadalupe\, en 
+ Ciudad de México.\nConducen Penélope Menchaca y Arturo Peniche. Horario 
+ anunciado: 23:35 ET/22:35 CT.\nHora Argentina: 12/12 01:35 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261212T013500
+END:VEVENT
+BEGIN:VEVENT
+UID:price-is-right-live-holiday-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:The Price Is Right at Night: Live Holiday Special
+LOCATION:CBS Television City\, Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nFuente (evento): https://www.paramountpre
+ ssexpress.com/cbs-entertainment/releases/?view=113384-cbs-announces-airdat
+ es-for-the-price-is-right-at-night-live-holiday-special-and-the-price-is-r
+ ight-20-seasons-of-drew-carey-airing-dec-13-and-15-on-cb\nEspecial navide
+ ño completamente en vivo\; por primera vez en sus 54 años en CBS\, el pr
+ ograma se emitirá en tiempo real.\nDrew Carey conduce. Emisión confirmad
+ a para el domingo 13 de diciembre\, de 20:00 a 21:00 ET.\nHora Argentina: 
+ 13/12 22:00–13/12 23:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261213T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261213T230000
+END:VEVENT
+BEGIN:VEVENT
+UID:light-of-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:The Light of Christmas 2026
+DESCRIPTION:Canal/Streaming: The CW\nFuente (evento): https://www.thetabern
+ aclechoir.org/christmas\nEspecial musical navideño del Tabernacle Choir\,
+  con Kristin Chenoweth\, Neal McDonough\, Megan Hilty y Michael Maliakel.\
+ nLa emisión por The CW está confirmada para el jueves 17 de diciembre\; 
+ la hora no fue publicada.
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+END:VEVENT
+BEGIN:VEVENT
+UID:iheart-radio-jingle-ball-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:iHeartRadio Jingle Ball 2026 — Especial televisivo
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nFuente (evento): https://www.detpress.com
+ /abc/pressrelease/abc-decks-the-halls-with-festive-holiday-programming-for
+ -2026/\nFuente (transmisión): https://abc.com/news/991c57c5-6bf2-40ee-bcc
+ a-62ee975adbaa/category/1138628\nEspecial televisivo del tour navideño iH
+ eartRadio Jingle Ball.\nCartel anunciado: Olivia Rodrigo\, Hilary Duff\, J
+ onas Brothers\, SOMBR\, Charlie Puth\, KATSEYE y RAYE\, entre otros.\nEmis
+ ión confirmada por ABC para el 17 de diciembre\; no se publicaron horario
+ s individuales de actuaciones.\nHora Argentina: 17/12 22:00–18/12 00:00 
+ (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261217T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261218T000000
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-eve-mass-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Christmas Eve Mass from St. Peter’s Basilica 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Telemundo\nMisa de Nochebuena desde la B
+ asílica de San Pedro\, con el papa León XIV.\nFuente (evento): https://w
+ ww.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-li
+ neup
+DTSTART:20261225T043000Z
+DTEND:20261225T060000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-message-pope-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Mensaje Navideño del Papa 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: Telemundo\nTransmisión del tradicional mensaj
+ e navideño desde el Vaticano.\nFuente (evento): https://www.nbcuniversal.
+ com/article/nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261225T110000Z
+DTEND:20261225T113000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:disney-parks-christmas-parade-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Disney Parks Magical Christmas Day Parade 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nFuente (evento): https://www.detpress.com
+ /abc/pressrelease/abc-decks-the-halls-with-festive-holiday-programming-for
+ -2026/\nDesfile y actuaciones desde Walt Disney World y Disneyland.\nHora 
+ Argentina: 25/12 12:00–25/12 14:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261225T120000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261225T140000
+END:VEVENT
+BEGIN:VEVENT
+UID:family-film-tv-awards-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:29th Annual Family Film & TV Awards 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nFuente (evento): https://www.paramountpre
+ ssexpress.com/cbs-entertainment/shows/reindeer-in-here/releases/?view=1134
+ 98-star-studded-specials-take-center-stage-this-november-and-december-on-c
+ bs\nPremios a películas\, programas y figuras del entretenimiento familia
+ r.\nEmisión confirmada por CBS el sábado 26 de diciembre\, de 20:00 a 21
+ :00 ET.\nHora Argentina: 26/12 22:00–26/12 23:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261226T220000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261226T230000
+END:VEVENT
+BEGIN:VEVENT
+UID:voices-of-hope-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Voices of Hope — The Tabernacle Choir 2026
+LOCATION:Hollywood Bowl\, Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nFuente (evento): https://www.paramountpre
+ ssexpress.com/cbs-entertainment/shows/reindeer-in-here/releases/?view=1134
+ 98-star-studded-specials-take-center-stage-this-november-and-december-on-c
+ bs\nKevin Frazier y Nischelle Turner conducen el concierto benéfico del T
+ abernacle Choir\, grabado en vivo en el Hollywood Bowl.\nParticipan Donny 
+ Osmond\, David Foster\, Katharine McPhee y otros invitados.\nEmisión conf
+ irmada por CBS el sábado 26 de diciembre\, de 21:00 a 22:00 ET.\nHora Arg
+ entina: 26/12 23:00–27/12 01:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261226T230000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261227T010000
+END:VEVENT
+BEGIN:VEVENT
+UID:new-years-eve-nashville-2026@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:New Year’s Eve Live: Nashville’s Big Bash 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nFuente (evento): https://www.paramountpre
+ ssexpress.com/cbs-entertainment/shows/reindeer-in-here/releases/?view=1134
+ 98-star-studded-specials-take-center-stage-this-november-and-december-on-c
+ bs\nCelebración musical de Año Nuevo desde Nashville\, con transmisión 
+ en vivo por CBS.\nArtistas anunciados: HARDY\, Little Big Town y The Red C
+ lay Strays\, entre otros.\nLa señal tiene dos bloques anunciados: 20:00
+ –22:00 y 22:30–01:05 ET.\nHora Argentina: 31/12 22:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261231T220000
+END:VEVENT
+BEGIN:VEVENT
+UID:bienvenido-2027-telemundo@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:Bienvenido 2027 — Especial de Año Nuevo
+DESCRIPTION:Canal/Streaming: Telemundo\nFuente (evento): https://www.nbcuni
+ versal.com/article/nbc-announces-full-2026-holiday-programming-lineup\nEsp
+ ecial musical en vivo de Telemundo para recibir el año 2027.\nArtistas an
+ unciados: Olga Tañón\, Ozuna\, Gente de Zona\, Fanny Lu\, Tito Nieves\, 
+ Guaynaa\, Emmanuel\, Piso 21\, Ha*Ash\, Pedro Fernández y Howie D.\nHora 
+ Argentina: 31/12 22:00 (UTC-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261231T220000
+END:VEVENT
+BEGIN:VEVENT
+UID:dick-clarks-rockin-eve-2027@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Dick Clark’s New Year’s Rockin’ Eve with Ryan Seacrest 2027
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC / Disney+ / iHeartRadio (simulcast de radi
+ o)\nConduce Ryan Seacrest\; Rita Ora desde Nueva York\, Julianne Hough y R
+ ob Gronkowski desde Las Vegas\, y Druski desde Chicago.\nLa transmisión e
+ n vivo comienza a las 20:00 ET / 22:00 de Argentina (UTC-3).\nLa grilla co
+ mpleta de artistas aún no fue anunciada en la fuente oficial.\nFuente (ev
+ ento): https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-roc
+ kin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-th
+ e-first-time-ever/\nFuente (transmisión): https://www.detpress.com/abc/pr
+ essrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-sim
+ ulcast-live-on-abc-and-disney-for-the-first-time-ever/
+DTSTART:20270101T010000Z
+DTEND:20270101T090000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rose-parade-2027@inhumano.github.io
+DTSTAMP:20261127T104157Z
+SUMMARY:The Rose Parade Presented by Honda 2027
+LOCATION:Pasadena\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Telemundo / Peacock\nFuente (evento): ht
+ tps://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-program
+ ming-lineup\nDesfile en vivo del 1 de enero de 2027\, con carrozas florale
+ s y bandas musicales.\nTransmisión confirmada por NBC desde las 11:00 ET\
+ , con simultánea en Peacock y Telemundo.\nHora Argentina: 01/01 13:00 (UT
+ C-3)
+DTSTART;TZID=America/Argentina/Buenos_Aires:20270101T130000
 END:VEVENT
 BEGIN:VEVENT
 UID:critics-choice-2027@inhumano.github.io
@@ -295,6 +618,49 @@ DTSTART:20270111T003000Z
 DTEND:20270111T033000Z
 END:VEVENT
 BEGIN:VEVENT
+UID:grammys-2027-premiere@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:69th GRAMMY Awards Premiere Ceremony 2027
+LOCATION:Peacock Theater\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: Disney+\nLa Premiere Ceremony anuncia y entreg
+ a numerosas categorías antes de la ceremonia principal.\nComienza a las 1
+ 4:30 ET / 16:30 de Argentina (UTC-3).\nFuente (evento): https://www.grammy
+ .com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/\nFuente (t
+ ransmisión): https://www.grammy.com/news/2027-grammys-premiere-ceremony-d
+ isney-plus-streaming/
+DTSTART:20270207T193000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:grammys-2027@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:69th Annual GRAMMY Awards 2027 — Ceremonia
+LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
+DESCRIPTION:Canal/Streaming: ABC / Disney+ / Hulu\nMás nominaciones: RAYE 
+ (11)\; ROSALÍA (9)\; Ella Langley (7)\; Miranda Lambert (7)\; Olivia Rodr
+ igo (7)\; Phoebe Bridgers (7)\; Bruno Mars (6)\; Leon Thomas (6)\; Olivia 
+ Dean (6)\nTransmisión en vivo desde Crypto.com Arena a las 19:00 ET / 21:
+ 00 de Argentina (UTC-3).\nPrimera edición de los GRAMMY con transmisión 
+ simultánea en ABC\, Disney+ y Hulu.\nFuente (evento): https://www.grammy.
+ com/news/2027-grammys-show-air-date-nominations-announced/\nFuente adicion
+ al: https://www.grammy.com/news/2027-grammys-nominations-announcement/
+DTSTART:20270208T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:super-bowl-lxi-2027@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Super Bowl LXI 2027 — Partido y Halftime Show
+LOCATION:SoFi Stadium\, Inglewood\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: ESPN / ABC / Disney+ / NFL+ (dispositivos móv
+ iles)\nPerformers confirmados: JAY-Z — artista principal del show de med
+ io tiempo\nLa NFL confirmó a JAY-Z como artista principal del Halftime Sh
+ ow.\nLa transmisión del evento está confirmada por ESPN y ABC\; Disney+ 
+ y NFL+ (en dispositivos móviles) también figuran como opciones de acceso
+ .\nEl horario de inicio del partido todavía no se anunció en la fuente c
+ onsultada.\nFuente (evento): https://www.nfl.com/super-bowl/halftime-show
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+END:VEVENT
+BEGIN:VEVENT
 UID:brit-awards-2027@inhumano.github.io
 DTSTAMP:20261127T014738Z
 SUMMARY:The BRIT Awards 2027 — Ceremonia
@@ -317,59 +683,6 @@ DESCRIPTION:Canal/Streaming: Netflix\nLa 33.ª edición se transmitirá en
  Fuente adicional: https://www.actorawards.org/media/news/releases/al-pacin
  o-be-honored-2026-sag-aftra-life-achievement-award
 DTSTART:20270301T010000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:super-bowl-lxi-2027@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Super Bowl LXI 2027 — Partido y Halftime Show
-LOCATION:SoFi Stadium\, Inglewood\, California\, Estados Unidos
-DESCRIPTION:Canal/Streaming: ESPN / ABC / Disney+ / NFL+ (dispositivos móv
- iles)\nPerformers confirmados: JAY-Z — artista principal del show de med
- io tiempo\nLa NFL confirmó a JAY-Z como artista principal del Halftime Sh
- ow.\nLa transmisión del evento está confirmada por ESPN y ABC\; Disney+ 
- y NFL+ (en dispositivos móviles) también figuran como opciones de acceso
- .\nEl horario de inicio del partido todavía no se anunció en la fuente c
- onsultada.\nFuente (evento): https://www.nfl.com/super-bowl/halftime-show
-DTSTART;VALUE=DATE:20270214
-DTEND;VALUE=DATE:20270215
-END:VEVENT
-BEGIN:VEVENT
-UID:oscars-2027@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:99th Oscars 2027 — Ceremonia
-LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
- tados Unidos
-DESCRIPTION:Canal/Streaming: ABC / Hulu\nConducción confirmada: Conan O’
- Brien\nTransmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3)\; 
- Estados Unidos estará en horario de verano (EDT).\nLa Academia anunció e
- l 21 de enero de 2027 como fecha de revelación de las nominaciones.\nFuen
- te (evento): https://press.oscars.org/news/99th-oscarsr-reunites-host-cona
- n-obrien-and-executive-producers-raj-kapoor-and-katy-mullan
-DTSTART:20270314T230000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:actor-awards-2028@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:34th Annual Actor Awards 2028 — Ceremonia
-LOCATION:Los Angeles\, California\, Estados Unidos
-DESCRIPTION:Canal/Streaming: Netflix\nNetflix confirmó la fecha y la trans
- misión en directo. El horario todavía no fue anunciado.\nFuente (evento)
- : https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-
- date-time
-DTSTART;VALUE=DATE:20280220
-DTEND;VALUE=DATE:20280221
-END:VEVENT
-BEGIN:VEVENT
-UID:oscars-2028@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:100th Oscars 2028 — Ceremonia
-LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
- tados Unidos
-DESCRIPTION:Canal/Streaming: ABC\nLa Academia y ABC confirmaron la fecha y 
- la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3).\nFuente (
- evento): https://press.oscars.org/news/academy-and-abc-announce-show-dates
- -99th-and-100th-oscarsr
-DTSTART:20280306T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:lolla-argentina-2027-day-1@inhumano.github.io
@@ -427,6 +740,20 @@ DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
  ada-dia-y-cuanto-cuestan-las-entradas-nid03112026/
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
+END:VEVENT
+BEGIN:VEVENT
+UID:oscars-2027@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:99th Oscars 2027 — Ceremonia
+LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
+ tados Unidos
+DESCRIPTION:Canal/Streaming: ABC / Hulu\nConducción confirmada: Conan O’
+ Brien\nTransmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3)\; 
+ Estados Unidos estará en horario de verano (EDT).\nLa Academia anunció e
+ l 21 de enero de 2027 como fecha de revelación de las nominaciones.\nFuen
+ te (evento): https://press.oscars.org/news/99th-oscarsr-reunites-host-cona
+ n-obrien-and-executive-producers-raj-kapoor-and-katy-mullan
+DTSTART:20270314T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-1-friday@inhumano.github.io
@@ -575,171 +902,27 @@ DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
 END:VEVENT
 BEGIN:VEVENT
-UID:rockefeller-center-2026@inhumano.github.io
+UID:actor-awards-2028@inhumano.github.io
 DTSTAMP:20261127T014738Z
-SUMMARY:Christmas in Rockefeller Center 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: NBC / Telemundo / Peacock\nCynthia Erivo condu
- ce y actúa.\nPresentaciones de Kelly Clarkson\, EJAE\, Kirk Franklin\, Wy
- nonna Judd\, JYT\, Alanis Morissette\, Brad Paisley\, Alex Warren y Radio 
- City Rockettes.\nFuente (evento): https://www.nbcuniversal.com/article/nbc
- s-annual-christmas-rockefeller-center-lights-holiday-season-dec-2
-DTSTART:20261203T010000Z
-DTEND:20261203T030000Z
+SUMMARY:34th Annual Actor Awards 2028 — Ceremonia
+LOCATION:Los Angeles\, California\, Estados Unidos
+DESCRIPTION:Canal/Streaming: Netflix\nNetflix confirmó la fecha y la trans
+ misión en directo. El horario todavía no fue anunciado.\nFuente (evento)
+ : https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-
+ date-time
+DTSTART;VALUE=DATE:20280220
+DTEND;VALUE=DATE:20280221
 END:VEVENT
 BEGIN:VEVENT
-UID:christmas-with-snoop-2026@inhumano.github.io
+UID:oscars-2028@inhumano.github.io
 DTSTAMP:20261127T014738Z
-SUMMARY:Christmas with Snoop 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: NBC / Peacock\nEspecial navideño con Snoop Do
- gg y sus invitados.\nFuente (evento): https://www.nbcuniversal.com/article
- /nbc-announces-full-2026-holiday-programming-lineup
-DTSTART:20261203T030000Z
-DTEND:20261203T040000Z
+SUMMARY:100th Oscars 2028 — Ceremonia
+LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
+ tados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nLa Academia y ABC confirmaron la fecha y 
+ la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3).\nFuente (
+ evento): https://press.oscars.org/news/academy-and-abc-announce-show-dates
+ -99th-and-100th-oscarsr
+DTSTART:20280306T000000Z
 END:VEVENT
-BEGIN:VEVENT
-UID:wonderful-world-disney-holiday-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:The Wonderful World of Disney: Holiday Spectacular 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: ABC\nEspecial musical con presentaciones desde
-  Walt Disney World y Disneyland.\nFuente (evento): https://abc.com/news/99
- 1c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628
-DTSTART:20261201T010000Z
-DTEND:20261201T030000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:dancing-with-holidays-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Dancing with the Holidays 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: ABC\nEspecial de Dancing with the Stars con 12
-  coreografías festivas.\nFuente (evento): https://abc.com/news/991c57c5-6
- bf2-40ee-bcca-62ee975adbaa/category/1138628
-DTSTART:20261202T010000Z
-DTEND:20261202T020000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:cma-country-christmas-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:CMA Country Christmas 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: ABC\n17.ª edición del especial musical count
- ry navideño\, grabado en Nashville.\nFuente (evento): https://abc.com/new
- s/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628
-DTSTART:20261202T020000Z
-DTEND:20261202T030100Z
-END:VEVENT
-BEGIN:VEVENT
-UID:iheart-radio-jingle-ball-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:iHeartRadio Jingle Ball 2026 — Especial televisivo
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: ABC\nEspecial televisivo del tour navideño iH
- eartRadio Jingle Ball.\nCartel anunciado: Olivia Rodrigo\, Hilary Duff\, J
- onas Brothers\, SOMBR\, Charlie Puth\, KATSEYE y RAYE\, entre otros.\nFuen
- te (evento): https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/cat
- egory/1138628\nFuente (transmisión): https://abc.com/news/991c57c5-6bf2-4
- 0ee-bcca-62ee975adbaa/category/1138628
-DTSTART:20261218T010000Z
-DTEND:20261218T030000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:disney-parks-christmas-parade-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Disney Parks Magical Christmas Day Parade 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: ABC\nDesfile y actuaciones desde Walt Disney W
- orld y Disneyland.\nFuente (evento): https://abc.com/news/991c57c5-6bf2-40
- ee-bcca-62ee975adbaa/category/1138628
-DTSTART:20261225T150000Z
-DTEND:20261225T170000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:christmas-eve-mass-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Christmas Eve Mass from St. Peter’s Basilica 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: NBC / Telemundo\nMisa de Nochebuena desde la B
- asílica de San Pedro\, con el papa León XIV.\nFuente (evento): https://w
- ww.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-li
- neup
-DTSTART:20261225T043000Z
-DTEND:20261225T060000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:christmas-message-pope-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Mensaje Navideño del Papa 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: Telemundo\nTransmisión del tradicional mensaj
- e navideño desde el Vaticano.\nFuente (evento): https://www.nbcuniversal.
- com/article/nbc-announces-full-2026-holiday-programming-lineup
-DTSTART:20261225T110000Z
-DTEND:20261225T113000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:voices-of-hope-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Voices of Hope — The Tabernacle Choir 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: CBS\nConcierto especial por el centenario del 
- debut del coro en Hollywood Bowl\; participan Donny Osmond\, David Foster 
- y Katharine McPhee.\nFuente (evento): https://www.tvinsider.com/1303617/ho
- liday-tv-specials-2026-schedule/
-DTSTART:20261227T020000Z
-DTEND:20261227T040000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:family-film-tv-awards-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:29th Annual Family Film & TV Awards 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: CBS\nPremios a películas y programas familiar
- es.\nFuente (evento): https://www.tvinsider.com/1303617/holiday-tv-special
- s-2026-schedule/
-DTSTART:20261227T010000Z
-DTEND:20261227T020000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:new-years-eve-nashville-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:New Year’s Eve Live: Nashville’s Big Bash 2026
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: CBS\nCelebración musical de Año Nuevo desde 
- Nashville.\nArtistas anunciados: HARDY\, Little Big Town y The Red Clay St
- rays\, entre otros.\nFuente (evento): https://www.tvinsider.com/1303617/ho
- liday-tv-specials-2026-schedule/
-DTSTART:20270101T010000Z
-DTEND:20270101T050000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:dick-clarks-rockin-eve-2027@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Dick Clark’s New Year’s Rockin’ Eve with Ryan Seacrest 2027
-LOCATION:Estados Unidos
-DESCRIPTION:Canal/Streaming: ABC / Disney+ / iHeartRadio (simulcast de radi
- o)\nConduce Ryan Seacrest\; Rita Ora desde Nueva York\, Julianne Hough y R
- ob Gronkowski desde Las Vegas\, y Druski desde Chicago.\nLa transmisión e
- n vivo comienza a las 20:00 ET / 22:00 de Argentina (UTC-3).\nLa grilla co
- mpleta de artistas aún no fue anunciada en la fuente oficial.\nFuente (ev
- ento): https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-roc
- kin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-th
- e-first-time-ever/\nFuente (transmisión): https://www.detpress.com/abc/pr
- essrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-sim
- ulcast-live-on-abc-and-disney-for-the-first-time-ever/
-DTSTART:20270101T010000Z
-DTEND:20270101T090000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fraggle-rock-holiday-gift-2026@inhumano.github.io
-DTSTAMP:20261127T014738Z
-SUMMARY:Fraggle Rock: A Holiday Gift — Estreno Apple TV
-DESCRIPTION:Canal/Streaming: Apple TV\nEspecial musical navideño con Nicol
- e Scherzinger y Lilli Cooper.\nFuente (evento): https://www.apple.com/tv-p
- r/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-sp
- ecial-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-END:VEVENT
+END:VCALENDAR
