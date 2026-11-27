@@ -602,26 +602,6 @@
       ]
     },
     {
-      "id": "christmas-at-graceland-2026",
-      "title": "Christmas at Graceland 2026 — Especial musical",
-      "date": "2026-11-30",
-      "start_local": "22:00",
-      "tz_local": "America/New_York",
-      "duration_minutes": 60,
-      "location": "Graceland, Memphis, Tennessee, Estados Unidos",
-      "broadcast": {
-        "tv": [
-          "NBC"
-        ],
-        "streaming": []
-      },
-      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
-      "notes": [
-        "Especial televisivo dedicado a Elvis Presley, su música y la temporada navideña.",
-        "Horario anunciado por NBC: 22:00–23:00 ET."
-      ]
-    },
-    {
       "id": "wonderful-world-disney-holiday-2026",
       "title": "The Wonderful World of Disney: Holiday Spectacular 2026",
       "date": "2026-11-30",
@@ -863,6 +843,22 @@
       "notes": [
         "Especial navideño completamente en vivo; por primera vez en sus 54 años en CBS, el programa se emitirá en tiempo real.",
         "Drew Carey conduce. Emisión confirmada para el domingo 13 de diciembre, de 20:00 a 21:00 ET."
+      ]
+    },
+    {
+      "id": "peace-on-earth-2026",
+      "title": "Peace on Earth — The Tabernacle Choir 2026",
+      "date": "2026-12-14",
+      "broadcast": {
+        "tv": [
+          "PBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.thetabernaclechoir.org/christmas",
+      "notes": [
+        "Primera emisión del especial navideño 2026 del Tabernacle Choir and Orchestra at Temple Square, con Stephanie J. Block y Sebastian Arcelus.",
+        "PBS también lo programa el 24 de diciembre; el calendario registra únicamente la primera emisión para evitar duplicar la repetición. El horario no fue publicado."
       ]
     },
     {

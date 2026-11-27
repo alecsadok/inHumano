@@ -286,19 +286,6 @@ DTSTART;TZID=America/Argentina/Buenos_Aires:20261130T220000
 DTEND;TZID=America/Argentina/Buenos_Aires:20261201T000000
 END:VEVENT
 BEGIN:VEVENT
-UID:christmas-at-graceland-2026@inhumano.github.io
-DTSTAMP:20261127T104157Z
-SUMMARY:Christmas at Graceland 2026 — Especial musical
-LOCATION:Graceland\, Memphis\, Tennessee\, Estados Unidos
-DESCRIPTION:Canal/Streaming: NBC\nFuente (evento): https://www.nbcuniversal
- .com/article/nbc-announces-full-2026-holiday-programming-lineup\nEspecial 
- televisivo dedicado a Elvis Presley\, su música y la temporada navideña.
- \nHorario anunciado por NBC: 22:00–23:00 ET.\nHora Argentina: 01/12 00:0
- 0–01/12 01:00 (UTC-3)
-DTSTART;TZID=America/Argentina/Buenos_Aires:20261201T000000
-DTEND;TZID=America/Argentina/Buenos_Aires:20261201T010000
-END:VEVENT
-BEGIN:VEVENT
 UID:dancing-with-holidays-2026@inhumano.github.io
 DTSTAMP:20261127T014738Z
 SUMMARY:Dancing with the Holidays 2026
@@ -441,6 +428,19 @@ DESCRIPTION:Canal/Streaming: CBS\nFuente (evento): https://www.paramountpre
  13/12 22:00–13/12 23:00 (UTC-3)
 DTSTART;TZID=America/Argentina/Buenos_Aires:20261213T220000
 DTEND;TZID=America/Argentina/Buenos_Aires:20261213T230000
+END:VEVENT
+BEGIN:VEVENT
+UID:peace-on-earth-2026@inhumano.github.io
+DTSTAMP:20261127T104305Z
+SUMMARY:Peace on Earth — The Tabernacle Choir 2026
+DESCRIPTION:Canal/Streaming: PBS\nFuente (evento): https://www.thetabernacl
+ echoir.org/christmas\nPrimera emisión del especial navideño 2026 del Tab
+ ernacle Choir and Orchestra at Temple Square\, con Stephanie J. Block y Se
+ bastian Arcelus.\nPBS también lo programa el 24 de diciembre\; el calenda
+ rio registra únicamente la primera emisión para evitar duplicar la repet
+ ición. El horario no fue publicado.
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
 END:VEVENT
 BEGIN:VEVENT
 UID:light-of-christmas-2026@inhumano.github.io
