@@ -24,6 +24,8 @@ Archivos principales:
 
 ## Criterio editorial y fuentes
 
+Deadline sirve como mapa editorial transversal para descubrir y ordenar fechas de la temporada de premios (Oscars, Emmys, Golden Globes y otras ceremonias cubiertas). Consultar su calendario al iniciar cada investigación y revisar sus actualizaciones. Usarlo como fuente secundaria de descubrimiento y planificación, nunca como confirmación final: verificar cada fecha, hora, canal/streaming y cambio con la academia, organizador o cadena correspondiente. Si Deadline y una fuente primaria difieren, prevalece la fuente primaria más reciente; conservar la URL de Deadline como referencia auxiliar.
+
 1. Priorizar páginas oficiales de organizadores, academias, sindicatos, festivales, cadenas de TV y plataformas.
 2. Complementar con medios de noticias reconocidos que informen hechos confirmados y publiquen nombres, horarios o anuncios concretos.
 3. Usar Wikipedia como fuente auxiliar para localizar páginas de ceremonias, historiales, nominaciones o fechas; comprobar los datos importantes con fuentes primarias o medios confiables cuando sea posible.

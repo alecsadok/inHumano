@@ -10,6 +10,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/List_of_Golden_Globe_Awards_ceremonies"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 180
@@ -27,6 +29,8 @@ watchlist:
         url: "https://www.sagawards.org/"
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/Actor_Awards"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 120
@@ -57,6 +61,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/List_of_Grammy_Award_ceremony_locations"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 210
@@ -72,6 +78,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/Critics%27_Choice_Movie_Awards"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "19:00"
     duration_minutes: 180
@@ -102,6 +110,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/NAACP_Image_Awards"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: null
     duration_minutes: null
@@ -117,6 +127,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/List_of_Brit_Awards_ceremonies"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "Europe/London"
     default_start_local: null
     duration_minutes: null
@@ -132,6 +144,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/List_of_Academy_Awards_ceremonies"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "19:00"
     duration_minutes: 210
@@ -147,6 +161,8 @@ watchlist:
     sources:
       - type: instagram_profile
         url: "https://www.instagram.com/queerty/"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: null
     duration_minutes: null
@@ -162,6 +178,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/IHeartRadio_Music_Awards"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 120
@@ -179,6 +197,8 @@ watchlist:
         url: "https://glaad.org/mediaawards/37/"
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/GLAAD_Media_Award"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/Los_Angeles"
     default_start_local: null
     duration_minutes: null
@@ -194,6 +214,8 @@ watchlist:
     sources:
       - type: wikipedia_next_date
         url: "https://en.wikipedia.org/wiki/List_of_Primetime_Emmy_Awards_ceremonies"
+      - type: awards_season_calendar_reference
+        url: "https://deadline.com/feature/awards-season-calendar-oscars-emmys-golden-globes-list-1234814076/"
     tz_local: "America/New_York"
     default_start_local: "20:00"
     duration_minutes: 180
