@@ -939,4 +939,106 @@ DESCRIPTION:Canal/Streaming: Disney+\nEspecial navideño señalado entre lo
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-christmas-delivered-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:Christmas Delivered — Estreno Hallmark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261126T220000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres\n
+ Estreno de la película navideña protagonizada por Autumn Reeser y Wes Br
+ own\; disponible en Hallmark+ al día siguiente.
+END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-christmas-eve-feast-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:The Christmas Eve Feast — Estreno Hallmark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261127T200000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres\n
+ Estreno protagonizado por Daniella Monet y Kevin McGarry\; disponible en H
+ allmark+ al día siguiente.
+END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-return-to-santa-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:Return to Santa — Estreno Hallmark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261127T220000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres\n
+ Estreno protagonizado por Paul Campbell y Rachel Boston\; disponible en Ha
+ llmark+ al día siguiente.
+END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-most-wonderful-secret-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:The Most Wonderful Secret — Estreno Hallmark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261128T200000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres\n
+ Estreno protagonizado por Tammin Sursok y Peter Porte\; disponible en Hall
+ mark+ al día siguiente.
+END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-holiday-ever-after-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:Holiday Ever After: A Disney World Wish Come True — Estreno Hallm
+ ark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261128T220000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/holiday-ever-after-a-disney-world-wish-come-true\nPro
+ tagonizada por Lacey Chabert\, Travis Van Winkle\, Christy Carlson Romano\
+ , Justin Bruening y Richard Kind\; disponible en Hallmark+ al día siguien
+ te.
+END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-eight-nights-for-love-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:Eight Nights for Love — Estreno Hallmark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261129T200000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres\n
+ Estreno protagonizado por Hunter King y Dan Jeannotte\; disponible en Hall
+ mark+ al día siguiente.
+END:VEVENT
+BEGIN:VEVENT
+UID:hallmark-miles-to-christmas-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:Miles to Christmas — Estreno Hallmark
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261129T220000
+DESCRIPTION:Canal/Streaming: Hallmark Channel\nFuente (evento): https://www
+ .hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres\n
+ Estreno protagonizado por Ashley Williams\, Steve Lund y Alison Sweeney\; 
+ disponible en Hallmark+ al día siguiente.
+END:VEVENT
+BEGIN:VEVENT
+UID:freeform-25-days-christmas-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:Freeform — 25 Days of Christmas 2026
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261226
+DESCRIPTION:Canal/Streaming: Freeform\nFuente (evento): https://www.freefor
+ m.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024\nPrograma
+ ción especial del 1 al 25 de diciembre: maratones de Home Alone\, The San
+ ta Clause\, Ice Age y clásicos como Frosty\, Rudolph y Grinch. El calenda
+ rio oficial incluye horarios diarios y estrenos especiales.
+END:VEVENT
+BEGIN:VEVENT
+UID:freeform-thrifting-holiday-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:That Thrifting Show with Lara Spencer: Holiday Edition
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261204T000000
+DESCRIPTION:Canal/Streaming: Freeform\nFuente (evento): https://www.freefor
+ m.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024\nEspecial
+  estreno: Sleigh the Family Room!
+END:VEVENT
+BEGIN:VEVENT
+UID:freeform-jonas-christmas-movie-2026@inhumano.github.io
+DTSTAMP:20261126T180000Z
+SUMMARY:A Very Jonas Christmas Movie — Estreno Freeform
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261207T230000
+DESCRIPTION:Canal/Streaming: Freeform\nFuente (evento): https://www.freefor
+ m.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024\nEstreno 
+ televisivo de la película navideña de Jonas Brothers.
+END:VEVENT
 END:VCALENDAR
