@@ -723,8 +723,10 @@
       "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
       "notes": [
         "Anuncio de nominaciones de cine y televisión, con Erin Lim Rhodes y Will Marfuggi.",
-        "La señal televisiva comienza a las 12:00 ET / 14:00 de Argentina (UTC-3)."
-      ]
+        "La señal televisiva comienza a las 12:00 ET / 14:00 de Argentina (UTC-3).",
+        "TV Passport E! Entertainment USA HD - East marca la emisión como New y Live; la página estaba configurada en Pacific y mostraba 09:00 PT, equivalente a 12:00 ET / 14:00 en Argentina (UTC-3)."
+      ],
+      "broadcast_source_url": "https://www.tvpassport.com/tv-listings/stations/e-entertainment-usa-hd-east/6659/2026-12-04"
     },
     {
       "id": "fraggle-rock-holiday-gift-2026",
@@ -896,8 +898,13 @@
       "event_url": "https://www.thetabernaclechoir.org/christmas",
       "notes": [
         "Especial musical navideño del Tabernacle Choir, con Kristin Chenoweth, Neal McDonough, Megan Hilty y Michael Maliakel.",
-        "La emisión por The CW está confirmada para el jueves 17 de diciembre; la hora no fue publicada."
-      ]
+        "La emisión por The CW está confirmada para el jueves 17 de diciembre; la hora no fue publicada.",
+        "The CW confirmó la emisión el jueves 17 de diciembre, de 21:00 a 22:00 ET (23:00 a 00:00 en Argentina, UTC-3)."
+      ],
+      "start_local": "21:00",
+      "tz_local": "America/New_York",
+      "duration_minutes": 60,
+      "broadcast_source_url": "https://www.cwtvpr.com/the-cw/releases/?view=102132-the-cw-network-celebrates-the-holiday-season-with-family-favorite-movies-and-specials"
     },
     {
       "id": "christmas-eve-mass-2026",
@@ -1909,6 +1916,169 @@
       "event_url": "https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr",
       "notes": [
         "La Academia y ABC confirmaron la fecha y la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3)."
+      ]
+    },
+    {
+      "id": "price-is-right-20-seasons-drew-carey-2026",
+      "title": "The Price Is Right: 20 Seasons of Drew Carey — Especial",
+      "date": "2026-12-15",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "tz_local": "America/New_York",
+      "location": "CBS Television City, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/new-years-eve-live-nashvilles-big-bash/releases/?view=113498-star-studded-specials-take-center-stage-this-november-and-december-on-cbs",
+      "notes": [
+        "Especial retrospectivo por las 20 temporadas de Drew Carey como conductor de The Price Is Right, con momentos destacados, grandes premios y apariciones de celebridades.",
+        "Emisión confirmada por CBS el martes 15 de diciembre, de 20:00 a 21:00 ET (22:00 a 23:00 en Argentina, UTC-3)."
+      ]
+    },
+    {
+      "id": "hollywood-christmas-parade-2026-telecast",
+      "title": "94th Annual Hollywood Christmas Parade — Emisión televisiva",
+      "date": "2026-12-18",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "tz_local": "America/New_York",
+      "location": "Hollywood, Los Angeles, California, USA",
+      "broadcast": {
+        "tv": [
+          "The CW"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://thehollywoodchristmasparade.org/press-release-media-alert/",
+      "broadcast_source_url": "https://www.cwtvpr.com/the-cw/releases/?view=102132-the-cw-network-celebrates-the-holiday-season-with-family-favorite-movies-and-specials",
+      "notes": [
+        "La transmisión nacional de The CW corresponde al desfile realizado en vivo en Hollywood el domingo 29 de noviembre de 2026; el telecast del 18 de diciembre es una emisión grabada, no un evento en vivo ese día.",
+        "Emisión confirmada el viernes 18 de diciembre, de 20:00 a 22:00 ET (22:00 a 00:00 en Argentina, UTC-3). No se duplica el encore del 24 de diciembre."
+      ]
+    },
+    {
+      "id": "totally-funny-animals-holiday-2026",
+      "title": "A Totally Funny Animals Holiday 2026",
+      "date": "2026-12-26",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "tz_local": "America/New_York",
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "The CW"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.cwtvpr.com/the-cw/releases/?view=102132-the-cw-network-celebrates-the-holiday-season-with-family-favorite-movies-and-specials",
+      "notes": [
+        "Especial navideño original de una sola emisión, con clips y momentos humorísticos de animales.",
+        "The CW confirmó la emisión el sábado 26 de diciembre, de 20:00 a 21:00 ET (22:00 a 23:00 en Argentina, UTC-3)."
+      ]
+    },
+    {
+      "id": "akc-national-championship-dog-show-2026",
+      "title": "AKC National Championship Dog Show Special 2026",
+      "date": "2026-12-27",
+      "start_local": "19:00",
+      "duration_minutes": 60,
+      "tz_local": "America/New_York",
+      "location": "Orlando, Florida, USA",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Especial televisivo dedicado al AKC National Championship presentado por Royal Canin, con más de 5.000 perros compitiendo por Best in Show.",
+        "ABC confirmó la emisión el domingo 27 de diciembre, de 19:00 a 20:00 ET (21:00 a 22:00 en Argentina, UTC-3)."
+      ]
+    },
+    {
+      "id": "popstar-best-of-2026",
+      "title": "Popstar! Best of 2026",
+      "date": "2026-12-28",
+      "start_local": "21:00",
+      "duration_minutes": 60,
+      "tz_local": "America/New_York",
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "The CW"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.cwtvpr.com/the-cw/releases/?view=102132-the-cw-network-celebrates-the-holiday-season-with-family-favorite-movies-and-specials",
+      "notes": [
+        "Especial de cierre de año presentado por Elizabeth Stanton, que repasa los momentos y tendencias más destacados de 2026 a partir de las encuestas de Popstar! Magazine.",
+        "The CW confirmó la emisión el lunes 28 de diciembre, de 21:00 a 22:00 ET (23:00 a 00:00 en Argentina, UTC-3)."
+      ]
+    },
+    {
+      "id": "the-year-2026-abc-special",
+      "title": "The Year: 2026 — Especial de fin de año",
+      "date": "2026-12-30",
+      "start_local": "21:00",
+      "duration_minutes": 120,
+      "tz_local": "America/New_York",
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Disney+ y Hulu (estreno en streaming el 31/12)"
+        ]
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Especial anual de ABC News con Robin Roberts, corresponsales, conductores e invitados que repasa las noticias y los momentos culturales más destacados de 2026.",
+        "ABC confirmó la emisión el miércoles 30 de diciembre, de 21:00 a 23:00 ET (23:00 a 01:00 en Argentina, UTC-3). Disney+ y Hulu anunciaron el estreno en streaming para el 31 de diciembre."
+      ]
+    },
+    {
+      "id": "nbc100-countdown-2026",
+      "title": "NBC100: The Countdown",
+      "date": "2026-12-31",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "tz_local": "America/New_York",
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial de cuenta regresiva por el centenario de NBC, presentado por Savannah Guthrie y Craig Melvin, que repasa 100 momentos de la historia de la cadena.",
+        "Emisión confirmada por NBC el jueves 31 de diciembre, de 20:00 a 22:00 ET (22:00 a 00:00 en Argentina, UTC-3)."
+      ]
+    },
+    {
+      "id": "a-toast-to-2026-nbc",
+      "title": "A Toast to 2026! — Especial de Año Nuevo",
+      "date": "2026-12-31",
+      "start_local": "22:30",
+      "duration_minutes": 120,
+      "tz_local": "America/New_York",
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial de fin de año conducido por Hoda Kotb y Jenna Bush Hager, con repaso de los momentos más comentados de 2026 junto a invitados del entretenimiento, el deporte y la televisión.",
+        "Emisión confirmada por NBC el jueves 31 de diciembre, de 22:30 a 00:30 ET; en Argentina comienza el 1 de enero de 2027 a las 00:30 (UTC-3)."
       ]
     }
   ]
