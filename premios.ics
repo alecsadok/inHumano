@@ -3,644 +3,940 @@ VERSION:2.0
 PRODID:-//inHumano//Calendario A-List AR//ES
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Calendario A-List — Premios y conciertos (Argentina UTC-3)
-X-WR-CALDESC:Premiaciones, festivales y conciertos con TV o streaming confi
- rmado; horarios en Argentina (UTC-3).
+X-WR-CALNAME:Calendario A-List — Premios, conciertos y especiales (Argent
+ ina UTC-3)
+X-WR-CALDESC:Premiaciones, festivales, especiales televisivos y estrenos co
+ n fecha y señal confirmadas. Horarios convertidos a Argentina (UTC-3).
 X-WR-TIMEZONE:America/Argentina/Buenos_Aires
 BEGIN:VEVENT
 UID:critics-choice-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Critics Choice Awards 2026 — Ceremonia
 LOCATION:Barker Hangar\, Santa Monica\, California\, USA
 DESCRIPTION:Canal/Streaming: E! / USA Network / Peacock (disponible al día
-  siguiente)\nFuente (evento): https://www.criticschoice.com/one-battle-aft
- er-another-wins-best-picture-at-the-31st-annual-critics-choice-awards/\nCe
- remonia de la 31.ª edición\; Chelsea Handler fue la conductora.\nOne Bat
- tle After Another ganó Mejor película\; Frankenstein y Sinners encabezar
- on categorías cinematográficas\; Adolescence lideró las categorías de 
- series.
+  siguiente)\nCeremonia de la 31.ª edición\; Chelsea Handler fue la condu
+ ctora.\nOne Battle After Another ganó Mejor película\; Frankenstein y Si
+ nners encabezaron categorías cinematográficas\; Adolescence lideró las 
+ categorías de series.\nFuente (evento): https://www.criticschoice.com/one
+ -battle-after-another-wins-best-picture-at-the-31st-annual-critics-choice-
+ awards/
 DTSTART;VALUE=DATE:20260104
 DTEND;VALUE=DATE:20260105
 END:VEVENT
 BEGIN:VEVENT
 UID:golden-globes-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Golden Globes 2026 — Ceremonia
 LOCATION:The Beverly Hilton\, Beverly Hills\, California\, USA
-DESCRIPTION:Canal/Streaming: CBS / Paramount+\nHora Argentina: 11/01 22:00 
- (UTC-3)\nFuente (evento): https://goldenglobes.com/winners-nominees/\nLa b
- ase oficial de ganadores y nominados de 2026 respalda la edición y sus re
- sultados.
+DESCRIPTION:Canal/Streaming: CBS / Paramount+\nLa base oficial de ganadores
+  y nominados de 2026 respalda la edición y sus resultados.\nFuente (event
+ o): https://goldenglobes.com/winners-nominees/
 DTSTART:20260112T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:GRAMMY Awards 2026 — Ceremonia
 LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: CBS / Paramount+\nHora Argentina: 01/02 22:00 
- (UTC-3)\nFuente (evento): https://www.grammy.com/news/2026-grammys-nominat
- ions-full-winners-nominees-list/\nBad Bunny ganó Álbum del Año con DeB
- Í TiRAR MáS FOToS\, primer álbum en español en obtener el premio.\nOli
- via Dean ganó Mejor artista nuevo\; Kendrick Lamar y SZA ganaron Grabaci
- ón del Año por luther.
+DESCRIPTION:Canal/Streaming: CBS / Paramount+\nBad Bunny ganó Álbum del A
+ ño con DeBÍ TiRAR MáS FOToS\, primer álbum en español en obtener el p
+ remio.\nOlivia Dean ganó Mejor artista nuevo\; Kendrick Lamar y SZA ganar
+ on Grabación del Año por luther.\nFuente (evento): https://www.grammy.co
+ m/news/2026-grammys-nominations-full-winners-nominees-list/
 DTSTART:20260202T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:bafta-film-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:EE BAFTA Film Awards 2026 — Ceremonia
 LOCATION:Royal Festival Hall\, Londres\, Reino Unido
-DESCRIPTION:Canal/Streaming: BBC One / BBC iPlayer\nFuente (evento): https:
- //www.bafta.org/media-centre/press-releases/winners-announced-2026-film-aw
- ards/\nOne Battle After Another obtuvo seis BAFTA\, incluidos Mejor pelíc
- ula y dirección.\nSinners obtuvo tres premios\; Frankenstein obtuvo tres\
- ; Hamnet obtuvo dos.\nAlan Cumming condujo la ceremonia.
+DESCRIPTION:Canal/Streaming: BBC One / BBC iPlayer\nOne Battle After Anothe
+ r obtuvo seis BAFTA\, incluidos Mejor película y dirección.\nSinners obt
+ uvo tres premios\; Frankenstein obtuvo tres\; Hamnet obtuvo dos.\nAlan Cum
+ ming condujo la ceremonia.\nFuente (evento): https://www.bafta.org/media-c
+ entre/press-releases/winners-announced-2026-film-awards/
 DTSTART;VALUE=DATE:20260222
 DTEND;VALUE=DATE:20260223
 END:VEVENT
 BEGIN:VEVENT
 UID:actor-awards-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:The Actor Awards 2026 — Ceremonia
 LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: Netflix\nPremios especiales: SAG-AFTRA Life Ac
- hievement Award — Harrison Ford\nHora Argentina: 01/03 22:00 (UTC-3)\nFu
- ente (evento): https://www.actorawards.org/where-watch\nFuente (informaci
- ón adicional): https://www.actorawards.org/media/news/releases/presenters
- -announces-32nd-annual-actor-awards-presented-sag-aftra\nKristen Bell cond
- ujo la ceremonia.\nEl pre-show oficial The Actor’s Red Carpet se transmi
- tió en Netflix desde las 19:00 ET.
+DESCRIPTION:Canal/Streaming: Netflix\nKristen Bell condujo la ceremonia.\nE
+ l pre-show oficial The Actor’s Red Carpet se transmitió en Netflix desd
+ e las 19:00 ET.\nFuente (evento): https://www.actorawards.org/where-watch\
+ nFuente adicional: https://www.actorawards.org/media/news/releases/present
+ ers-announces-32nd-annual-actor-awards-presented-sag-aftra
 DTSTART:20260302T010000Z
 END:VEVENT
 BEGIN:VEVENT
-UID:actor-awards-2026-red-carpet@inhumano.github.io
-DTSTAMP:20261127T013846Z
-SUMMARY:The Actor Awards 2026 — Red Carpet / Official Pre-Show
-LOCATION:Shrine Auditorium & Expo Hall\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: Netflix\nPremios especiales: SAG-AFTRA Life Ac
- hievement Award — Harrison Ford\nHora Argentina: 01/03 21:00 (UTC-3)\nFu
- ente (evento): https://www.actorawards.org/where-watch\nFuente (informaci
- ón adicional): https://www.actorawards.org/media/news/releases/presenters
- -announces-32nd-annual-actor-awards-presented-sag-aftra\nKristen Bell cond
- ujo la ceremonia.\nEl pre-show oficial The Actor’s Red Carpet se transmi
- tió en Netflix desde las 19:00 ET.\nFuente (red carpet): https://actorawa
- rds.org/media/news/releases/paige-desorbo-and-scott-evans-host-actors-red-
- carpet-32nd-annual-actor-awards
-DTSTART:20260302T000000Z
-END:VEVENT
-BEGIN:VEVENT
 UID:oscars-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Oscars 2026 (98th) — Ceremonia
 LOCATION:Dolby Theatre\, Hollywood\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: ABC\nHora Argentina: 15/03 20:00 (UTC-3)\nFuen
- te (evento): https://www.oscars.org/oscars/ceremonies/2026\nLa página ofi
- cial de la Academia contiene ganadores y nominados de la 98.ª edición.
+DESCRIPTION:Canal/Streaming: ABC\nLa página oficial de la Academia contien
+ e ganadores y nominados de la 98.ª edición.\nFuente (evento): https://ww
+ w.oscars.org/oscars/ceremonies/2026
 DTSTART:20260315T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:lollapalooza-argentina-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Lollapalooza Argentina 2026 — Festival
 LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
 DESCRIPTION:Canal/Streaming: Flow (canales 605–608\, según cobertura pub
  licada)\nHeadliners: Tyler\, The Creator\; Lorde\; Chappell Roan\; Skrille
  x\; Lewis Capaldi\; Paulo Londra\; Sabrina Carpenter\; Deftones\; Doechii\
- nArtistas pop destacados: Lorde\; Chappell Roan\; Sabrina Carpenter\; Doec
- hii\; Addison Rae\; Katseye\; Marina\; Aitana\; Danny Ocean\nArtistas arge
- ntinos: Paulo Londra\; Ratones Paranoicos\; Soledad\; Ángela Torres\; Tur
- f\; Massacre\; Yami Safdie\; Joaquina\; Militantes del Climax\nFuente (eve
- nto): https://turismo.buenosaires.gob.ar/es/propuestaslolla\nFuente (line-
- up): https://www.lanacion.com.ar/espectaculos/lollapalooza-argentina-2026-
- accesos-horarios-y-todo-lo-que-hay-que-saber-para-los-tres-dias-de-nid1203
- 2026/\nTres jornadas: 13\, 14 y 15 de marzo.\nLa grilla por día fue publi
- cada por medios locales\; no se incorporan horarios individuales de sets e
- n esta actualización.
+ nTres jornadas: 13\, 14 y 15 de marzo.\nLa grilla por día fue publicada p
+ or medios locales\; no se incorporan horarios individuales de sets en esta
+  actualización.\nFuente (evento): https://turismo.buenosaires.gob.ar/es/p
+ ropuestaslolla
 DTSTART;VALUE=DATE:20260313
 DTEND;VALUE=DATE:20260316
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2026-weekend-1@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2026 — Weekend 1
 LOCATION:Empire Polo Club\, Indio\, California\, USA
 DESCRIPTION:Canal/Streaming: YouTube (livestream oficial)\nHeadliners: Sabr
- ina Carpenter\; Justin Bieber\; Karol G\nArtistas pop destacados: The xx\;
-  The Strokes\; Anyma\; Young Thug\; BigBang\nFuente (evento): https://www.
- coachella.com/lineup/\nFuente (line-up): https://coachellavalley.com/coach
- ella-music-festival-announces-2026-lineup/\nPrimer fin de semana: 10 al 12
-  de abril.
+ ina Carpenter\; Justin Bieber\; Karol G\nPrimer fin de semana: 10 al 12 de
+  abril.\nFuente (evento): https://www.coachella.com/lineup/
 DTSTART;VALUE=DATE:20260410
 DTEND;VALUE=DATE:20260413
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2026-weekend-2@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2026 — Weekend 2
 LOCATION:Empire Polo Club\, Indio\, California\, USA
 DESCRIPTION:Canal/Streaming: YouTube (livestream oficial)\nHeadliners: Sabr
- ina Carpenter\; Justin Bieber\; Karol G\nArtistas pop destacados: The xx\;
-  The Strokes\; Anyma\; Young Thug\; BigBang\nFuente (evento): https://www.
- coachella.com/lineup/\nFuente (line-up): https://coachellavalley.com/coach
- ella-music-festival-announces-2026-lineup/\nSegundo fin de semana: 17 al 1
- 9 de abril.
+ ina Carpenter\; Justin Bieber\; Karol G\nSegundo fin de semana: 17 al 19 d
+ e abril.\nFuente (evento): https://www.coachella.com/lineup/
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260420
 END:VEVENT
 BEGIN:VEVENT
 UID:amas-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:American Music Awards 2026 — Ceremonia
 LOCATION:MGM Grand Garden Arena\, Las Vegas\, Nevada\, USA
-DESCRIPTION:Canal/Streaming: CBS / Paramount+\nPremios especiales: Lifetime
-  Achievement Award — Billy Idol\; International Artist Award of Excellen
- ce — KAROL G\; Veterans Voice Award — Darius Rucker\nPerformers confir
- mados: Billy Idol\; KAROL G\; Darius Rucker with Hootie & the Blowfish\; K
- ATSEYE\; Keith Urban\; Maluma\; New Kids on the Block\; The Pussycat Dolls
-  + Busta Rhymes\; Riley Green\; SOMBR\; Teddy Swims\; Teyana Taylor\; Twen
- ty One Pilots\nHora Argentina: 25/05 21:00 (UTC-3)\nFuente (evento): https
- ://www.theamas.com/2026/05/how-to-watch-the-52nd-american-music-awards/\nL
- a ceremonia se emitió el Memorial Day\, lunes 25 de mayo\, a las 20:00 ET
- .
+DESCRIPTION:Canal/Streaming: CBS / Paramount+\nLa ceremonia se emitió el M
+ emorial Day\, lunes 25 de mayo\, a las 20:00 ET.\nFuente (evento): https:/
+ /www.theamas.com/2026/05/how-to-watch-the-52nd-american-music-awards/
 DTSTART:20260526T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrowland-2026-weekend-1@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Tomorrowland Belgium 2026 — Weekend 1
 LOCATION:De Schorre\, Boom\, Bélgica
 DESCRIPTION:Canal/Streaming: Livestream oficial en Tomorrowland.com y app d
- e Tomorrowland\nFuente (evento): https://press.belgium.tomorrowland.com/to
- morrowland-belgium-returns-in-2026\nFuente (line-up): https://press.belgiu
- m.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for
- -consciencia-in-belgium\nPrimer fin de semana: 17 al 19 de julio.
+ e Tomorrowland\nPrimer fin de semana: 17 al 19 de julio.\nFuente (evento):
+  https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns-in-20
+ 26
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260720
 END:VEVENT
 BEGIN:VEVENT
 UID:tomorrowland-2026-weekend-2@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Tomorrowland Belgium 2026 — Weekend 2
 LOCATION:De Schorre\, Boom\, Bélgica
 DESCRIPTION:Canal/Streaming: Livestream oficial en Tomorrowland.com y app d
- e Tomorrowland\nFuente (evento): https://press.belgium.tomorrowland.com/to
- morrowland-belgium-returns-in-2026\nFuente (line-up): https://press.belgiu
- m.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for
- -consciencia-in-belgium\nSegundo fin de semana: 24 al 26 de julio.
+ e Tomorrowland\nSegundo fin de semana: 24 al 26 de julio.\nFuente (evento)
+ : https://press.belgium.tomorrowland.com/tomorrowland-belgium-returns-in-2
+ 026
 DTSTART;VALUE=DATE:20260724
 DTEND;VALUE=DATE:20260727
 END:VEVENT
 BEGIN:VEVENT
 UID:outside-lands-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Outside Lands 2026 — Festival
 LOCATION:Golden Gate Park\, San Francisco\, California\, USA
 DESCRIPTION:Canal/Streaming: Amazon Music (livestream de escenarios selecci
  onados)\nHeadliners: Charli XCX\; The xx\; The Strokes\; Turnstile\; Death
-  Cab for Cutie\nArtistas pop destacados: Tinashe\; Djo\; Labrinth\; Baby K
- eem\; Mariah the Scientist\; Lucy Dacus\nFuente (evento): https://www.sfou
- tsidelands.com/faq-app/\nFuente (line-up): https://pitchfork.com/story/out
- side-lands-2026-amazon-music-livestream-schedule-and-details/\nFestival de
- l 7 al 9 de agosto.
+  Cab for Cutie\nFestival del 7 al 9 de agosto.\nFuente (evento): https://w
+ ww.sfoutsidelands.com/faq-app/
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260810
 END:VEVENT
 BEGIN:VEVENT
 UID:emmys-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:78th Primetime Emmy Awards 2026 — Telecast
 LOCATION:Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: NBC / Peacock\nPremios especiales: Bob Hope Hu
- manitarian Award — Michael J. Fox\nHora Argentina: 14/09 21:00 (UTC-3)\n
- Fuente (evento): https://www.televisionacademy.com/watch/\nFuente (informa
- ción adicional): https://www.televisionacademy.com/features/news/awards-n
- ews/78th-emmy-awards-release\nTelecast principal del lunes 14 de septiembr
- e\, 20:00 ET / 17:00 PT.\nLas ceremonias presenciales de Creative Arts se 
- celebraron el 5 y 6 de septiembre.
+DESCRIPTION:Canal/Streaming: NBC / Peacock\nTelecast principal del lunes 14
+  de septiembre\, 20:00 ET / 17:00 PT.\nLas ceremonias presenciales de Crea
+ tive Arts se celebraron el 5 y 6 de septiembre.\nFuente (evento): https://
+ www.televisionacademy.com/watch/\nFuente adicional: https://www.television
+ academy.com/features/news/awards-news/78th-emmy-awards-release
 DTSTART:20260915T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:vmas-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:MTV Video Music Awards 2026 — Ceremonia
 LOCATION:Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: CBS / MTV / Paramount+\nPerformers confirmados
- : Madonna (opening performance)\nHora Argentina: 27/09 20:30–27/09 22:30
-  (UTC-3)\nFuente (evento): https://www.paramountpressexpress.com/mtv/shows
- /2026-mtv-video-music-awards-vmas/\nFuente (información adicional): https
- ://www.paramountpressexpress.com/mtv/shows/2026-mtv-video-music-awards-vma
- s/releases/?view=113305-presenters-announced-for-the-2026-video-music-awar
- ds-vmas-airing-sunday-sept-27-on-cbs\nLa transmisión se emitió de 19:30 
- a 21:30 ET\; CBS y MTV\, con streaming en Paramount+.
+DESCRIPTION:Canal/Streaming: CBS / MTV / Paramount+\nLa transmisión se emi
+ tió de 19:30 a 21:30 ET\; CBS y MTV\, con streaming en Paramount+.\nFuent
+ e (evento): https://www.paramountpressexpress.com/mtv/shows/2026-mtv-video
+ -music-awards-vmas/\nFuente adicional: https://www.paramountpressexpress.c
+ om/mtv/shows/2026-mtv-video-music-awards-vmas/releases/?view=113305-presen
+ ters-announced-for-the-2026-video-music-awards-vmas-airing-sunday-sept-27-
+ on-cbs
 DTSTART:20260927T233000Z
 DTEND:20260928T013000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:naacp-image-awards-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:57th NAACP Image Awards 2026 — Ceremonia
 LOCATION:Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: BET\nHora Argentina: 28/02 22:00 (UTC-3)\nFuen
- te (evento): https://naacp.org/events/57th-naacp-image-awards\nLa ceremoni
- a se transmitió en vivo el sábado 28 de febrero de 2026 a las 20:00 ET /
-  20:00 PT.
+DESCRIPTION:Canal/Streaming: BET\nLa ceremonia se transmitió en vivo el s
+ ábado 28 de febrero de 2026 a las 20:00 ET / 20:00 PT.\nFuente (evento): 
+ https://naacp.org/events/57th-naacp-image-awards
 DTSTART:20260301T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:brit-awards-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:The BRIT Awards 2026 — Ceremonia
 LOCATION:Co-op Live\, Manchester\, Reino Unido
-DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nFuente (evento): https://www.brit
- s.co.uk/news/2026/2026-brit-award-revealed/\nLa edición 2026 se celebró 
- el sábado 28 de febrero en Manchester\; primera vez que la ceremonia se r
- ealizó fuera de Londres.
+DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nLa edición 2026 se celebró el s
+ ábado 28 de febrero en Manchester\; primera vez que la ceremonia se reali
+ zó fuera de Londres.\nFuente (evento): https://www.brits.co.uk/news/2026/
+ 2026-brit-award-revealed/
 DTSTART;VALUE=DATE:20260228
 DTEND;VALUE=DATE:20260301
 END:VEVENT
 BEGIN:VEVENT
 UID:latin-grammy-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:27th Annual Latin GRAMMY Awards 2026 — Ceremonia
 LOCATION:MGM Grand Garden Arena\, Las Vegas\, Nevada\, USA
 DESCRIPTION:Canal/Streaming: Univision / Plataformas oficiales de Latin GRA
- MMY (Premiere)\nPerformers confirmados: Anitta\; Banda Los Recoditos\; Dad
- dy Yankee\; Jorge Drexler\; Silvana Estrada\; Kany García\; Juanes\; Car
- ín León\; Mon Laferte\; Vivir Quintana\; Rawayana\; Rosalía\; Elena Ros
- e\; Xavi\nHora Argentina: 12/11 22:00–13/11 01:00 (UTC-3)\nFuente (event
- o): https://www.latingrammy.com/es/noticias/akapellah-pablo-alboran-carmin
- ho-jorge-celedon-yerai-cortes-gusi-kakalo-karen-lizarazo-victor-nain-jr-an
- d-marina-sena-to-perform-at-the-latin-grammy-premiere/\nFuente (informaci
- ón adicional): https://www.latingrammy.com/es/noticias/presenters-announc
- ed-for-the-27th-annual-latin-grammy-awards/\nRoselyn Sánchez fue anunciad
- a como conductora de la ceremonia televisada.\nLa Latin GRAMMY Premiere co
- menzó a las 15:00 ET y se transmitió en plataformas de la Academia\; la 
- ceremonia principal fue televisada por Univision a las 20:00 ET.
+ MMY (Premiere)\nRoselyn Sánchez fue anunciada como conductora de la cerem
+ onia televisada.\nLa Latin GRAMMY Premiere comenzó a las 15:00 ET y se tr
+ ansmitió en plataformas de la Academia\; la ceremonia principal fue telev
+ isada por Univision a las 20:00 ET.\nFuente (evento): https://www.latingra
+ mmy.com/es/noticias/akapellah-pablo-alboran-carminho-jorge-celedon-yerai-c
+ ortes-gusi-kakalo-karen-lizarazo-victor-nain-jr-and-marina-sena-to-perform
+ -at-the-latin-grammy-premiere/\nFuente adicional: https://www.latingrammy.
+ com/es/noticias/presenters-announced-for-the-27th-annual-latin-grammy-awar
+ ds/
 DTSTART:20261113T010000Z
 DTEND:20261113T040000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:69th Annual GRAMMY Awards 2027 — Ceremonia
 LOCATION:Crypto.com Arena\, Los Angeles\, California\, USA
 DESCRIPTION:Canal/Streaming: ABC / Disney+ / Hulu\nMás nominaciones: RAYE 
  (11)\; ROSALÍA (9)\; Ella Langley (7)\; Miranda Lambert (7)\; Olivia Rodr
  igo (7)\; Phoebe Bridgers (7)\; Bruno Mars (6)\; Leon Thomas (6)\; Olivia 
- Dean (6)\nFuente (evento): https://www.grammy.com/news/2027-grammys-show-a
- ir-date-nominations-announced/\nFuente (nominaciones): https://www.grammy.
- com/news/2027-grammys-nominations-announcement/\nFuente (información adic
- ional): https://www.grammy.com/news/2027-grammys-nominations-announcement/
- \nTransmisión en vivo desde Crypto.com Arena a las 19:00 ET / 21:00 de Ar
- gentina (UTC-3).\nPrimera edición de los GRAMMY con transmisión simultá
- nea en ABC\, Disney+ y Hulu.
+ Dean (6)\nTransmisión en vivo desde Crypto.com Arena a las 19:00 ET / 21:
+ 00 de Argentina (UTC-3).\nPrimera edición de los GRAMMY con transmisión 
+ simultánea en ABC\, Disney+ y Hulu.\nFuente (evento): https://www.grammy.
+ com/news/2027-grammys-show-air-date-nominations-announced/\nFuente adicion
+ al: https://www.grammy.com/news/2027-grammys-nominations-announcement/
 DTSTART:20270208T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:grammys-2027-premiere@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:69th GRAMMY Awards Premiere Ceremony 2027
 LOCATION:Peacock Theater\, Los Angeles\, California\, USA
-DESCRIPTION:Canal/Streaming: Disney+\nFuente (evento): https://www.grammy.c
- om/news/2027-grammys-premiere-ceremony-disney-plus-streaming/\nFuente (tra
- nsmisión): https://www.grammy.com/news/2027-grammys-premiere-ceremony-dis
- ney-plus-streaming/\nLa Premiere Ceremony anuncia y entrega numerosas cate
- gorías antes de la ceremonia principal.\nComienza a las 14:30 ET / 16:30 
- de Argentina (UTC-3).
+DESCRIPTION:Canal/Streaming: Disney+\nLa Premiere Ceremony anuncia y entreg
+ a numerosas categorías antes de la ceremonia principal.\nComienza a las 1
+ 4:30 ET / 16:30 de Argentina (UTC-3).\nFuente (evento): https://www.grammy
+ .com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/\nFuente (t
+ ransmisión): https://www.grammy.com/news/2027-grammys-premiere-ceremony-d
+ isney-plus-streaming/
 DTSTART:20270207T193000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:critics-choice-nominations-2026@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:32nd Critics Choice Awards 2027 — Anuncio de nominaciones
 LOCATION:Transmisión desde Estados Unidos
-DESCRIPTION:Canal/Streaming: E! / USA Network\nFuente (evento): https://www
- .criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards
- /\nAnuncio de nominaciones de cine y televisión\, con Erin Lim Rhodes y W
- ill Marfuggi.\nLa señal televisiva comienza a las 12:00 ET / 14:00 de Arg
- entina (UTC-3).
+DESCRIPTION:Canal/Streaming: E! / USA Network\nAnuncio de nominaciones de c
+ ine y televisión\, con Erin Lim Rhodes y Will Marfuggi.\nLa señal televi
+ siva comienza a las 12:00 ET / 14:00 de Argentina (UTC-3).\nFuente (evento
+ ): https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics
+ -choice-awards/
 DTSTART:20261204T170000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:critics-choice-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:32nd Critics Choice Awards 2027 — Ceremonia
 LOCATION:The Barker Hangar\, Santa Monica\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: E! / USA Network\nConducción confirmada: Jane
- lle James\nFuente (evento): https://www.criticschoice.com/janelle-james-to
- -host-32nd-annual-critics-choice-awards/\nTransmisión en vivo 19:00–22:
- 00 ET / 21:00–00:00 Argentina (UTC-3).
+ lle James\nTransmisión en vivo 19:00–22:00 ET / 21:00–00:00 Argentina
+  (UTC-3).\nFuente (evento): https://www.criticschoice.com/janelle-james-to
+ -host-32nd-annual-critics-choice-awards/
 DTSTART:20270104T000000Z
 DTEND:20270104T030000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:golden-globes-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:84th Golden Globe Awards 2027 — Ceremonia
 LOCATION:The Beverly Hilton\, Beverly Hills\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: CBS / Paramount+\nConducción confirmada: Nikk
- i Glaser\nFuente (evento): https://www.paramountpressexpress.com/cbs-enter
- tainment/shows/84th-annual-golden-globes/about/\nTransmisión en vivo 19:3
- 0–22:30 ET / 21:30–00:30 Argentina (UTC-3).
+ i Glaser\nTransmisión en vivo 19:30–22:30 ET / 21:30–00:30 Argentina 
+ (UTC-3).\nFuente (evento): https://www.paramountpressexpress.com/cbs-enter
+ tainment/shows/84th-annual-golden-globes/about/
 DTSTART:20270111T003000Z
 DTEND:20270111T033000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:brit-awards-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:The BRIT Awards 2027 — Ceremonia
 LOCATION:Co-op Live\, Manchester\, Reino Unido
-DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nFuente (evento): https://www.brit
- s.co.uk/news/2026/the-brit-awards-reveals-2027-date\nFecha y emisión conf
- irmadas por la organización. Horario exacto no publicado\; el anuncio ind
- ica franja prime-time.
+DESCRIPTION:Canal/Streaming: ITV1 / ITVX\nFecha y emisión confirmadas por 
+ la organización. Horario exacto no publicado\; el anuncio indica franja p
+ rime-time.\nFuente (evento): https://www.brits.co.uk/news/2026/the-brit-aw
+ ards-reveals-2027-date
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 END:VEVENT
 BEGIN:VEVENT
 UID:actor-awards-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:33rd Annual Actor Awards 2027 — Ceremonia
 LOCATION:Los Angeles\, California\, Estados Unidos
-DESCRIPTION:Canal/Streaming: Netflix\nPremios especiales: Premio SAG-AFTRA 
- a la Trayectoria (62.ª edición) — Al Pacino\nFuente (evento): https://
- actorawards.org/awards/calendar\nFuente (información adicional): https://
- www.actorawards.org/media/news/releases/al-pacino-be-honored-2026-sag-aftr
- a-life-achievement-award\nLa 33.ª edición se transmitirá en vivo por Ne
- tflix el domingo 28 de febrero\, a las 20:00 ET / 22:00 de Argentina (UTC-
- 3).
+DESCRIPTION:Canal/Streaming: Netflix\nLa 33.ª edición se transmitirá en 
+ vivo por Netflix el domingo 28 de febrero\, a las 20:00 ET / 22:00 de Arge
+ ntina (UTC-3).\nFuente (evento): https://actorawards.org/awards/calendar\n
+ Fuente adicional: https://www.actorawards.org/media/news/releases/al-pacin
+ o-be-honored-2026-sag-aftra-life-achievement-award
 DTSTART:20270301T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:super-bowl-lxi-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Super Bowl LXI 2027 — Partido y Halftime Show
 LOCATION:SoFi Stadium\, Inglewood\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: ESPN / ABC / Disney+ / NFL+ (dispositivos móv
  iles)\nPerformers confirmados: JAY-Z — artista principal del show de med
- io tiempo\nFuente (evento): https://www.nfl.com/super-bowl/halftime-show\n
- La NFL confirmó a JAY-Z como artista principal del Halftime Show.\nLa tra
- nsmisión del evento está confirmada por ESPN y ABC\; Disney+ y NFL+ (en 
- dispositivos móviles) también figuran como opciones de acceso.\nEl horar
- io de inicio del partido todavía no se anunció en la fuente consultada.
+ io tiempo\nLa NFL confirmó a JAY-Z como artista principal del Halftime Sh
+ ow.\nLa transmisión del evento está confirmada por ESPN y ABC\; Disney+ 
+ y NFL+ (en dispositivos móviles) también figuran como opciones de acceso
+ .\nEl horario de inicio del partido todavía no se anunció en la fuente c
+ onsultada.\nFuente (evento): https://www.nfl.com/super-bowl/halftime-show
 DTSTART;VALUE=DATE:20270214
 DTEND;VALUE=DATE:20270215
 END:VEVENT
 BEGIN:VEVENT
 UID:oscars-2027@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:99th Oscars 2027 — Ceremonia
 LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
  tados Unidos
 DESCRIPTION:Canal/Streaming: ABC / Hulu\nConducción confirmada: Conan O’
- Brien\nFuente (evento): https://press.oscars.org/news/99th-oscarsr-reunite
- s-host-conan-obrien-and-executive-producers-raj-kapoor-and-katy-mullan\nTr
- ansmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3)\; Estados U
- nidos estará en horario de verano (EDT).\nLa Academia anunció el 21 de e
- nero de 2027 como fecha de revelación de las nominaciones.
+ Brien\nTransmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3)\; 
+ Estados Unidos estará en horario de verano (EDT).\nLa Academia anunció e
+ l 21 de enero de 2027 como fecha de revelación de las nominaciones.\nFuen
+ te (evento): https://press.oscars.org/news/99th-oscarsr-reunites-host-cona
+ n-obrien-and-executive-producers-raj-kapoor-and-katy-mullan
 DTSTART:20270314T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:actor-awards-2028@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:34th Annual Actor Awards 2028 — Ceremonia
 LOCATION:Los Angeles\, California\, Estados Unidos
-DESCRIPTION:Canal/Streaming: Netflix\nFuente (evento): https://www.netflix.
- com/tudum/articles/actor-awards-sag-aftra-2027-2028-date-time\nNetflix con
- firmó la fecha y la transmisión en directo. El horario todavía no fue a
- nunciado.
+DESCRIPTION:Canal/Streaming: Netflix\nNetflix confirmó la fecha y la trans
+ misión en directo. El horario todavía no fue anunciado.\nFuente (evento)
+ : https://www.netflix.com/tudum/articles/actor-awards-sag-aftra-2027-2028-
+ date-time
 DTSTART;VALUE=DATE:20280220
 DTEND;VALUE=DATE:20280221
 END:VEVENT
 BEGIN:VEVENT
 UID:oscars-2028@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:100th Oscars 2028 — Ceremonia
 LOCATION:Dolby Theatre at Ovation Hollywood\, Los Angeles\, California\, Es
  tados Unidos
-DESCRIPTION:Canal/Streaming: ABC\nFuente (evento): https://press.oscars.org
- /news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr\nLa Acade
- mia y ABC confirmaron la fecha y la emisión en directo a las 19:00 ET / 2
- 1:00 Argentina (UTC-3).
+DESCRIPTION:Canal/Streaming: ABC\nLa Academia y ABC confirmaron la fecha y 
+ la emisión en directo a las 19:00 ET / 21:00 Argentina (UTC-3).\nFuente (
+ evento): https://press.oscars.org/news/academy-and-abc-announce-show-dates
+ -99th-and-100th-oscarsr
 DTSTART:20280306T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:lolla-argentina-2027-day-1@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Lollapalooza Argentina 2027 — Viernes 12 de marzo
 LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
 DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
- adas\nHeadliners: The Killers\; The Neighbourhood\nLine-up del día: The K
- illers\; The Neighbourhood\; Fontaines D.C.\; The Prodigy\; Dillom\; Malco
- lm Todd\; RAYE\; ADÉLA\; Marlon Hoffstadt\; Boys Noize\; Midnight Generat
- ion\; Mind Enterprises\; AYYBO\; Ela Taubert\; Princesa Alba\; Folgar\; Sa
- ntos Bravos\; Kchiporros\; Natalia Lacunza\; Joaco Burgos\; Mai Lawson\; V
- arese\; Sol Porro\; Pato Mallet\; Las Sombras\nFuente (evento): https://ww
- w.lollapaloozaar.com/\nFuente (line-up): https://www.lanacion.com.ar/espec
- taculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocara
- n-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/\nFuente (transmisió
- n): https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina
- -2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entra
- das-nid03112026/\nProgramación diaria anunciada. Los horarios de escenari
- o aún no fueron publicados.
+ adas\nHeadliners: The Killers\; The Neighbourhood\nLine-up: The Killers\; 
+ The Neighbourhood\; Fontaines D.C.\; The Prodigy\; Dillom\; Malcolm Todd\;
+  RAYE\; ADÉLA\; Marlon Hoffstadt\; Boys Noize\; Midnight Generation\; Min
+ d Enterprises\; AYYBO\; Ela Taubert\; Princesa Alba\; Folgar\; Santos Brav
+ os\; Kchiporros\; Natalia Lacunza\; Joaco Burgos\; Mai Lawson\; Varese\; S
+ ol Porro\; Pato Mallet\; Las Sombras\nProgramación diaria anunciada. Los 
+ horarios de escenario aún no fueron publicados.\nFuente (evento): https:/
+ /www.lollapaloozaar.com/\nFuente (transmisión): https://www.lanacion.com.
+ ar/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artista
+ s-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
 END:VEVENT
 BEGIN:VEVENT
 UID:lolla-argentina-2027-day-2@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Lollapalooza Argentina 2027 — Sábado 13 de marzo
 LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
 DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
- adas\nHeadliners: Travis Scott\; TINI\; Queens of the Stone Age\nLine-up d
- el día: Travis Scott\; TINI\; Queens of the Stone Age\; Rawayana\; Geese\
- ; SLAYYYTER\; Un Poco de Ruido\; Four Tet\; Angine de Poitrine\; Carlita\;
-  Sammy Virji\; Julia Wolf\; Die Spitz\; Mateo Dufour Live\; Yorghaki\; Jua
- na Rozas\; Francisca Valenzuela\; Broke Carrey\; Tiga\; Lolu Menayed\; Sof
- ía Mora\; Ara\; Palo\; Fabrizio\; Hellolola\nFuente (evento): https://www
- .lollapaloozaar.com/\nFuente (line-up): https://www.lanacion.com.ar/espect
- aculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran
- -cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/\nFuente (transmisión
- ): https://www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-
- 2027-se-confirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entrad
- as-nid03112026/\nProgramación diaria anunciada. Los horarios de escenario
-  aún no fueron publicados.
+ adas\nHeadliners: Travis Scott\; TINI\; Queens of the Stone Age\nLine-up: 
+ Travis Scott\; TINI\; Queens of the Stone Age\; Rawayana\; Geese\; SLAYYYT
+ ER\; Un Poco de Ruido\; Four Tet\; Angine de Poitrine\; Carlita\; Sammy Vi
+ rji\; Julia Wolf\; Die Spitz\; Mateo Dufour Live\; Yorghaki\; Juana Rozas\
+ ; Francisca Valenzuela\; Broke Carrey\; Tiga\; Lolu Menayed\; Sofía Mora\
+ ; Ara\; Palo\; Fabrizio\; Hellolola\nProgramación diaria anunciada. Los h
+ orarios de escenario aún no fueron publicados.\nFuente (evento): https://
+ www.lollapaloozaar.com/\nFuente (transmisión): https://www.lanacion.com.a
+ r/espectaculos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas
+ -tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid03112026/
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 END:VEVENT
 BEGIN:VEVENT
 UID:lolla-argentina-2027-day-3@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Lollapalooza Argentina 2027 — Domingo 14 de marzo
 LOCATION:Hipódromo de San Isidro\, San Isidro\, Buenos Aires\, Argentina
 DESCRIPTION:Canal/Streaming: Flow — transmisión en vivo de las tres jorn
- adas\nHeadliners: Charli xcx\; David Guetta\; Sombr\nLine-up del día: Cha
- rli xcx\; David Guetta\; Sombr\; Dominic Fike\; Cage the Elephant\; Lola Y
- oung\; TOMORA\; K4OS\; Leon Bridges\; Usted Señalemelo\; Snow Strippers\;
-  Ninajirachi\; The Avalanches\; Rivo\; Boy Harsher\; Amaia\; Juan Hansen L
- ive\; Violet Grohl\; Enzocerobulto\; Daniela Spalla\; Zé Pequeña\; Dand
- ára\; Hana Fox\; Molle\; La Ramona\nFuente (evento): https://www.lollapal
- oozaar.com/\nFuente (line-up): https://www.lanacion.com.ar/espectaculos/mu
- sica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-cada-dia
- -y-cuanto-cuestan-las-entradas-nid03112026/\nFuente (transmisión): https:
- //www.lanacion.com.ar/espectaculos/musica/lollapalooza-argentina-2027-se-c
- onfirmo-que-artistas-tocaran-cada-dia-y-cuanto-cuestan-las-entradas-nid031
- 12026/\nProgramación diaria anunciada. Los horarios de escenario aún no 
- fueron publicados.
+ adas\nHeadliners: Charli xcx\; David Guetta\; Sombr\nLine-up: Charli xcx\;
+  David Guetta\; Sombr\; Dominic Fike\; Cage the Elephant\; Lola Young\; TO
+ MORA\; K4OS\; Leon Bridges\; Usted Señalemelo\; Snow Strippers\; Ninajira
+ chi\; The Avalanches\; Rivo\; Boy Harsher\; Amaia\; Juan Hansen Live\; Vio
+ let Grohl\; Enzocerobulto\; Daniela Spalla\; Zé Pequeña\; Dandára\; Han
+ a Fox\; Molle\; La Ramona\nProgramación diaria anunciada. Los horarios de
+  escenario aún no fueron publicados.\nFuente (evento): https://www.lollap
+ aloozaar.com/\nFuente (transmisión): https://www.lanacion.com.ar/espectac
+ ulos/musica/lollapalooza-argentina-2027-se-confirmo-que-artistas-tocaran-c
+ ada-dia-y-cuanto-cuestan-las-entradas-nid03112026/
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-1-friday@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2027 — Weekend 1 — Viernes
 LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
- nHeadliners: Dua Lipa\nLine-up del día: Dua Lipa\; Madonna\; Zara Larsson
- \; Steve Lacy\; JISOO\; Diljit Dosanjh\; Peggy Gou\; Kehlani\; Solid Groov
- es\; Giorgio Moroder\; Social Distortion\; Pinegrove\; Angine de Poitrine\
- ; Leon Thomas\; Drain Gang\; Snow Strippers\; Mike D 5D\; CHRIS STASSY\; M
- ilo J\; SG Lewis\; Kelela\; Franky Rizardo\; Fetty Wap\; Vintage Culture\;
-  The Damned\; ATARASHII GAKKO!\; Nettspend\; American Football\; xaviersob
- ased\; La Dispute\; Haute & Freddy\; The Hellp\; Disco Dom\; MPH\; Bella K
- ay\; This Is Lorelei\; The Womack Sisters\; Mary in the Junkyard\; Close F
- riends Only\; Obskür\; Jacob Lusk\; LEENALCHI\; Bea Miller\; Gang of Yout
- hs\; Love Spells\; Rafael\; Nirosta Steel\; Ragie Ban\; Eli\; Las Petunias
- \; Violet Grohl\; Jackie Hollander\; Jamback x Marsolo\; NOYA\nFuente (eve
- nto): https://www.coachella.com/lineup/\nFuente (line-up): https://www.coa
- chella.com/lineup/\nFuente (transmisión): https://coachella.com/youtube-l
- ivestream\nFuente (información adicional): https://blog.youtube/news-and-
- events/made-on-youtube-coachella-exclusively-stream-youtube-2030/\nLa prog
- ramación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de 
- escenarios aún no publicados.
+ nHeadliners: Dua Lipa\nLine-up: Dua Lipa\; Madonna\; Zara Larsson\; Steve 
+ Lacy\; JISOO\; Diljit Dosanjh\; Peggy Gou\; Kehlani\; Solid Grooves\; Gior
+ gio Moroder\; Social Distortion\; Pinegrove\; Angine de Poitrine\; Leon Th
+ omas\; Drain Gang\; Snow Strippers\; Mike D 5D\; CHRIS STASSY\; Milo J\; S
+ G Lewis\; Kelela\; Franky Rizardo\; Fetty Wap\; Vintage Culture\; The Damn
+ ed\; ATARASHII GAKKO!\; Nettspend\; American Football\; xaviersobased\; La
+  Dispute\; Haute & Freddy\; The Hellp\; Disco Dom\; MPH\; Bella Kay\; This
+  Is Lorelei\; The Womack Sisters\; Mary in the Junkyard\; Close Friends On
+ ly\; Obskür\; Jacob Lusk\; LEENALCHI\; Bea Miller\; Gang of Youths\; Love
+  Spells\; Rafael\; Nirosta Steel\; Ragie Ban\; Eli\; Las Petunias\; Violet
+  Grohl\; Jackie Hollander\; Jamback x Marsolo\; NOYA\nLa programación de 
+ esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios a
+ ún no publicados.\nFuente (evento): https://www.coachella.com/lineup/\nFu
+ ente (transmisión): https://coachella.com/youtube-livestream\nFuente adic
+ ional: https://blog.youtube/news-and-events/made-on-youtube-coachella-excl
+ usively-stream-youtube-2030/
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270410
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-1-saturday@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2027 — Weekend 1 — Sábado
 LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
- nHeadliners: Tame Impala\nLine-up del día: Tame Impala\; Phoebe Bridgers\
- ; Weezer\; Tiësto\; Martin Garrix\; Robyn\; Role Model\; ADÉLA\; Månesk
- in\; Solomun\; NCT\; Enigma\; Underworld\; Charlotte de Witte\; Leon Bridg
- es\; Cloonee\; Magdalena Bay\; Barry Can’t Swim\; Boy Harsher\; KI/KI\; 
- Mariah the Scientist\; Bad Gyal\; Basement\; Brutalismus 3000\; Beltran\; 
- underscores\; SB19\; Twin Tribes\; Odeal\; Bassvictim\; Los Pibes Chorros\
- ; Tiffany Day\; no na\; Mathame\; ear\; Vandelux\; rommulas\; Apollonia\; 
- Getdown Services\; Good Neighbours\; First Day Back\; Jimi Jules\; Twisted
-  Teens\; Murda Beatz\; Villanelle\; Kolter x Sidney Charles\; La Texana\; 
- OMRI.\; Volkoder\; Zimmer90\; LuSiD\; Dream Boat\nFuente (evento): https:/
- /www.coachella.com/lineup/\nFuente (line-up): https://www.coachella.com/li
- neup/\nFuente (transmisión): https://coachella.com/youtube-livestream\nFu
- ente (información adicional): https://blog.youtube/news-and-events/made-o
- n-youtube-coachella-exclusively-stream-youtube-2030/\nLa programación de 
- esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios a
- ún no publicados.
+ nHeadliners: Tame Impala\nLine-up: Tame Impala\; Phoebe Bridgers\; Weezer\
+ ; Tiësto\; Martin Garrix\; Robyn\; Role Model\; ADÉLA\; Måneskin\; Solo
+ mun\; NCT\; Enigma\; Underworld\; Charlotte de Witte\; Leon Bridges\; Cloo
+ nee\; Magdalena Bay\; Barry Can’t Swim\; Boy Harsher\; KI/KI\; Mariah th
+ e Scientist\; Bad Gyal\; Basement\; Brutalismus 3000\; Beltran\; underscor
+ es\; SB19\; Twin Tribes\; Odeal\; Bassvictim\; Los Pibes Chorros\; Tiffany
+  Day\; no na\; Mathame\; ear\; Vandelux\; rommulas\; Apollonia\; Getdown S
+ ervices\; Good Neighbours\; First Day Back\; Jimi Jules\; Twisted Teens\; 
+ Murda Beatz\; Villanelle\; Kolter x Sidney Charles\; La Texana\; OMRI.\; V
+ olkoder\; Zimmer90\; LuSiD\; Dream Boat\nLa programación de esta jornada 
+ se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publica
+ dos.\nFuente (evento): https://www.coachella.com/lineup/\nFuente (transmis
+ ión): https://coachella.com/youtube-livestream\nFuente adicional: https:/
+ /blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream
+ -youtube-2030/
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-1-sunday@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2027 — Weekend 1 — Domingo
 LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
- nHeadliners: SZA\nLine-up del día: SZA\; Don Toliver\; DOM DOLLA\; Kygo\;
-  Empire of the Sun\; Four Tet\; The Neighbourhood\; Becky G\; BABYMONSTER\
- ; Amelie Lens x Sara Landry\; Remi Wolf\; Trove Lo\; Victoria Monét\; EsD
- eeKid\; Caroline Polachek\; Chase & Status\; MUNA\; Boris Brejcha\; Jorja 
- Smith\; The Avalanches\; BOLO\; Pennywise\; Freddie Gibbs\; Shygirl\; Juli
- a Wolf\; Odd Mob\; Ayra Starr\; Lambrini Girls\; AKRIILA\; Dinner Party\; 
- Silva Bumpa\; DJ Habibeats\; Chanel Beads\; Adam Ten\; After\; Zack Fox\; 
- Fat Dog\; Omar+\; Genesis Owusu\; Joshua Slone\; The Mainliners\; Marten L
- ou x Alex Wann\; ChaseWest\; Florence Road\; Jazzy\; TUL8TE\; Jakob Nowell
-  and THE CASTLE\; Talón\; Klave Efectiva\nFuente (evento): https://www.co
- achella.com/lineup/\nFuente (line-up): https://www.coachella.com/lineup/\n
- Fuente (transmisión): https://coachella.com/youtube-livestream\nFuente (i
- nformación adicional): https://blog.youtube/news-and-events/made-on-youtu
- be-coachella-exclusively-stream-youtube-2030/\nLa programación de esta jo
- rnada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no p
- ublicados.
+ nHeadliners: SZA\nLine-up: SZA\; Don Toliver\; DOM DOLLA\; Kygo\; Empire o
+ f the Sun\; Four Tet\; The Neighbourhood\; Becky G\; BABYMONSTER\; Amelie 
+ Lens x Sara Landry\; Remi Wolf\; Trove Lo\; Victoria Monét\; EsDeeKid\; C
+ aroline Polachek\; Chase & Status\; MUNA\; Boris Brejcha\; Jorja Smith\; T
+ he Avalanches\; BOLO\; Pennywise\; Freddie Gibbs\; Shygirl\; Julia Wolf\; 
+ Odd Mob\; Ayra Starr\; Lambrini Girls\; AKRIILA\; Dinner Party\; Silva Bum
+ pa\; DJ Habibeats\; Chanel Beads\; Adam Ten\; After\; Zack Fox\; Fat Dog\;
+  Omar+\; Genesis Owusu\; Joshua Slone\; The Mainliners\; Marten Lou x Alex
+  Wann\; ChaseWest\; Florence Road\; Jazzy\; TUL8TE\; Jakob Nowell and THE 
+ CASTLE\; Talón\; Klave Efectiva\nLa programación de esta jornada se repi
+ te en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados.\nF
+ uente (evento): https://www.coachella.com/lineup/\nFuente (transmisión): 
+ https://coachella.com/youtube-livestream\nFuente adicional: https://blog.y
+ outube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtub
+ e-2030/
 DTSTART;VALUE=DATE:20270411
 DTEND;VALUE=DATE:20270412
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-2-friday@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2027 — Weekend 2 — Viernes
 LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
- nHeadliners: Dua Lipa\nLine-up del día: Dua Lipa\; Madonna\; Zara Larsson
- \; Steve Lacy\; JISOO\; Diljit Dosanjh\; Peggy Gou\; Kehlani\; Solid Groov
- es\; Giorgio Moroder\; Social Distortion\; Pinegrove\; Angine de Poitrine\
- ; Leon Thomas\; Drain Gang\; Snow Strippers\; Mike D 5D\; CHRIS STASSY\; M
- ilo J\; SG Lewis\; Kelela\; Franky Rizardo\; Fetty Wap\; Vintage Culture\;
-  The Damned\; ATARASHII GAKKO!\; Nettspend\; American Football\; xaviersob
- ased\; La Dispute\; Haute & Freddy\; The Hellp\; Disco Dom\; MPH\; Bella K
- ay\; This Is Lorelei\; The Womack Sisters\; Mary in the Junkyard\; Close F
- riends Only\; Obskür\; Jacob Lusk\; LEENALCHI\; Bea Miller\; Gang of Yout
- hs\; Love Spells\; Rafael\; Nirosta Steel\; Ragie Ban\; Eli\; Las Petunias
- \; Violet Grohl\; Jackie Hollander\; Jamback x Marsolo\; NOYA\nFuente (eve
- nto): https://www.coachella.com/lineup/\nFuente (line-up): https://www.coa
- chella.com/lineup/\nFuente (transmisión): https://coachella.com/youtube-l
- ivestream\nFuente (información adicional): https://blog.youtube/news-and-
- events/made-on-youtube-coachella-exclusively-stream-youtube-2030/\nLa prog
- ramación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de 
- escenarios aún no publicados.
+ nHeadliners: Dua Lipa\nLine-up: Dua Lipa\; Madonna\; Zara Larsson\; Steve 
+ Lacy\; JISOO\; Diljit Dosanjh\; Peggy Gou\; Kehlani\; Solid Grooves\; Gior
+ gio Moroder\; Social Distortion\; Pinegrove\; Angine de Poitrine\; Leon Th
+ omas\; Drain Gang\; Snow Strippers\; Mike D 5D\; CHRIS STASSY\; Milo J\; S
+ G Lewis\; Kelela\; Franky Rizardo\; Fetty Wap\; Vintage Culture\; The Damn
+ ed\; ATARASHII GAKKO!\; Nettspend\; American Football\; xaviersobased\; La
+  Dispute\; Haute & Freddy\; The Hellp\; Disco Dom\; MPH\; Bella Kay\; This
+  Is Lorelei\; The Womack Sisters\; Mary in the Junkyard\; Close Friends On
+ ly\; Obskür\; Jacob Lusk\; LEENALCHI\; Bea Miller\; Gang of Youths\; Love
+  Spells\; Rafael\; Nirosta Steel\; Ragie Ban\; Eli\; Las Petunias\; Violet
+  Grohl\; Jackie Hollander\; Jamback x Marsolo\; NOYA\nLa programación de 
+ esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios a
+ ún no publicados.\nFuente (evento): https://www.coachella.com/lineup/\nFu
+ ente (transmisión): https://coachella.com/youtube-livestream\nFuente adic
+ ional: https://blog.youtube/news-and-events/made-on-youtube-coachella-excl
+ usively-stream-youtube-2030/
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270417
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-2-saturday@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2027 — Weekend 2 — Sábado
 LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
- nHeadliners: Tame Impala\nLine-up del día: Tame Impala\; Phoebe Bridgers\
- ; Weezer\; Tiësto\; Martin Garrix\; Robyn\; Role Model\; ADÉLA\; Månesk
- in\; Solomun\; NCT\; Enigma\; Underworld\; Charlotte de Witte\; Leon Bridg
- es\; Cloonee\; Magdalena Bay\; Barry Can’t Swim\; Boy Harsher\; KI/KI\; 
- Mariah the Scientist\; Bad Gyal\; Basement\; Brutalismus 3000\; Beltran\; 
- underscores\; SB19\; Twin Tribes\; Odeal\; Bassvictim\; Los Pibes Chorros\
- ; Tiffany Day\; no na\; Mathame\; ear\; Vandelux\; rommulas\; Apollonia\; 
- Getdown Services\; Good Neighbours\; First Day Back\; Jimi Jules\; Twisted
-  Teens\; Murda Beatz\; Villanelle\; Kolter x Sidney Charles\; La Texana\; 
- OMRI.\; Volkoder\; Zimmer90\; LuSiD\; Dream Boat\nFuente (evento): https:/
- /www.coachella.com/lineup/\nFuente (line-up): https://www.coachella.com/li
- neup/\nFuente (transmisión): https://coachella.com/youtube-livestream\nFu
- ente (información adicional): https://blog.youtube/news-and-events/made-o
- n-youtube-coachella-exclusively-stream-youtube-2030/\nLa programación de 
- esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios a
- ún no publicados.
+ nHeadliners: Tame Impala\nLine-up: Tame Impala\; Phoebe Bridgers\; Weezer\
+ ; Tiësto\; Martin Garrix\; Robyn\; Role Model\; ADÉLA\; Måneskin\; Solo
+ mun\; NCT\; Enigma\; Underworld\; Charlotte de Witte\; Leon Bridges\; Cloo
+ nee\; Magdalena Bay\; Barry Can’t Swim\; Boy Harsher\; KI/KI\; Mariah th
+ e Scientist\; Bad Gyal\; Basement\; Brutalismus 3000\; Beltran\; underscor
+ es\; SB19\; Twin Tribes\; Odeal\; Bassvictim\; Los Pibes Chorros\; Tiffany
+  Day\; no na\; Mathame\; ear\; Vandelux\; rommulas\; Apollonia\; Getdown S
+ ervices\; Good Neighbours\; First Day Back\; Jimi Jules\; Twisted Teens\; 
+ Murda Beatz\; Villanelle\; Kolter x Sidney Charles\; La Texana\; OMRI.\; V
+ olkoder\; Zimmer90\; LuSiD\; Dream Boat\nLa programación de esta jornada 
+ se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publica
+ dos.\nFuente (evento): https://www.coachella.com/lineup/\nFuente (transmis
+ ión): https://coachella.com/youtube-livestream\nFuente adicional: https:/
+ /blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream
+ -youtube-2030/
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270418
 END:VEVENT
 BEGIN:VEVENT
 UID:coachella-2027-weekend-2-sunday@inhumano.github.io
-DTSTAMP:20261127T013846Z
+DTSTAMP:20261127T014738Z
 SUMMARY:Coachella 2027 — Weekend 2 — Domingo
 LOCATION:Empire Polo Club\, Indio\, California\, Estados Unidos
 DESCRIPTION:Canal/Streaming: YouTube — transmisión oficial de Coachella\
- nHeadliners: SZA\nLine-up del día: SZA\; Don Toliver\; DOM DOLLA\; Kygo\;
-  Empire of the Sun\; Four Tet\; The Neighbourhood\; Becky G\; BABYMONSTER\
- ; Amelie Lens x Sara Landry\; Remi Wolf\; Trove Lo\; Victoria Monét\; EsD
- eeKid\; Caroline Polachek\; Chase & Status\; MUNA\; Boris Brejcha\; Jorja 
- Smith\; The Avalanches\; BOLO\; Pennywise\; Freddie Gibbs\; Shygirl\; Juli
- a Wolf\; Odd Mob\; Ayra Starr\; Lambrini Girls\; AKRIILA\; Dinner Party\; 
- Silva Bumpa\; DJ Habibeats\; Chanel Beads\; Adam Ten\; After\; Zack Fox\; 
- Fat Dog\; Omar+\; Genesis Owusu\; Joshua Slone\; The Mainliners\; Marten L
- ou x Alex Wann\; ChaseWest\; Florence Road\; Jazzy\; TUL8TE\; Jakob Nowell
-  and THE CASTLE\; Talón\; Klave Efectiva\nFuente (evento): https://www.co
- achella.com/lineup/\nFuente (line-up): https://www.coachella.com/lineup/\n
- Fuente (transmisión): https://coachella.com/youtube-livestream\nFuente (i
- nformación adicional): https://blog.youtube/news-and-events/made-on-youtu
- be-coachella-exclusively-stream-youtube-2030/\nLa programación de esta jo
- rnada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no p
- ublicados.
+ nHeadliners: SZA\nLine-up: SZA\; Don Toliver\; DOM DOLLA\; Kygo\; Empire o
+ f the Sun\; Four Tet\; The Neighbourhood\; Becky G\; BABYMONSTER\; Amelie 
+ Lens x Sara Landry\; Remi Wolf\; Trove Lo\; Victoria Monét\; EsDeeKid\; C
+ aroline Polachek\; Chase & Status\; MUNA\; Boris Brejcha\; Jorja Smith\; T
+ he Avalanches\; BOLO\; Pennywise\; Freddie Gibbs\; Shygirl\; Julia Wolf\; 
+ Odd Mob\; Ayra Starr\; Lambrini Girls\; AKRIILA\; Dinner Party\; Silva Bum
+ pa\; DJ Habibeats\; Chanel Beads\; Adam Ten\; After\; Zack Fox\; Fat Dog\;
+  Omar+\; Genesis Owusu\; Joshua Slone\; The Mainliners\; Marten Lou x Alex
+  Wann\; ChaseWest\; Florence Road\; Jazzy\; TUL8TE\; Jakob Nowell and THE 
+ CASTLE\; Talón\; Klave Efectiva\nLa programación de esta jornada se repi
+ te en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados.\nF
+ uente (evento): https://www.coachella.com/lineup/\nFuente (transmisión): 
+ https://coachella.com/youtube-livestream\nFuente adicional: https://blog.y
+ outube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtub
+ e-2030/
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
+END:VEVENT
+BEGIN:VEVENT
+UID:rockefeller-center-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Christmas in Rockefeller Center 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Telemundo / Peacock\nCynthia Erivo condu
+ ce y actúa.\nPresentaciones de Kelly Clarkson\, EJAE\, Kirk Franklin\, Wy
+ nonna Judd\, JYT\, Alanis Morissette\, Brad Paisley\, Alex Warren y Radio 
+ City Rockettes.\nFuente (evento): https://www.nbcuniversal.com/article/nbc
+ s-annual-christmas-rockefeller-center-lights-holiday-season-dec-2
+DTSTART:20261203T010000Z
+DTEND:20261203T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-with-snoop-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Christmas with Snoop 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Peacock\nEspecial navideño con Snoop Do
+ gg y sus invitados.\nFuente (evento): https://www.nbcuniversal.com/article
+ /nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261203T030000Z
+DTEND:20261203T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:grinch-1966-nbc-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:How the Grinch Stole Christmas! (1966) — Emisión NBC
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nEmisión televisiva confirmada\; repetici
+ ón el 25 de diciembre.\nFuente (evento): https://www.nbcuniversal.com/art
+ icle/nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261204T010000Z
+DTEND:20261204T013000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:frosty-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Frosty the Snowman (1969) — Emisión NBC
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nEmisión televisiva confirmada\; repetici
+ ón el 16 de diciembre.\nFuente (evento): https://www.nbcuniversal.com/art
+ icle/nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261204T013000Z
+DTEND:20261204T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rudolph-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Rudolph the Red-Nosed Reindeer (1964) — Emisión NBC
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nEmisión televisiva confirmada\; repetici
+ ón el 17 de diciembre.\nFuente (evento): https://www.nbcuniversal.com/art
+ icle/nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261205T010000Z
+DTEND:20261205T021500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:paw-patrol-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:PAW Patrol Christmas Special 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nEspecial navideño de PAW Patrol.\nFuente
+  (evento): https://www.tvinsider.com/1303617/holiday-tv-specials-2026-sche
+ dule/
+DTSTART:20261129T010000Z
+DTEND:20261129T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:reindeer-in-here-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Reindeer in Here 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nEspecial animado navideño\; repetición 
+ anunciada para el 23 de diciembre.\nFuente (evento): https://www.tvinsider
+ .com/1303617/holiday-tv-specials-2026-schedule/
+DTSTART:20261206T010000Z
+DTEND:20261206T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wonderful-world-disney-holiday-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:The Wonderful World of Disney: Holiday Spectacular 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nEspecial musical con presentaciones desde
+  Walt Disney World y Disneyland.\nFuente (evento): https://abc.com/news/99
+ 1c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261201T010000Z
+DTEND:20261201T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:santa-claus-is-comin-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Santa Claus Is Comin’ to Town (1970) — Emisión ABC
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nClásico animado navideño de Rankin/Bass
+ .\nFuente (evento): https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975ad
+ baa/category/1138628
+DTSTART:20261201T030000Z
+DTEND:20261201T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dancing-with-holidays-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Dancing with the Holidays 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nEspecial de Dancing with the Stars con 12
+  coreografías festivas.\nFuente (evento): https://abc.com/news/991c57c5-6
+ bf2-40ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261202T010000Z
+DTEND:20261202T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:cma-country-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:CMA Country Christmas 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\n17.ª edición del especial musical count
+ ry navideño\, grabado en Nashville.\nFuente (evento): https://abc.com/new
+ s/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261202T020000Z
+DTEND:20261202T030100Z
+END:VEVENT
+BEGIN:VEVENT
+UID:saturday-night-live-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:A Saturday Night Live Christmas 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nSelección de sketches navideños\; repet
+ ición el 21 de diciembre.\nFuente (evento): https://www.nbcuniversal.com/
+ article/nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261212T010000Z
+DTEND:20261212T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:shrek-the-halls-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Shrek the Halls — Emisión NBC 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nEspecial animado navideño\; repetición 
+ el 18 de diciembre.\nFuente (evento): https://www.nbcuniversal.com/article
+ /nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261217T013000Z
+DTEND:20261217T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dolly-parton-mountain-magic-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Dolly Parton’s Mountain Magic Christmas — Emisión 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Peacock (catálogo posterior\, sujeto a 
+ disponibilidad)\nPelícula musical navideña protagonizada por Dolly Parto
+ n.\nFuente (evento): https://www.nbcuniversal.com/article/nbc-announces-fu
+ ll-2026-holiday-programming-lineup
+DTSTART:20261217T020000Z
+DTEND:20261217T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:iheart-radio-jingle-ball-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:iHeartRadio Jingle Ball 2026 — Especial televisivo
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nEspecial televisivo del tour navideño iH
+ eartRadio Jingle Ball.\nCartel anunciado: Olivia Rodrigo\, Hilary Duff\, J
+ onas Brothers\, SOMBR\, Charlie Puth\, KATSEYE y RAYE\, entre otros.\nFuen
+ te (evento): https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/cat
+ egory/1138628\nFuente (transmisión): https://abc.com/news/991c57c5-6bf2-4
+ 0ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261218T010000Z
+DTEND:20261218T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:disney-parks-christmas-parade-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Disney Parks Magical Christmas Day Parade 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nDesfile y actuaciones desde Walt Disney W
+ orld y Disneyland.\nFuente (evento): https://abc.com/news/991c57c5-6bf2-40
+ ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261225T150000Z
+DTEND:20261225T170000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:its-a-wonderful-life-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:It’s a Wonderful Life — Emisión NBC 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC\nEmisión navideña del clásico de Frank 
+ Capra.\nFuente (evento): https://www.nbcuniversal.com/article/nbc-announce
+ s-full-2026-holiday-programming-lineup
+DTSTART:20261225T010000Z
+DTEND:20261225T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-eve-mass-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Christmas Eve Mass from St. Peter’s Basilica 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: NBC / Telemundo\nMisa de Nochebuena desde la B
+ asílica de San Pedro\, con el papa León XIV.\nFuente (evento): https://w
+ ww.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-li
+ neup
+DTSTART:20261225T043000Z
+DTEND:20261225T060000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-message-pope-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Mensaje Navideño del Papa 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: Telemundo\nTransmisión del tradicional mensaj
+ e navideño desde el Vaticano.\nFuente (evento): https://www.nbcuniversal.
+ com/article/nbc-announces-full-2026-holiday-programming-lineup
+DTSTART:20261225T110000Z
+DTEND:20261225T113000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:voices-of-hope-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Voices of Hope — The Tabernacle Choir 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nConcierto especial por el centenario del 
+ debut del coro en Hollywood Bowl\; participan Donny Osmond\, David Foster 
+ y Katharine McPhee.\nFuente (evento): https://www.tvinsider.com/1303617/ho
+ liday-tv-specials-2026-schedule/
+DTSTART:20261227T020000Z
+DTEND:20261227T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:family-film-tv-awards-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:29th Annual Family Film & TV Awards 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nPremios a películas y programas familiar
+ es.\nFuente (evento): https://www.tvinsider.com/1303617/holiday-tv-special
+ s-2026-schedule/
+DTSTART:20261227T010000Z
+DTEND:20261227T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:new-years-eve-nashville-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:New Year’s Eve Live: Nashville’s Big Bash 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: CBS\nCelebración musical de Año Nuevo desde 
+ Nashville.\nArtistas anunciados: HARDY\, Little Big Town y The Red Clay St
+ rays\, entre otros.\nFuente (evento): https://www.tvinsider.com/1303617/ho
+ liday-tv-specials-2026-schedule/
+DTSTART:20270101T010000Z
+DTEND:20270101T050000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dick-clarks-rockin-eve-2027@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Dick Clark’s New Year’s Rockin’ Eve with Ryan Seacrest 2027
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC / Disney+ / iHeartRadio (simulcast de radi
+ o)\nConduce Ryan Seacrest\; Rita Ora desde Nueva York\, Julianne Hough y R
+ ob Gronkowski desde Las Vegas\, y Druski desde Chicago.\nLa transmisión e
+ n vivo comienza a las 20:00 ET / 22:00 de Argentina (UTC-3).\nLa grilla co
+ mpleta de artistas aún no fue anunciada en la fuente oficial.\nFuente (ev
+ ento): https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-roc
+ kin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-th
+ e-first-time-ever/\nFuente (transmisión): https://www.detpress.com/abc/pr
+ essrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-sim
+ ulcast-live-on-abc-and-disney-for-the-first-time-ever/
+DTSTART:20270101T010000Z
+DTEND:20270101T090000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:charlie-brown-christmas-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:A Charlie Brown Christmas — Apple TV 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: Apple TV\nEspecial disponible en Apple TV\; ac
+ ceso gratuito anunciado para el 13 y 14 de diciembre.\nFuente (evento): ht
+ tps://www.boston.com/culture/tv/2026/11/25/holiday-tv-specials-2026-full-s
+ chedule/
+DTSTART:20261213T050000Z
+DTEND:20261214T050000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mickey-christmas-carol-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Mickey’s Christmas Carol — Emisión ABC 2026
+LOCATION:Estados Unidos
+DESCRIPTION:Canal/Streaming: ABC\nEmisión confirmada\, ya realizada al mom
+ ento de la actualización.\nFuente (evento): https://www.boston.com/cultur
+ e/tv/2026/11/25/holiday-tv-specials-2026-full-schedule/
+DTSTART:20261126T010000Z
+DTEND:20261126T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:in-a-holidaze-netflix-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:In a Holidaze — Estreno Netflix
+DESCRIPTION:Canal/Streaming: Netflix\nEstreno global de la película navide
+ ña protagonizada por Maddie Ziegler y Rob Lowe.\nFuente (evento): https:/
+ /www.whats-on-netflix.com/news/in-a-holidaze-netflix-release-date/
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+END:VEVENT
+BEGIN:VEVENT
+UID:the-man-with-the-bag-prime-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:The Man with the Bag — Estreno Prime Video
+DESCRIPTION:Canal/Streaming: Prime Video\nEstreno de la comedia navideña p
+ rotagonizada por Arnold Schwarzenegger y Alan Ritchson.\nFuente (evento): 
+ https://www.usmagazine.com/entertainment/news/every-holiday-movie-on-tv-in
+ -2026-a-complete-guide/
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+END:VEVENT
+BEGIN:VEVENT
+UID:fraggle-rock-holiday-gift-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Fraggle Rock: A Holiday Gift — Estreno Apple TV
+DESCRIPTION:Canal/Streaming: Apple TV\nEspecial musical navideño con Nicol
+ e Scherzinger y Lilli Cooper.\nFuente (evento): https://www.apple.com/tv-p
+ r/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-sp
+ ecial-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+END:VEVENT
+BEGIN:VEVENT
+UID:diary-wimpy-kid-christmas-getaway-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Diary of a Wimpy Kid Christmas: The Getaway — Estreno Disney+
+DESCRIPTION:Canal/Streaming: Disney+\nNueva película animada navideña\, e
+ streno exclusivo en Disney+.\nFuente (evento): https://www.disneyplus.com/
+ explore/articles/diary-of-a-wimpy-kid-christmas-the-getaway-movie
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+END:VEVENT
+BEGIN:VEVENT
+UID:santa-clause-abc-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:The Santa Clause — Emisión ABC 2026
+DESCRIPTION:Canal/Streaming: ABC\nEmisión navideña de la película protag
+ onizada por Tim Allen.\nFuente (evento): https://abc.com/news/991c57c5-6bf
+ 2-40ee-bcca-62ee975adbaa/category/1138628
+DTSTART:20261224T020000Z
+DTEND:20261224T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:home-alone-abc-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Home Alone — Emisión ABC 2026
+DESCRIPTION:Canal/Streaming: ABC\nEmisión televisiva confirmada en Nochebu
+ ena.\nFuente (evento): https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee97
+ 5adbaa/category/1138628
+DTSTART:20261225T010000Z
+DTEND:20261225T031500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:christmas-carol-mickey-home-alone-disney-2026@inhumano.github.io
+DTSTAMP:20261127T014738Z
+SUMMARY:Mickey’s Home Alone — Estreno Disney+
+DESCRIPTION:Canal/Streaming: Disney+\nEspecial navideño señalado entre lo
+ s estrenos de streaming de la temporada.\nFuente (evento): https://www.sfc
+ hronicle.com/entertainment/movies-tv/article/2026-holiday-tv-specials-2252
+ 1720.php
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
 END:VEVENT
 END:VCALENDAR
