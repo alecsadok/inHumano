@@ -2061,6 +2061,165 @@
       "notes": [
         "Especial navideño señalado entre los estrenos de streaming de la temporada."
       ]
+    },
+    {
+      "id": "hallmark-christmas-delivered-2026",
+      "title": "Christmas Delivered — Estreno Hallmark",
+      "date": "2026-11-26",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres",
+      "notes": [
+        "Estreno de la película navideña protagonizada por Autumn Reeser y Wes Brown; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "hallmark-christmas-eve-feast-2026",
+      "title": "The Christmas Eve Feast — Estreno Hallmark",
+      "date": "2026-11-27",
+      "start_local": "18:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres",
+      "notes": [
+        "Estreno protagonizado por Daniella Monet y Kevin McGarry; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "hallmark-return-to-santa-2026",
+      "title": "Return to Santa — Estreno Hallmark",
+      "date": "2026-11-27",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres",
+      "notes": [
+        "Estreno protagonizado por Paul Campbell y Rachel Boston; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "hallmark-most-wonderful-secret-2026",
+      "title": "The Most Wonderful Secret — Estreno Hallmark",
+      "date": "2026-11-28",
+      "start_local": "18:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres",
+      "notes": [
+        "Estreno protagonizado por Tammin Sursok y Peter Porte; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "hallmark-holiday-ever-after-2026",
+      "title": "Holiday Ever After: A Disney World Wish Come True — Estreno Hallmark",
+      "date": "2026-11-28",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/holiday-ever-after-a-disney-world-wish-come-true",
+      "notes": [
+        "Protagonizada por Lacey Chabert, Travis Van Winkle, Christy Carlson Romano, Justin Bruening y Richard Kind; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "hallmark-eight-nights-for-love-2026",
+      "title": "Eight Nights for Love — Estreno Hallmark",
+      "date": "2026-11-29",
+      "start_local": "18:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres",
+      "notes": [
+        "Estreno protagonizado por Hunter King y Dan Jeannotte; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "hallmark-miles-to-christmas-2026",
+      "title": "Miles to Christmas — Estreno Hallmark",
+      "date": "2026-11-29",
+      "start_local": "20:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Hallmark Channel"
+        ]
+      },
+      "event_url": "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres",
+      "notes": [
+        "Estreno protagonizado por Ashley Williams, Steve Lund y Alison Sweeney; disponible en Hallmark+ al día siguiente."
+      ]
+    },
+    {
+      "id": "freeform-25-days-christmas-2026",
+      "title": "Freeform — 25 Days of Christmas 2026",
+      "date": "2026-12-01",
+      "end_date": "2026-12-26",
+      "broadcast": {
+        "tv": [
+          "Freeform"
+        ]
+      },
+      "event_url": "https://www.freeform.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024",
+      "notes": [
+        "Programación especial del 1 al 25 de diciembre: maratones de Home Alone, The Santa Clause, Ice Age y clásicos como Frosty, Rudolph y Grinch. El calendario oficial incluye horarios diarios y estrenos especiales."
+      ]
+    },
+    {
+      "id": "freeform-thrifting-holiday-2026",
+      "title": "That Thrifting Show with Lara Spencer: Holiday Edition",
+      "date": "2026-12-03",
+      "start_local": "22:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Freeform"
+        ]
+      },
+      "event_url": "https://www.freeform.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024",
+      "notes": [
+        "Especial estreno: Sleigh the Family Room!"
+      ]
+    },
+    {
+      "id": "freeform-jonas-christmas-movie-2026",
+      "title": "A Very Jonas Christmas Movie — Estreno Freeform",
+      "date": "2026-12-07",
+      "start_local": "21:00",
+      "tz_local": "America/New_York",
+      "broadcast": {
+        "tv": [
+          "Freeform"
+        ]
+      },
+      "event_url": "https://www.freeform.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024",
+      "notes": [
+        "Estreno televisivo de la película navideña de Jonas Brothers."
+      ]
     }
   ]
 }
