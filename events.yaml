@@ -1459,6 +1459,499 @@
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
       ],
       "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
+    },
+    {
+      "id": "rockefeller-center-2026",
+      "title": "Christmas in Rockefeller Center 2026",
+      "date": "2026-12-02",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC",
+          "Telemundo"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbcs-annual-christmas-rockefeller-center-lights-holiday-season-dec-2",
+      "notes": [
+        "Cynthia Erivo conduce y actúa.",
+        "Presentaciones de Kelly Clarkson, EJAE, Kirk Franklin, Wynonna Judd, JYT, Alanis Morissette, Brad Paisley, Alex Warren y Radio City Rockettes."
+      ]
+    },
+    {
+      "id": "christmas-with-snoop-2026",
+      "title": "Christmas with Snoop 2026",
+      "date": "2026-12-02",
+      "tz_local": "America/New_York",
+      "start_local": "22:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": [
+          "Peacock"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial navideño con Snoop Dogg y sus invitados."
+      ]
+    },
+    {
+      "id": "grinch-1966-nbc-2026",
+      "title": "How the Grinch Stole Christmas! (1966) — Emisión NBC",
+      "date": "2026-12-03",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 30,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Emisión televisiva confirmada; repetición el 25 de diciembre."
+      ]
+    },
+    {
+      "id": "frosty-2026",
+      "title": "Frosty the Snowman (1969) — Emisión NBC",
+      "date": "2026-12-03",
+      "tz_local": "America/New_York",
+      "start_local": "20:30",
+      "duration_minutes": 30,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Emisión televisiva confirmada; repetición el 16 de diciembre."
+      ]
+    },
+    {
+      "id": "rudolph-2026",
+      "title": "Rudolph the Red-Nosed Reindeer (1964) — Emisión NBC",
+      "date": "2026-12-04",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 75,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Emisión televisiva confirmada; repetición el 17 de diciembre."
+      ]
+    },
+    {
+      "id": "paw-patrol-christmas-2026",
+      "title": "PAW Patrol Christmas Special 2026",
+      "date": "2026-11-28",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
+      "notes": [
+        "Especial navideño de PAW Patrol."
+      ]
+    },
+    {
+      "id": "reindeer-in-here-2026",
+      "title": "Reindeer in Here 2026",
+      "date": "2026-12-05",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
+      "notes": [
+        "Especial animado navideño; repetición anunciada para el 23 de diciembre."
+      ]
+    },
+    {
+      "id": "wonderful-world-disney-holiday-2026",
+      "title": "The Wonderful World of Disney: Holiday Spectacular 2026",
+      "date": "2026-11-30",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Especial musical con presentaciones desde Walt Disney World y Disneyland."
+      ]
+    },
+    {
+      "id": "santa-claus-is-comin-2026",
+      "title": "Santa Claus Is Comin’ to Town (1970) — Emisión ABC",
+      "date": "2026-11-30",
+      "tz_local": "America/New_York",
+      "start_local": "22:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Clásico animado navideño de Rankin/Bass."
+      ]
+    },
+    {
+      "id": "dancing-with-holidays-2026",
+      "title": "Dancing with the Holidays 2026",
+      "date": "2026-12-01",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Especial de Dancing with the Stars con 12 coreografías festivas."
+      ]
+    },
+    {
+      "id": "cma-country-christmas-2026",
+      "title": "CMA Country Christmas 2026",
+      "date": "2026-12-01",
+      "tz_local": "America/New_York",
+      "start_local": "21:00",
+      "duration_minutes": 61,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "17.ª edición del especial musical country navideño, grabado en Nashville."
+      ]
+    },
+    {
+      "id": "saturday-night-live-christmas-2026",
+      "title": "A Saturday Night Live Christmas 2026",
+      "date": "2026-12-11",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Selección de sketches navideños; repetición el 21 de diciembre."
+      ]
+    },
+    {
+      "id": "shrek-the-halls-2026",
+      "title": "Shrek the Halls — Emisión NBC 2026",
+      "date": "2026-12-16",
+      "tz_local": "America/New_York",
+      "start_local": "20:30",
+      "duration_minutes": 30,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Especial animado navideño; repetición el 18 de diciembre."
+      ]
+    },
+    {
+      "id": "dolly-parton-mountain-magic-christmas-2026",
+      "title": "Dolly Parton’s Mountain Magic Christmas — Emisión 2026",
+      "date": "2026-12-16",
+      "tz_local": "America/New_York",
+      "start_local": "21:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": [
+          "Peacock (catálogo posterior, sujeto a disponibilidad)"
+        ]
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Película musical navideña protagonizada por Dolly Parton."
+      ]
+    },
+    {
+      "id": "iheart-radio-jingle-ball-2026",
+      "title": "iHeartRadio Jingle Ball 2026 — Especial televisivo",
+      "date": "2026-12-17",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Especial televisivo del tour navideño iHeartRadio Jingle Ball.",
+        "Cartel anunciado: Olivia Rodrigo, Hilary Duff, Jonas Brothers, SOMBR, Charlie Puth, KATSEYE y RAYE, entre otros."
+      ],
+      "broadcast_source_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628"
+    },
+    {
+      "id": "disney-parks-christmas-parade-2026",
+      "title": "Disney Parks Magical Christmas Day Parade 2026",
+      "date": "2026-12-25",
+      "tz_local": "America/New_York",
+      "start_local": "10:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Desfile y actuaciones desde Walt Disney World y Disneyland."
+      ]
+    },
+    {
+      "id": "its-a-wonderful-life-2026",
+      "title": "It’s a Wonderful Life — Emisión NBC 2026",
+      "date": "2026-12-24",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 180,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Emisión navideña del clásico de Frank Capra."
+      ]
+    },
+    {
+      "id": "christmas-eve-mass-2026",
+      "title": "Christmas Eve Mass from St. Peter’s Basilica 2026",
+      "date": "2026-12-24",
+      "tz_local": "America/New_York",
+      "start_local": "23:30",
+      "duration_minutes": 90,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "NBC",
+          "Telemundo"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Misa de Nochebuena desde la Basílica de San Pedro, con el papa León XIV."
+      ]
+    },
+    {
+      "id": "christmas-message-pope-2026",
+      "title": "Mensaje Navideño del Papa 2026",
+      "date": "2026-12-25",
+      "tz_local": "America/New_York",
+      "start_local": "06:00",
+      "duration_minutes": 30,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "Telemundo"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup",
+      "notes": [
+        "Transmisión del tradicional mensaje navideño desde el Vaticano."
+      ]
+    },
+    {
+      "id": "voices-of-hope-2026",
+      "title": "Voices of Hope — The Tabernacle Choir 2026",
+      "date": "2026-12-26",
+      "tz_local": "America/New_York",
+      "start_local": "21:00",
+      "duration_minutes": 120,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
+      "notes": [
+        "Concierto especial por el centenario del debut del coro en Hollywood Bowl; participan Donny Osmond, David Foster y Katharine McPhee."
+      ]
+    },
+    {
+      "id": "family-film-tv-awards-2026",
+      "title": "29th Annual Family Film & TV Awards 2026",
+      "date": "2026-12-26",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
+      "notes": [
+        "Premios a películas y programas familiares."
+      ]
+    },
+    {
+      "id": "new-years-eve-nashville-2026",
+      "title": "New Year’s Eve Live: Nashville’s Big Bash 2026",
+      "date": "2026-12-31",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 240,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "CBS"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.tvinsider.com/1303617/holiday-tv-specials-2026-schedule/",
+      "notes": [
+        "Celebración musical de Año Nuevo desde Nashville.",
+        "Artistas anunciados: HARDY, Little Big Town y The Red Clay Strays, entre otros."
+      ]
+    },
+    {
+      "id": "dick-clarks-rockin-eve-2027",
+      "title": "Dick Clark’s New Year’s Rockin’ Eve with Ryan Seacrest 2027",
+      "date": "2026-12-31",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 480,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": [
+          "Disney+",
+          "iHeartRadio (simulcast de radio)"
+        ]
+      },
+      "event_url": "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/",
+      "notes": [
+        "Conduce Ryan Seacrest; Rita Ora desde Nueva York, Julianne Hough y Rob Gronkowski desde Las Vegas, y Druski desde Chicago.",
+        "La transmisión en vivo comienza a las 20:00 ET / 22:00 de Argentina (UTC-3).",
+        "La grilla completa de artistas aún no fue anunciada en la fuente oficial."
+      ],
+      "broadcast_source_url": "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/"
+    },
+    {
+      "id": "charlie-brown-christmas-2026",
+      "title": "A Charlie Brown Christmas — Apple TV 2026",
+      "date": "2026-12-13",
+      "tz_local": "America/New_York",
+      "start_local": "00:00",
+      "duration_minutes": 1440,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Apple TV"
+        ]
+      },
+      "event_url": "https://www.boston.com/culture/tv/2026/11/25/holiday-tv-specials-2026-full-schedule/",
+      "notes": [
+        "Especial disponible en Apple TV; acceso gratuito anunciado para el 13 y 14 de diciembre."
+      ]
+    },
+    {
+      "id": "mickey-christmas-carol-2026",
+      "title": "Mickey’s Christmas Carol — Emisión ABC 2026",
+      "date": "2026-11-25",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 60,
+      "location": "Estados Unidos",
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ],
+        "streaming": []
+      },
+      "event_url": "https://www.boston.com/culture/tv/2026/11/25/holiday-tv-specials-2026-full-schedule/",
+      "notes": [
+        "Emisión confirmada, ya realizada al momento de la actualización."
+      ]
     }
   ]
 }
