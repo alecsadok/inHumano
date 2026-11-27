@@ -1952,6 +1952,115 @@
       "notes": [
         "Emisión confirmada, ya realizada al momento de la actualización."
       ]
+    },
+    {
+      "id": "in-a-holidaze-netflix-2026",
+      "title": "In a Holidaze — Estreno Netflix",
+      "date": "2026-12-02",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Netflix"
+        ]
+      },
+      "event_url": "https://www.whats-on-netflix.com/news/in-a-holidaze-netflix-release-date/",
+      "notes": [
+        "Estreno global de la película navideña protagonizada por Maddie Ziegler y Rob Lowe."
+      ]
+    },
+    {
+      "id": "the-man-with-the-bag-prime-2026",
+      "title": "The Man with the Bag — Estreno Prime Video",
+      "date": "2026-12-02",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Prime Video"
+        ]
+      },
+      "event_url": "https://www.usmagazine.com/entertainment/news/every-holiday-movie-on-tv-in-2026-a-complete-guide/",
+      "notes": [
+        "Estreno de la comedia navideña protagonizada por Arnold Schwarzenegger y Alan Ritchson."
+      ]
+    },
+    {
+      "id": "fraggle-rock-holiday-gift-2026",
+      "title": "Fraggle Rock: A Holiday Gift — Estreno Apple TV",
+      "date": "2026-12-04",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Apple TV"
+        ]
+      },
+      "event_url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-special-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/",
+      "notes": [
+        "Especial musical navideño con Nicole Scherzinger y Lilli Cooper."
+      ]
+    },
+    {
+      "id": "diary-wimpy-kid-christmas-getaway-2026",
+      "title": "Diary of a Wimpy Kid Christmas: The Getaway — Estreno Disney+",
+      "date": "2026-12-04",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Disney+"
+        ]
+      },
+      "event_url": "https://www.disneyplus.com/explore/articles/diary-of-a-wimpy-kid-christmas-the-getaway-movie",
+      "notes": [
+        "Nueva película animada navideña, estreno exclusivo en Disney+."
+      ]
+    },
+    {
+      "id": "santa-clause-abc-2026",
+      "title": "The Santa Clause — Emisión ABC 2026",
+      "date": "2026-12-23",
+      "tz_local": "America/New_York",
+      "start_local": "21:00",
+      "duration_minutes": 120,
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ]
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Emisión navideña de la película protagonizada por Tim Allen."
+      ]
+    },
+    {
+      "id": "home-alone-abc-2026",
+      "title": "Home Alone — Emisión ABC 2026",
+      "date": "2026-12-24",
+      "tz_local": "America/New_York",
+      "start_local": "20:00",
+      "duration_minutes": 135,
+      "broadcast": {
+        "tv": [
+          "ABC"
+        ]
+      },
+      "event_url": "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628",
+      "notes": [
+        "Emisión televisiva confirmada en Nochebuena."
+      ]
+    },
+    {
+      "id": "christmas-carol-mickey-home-alone-disney-2026",
+      "title": "Mickey’s Home Alone — Estreno Disney+",
+      "date": "2026-11-27",
+      "broadcast": {
+        "tv": [],
+        "streaming": [
+          "Disney+"
+        ]
+      },
+      "event_url": "https://www.sfchronicle.com/entertainment/movies-tv/article/2026-holiday-tv-specials-22521720.php",
+      "notes": [
+        "Especial navideño señalado entre los estrenos de streaming de la temporada."
+      ]
     }
   ]
 }
