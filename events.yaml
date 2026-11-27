@@ -626,11 +626,10 @@
           "Hulu"
         ]
       },
-      "event_url": "https://www.grammy.com/news/how-to-watch-2027-grammys/",
+      "event_url": "https://www.grammy.com/news/2027-grammys-show-air-date-nominations-announced/",
       "notes": [
-        "La ceremonia principal comienza a las 19:00 ET / 21:00 de Argentina (UTC-3), en el Crypto.com Arena.",
-        "La 69.ª edición marca el regreso de los GRAMMY a ABC y el debut de la transmisión simultánea en Disney+ y Hulu.",
-        "Nominaciones: RAYE lidera con 11; ROSALÍA tiene 9; Ella Langley, Miranda Lambert, Olivia Rodrigo y Phoebe Bridgers suman 7 cada una."
+        "Transmisión en vivo desde Crypto.com Arena a las 19:00 ET / 21:00 de Argentina (UTC-3).",
+        "Primera edición de los GRAMMY con transmisión simultánea en ABC, Disney+ y Hulu."
       ],
       "event_extra_source": "https://www.grammy.com/news/2027-grammys-nominations-announcement/",
       "start_local": "19:00",
@@ -663,9 +662,10 @@
       },
       "event_url": "https://www.grammy.com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/",
       "notes": [
-        "Ceremonia de Premiere, donde se entregará la mayoría de las categorías antes de la transmisión televisiva principal.",
+        "La Premiere Ceremony anuncia y entrega numerosas categorías antes de la ceremonia principal.",
         "Comienza a las 14:30 ET / 16:30 de Argentina (UTC-3)."
-      ]
+      ],
+      "broadcast_source_url": "https://www.grammy.com/news/2027-grammys-premiere-ceremony-disney-plus-streaming/"
     },
     {
       "id": "critics-choice-nominations-2026",
@@ -681,10 +681,10 @@
         ],
         "streaming": []
       },
-      "event_url": "https://www.criticschoice.com/shortlists-for-the-32nd-annual-critics-choice-awards-below-the-line-categories-announced/",
+      "event_url": "https://www.criticschoice.com/janelle-james-to-host-32nd-annual-critics-choice-awards/",
       "notes": [
         "Anuncio de nominaciones de cine y televisión, con Erin Lim Rhodes y Will Marfuggi.",
-        "Inicio: 12:00 ET / 14:00 Argentina (UTC-3)."
+        "La señal televisiva comienza a las 12:00 ET / 14:00 de Argentina (UTC-3)."
       ]
     },
     {
@@ -767,8 +767,12 @@
       },
       "event_url": "https://actorawards.org/awards/calendar",
       "notes": [
-        "Transmisión en vivo por Netflix a las 20:00 ET / 22:00 Argentina (UTC-3)."
-      ]
+        "La 33.ª edición se transmitirá en vivo por Netflix el domingo 28 de febrero, a las 20:00 ET / 22:00 de Argentina (UTC-3)."
+      ],
+      "special_awards": [
+        "Premio SAG-AFTRA a la Trayectoria (62.ª edición) — Al Pacino"
+      ],
+      "event_extra_source": "https://www.actorawards.org/media/news/releases/al-pacino-be-honored-2026-sag-aftra-life-achievement-award"
     },
     {
       "id": "super-bowl-lxi-2027",
@@ -778,22 +782,21 @@
       "broadcast": {
         "tv": [
           "ESPN",
-          "ABC",
-          "ESPN Deportes",
-          "Univision"
+          "ABC"
         ],
         "streaming": [
           "Disney+",
           "NFL+ (dispositivos móviles)"
         ]
       },
-      "event_url": "https://amp.nfl.com/news/jay-z-halftime-show-press-release",
+      "event_url": "https://www.nfl.com/super-bowl/halftime-show",
       "confirmed_performers": [
-        "JAŸ-Z — Apple Music Super Bowl LXI Halftime Show"
+        "JAY-Z — artista principal del show de medio tiempo"
       ],
       "notes": [
-        "La NFL, Apple Music y Roc Nation confirmaron a JAŸ-Z como artista principal del show de medio tiempo.",
-        "No se carga hora de inicio: no está confirmada en la fuente consultada."
+        "La NFL confirmó a JAY-Z como artista principal del Halftime Show.",
+        "La transmisión del evento está confirmada por ESPN y ABC; Disney+ y NFL+ (en dispositivos móviles) también figuran como opciones de acceso.",
+        "El horario de inicio del partido todavía no se anunció en la fuente consultada."
       ]
     },
     {
@@ -816,8 +819,8 @@
         "Conan O’Brien"
       ],
       "notes": [
-        "En vivo a las 19:00 ET / 20:00 Argentina (UTC-3); Estados Unidos estará en horario de verano (EDT).",
-        "La Academia anunció las nominaciones para el 21 de enero de 2027; los títulos y conteos líderes se agregarán cuando se publiquen."
+        "Transmisión en vivo a las 19:00 ET / 20:00 de Argentina (UTC-3); Estados Unidos estará en horario de verano (EDT).",
+        "La Academia anunció el 21 de enero de 2027 como fecha de revelación de las nominaciones."
       ]
     },
     {
@@ -970,7 +973,7 @@
       "headliners": [
         "Charli xcx",
         "David Guetta",
-        "Cage the Elephant"
+        "Sombr"
       ],
       "lineup": [
         "Charli xcx",
@@ -1016,7 +1019,7 @@
       },
       "event_url": "https://www.coachella.com/lineup/",
       "broadcast_source_url": "https://coachella.com/youtube-livestream",
-      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "lineup_source_url": "https://www.coachella.com/lineup/",
       "headliners": [
         "Dua Lipa"
       ],
@@ -1078,7 +1081,8 @@
       ],
       "notes": [
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
-      ]
+      ],
+      "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     },
     {
       "id": "coachella-2027-weekend-1-saturday",
@@ -1093,7 +1097,7 @@
       },
       "event_url": "https://www.coachella.com/lineup/",
       "broadcast_source_url": "https://coachella.com/youtube-livestream",
-      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "lineup_source_url": "https://www.coachella.com/lineup/",
       "headliners": [
         "Tame Impala"
       ],
@@ -1153,7 +1157,8 @@
       ],
       "notes": [
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
-      ]
+      ],
+      "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     },
     {
       "id": "coachella-2027-weekend-1-sunday",
@@ -1168,7 +1173,7 @@
       },
       "event_url": "https://www.coachella.com/lineup/",
       "broadcast_source_url": "https://coachella.com/youtube-livestream",
-      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "lineup_source_url": "https://www.coachella.com/lineup/",
       "headliners": [
         "SZA"
       ],
@@ -1225,7 +1230,8 @@
       ],
       "notes": [
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
-      ]
+      ],
+      "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     },
     {
       "id": "coachella-2027-weekend-2-friday",
@@ -1240,7 +1246,7 @@
       },
       "event_url": "https://www.coachella.com/lineup/",
       "broadcast_source_url": "https://coachella.com/youtube-livestream",
-      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "lineup_source_url": "https://www.coachella.com/lineup/",
       "headliners": [
         "Dua Lipa"
       ],
@@ -1302,7 +1308,8 @@
       ],
       "notes": [
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
-      ]
+      ],
+      "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     },
     {
       "id": "coachella-2027-weekend-2-saturday",
@@ -1317,7 +1324,7 @@
       },
       "event_url": "https://www.coachella.com/lineup/",
       "broadcast_source_url": "https://coachella.com/youtube-livestream",
-      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "lineup_source_url": "https://www.coachella.com/lineup/",
       "headliners": [
         "Tame Impala"
       ],
@@ -1377,7 +1384,8 @@
       ],
       "notes": [
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
-      ]
+      ],
+      "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     },
     {
       "id": "coachella-2027-weekend-2-sunday",
@@ -1392,7 +1400,7 @@
       },
       "event_url": "https://www.coachella.com/lineup/",
       "broadcast_source_url": "https://coachella.com/youtube-livestream",
-      "lineup_source_url": "https://www.thefader.com/2026/11/11/coachella-2027-lineup-sza-dua-lipa-tame-impala-and-more",
+      "lineup_source_url": "https://www.coachella.com/lineup/",
       "headliners": [
         "SZA"
       ],
@@ -1449,7 +1457,8 @@
       ],
       "notes": [
         "La programación de esta jornada se repite en Weekend 1 y Weekend 2. Horarios de escenarios aún no publicados."
-      ]
+      ],
+      "event_extra_source": "https://blog.youtube/news-and-events/made-on-youtube-coachella-exclusively-stream-youtube-2030/"
     }
   ]
 }
