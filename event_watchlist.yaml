@@ -697,3 +697,24 @@ watchlist:
     sources:
       - type: official_homepage
         url: "https://www.billboard.com/"
+
+  - id: holiday_tv_streaming_specials
+    name: "Christmas TV and Streaming Specials"
+    kind: seasonal_specials
+    status: active
+    requires_edition_broadcast_confirmation: true
+    sources:
+      - type: official_network_schedule
+        url: "https://abc.com/news/991c57c5-6bf2-40ee-bcca-62ee975adbaa/category/1138628"
+      - type: official_network_schedule
+        url: "https://www.nbcuniversal.com/article/nbc-announces-full-2026-holiday-programming-lineup"
+      - type: official_streaming_schedule
+        url: "https://www.apple.com/tv-pr/news/2026/11/apple-tv-debuts-heartwarming-trailer-for-all-new-holiday-special-fraggle-rock-a-holiday-gift-premiering-globally-friday-december-4/"
+      - type: official_streaming_schedule
+        url: "https://www.disneyplus.com/explore/articles/diary-of-a-wimpy-kid-christmas-the-getaway-movie"
+      - type: official_event_announcement
+        url: "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/"
+    tz_local: "America/New_York"
+    broadcast:
+      tv: []
+      streaming: []
