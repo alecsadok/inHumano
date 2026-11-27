@@ -714,6 +714,10 @@ watchlist:
         url: "https://www.disneyplus.com/explore/articles/diary-of-a-wimpy-kid-christmas-the-getaway-movie"
       - type: official_event_announcement
         url: "https://www.detpress.com/abc/pressrelease/dick-clarks-new-years-rockin-eve-with-ryan-seacrest-2027-to-simulcast-live-on-abc-and-disney-for-the-first-time-ever/"
+      - type: official_network_schedule
+        url: "https://www.freeform.com/news/8e058db0-9e60-46e1-9488-0c26687d29a7/category/3444024"
+      - type: official_network_schedule
+        url: "https://www.hallmarkchannel.com/christmas/thanksgiving-weekend-2026-movie-premieres"
     tz_local: "America/New_York"
     broadcast:
       tv: []
